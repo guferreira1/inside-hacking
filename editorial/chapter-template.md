@@ -2,7 +2,7 @@
 
 ## Metadados
 
-- Parte:
+- Módulo:
 - Capítulo:
 - Status:
 - Última revisão:
@@ -36,7 +36,11 @@ Mapa dos conceitos que precisam ser desenvolvidos em prosa.
 
 Como o assunto será introduzido e quais exemplos serão usados?
 
-## Prática / laboratório
+## Prática, demonstração ou exercício
+
+Escolher somente o formato que realmente acrescenta compreensão ao capítulo. **Laboratório não é requisito universal.**
+
+Quando houver laboratório reproduzível, registrar:
 
 - objetivo;
 - ambiente;
@@ -46,6 +50,8 @@ Como o assunto será introduzido e quais exemplos serão usados?
 - evidências;
 - restauração;
 - limites de autorização.
+
+Quando não houver, usar exemplos, cenários, análise de comportamento, exercícios de raciocínio ou demonstrações conceituais sem alegar execução.
 
 ## Verificação de compreensão
 
@@ -64,7 +70,7 @@ Fontes primárias, especificações, documentação, pesquisas e materiais compl
 - [ ] Pesquisa revisada
 - [ ] Afirmações técnicas verificadas
 - [ ] Exemplos revisados
-- [ ] Laboratório reproduzido
+- [ ] Prática/laboratório reproduzido quando aplicável; caso contrário, marcado como N/A
 - [ ] Soluções revisadas
 - [ ] Revisão editorial
 - [ ] Revisão técnica
