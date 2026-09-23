@@ -19,7 +19,7 @@ A proposta é permitir que quem está começando entenda computadores, sistemas 
 | --- | --- | --- |
 | [1 · O que é hacking?](book/capitulo-1/README.md) | Conceitos iniciais, investigação, ferramentas e responsabilidade. | Em revisão |
 | [2 · Da curiosidade à segurança ofensiva](book/capitulo-2/README.md) | Uma introdução à história da cultura hacker e da segurança. | Revisão interna concluída — v1.0 |
-| [3 · Ética, legalidade, autorização e escopo](book/capitulo-3/README.md) | Permissões, limites, dados e um estudo de caso com respostas comentadas. | Rascunho para leitura |
+| [3 · Ética, legalidade, autorização e escopo](book/capitulo-3/README.md) | Permissões, limites, dados e um estudo de caso com respostas comentadas. | Revisão interna concluída — v1.0 |
 
 **[Abrir o índice de leitura →](book/README.md)**
 
