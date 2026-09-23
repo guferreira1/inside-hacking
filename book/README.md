@@ -1,23 +1,27 @@
-# Manuscrito
+# Por Dentro do Hacking · Índice de leitura
 
-Este diretório contém o texto que efetivamente compõe **Por Dentro do Hacking**.
+[← Página inicial](../README.md) · [Glossário](glossario.md) · [Bibliografia](bibliografia.md)
 
-## Organização
+Este índice reúne somente textos que já existem. Para consultar os assuntos ainda planejados, abra o [mapa completo da obra](../editorial/master-outline.md).
 
-O manuscrito será organizado por capítulos:
+## Parte I · Hacking, segurança e método
 
-```text
-book/
-├── capitulo-1/
-│   ├── README.md
-│   ├── 1.1-....md
-│   ├── 1.2-....md
-│   └── ...
-├── capitulo-2/
-│   └── ...
-└── capitulo-N/
-```
+| Capítulo | Leitura | Estado |
+| --- | --- | --- |
+| 1 | [O que é hacking?](capitulo-1/README.md) | Em revisão |
+| 2 | [Da curiosidade à segurança ofensiva: uma breve história da cultura hacker](capitulo-2/README.md) | Em revisão |
+| 3 | [Ética, legalidade, autorização e escopo](capitulo-3/README.md) | Rascunho para leitura |
 
-O `README.md` de cada capítulo funcionará como abertura e índice navegável. Subcapítulos representam unidades conceituais e podem variar em quantidade e tamanho.
+### Dentro do Capítulo 3
 
-A estrutura definitiva será criada após aprovação do sumário mestre. Rascunhos de pesquisa não devem ser tratados automaticamente como conteúdo publicável.
+- [3.1 · Permissão não é uma sensação: autorização, escopo e regras](capitulo-3/3.1-autorizacao-e-escopo.md)
+- [3.2 · Evidências, dados e responsabilidade jurídica](capitulo-3/3.2-evidencias-e-responsabilidade.md)
+- [3.3 · Antes da primeira requisição: estudo de caso](capitulo-3/3.3-estudo-de-caso.md)
+- [Soluções comentadas](capitulo-3/solucoes.md) — consulte depois de tentar.
+- [Fontes e notas de pesquisa](capitulo-3/referencias.md).
+
+## Como navegar
+
+Os diretórios seguem `capitulo-1/`, `capitulo-2/` e assim por diante. A leitura segue este índice, não a ordenação alfabética dos diretórios. Subcapítulos são separados quando isso ajuda a compreender, revisar e manter o texto; não há uma quantidade fixa por capítulo.
+
+Leia o [significado dos estados editoriais](../editorial/publication-status.md). Ainda não há edição estável ou PDF disponível.

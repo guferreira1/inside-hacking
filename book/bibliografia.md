@@ -32,8 +32,16 @@ O Morris Worm é tratado como um marco que catalisou resposta coordenada a incid
 
 A seção de *phone phreaking* permanece deliberadamente introdutória. Detalhes históricos populares que não sejam necessários para compreender o mecanismo serão submetidos a verificação adicional antes de uma edição estável.
 
+## Capítulo 3 — Ética, legalidade, autorização e escopo
+
+As referências desta entrega estão em [Fontes e notas de pesquisa do Capítulo 3](capitulo-3/referencias.md), com identificadores utilizados ao longo do texto, localização dos trechos pertinentes, data de consulta e limites da revisão.
+
+Incluem PTES, política de divulgação do get.gov/CISA, política de pentest da AWS, RFC 9116, documentação de safe harbor da HackerOne, art. 154-A do Código Penal brasileiro e artigos pertinentes da LGPD. São fontes de mecanismos e regras específicos, não endosso institucional à obra.
+
+Os exemplos Aurora são fictícios e não representam execuções reais. A discussão jurídica permanece educacional e pendente de revisão especializada.
+
 ## Política de referências
 
 URLs e datas de consulta serão preservadas para recursos Web. Quando houver especificação, norma, RFC, artigo acadêmico ou publicação original disponível, ela deve ser preferida a resumos secundários.
 
-Referências serão revisadas novamente antes de cada release do livro para identificar links quebrados, documentos substituídos e versões mais atuais.
+Referências serão revisadas novamente antes de cada release do livro para identificar links quebrados, documentos substituídos e versões mais atuais. As pendências de cada capítulo estão no [controle editorial](../editorial/publication-status.md).
