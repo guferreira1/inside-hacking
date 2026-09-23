@@ -1,6 +1,6 @@
 # Capítulo 1 — O que é hacking?
 
-> **Status:** primeira entrega de leitura — draft 0.1
+> **Status:** REVIEW — fact-check primário concluído; revisão pública aberta
 
 Antes de instalar Kali Linux, executar um scanner ou falar sobre exploração, precisamos resolver um problema de linguagem: **o que significa hackear?**
 
