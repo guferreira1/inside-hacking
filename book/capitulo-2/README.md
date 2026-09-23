@@ -1,6 +1,6 @@
 # Capítulo 2 — Da curiosidade à segurança ofensiva: uma breve história da cultura hacker
 
-> **Status:** primeira entrega de leitura — draft 0.1
+> **Status:** REVIEW — fact-check primário concluído; revisão pública aberta
 
 No capítulo anterior, vimos que *hacking* não nasceu como sinônimo de crime digital. Mas essa constatação cria outra pergunta: **como uma cultura de exploração criativa de sistemas se tornou também uma disciplina de segurança, uma profissão e uma atividade associada a ataques?**
 
