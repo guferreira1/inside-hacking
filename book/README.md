@@ -10,7 +10,7 @@ Este índice reúne somente textos que já existem. Para consultar os assuntos a
 | --- | --- | --- |
 | 1 | [O que é hacking?](capitulo-1/README.md) | Em revisão |
 | 2 | [Da curiosidade à segurança ofensiva: uma breve história da cultura hacker](capitulo-2/README.md) | Revisão interna concluída — v1.0 |
-| 3 | [Ética, legalidade, autorização e escopo](capitulo-3/README.md) | Rascunho para leitura |
+| 3 | [Ética, legalidade, autorização e escopo](capitulo-3/README.md) | Revisão interna concluída — v1.0 |
 
 ### Material de apoio do Capítulo 2
 
