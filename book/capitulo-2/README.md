@@ -1,28 +1,26 @@
 # Capítulo 2 — Da curiosidade à segurança ofensiva: uma breve história da cultura hacker
 
-> **Status:** REVIEW — fact-check primário concluído; revisão pública aberta
+[← Capítulo 1](../capitulo-1/README.md) · [Índice do livro](../README.md) · [Capítulo 3 →](../capitulo-3/README.md)
+
+> **Status:** VALIDATED — versão editorial 1.0; fechamento da revisão interna em 23/09/2026. As fontes e os limites da verificação estão documentados. Revisão histórica independente não realizada; esta versão não é uma release do livro em PDF. [Registro da revisão](../../editorial/reviews/capitulo-2.md).
 
 No capítulo anterior, vimos que *hacking* não nasceu como sinônimo de crime digital. Mas essa constatação cria outra pergunta: **como uma cultura de exploração criativa de sistemas se tornou também uma disciplina de segurança, uma profissão e uma atividade associada a ataques?**
 
 A resposta não cabe em uma única data nem em um único grupo.
 
-A história do hacking atravessa universidades, sistemas telefônicos, computadores compartilhados, redes acadêmicas, comunidades underground, incidentes de grande escala, pesquisa de vulnerabilidades e a profissionalização da segurança. Em cada etapa, uma ideia permanece reconhecível: pessoas encontram sistemas complexos, tentam compreendê-los além da interface prevista e descobrem comportamentos que seus projetistas nem sempre imaginaram.
+Nosso percurso passa por universidades, sistemas telefônicos, computadores compartilhados, redes, incidentes e pesquisa de vulnerabilidades. Não vamos tratá-los como etapas de uma evolução inevitável, nem procurar uma pessoa que tenha inventado tudo. Vamos observar episódios que ajudam a entender a relação entre a tecnologia e as maneiras de investigá-la.
 
 Este capítulo não pretende contar toda a história da computação. Ele procura construir uma linha que nos ajude a entender **de onde vieram a cultura hacker e a segurança ofensiva que estudaremos no restante da obra**.
 
 ## 2.1 Quando computadores eram recursos escassos
 
-Hoje carregamos no bolso computadores muito mais acessíveis do que as máquinas que ocupavam laboratórios inteiros nas primeiras décadas da computação.
+Para imaginar os ambientes em que essas comunidades se desenvolveram, precisamos deixar de lado a ideia de que cada estudante tinha um computador pessoal disponível a qualquer momento. Em instituições com equipamentos caros e compartilhados, aproveitar o tempo de máquina era uma questão importante. O relatório de segurança organizado por Willis Ware descreve justamente sistemas que dividiam recursos de computação entre usuários, aumentando o aproveitamento do equipamento e introduzindo problemas de isolamento entre eles. [R8](referencias.md#r8)
 
-Essa diferença muda a maneira como precisamos imaginar o ambiente em que a cultura hacker se desenvolveu.
+No MIT, membros do Tech Model Railroad Club (TMRC) já estavam acostumados a construir e modificar sistemas complexos. O clube, fundado em 1946, possuía uma maquete ferroviária com controles desenvolvidos pelos estudantes. Em um relato publicado pelo MIT em 1996, John Shriver, do próprio clube, relaciona os integrantes que trabalhavam nesses controles aos primeiros hackers de computadores da instituição, quando máquinas como o TX-0 e o PDP-1 se tornaram disponíveis. [R1](referencias.md#r1)
 
-Computadores eram caros, compartilhados e frequentemente controlados por instituições. O acesso podia depender de horários, permissões e da disponibilidade de uma máquina utilizada por várias pessoas. Para estudantes fascinados pela computação, conseguir tempo de máquina significava conseguir experimentar.
+O ponto importante não é transformar um clube universitário em uma “origem oficial” única do hacking. O TMRC é um caso documentado de encontro entre experimentação, construção de sistemas e computação. Seu dicionário, derivado de um texto de Pete Samson de 1959 e ampliado posteriormente, também preserva parte do vocabulário daquela comunidade. [R2](referencias.md#r2)
 
-No MIT, membros do Tech Model Railroad Club (TMRC) já estavam acostumados a construir e modificar sistemas complexos. O clube, fundado em 1946, possuía uma grande maquete ferroviária com sistemas de controle criados pelos próprios estudantes. O MIT registra que integrantes envolvidos nesses controles estiveram entre os primeiros hackers de computadores da instituição quando máquinas como o TX-0 e o PDP-1 se tornaram disponíveis.
-
-O ponto importante não é transformar um clube universitário em uma “origem oficial” única do hacking. Culturas técnicas semelhantes existiram em outros lugares. O TMRC é importante porque deixou registros de uma comunidade na qual experimentação, improvisação e compreensão profunda de sistemas se encontraram com a computação.
-
-Quando o computador passou a ser o novo sistema a explorar, a curiosidade não mudou de natureza. Mudou de objeto.
+Para nossa leitura, a conexão é esta: o computador podia se tornar um novo objeto para uma curiosidade técnica que já existia.
 
 ## 2.2 O computador como sistema a ser explorado
 
@@ -46,275 +44,167 @@ O que acontece quando dois programas precisam da mesma memória?
 
 É possível fazer algo que os projetistas não previram?
 
-Essas perguntas não são necessariamente perguntas de segurança. Elas representam uma forma exploratória de aprender tecnologia.
+Essas perguntas não são necessariamente perguntas de segurança. Elas representam uma forma exploratória de aprender tecnologia. São um exemplo didático, não a transcrição de uma conversa histórica.
 
-O ambiente hacker inicial valorizava bastante a experimentação direta. Computadores não eram apenas objetos para observar teoricamente; eram sistemas para manipular, programar e compreender pela interação.
+Podemos estudar o computador como objeto para observar e também como sistema para programar, modificar e compreender pela interação. Essa postura aparecerá novamente nos laboratórios da obra: uma explicação apresenta um modelo; uma observação permite confrontá-lo com o comportamento do sistema.
 
-Essa postura aparecerá novamente quando começarmos nossos laboratórios. Ler sobre um protocolo nos fornece um modelo. Observar pacotes reais nos permite confrontar esse modelo com o comportamento do sistema.
+Mas existe uma distinção importante para nosso método: **explorar um ambiente que você está autorizado a testar é diferente de presumir a mesma liberdade sobre sistemas de terceiros**. Curiosidade será o ponto de partida das nossas perguntas, não uma autorização automática para executar qualquer teste.
 
-Mas existe uma tensão histórica importante: **explorar livremente um sistema que você controla é diferente de explorar livremente um sistema que pertence a outra pessoa**.
+## 2.3 Explorando a rede telefônica
 
-À medida que computadores e redes passaram a conectar mais usuários e organizações, essa diferença se tornou cada vez mais importante.
-
-## 2.3 Antes da Internet: explorando a rede telefônica
-
-A história hacker também passa pelo telefone.
-
-Entre o fim dos anos 1950 e as décadas seguintes, comunidades que ficaram conhecidas como *phone phreaks* estudaram o funcionamento da rede telefônica. Elas ouviam tons, investigavam sinalização, procuravam documentação técnica e construíam dispositivos capazes de interagir com mecanismos da rede.
+A história hacker também passa pelo telefone. Em seu relato pessoal sobre a construção de uma *blue box*, Steve Wozniak descreve a leitura, em 1971, de uma reportagem sobre pessoas que investigavam a rede telefônica, seguida da consulta a documentação técnica e de experimentos com circuitos. Esses exploradores ficaram conhecidos como *phone phreaks*. [R5](referencias.md#r5)
 
 Por que isso importa para cybersecurity?
 
-Porque a rede telefônica oferece um exemplo histórico extremamente claro de uma ideia que veremos repetidamente:
+Porque essa história permite investigar uma pergunta que reaparecerá na obra:
 
-> **quando informação de controle e uso normal do sistema compartilham mecanismos que um usuário consegue influenciar, surgem possibilidades inesperadas.**
+> **O que acontece quando um usuário consegue produzir sinais que o sistema interpreta como comandos de controle?**
 
-Sistemas telefônicos antigos utilizavam tons audíveis como parte de sua sinalização. Documentação técnica do Bell System descrevia, entre outros mecanismos, sinalização em frequências que incluíam 2600 Hz. Pessoas que estudavam a rede descobriram maneiras de reproduzir sinais utilizados pelo próprio sistema.
+Em determinados sistemas telefônicos históricos, sinais de controle viajavam no mesmo canal usado para transmitir a voz. Essa é a ideia de sinalização **em banda**. Um artigo de A. Weaver e N. A. Newell, publicado no *Bell System Technical Journal* em 1954, descreve sistemas de frequência única e o uso de 2600 Hz em determinadas linhas. O próprio artigo discute o risco de outros sons imitarem a sinalização e os mecanismos projetados para reduzir esse problema. [R3](referencias.md#r3)
 
-O famoso caso do apito associado ao cereal Cap'n Crunch tornou-se parte da cultura popular porque um brinquedo distribuído com o produto podia produzir aproximadamente um tom utilizado naquele ecossistema de sinalização. John Draper ficou conhecido pelo apelido *Captain Crunch* em associação a essa história.
+Um episódio conhecido envolve o apito distribuído com o cereal Cap'n Crunch. Wozniak relata que ele podia produzir um tom de 2600 Hz, relacionado à supervisão de certas ligações. John Draper, conhecido como *Captain Crunch*, aparece nessa história. Aqui estamos identificando o relato de um participante, não atribuindo a Draper a descoberta de todos esses mecanismos ou a criação da segurança de computadores. [R5](referencias.md#r5)
 
-O detalhe técnico completo da telefonia daquela época não é necessário agora. O que queremos observar é o padrão.
+Há uma diferença técnica importante: **produzir um tom não equivale a controlar toda a rede telefônica**. Supervisão da ligação e transmissão do número de destino são funções distintas. A documentação do Bell System de 1960 descreve sinalização multifrequência, ou MF, que representava informações de endereçamento por combinações de tons. Não devemos reduzir todos esses mecanismos a um único apito. [R4](referencias.md#r4)
 
-O sistema tinha uma linguagem interna.
+Também não devemos generalizar o comportamento desses sistemas históricos para qualquer rede telefônica, muito menos para as atuais. O exemplo serve para compreender uma arquitetura e sua exposição; não é uma instrução de teste em serviços de telecomunicações.
 
-Pesquisadores informais descobriram partes dessa linguagem.
+O padrão que queremos reconhecer é o seguinte: o sistema tinha convenções internas de controle; quem compreendia essas convenções podia investigar se entradas acessíveis a um usuário seriam interpretadas com uma autoridade indevida.
 
-Ao conseguir produzir sinais que o sistema interpretava como controle, conseguiram provocar comportamentos que um usuário comum não deveria controlar daquela maneira.
-
-Décadas depois encontraremos o mesmo tipo de pergunta em tecnologias completamente diferentes:
+Décadas depois, faremos uma pergunta parecida diante de tecnologias diferentes:
 
 **quais entradas o sistema interpreta como dados e quais interpreta como instruções?**
 
-Essa pergunta aparecerá quando estudarmos injeções, parsers, protocolos e até aplicações de inteligência artificial.
-
-A tecnologia muda. Certas classes de erro de confiança reaparecem.
+Essa comparação é uma ferramenta didática. Ela não significa que sinalização telefônica, SQL injection e prompt injection funcionem da mesma maneira ou aceitem as mesmas defesas.
 
 ## 2.4 Comunidades, conhecimento e uma cultura própria
 
-Hacking nunca foi apenas uma relação entre uma pessoa e uma máquina.
+Hacking não precisa ser pensado apenas como a relação entre uma pessoa e uma máquina. O dicionário do TMRC, por exemplo, registra um vocabulário coletivo, comentários bem-humorados e contribuições de diferentes integrantes. É um vestígio de práticas compartilhadas, não apenas de feitos individuais. [R2](referencias.md#r2)
 
-Comunidades importaram desde cedo.
+Para interpretar esse material, vale separar cultura de idealização. Podemos valorizar criatividade, troca de conhecimento e habilidade técnica sem presumir que todos os participantes de uma comunidade tenham a mesma conduta ou os mesmos objetivos.
 
-Conhecimento circulava entre estudantes, pesquisadores, entusiastas e grupos informais. Pessoas compartilhavam programas, técnicas, descobertas, documentação e histórias. Surgiram vocabulários próprios, publicações e espaços de encontro.
+Uma pessoa pode construir algo engenhoso e, em outra situação, tomar uma decisão irresponsável. Um relato autobiográfico também pode apresentar a atuação de seu autor de maneira favorável. Por isso, nossa leitura histórica deve distinguir o que o documento demonstra da interpretação que fazemos dele.
 
-Isso produziu algo maior do que um conjunto de truques técnicos: uma cultura.
-
-Parte dessa cultura valorizava entender sistemas pelo funcionamento interno, compartilhar conhecimento e avaliar habilidade pelo que uma pessoa conseguia construir ou descobrir. Parte também cultivava irreverência diante de regras consideradas arbitrárias.
-
-É importante não romantizar esse passado.
-
-Uma cultura que valoriza acesso irrestrito ao conhecimento pode produzir software, descobertas e aprendizado extraordinários. A mesma atitude aplicada sem consentimento a sistemas de terceiros pode causar danos e violar direitos.
-
-Essa tensão ajuda a explicar por que a história do hacking não pode ser contada apenas como uma história de heróis criativos ou apenas como uma história de criminosos.
-
-Ela contém ambos — e muitas pessoas que não cabem confortavelmente em nenhuma dessas categorias.
+O livro não tratará o passado como uma sequência de heróis criativos nem como uma história composta apenas por criminosos. A pergunta mais útil continua sendo: **qual sistema estava envolvido, o que aconteceu e que evidência sustenta essa explicação?**
 
 ## 2.5 Quando computadores começam a conversar
 
-Enquanto comunidades exploravam computadores individualmente, outra transformação estava acontecendo: máquinas começaram a ser conectadas em redes cada vez maiores.
+Agora imagine dois cenários fictícios.
 
-Uma vulnerabilidade em um computador isolado possui um alcance.
+No primeiro, um computador executa um programa sem disponibilizá-lo pela rede. No segundo, a mesma função passa a receber solicitações de outras máquinas.
 
-Uma vulnerabilidade em um computador conectado a centenas, milhares ou milhões de outros sistemas possui outro.
+A conectividade acrescenta uma possibilidade legítima de uso. Também pode acrescentar uma forma de alcançar uma falha. Não se segue daí que todo serviço conectado esteja vulnerável, nem que um computador isolado esteja livre de riscos. A diferença é que precisamos incluir os caminhos de comunicação na análise.
 
-A conectividade aumenta utilidade e superfície de ataque ao mesmo tempo.
+Quando permitimos que sistemas confiem uns nos outros, também precisamos perguntar quais operações essa confiança autoriza. Uma relação útil para o funcionamento do ambiente pode se tornar relevante para um ataque, dependendo dos controles presentes.
 
-Isso é uma relação que encontraremos durante toda a obra.
-
-Quando conectamos um serviço à rede, criamos uma maneira legítima de alcançá-lo. Essa mesma capacidade pode criar uma nova oportunidade para reconhecimento ou exploração.
-
-Quando permitimos que sistemas confiem uns nos outros, facilitamos operações legítimas. Essa confiança também pode se transformar em caminho de ataque.
-
-Quando automatizamos comunicação entre aplicações, aumentamos capacidade. Também criamos novas interfaces e novos limites que precisam ser protegidos.
-
-A história da segurança ofensiva acompanha, em grande medida, o crescimento dessas interconexões.
+Essa é a conexão conceitual com o próximo episódio histórico: um problema que se propaga entre máquinas pode exigir uma resposta que não termina na administração de uma única máquina.
 
 ## 2.6 1988: um incidente que mudou a percepção da Internet
 
-Em 2 de novembro de 1988, um programa autorreplicante escrito por Robert Tappan Morris começou a se espalhar por sistemas conectados à Internet da época.
+Em 2 de novembro de 1988, o programa associado a Robert Tappan Morris começou a se espalhar por sistemas conectados à Internet. Ficou conhecido como **Morris Worm**. A RFC 1135, publicada em 1989, descreve a propagação, as interrupções causadas e os esforços para combatê-lo. [R6](referencias.md#r6) [R7](referencias.md#r7)
 
-Ficou conhecido como **Morris Worm**.
+Um *worm* é um programa capaz de se executar de forma independente e propagar cópias funcionais de si para outras máquinas. Esse sentido não deve ser confundido com o nome de uma pessoa. No episódio estudado, **Morris** é o sobrenome do autor; **worm** descreve o tipo de programa. [R6](referencias.md#r6)
 
-Um *worm* é um tipo de software capaz de se propagar entre sistemas. Mais adiante estudaremos malware com precisão; aqui interessa a consequência histórica.
+Segundo o histórico institucional do Software Engineering Institute (SEI), da Carnegie Mellon University, a DARPA pediu ao instituto que estabelecesse uma equipe de resposta a emergências computacionais após o incidente. Dessa iniciativa surgiu, em 1988, o **CERT Coordination Center (CERT/CC)**. [R7](referencias.md#r7)
 
-A Internet daquele período era muito menor do que a atual, mas já conectava universidades, centros de pesquisa e outras instituições. A propagação do worm causou interrupções significativas e evidenciou que um problema distribuído poderia exigir coordenação entre organizações diferentes.
+O episódio ajuda a entender a importância de coordenação, análise e comunicação entre organizações. Mas não marca a invenção da segurança de computadores: o National Bureau of Standards e a Association for Computing Machinery já haviam realizado, em dezembro de 1972, um workshop sobre controle de acesso, auditoria, identificação e outros temas de segurança, documentado na NBS Technical Note 827, de 1974. [R9](referencias.md#r9)
 
-No período posterior ao incidente, a DARPA solicitou ao Software Engineering Institute (SEI), da Carnegie Mellon University, a criação de uma capacidade de resposta. Dessa iniciativa nasceu o **CERT Coordination Center (CERT/CC)** em 1988.
-
-Isso representa uma mudança importante na nossa história.
-
-Segurança deixa de ser apenas um problema que administradores individuais resolvem localmente. Incidentes em redes interconectadas exigem **coordenação, compartilhamento de informações, análise e resposta organizada**.
-
-O Morris Worm não “inventou cybersecurity”. Seria uma simplificação histórica.
-
-Mas ele se tornou um marco porque demonstrou, de maneira difícil de ignorar, como a conectividade transformava a escala dos incidentes e ajudou a catalisar estruturas profissionais de resposta.
+**Phone phreaking, Morris Worm e criação do CERT/CC são episódios diferentes.** Não devemos fundi-los na história de uma pessoa que teria criado cybersecurity. O caso da telefonia ajuda a estudar sinalização; o worm ajuda a estudar propagação e impacto; o CERT/CC representa uma resposta institucional ao problema de coordenação.
 
 ## 2.7 Da descoberta informal à pesquisa de vulnerabilidades
 
-À medida que computadores se tornaram infraestrutura de empresas, governos e da vida cotidiana, descobrir uma falha passou a ter consequências cada vez maiores.
-
-Considere uma situação simples.
+Vamos usar um exemplo fictício para entender a diferença entre observar uma falha e estabelecer suas consequências.
 
 Você encontra uma maneira de fazer um programa travar.
 
-Isso é apenas um bug?
+Isso demonstra que existe um problema de execução, mas ainda não explica sua causa ou todo o seu impacto.
 
-Talvez.
+O que ocorreu na memória?
 
-Mas e se o travamento for causado por uma escrita indevida na memória?
+O programa estava processando uma entrada controlável por um usuário?
 
-E se essa escrita puder ser controlada?
+O comportamento aparece sempre ou depende de alguma condição?
 
-E se ela permitir alterar o fluxo do programa?
+A falha afeta apenas aquela execução ou também um serviço utilizado por outras pessoas?
 
-E se o programa estiver executando com privilégios elevados?
+Há evidência de que seria possível alterar o fluxo do programa?
 
-Agora um comportamento aparentemente pequeno pode formar uma cadeia:
+Um percurso de investigação possível seria:
 
-**bug → condição explorável → vulnerabilidade → técnica de exploração → impacto.**
+**comportamento inesperado → investigação da causa → vulnerabilidade, se confirmada → teste de exploração, quando necessário e autorizado → impacto demonstrado.**
 
-A pesquisa de segurança se desenvolveu justamente nesse espaço entre observar um comportamento estranho e entender suas consequências.
+Essa sequência é uma organização do trabalho, não uma definição de como toda vulnerabilidade nasce. Uma vulnerabilidade pode existir antes de alguém descobrir um exploit. Da mesma forma, observar um travamento não autoriza concluir que existe execução arbitrária de código.
 
-Isso exige uma mentalidade diferente de simplesmente procurar uma ferramenta que “invada” o software.
+No exemplo, seria necessário reduzir variáveis, distinguir observação de hipótese e decidir quais testes poderiam sustentar cada conclusão. Uma hipótese que não se confirmou deve ser registrada como tal. Isso não prova, automaticamente, que o sistema inteiro esteja seguro.
 
-O pesquisador precisa reproduzir o comportamento, reduzir variáveis, identificar a causa, determinar quais condições são necessárias, avaliar versões afetadas e descobrir o que realmente pode ser demonstrado.
-
-É ciência experimental aplicada a sistemas imperfeitos.
+Essa é a forma de investigação que queremos exercitar: **a conclusão deve ter o tamanho da evidência, não o tamanho da expectativa do pesquisador**.
 
 ## 2.8 O nascimento de uma profissão ofensiva
 
-Quando organizações perceberam que poderiam possuir vulnerabilidades antes que adversários as descobrissem, surgiu uma pergunta natural:
+A ideia de avaliar a segurança com tentativas deliberadas de atravessar seus controles é anterior à Web. O relatório *Security Controls for Computer Systems*, publicado originalmente em 1970 e reeditado em 1979, já discutia testes e tentativas diagnósticas de penetração conduzidos sob a autoridade responsável pelo sistema. Isso demonstra a existência desse pensamento naquele período; não estabelece uma data única de nascimento do pentest. [R8](referencias.md#r8)
 
-**e se pedirmos a alguém para tentar encontrá-las primeiro?**
+A pergunta central é simples:
 
-A ideia de testar segurança simulando ações adversariais é anterior à indústria moderna de pentest. Exercícios de avaliação, equipes que simulavam adversários e análises de segurança já apareciam em contextos governamentais e militares antes da Web.
+**e se procurarmos as falhas de forma autorizada antes que um adversário as explore?**
 
-Com o crescimento das redes corporativas e posteriormente da Internet comercial, esse princípio tornou-se uma atividade profissional mais reconhecível.
+A execução profissional exige mais que habilidade para obter acesso. Objetivos, planejamento, regras de engajamento, tratamento de dados e comunicação dos resultados fazem parte de uma avaliação organizada. A NIST SP 800-115, de 2008, descreve esses elementos e inclui um modelo de regras de engajamento. É uma referência metodológica daquele período, não um manual atualizado de ferramentas. [R10](referencias.md#r10)
 
-Um teste de intrusão moderno não deveria ser simplesmente:
+Um teste não deveria ser simplesmente:
 
 > “tente invadir e veja até onde chega.”
 
-Existe um objetivo, um escopo, regras de engajamento, métodos permitidos, limites de impacto, coleta de evidências e um relatório.
+Para o método adotado neste livro, precisamos definir o que queremos avaliar, como demonstraremos os resultados e quais limites serão respeitados.
 
-Essa formalização é uma diferença fundamental entre **capacidade ofensiva** e **prestação profissional de um teste ofensivo**.
-
-A técnica pode ser semelhante à utilizada por um adversário.
-
-O contexto não é.
+Essa é uma diferença fundamental entre **capacidade ofensiva** e **prestação profissional de um teste ofensivo**.
 
 ## 2.9 A Web muda novamente a superfície
 
-Quando a Web se tornou parte central da Internet comercial, aplicações passaram a expor funcionalidades complexas para qualquer pessoa com um navegador.
+Pense nas funções de uma aplicação Web: receber formulários, processar entradas, consultar dados, reconhecer usuários, controlar acesso e aceitar arquivos. Não é necessário entender sua implementação agora. Basta perceber que cada função envolve decisões sobre quais dados aceitar e quais ações permitir.
 
-Formulários recebem dados.
+O estudo de segurança dessas aplicações inclui SQL injection, Cross-Site Scripting, falhas de autenticação e problemas de autorização. Esses são temas distintos, documentados, por exemplo, nos materiais da Web Security Academy da PortSwigger. Citá-los aqui não atribui a essa plataforma a descoberta dessas classes de falha. [R13](referencias.md#r13)
 
-Servidores processam entradas.
+Perceba o padrão didático: não precisamos imaginar uma tecnologia de hacking separada dos sistemas úteis. Investigamos justamente o que acontece quando as suposições desses sistemas não se sustentam.
 
-Aplicações consultam bancos de dados.
-
-Usuários recebem sessões.
-
-Sistemas tomam decisões de autorização.
-
-Arquivos são enviados.
-
-APIs conectam serviços.
-
-Cada uma dessas funcionalidades resolve um problema legítimo — e cada uma introduz suposições que podem falhar.
-
-É nesse ambiente que vulnerabilidades como SQL Injection, Cross-Site Scripting, falhas de autenticação e problemas de controle de acesso ganharam enorme relevância.
-
-Perceba novamente o padrão histórico.
-
-Não surgiu uma “tecnologia de hacking” separada.
-
-**Surgiu uma nova tecnologia útil. Depois, pesquisadores e adversários começaram a explorar as maneiras pelas quais ela podia se comportar fora das expectativas de seus criadores.**
-
-Segurança ofensiva acompanha tecnologia porque vulnerabilidades nascem dentro dos sistemas que construímos.
+Ao estudar uma funcionalidade, voltaremos a perguntar quem a utiliza, em quais entradas ela confia e quais resultados deveriam ser impossíveis. Os capítulos técnicos construirão cada mecanismo antes de desenvolver seus testes.
 
 ## 2.10 Divulgação, mercado e Bug Bounty
 
-Descobrir uma vulnerabilidade cria outro problema:
+Descobrir uma vulnerabilidade cria outra pergunta:
 
 **o que fazer com ela?**
 
-Ao longo da história da segurança, pesquisadores, fornecedores e comunidades discordaram bastante sobre divulgação. Publicar imediatamente pode colocar usuários em risco antes de uma correção. Ocultar indefinidamente uma falha pode deixar usuários vulneráveis sem saber. Comunicar privadamente também não garante que o fornecedor responderá.
+Divulgar informações sobre uma falha pode ajudar a proteger usuários, mas também pode facilitar sua exploração antes que existam medidas de proteção. Manter a informação restrita, por outro lado, não garante que o problema será corrigido. O guia de divulgação coordenada do CERT trata dessa coordenação entre quem encontra, quem corrige, quem utiliza e quem comunica a vulnerabilidade. [R12](referencias.md#r12)
 
-Dessas tensões surgiram diferentes práticas de *vulnerability disclosure*, coordenação de vulnerabilidades e, posteriormente, programas estruturados de Bug Bounty.
+Programas de **Bug Bounty** acrescentam a possibilidade de recompensar relatos que atendam a critérios definidos. Não são sinônimo de toda política de divulgação: um canal para reportar falhas pode existir sem recompensa financeira. O programa da Mozilla é um exemplo que explicita tanto critérios de recompensa quanto regras de pesquisa e limites envolvendo sistemas de terceiros. [R11](referencias.md#r11) [R12](referencias.md#r12)
 
-Em um Bug Bounty, uma organização publica regras que autorizam determinados tipos de pesquisa em determinado escopo e estabelece como vulnerabilidades devem ser reportadas.
+Para o pesquisador, a existência de um programa não deve ser interpretada como permissão irrestrita. É preciso conferir exatamente quais sistemas e atividades a política contempla. Elegibilidade para recompensa, autorização para testar e regras de divulgação são questões relacionadas, mas distintas. [R11](referencias.md#r11)
 
-Isso altera profundamente a relação entre pesquisador e alvo.
+No método do livro, isso se traduz em uma regra de trabalho: **não começar pelo que uma ferramenta consegue fazer; começar pelo que foi permitido investigar**.
 
-O pesquisador não precisa pressupor autorização.
-
-Ele precisa **ler exatamente a autorização que recebeu**.
-
-Uma empresa pode permitir testes em um domínio e proibi-los em outro. Pode permitir determinados métodos e restringir outros. Pode estabelecer regras específicas para dados pessoais, engenharia social, negação de serviço ou acesso a contas.
-
-Portanto, Bug Bounty não significa “a empresa deixou hackers atacarem”.
-
-Significa que existe **um contrato operacional de pesquisa com limites definidos**.
-
-Voltaremos a isso em profundidade muito mais adiante.
+Voltaremos ao tema no próximo capítulo e, mais adiante, na parte específica de Bug Bounty.
 
 ## 2.11 Hacking torna-se especialização — e se fragmenta
 
-Hoje, dizer apenas “trabalho com hacking” descreve muito pouco.
+Nosso próprio mapa de estudos ajuda a perceber a variedade de problemas reunidos sob a palavra hacking.
 
-Uma pessoa pode pesquisar aplicações Web.
+Aplicações Web e APIs exigirão compreensão dos fluxos de dados e decisões de acesso. Windows e Active Directory trarão outros mecanismos de identidade e confiança. Dispositivos embarcados, engenharia reversa, cloud e aplicações de IA abrirão problemas diferentes.
 
-Outra pode analisar APIs.
+Não estamos afirmando que essas áreas sejam equivalentes ou que uma única ferramenta sirva para todas. Estamos planejando uma base compartilhada, seguida de aprofundamentos.
 
-Outra trabalha com Windows e Active Directory.
+É por isso que a obra começará por computadores, sistemas operacionais, redes, programação, identidade e segurança. Quando os percursos se separarem, queremos que o leitor consiga reconhecer o sistema que está investigando e localizar os conhecimentos que ainda precisa construir.
 
-Outra pesquisa segurança de cloud.
-
-Outra estuda dispositivos embarcados.
-
-Outra faz engenharia reversa.
-
-Outra desenvolve exploits.
-
-Outra investiga aplicações de IA.
-
-Outra participa de Red Teams que simulam adversários em ambientes corporativos.
-
-As bases se conectam, mas as especializações podem exigir anos de aprofundamento.
-
-Isso explica a arquitetura deste livro.
-
-Começaremos com fundamentos compartilhados — computadores, sistemas operacionais, redes, programação, identidade e segurança — e então abriremos caminhos progressivamente especializados.
-
-O objetivo não é fingir que todas as áreas são iguais.
-
-É construir uma base suficientemente sólida para que, quando elas se separarem, você entenda **de onde cada uma veio e quais mecanismos ela está explorando**.
+O objetivo não é decorar o nome de cada especialidade. É compreender **por que problemas diferentes exigem conhecimentos e formas de observação diferentes**.
 
 ## 2.12 A história continua
 
-Cybersecurity possui uma característica desconfortável para quem escreve livros:
+Um livro como este precisa manter separadas duas coisas: os episódios históricos que consegue documentar e a interpretação que propõe para aprender com eles.
 
-ela muda enquanto o livro está sendo escrito.
+Aplicações com modelos de linguagem oferecem uma conexão contemporânea. A OWASP descreve prompt injection como um problema em que entradas podem influenciar indevidamente o comportamento do modelo, inclusive por conteúdo de fontes externas. Os efeitos dependem do contexto da aplicação e das capacidades disponíveis. [R14](referencias.md#r14)
 
-Novas tecnologias criam novas superfícies.
+Para nossa investigação, reaparecem perguntas familiares: **o que o sistema considera instrução? Em quais dados confia? Que autoridade uma entrada consegue influenciar? Que ações podem resultar disso?**
 
-Sistemas antigos continuam existindo.
+Essa aproximação não torna uma aplicação de IA equivalente a uma central telefônica ou a um banco de dados. Usaremos a história para melhorar nossas perguntas, não para aplicar automaticamente uma solução antiga a um mecanismo novo.
 
-Vulnerabilidades conhecidas reaparecem em implementações novas.
-
-Técnicas ofensivas evoluem.
-
-Defesas respondem.
-
-Atacantes adaptam novamente.
-
-Aplicações baseadas em modelos de linguagem são um exemplo contemporâneo. Conceitos como prompt injection parecem novos porque a tecnologia é nova, mas algumas perguntas são familiares: **o que o sistema considera instrução? Em quais dados confia? Que autoridade uma entrada consegue influenciar? Que ações podem resultar dessa influência?**
-
-A história do hacking não é uma sequência de truques que foram substituídos.
-
-É uma história de sistemas, confiança, curiosidade, falhas e adaptação.
-
-Por isso, aprender cybersecurity não pode signific decorar o conjunto de ataques conhecidos em determinado ano.
+Por isso, aprender cybersecurity não pode significar decorar o conjunto de ataques conhecidos em determinado ano.
 
 Precisamos aprender a investigar sistemas que ainda nem existem.
 
@@ -325,18 +215,20 @@ Precisamos aprender a investigar sistemas que ainda nem existem.
 Sem consultar o capítulo, tente responder:
 
 1. Por que o TMRC é relevante para a história hacker sem precisar ser tratado como a única “origem oficial” do hacking?
-2. O que o phone phreaking ensina sobre a relação entre a linguagem interna de um sistema e sua superfície de ataque?
-3. Por que a expansão das redes alterou a escala dos problemas de segurança?
-4. Qual foi a importância histórica do Morris Worm para a resposta coordenada a incidentes?
-5. Explique a sequência: **bug → condição explorável → vulnerabilidade → exploração → impacto**.
+2. O que o phone phreaking ensina sobre sinais de controle? Por que um tom de 2600 Hz não deve ser descrito como uma chave universal da rede telefônica?
+3. Por que a conectividade pode alterar o alcance de um problema de segurança, sem tornar todo sistema conectado automaticamente vulnerável?
+4. O que foi o Morris Worm e qual é sua relação com a criação do CERT/CC? Por que isso não equivale à invenção de cybersecurity?
+5. No exemplo do programa que trava, o que foi observado e o que ainda precisa ser investigado? Por que uma vulnerabilidade não depende da existência de um exploit público?
 6. O que diferencia capacidade ofensiva de um pentest profissional?
-7. Por que Bug Bounty não significa autorização irrestrita?
-8. Por que a história do hacking ajuda a entender vulnerabilidades modernas em vez de servir apenas como curiosidade?
+7. Por que Bug Bounty não significa autorização irrestrita? Toda política de divulgação precisa oferecer recompensa?
+8. Como a história pode ajudar a investigar sistemas modernos sem levar à suposição de que tecnologias diferentes funcionam da mesma maneira?
 
-## Nota de pesquisa
+Depois da tentativa, consulte as [respostas comentadas](solucoes.md). Elas apresentam o raciocínio esperado, não frases que precisam ser decoradas.
 
-Esta versão foi escrita após consulta a registros e publicações do MIT sobre o Tech Model Railroad Club e a cultura hacker, documentação histórica e técnica sobre phone phreaking e sinalização do Bell System, além de materiais do Software Engineering Institute da Carnegie Mellon University sobre o Morris Worm e a criação do CERT/CC.
+## Fontes e notas de leitura
 
-Alguns episódios populares possuem versões simplificadas repetidas durante décadas. Sempre que um detalhe histórico não for necessário para compreender o mecanismo, a obra evitará tratá-lo como fato apenas porque se tornou parte do folclore hacker.
+As marcações R1 a R14 remetem às [referências do capítulo](referencias.md), com autoria, datas, localização dos trechos consultados e limites de uso. Relatos de participantes são identificados como relatos; exemplos fictícios e conexões didáticas são explicações da obra, não novos acontecimentos históricos.
 
-As referências serão normalizadas na bibliografia da edição.
+Este capítulo não contém um laboratório executável. A atividade proposta é interpretar os episódios e justificar respostas. O [registro editorial](../../editorial/reviews/capitulo-2.md) documenta a verificação realizada e distingue o fechamento interno de uma revisão especializada independente.
+
+**[Continuar para o Capítulo 3 — Ética, legalidade, autorização e escopo →](../capitulo-3/README.md)**
