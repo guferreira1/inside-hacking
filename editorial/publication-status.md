@@ -27,15 +27,14 @@ A anotação anterior de “fact-check primário concluído” nos capítulos 1 
 
 ## Publicação e comunidade
 
-O repositório recebe leitura e feedback público. A licença ainda está pendente; nenhuma licença foi escolhida ou aplicada nesta entrega. A integração de contribuições externas substantivas continua condicionada a essa definição.
+O repositório recebe leitura, feedback público e propostas de alteração por pull request. O licenciamento foi definido: **CC BY-SA 4.0 para conteúdo editorial e ilustrações originais; MIT para código e exemplos de código**, conforme [LICENSE.md](../LICENSE.md). Contribuições passam pelos critérios de revisão e autoria de [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 Os templates de feedback já existentes foram preservados. A divulgação deve descrever uma obra em construção, sem prometer o número final de capítulos ou afirmar que laboratórios e PDF já foram entregues.
 
 ## Próximas unidades de trabalho
 
 1. Revisar o Capítulo 3 a partir da leitura e dos comentários recebidos.
-2. Resolver o licenciamento de texto e código com decisão explícita do mantenedor.
-3. Concluir as pendências factuais dos capítulos 1 e 2 antes de uma edição estável.
-4. Planejar a primeira geração de PDF e conferir sua apresentação antes de anunciar uma release.
+2. Concluir as pendências factuais dos capítulos 1 e 2 antes de uma edição estável.
+3. Planejar a primeira geração de PDF e conferir sua apresentação antes de anunciar uma release, incluindo os avisos das licenças e os créditos aplicáveis.
 
 Estas são tarefas editoriais, não automações de trabalho futuro.

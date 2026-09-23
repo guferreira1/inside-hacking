@@ -74,6 +74,12 @@ Mudanças relevantes devem explicar:
 
 A aceitação de uma contribuição não implica que ela entrará imediatamente em uma edição estável.
 
-## Licença
+## Licenças e autoria
 
-A licença do projeto ainda está em definição. Até sua publicação, contribuições externas substantivas devem aguardar a definição das condições de licenciamento.
+O projeto recebe contribuições sob as licenças indicadas em [LICENSE.md](LICENSE.md): **CC BY-SA 4.0 para conteúdo editorial e ilustrações originais; MIT para código, scripts, configurações e exemplos de código**.
+
+Ao enviar uma contribuição original para integração, disponibilize-a sob a licença aplicável ao material e confirme que possui os direitos necessários. Você mantém os direitos sobre sua contribuição; não há exigência de cessão de titularidade. Preserve os avisos existentes e identifique a autoria de novos materiais quando pertinente.
+
+Material de terceiros deve trazer origem, licença e atribuição adequadas. Não copie texto, figuras ou código de outra fonte apenas porque ela é pública. Se houver dúvida sobre compatibilidade, descreva-a no pull request antes da integração. A presença do material no repositório não altera automaticamente a licença de seu titular.
+
+As recomendações de segurança orientam os exercícios e a revisão das contribuições; não acrescentam restrições às licenças abertas adotadas pelo projeto.

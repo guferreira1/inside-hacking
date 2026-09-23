@@ -53,7 +53,7 @@ O manuscrito no Git é a fonte editorial. **O PDF será gerado em uma etapa post
 
 Você pode apontar um [possível erro técnico](https://github.com/guferreira1/inside-hacking/issues/new?template=technical-error.md), sugerir [conteúdo ou aprofundamento](https://github.com/guferreira1/inside-hacking/issues/new?template=content-suggestion.md), relatar [desatualização](https://github.com/guferreira1/inside-hacking/issues/new?template=outdated-content.md) ou dizer que não entendeu um trecho.
 
-Leia o [guia de contribuição](CONTRIBUTING.md). Não inclua tokens, credenciais, dados pessoais ou detalhes de vulnerabilidades privadas em issues ou pull requests. Mudanças substantivas de terceiros aguardam a definição da licença.
+Leia o [guia de contribuição](CONTRIBUTING.md). Não inclua tokens, credenciais, dados pessoais ou detalhes de vulnerabilidades privadas em issues ou pull requests. Correções e propostas de melhoria podem ser enviadas por pull request e passam por revisão antes da integração.
 
 <details>
 <summary><strong>Para quem quer conhecer a organização do projeto</strong></summary>
@@ -70,11 +70,13 @@ O [Project Charter](PROJECT_CHARTER.md) registra a proposta original. O sumário
 
 </details>
 
-## Segurança e licença
+## Uso responsável
 
 Os exercícios ofensivos destinam-se exclusivamente a laboratórios e ambientes explicitamente autorizados. A presença de um sistema neste livro ou em suas referências **não concede autorização para testá-lo**.
 
-**Licenciamento ainda em definição.** O repositório é público e o objetivo é adotar licenças abertas adequadas ao texto e ao código, mas essa decisão ainda não foi tomada. Não presuma uma licença de reutilização a partir da visibilidade do repositório. Consulte também a [explicação oficial do GitHub](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
+## Licenças
+
+Conteúdo editorial e ilustrações originais sob [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt). Código, scripts e exemplos de código sob [MIT](LICENSES/MIT.txt). Consulte o [mapa de licenciamento e atribuição](LICENSE.md).
 
 ---
 

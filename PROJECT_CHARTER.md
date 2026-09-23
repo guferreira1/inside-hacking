@@ -84,6 +84,10 @@ O repositório é a fonte de verdade da obra. O PDF será um artefato versionado
 
 Novos conceitos, correções, erratas e contribuições poderão evoluir a obra sem alterar retroativamente edições publicadas. Mudanças relevantes deverão ser revisadas técnica e editorialmente antes de integrar uma edição estável.
 
+## Licenciamento
+
+Conteúdo editorial e ilustrações originais são disponibilizados sob CC BY-SA 4.0. Código, scripts e exemplos de código são disponibilizados sob MIT. O [mapa de licenciamento](LICENSE.md) identifica a aplicação de cada licença e o tratamento de materiais de terceiros. As condições para contribuir estão em [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Estado deste documento
 
-Este Charter é uma versão inicial. Licenciamento, governança de contribuições, processo de releases e critérios formais de revisão ainda serão definidos.
+Este Charter registra a proposta inicial. O licenciamento foi definido em 23 de setembro de 2026. Governança de contribuições, processo de releases e critérios formais de revisão continuam evoluindo nos documentos editoriais.
