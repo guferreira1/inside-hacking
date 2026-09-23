@@ -37,6 +37,12 @@ Incluem PTES, política de divulgação do get.gov/CISA, política de pentest da
 
 Os exemplos Aurora são fictícios e não representam execuções reais. A discussão jurídica permanece educacional e pendente de revisão especializada.
 
+## Capítulo 5 — Ameaças, vulnerabilidades, exploits, risco e superfície de ataque
+
+As [fontes S1–S12](capitulo-5/referencias.md) identificam verbetes do NIST, documentação OWASP, definição de CWE e terminologia do Metasploit. O guia CVSS v4.0 da FIRST sustenta a distinção entre severidade Base e avaliação de risco. Cada fonte tem seu uso delimitado; consultas a glossários não são apresentadas como leitura integral das publicações que eles citam.
+
+A narrativa usa situações fictícias para conectar definições, condições de exploração, exposição e consequências. Não houve exploração executada, medição de probabilidade, cálculo CVSS ou revisão independente. O Capítulo 5 está em DRAFT 0.1 e sua inclusão não encerra o Módulo I.
+
 ## Política de referências
 
 URLs e datas de consulta serão preservadas para recursos Web. Quando houver especificação, norma, RFC, artigo acadêmico ou publicação original disponível, ela deve ser preferida a resumos secundários.

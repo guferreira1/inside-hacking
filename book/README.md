@@ -11,6 +11,9 @@ Este índice reúne somente textos que já existem. Para consultar os assuntos a
 | 1 | [O que é hacking?](capitulo-1/README.md) | Em revisão |
 | 2 | [Da curiosidade à segurança ofensiva: uma breve história da cultura hacker](capitulo-2/README.md) | Revisão interna concluída — v1.0 |
 | 3 | [Ética, legalidade, autorização e escopo](capitulo-3/README.md) | Revisão interna concluída — v1.0 |
+| 5 | [Ameaças, vulnerabilidades, exploits, risco e superfície de ataque](capitulo-5/README.md) | Rascunho para leitura — v0.1 |
+
+**Continuidade editorial:** o Capítulo 4, “Como pensar como investigador de segurança”, ainda não está disponível nesta branch. Sua numeração foi preservada; a disponibilização do Capítulo 5 não significa que o Módulo I esteja concluído. Veja o [controle editorial](../editorial/publication-status.md).
 
 ### Material de apoio do Capítulo 2
 
@@ -24,6 +27,13 @@ Este índice reúne somente textos que já existem. Para consultar os assuntos a
 - [3.3 · Antes da primeira requisição: estudo de caso](capitulo-3/3.3-estudo-de-caso.md)
 - [Soluções comentadas](capitulo-3/solucoes.md) — consulte depois de tentar.
 - [Fontes e notas de pesquisa](capitulo-3/referencias.md).
+
+### Dentro do Capítulo 5
+
+- [5.1 · O que estamos tentando proteger?](capitulo-5/5.1-ativos-e-vulnerabilidades.md)
+- [5.2 · Da possibilidade à exploração](capitulo-5/5.2-ameacas-e-exploracao.md)
+- [5.3 · Onde o sistema está exposto e o que fazer primeiro](capitulo-5/5.3-superficie-e-risco.md)
+- [Referências e limites da pesquisa](capitulo-5/referencias.md).
 
 ## Como navegar
 

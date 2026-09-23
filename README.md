@@ -20,8 +20,11 @@ A proposta é permitir que quem está começando entenda computadores, sistemas 
 | [1 · O que é hacking?](book/capitulo-1/README.md) | Conceitos iniciais, investigação, ferramentas e responsabilidade. | Em revisão |
 | [2 · Da curiosidade à segurança ofensiva](book/capitulo-2/README.md) | Uma introdução à história da cultura hacker e da segurança. | Revisão interna concluída — v1.0 |
 | [3 · Ética, legalidade, autorização e escopo](book/capitulo-3/README.md) | Permissões, limites, dados e um estudo de caso com respostas comentadas. | Revisão interna concluída — v1.0 |
+| [5 · Ameaças, vulnerabilidades, exploits, risco e superfície de ataque](book/capitulo-5/README.md) | Uma narrativa para distinguir fraquezas, exploração, exposição e consequências. | Rascunho para leitura — v0.1 |
 
 **[Abrir o índice de leitura →](book/README.md)**
+
+O Capítulo 4 ainda não está disponível nesta branch. A sequência completa do Módulo I permanece em produção; capítulos disponíveis não equivalem a um módulo concluído.
 
 Os estados indicam o andamento editorial, não certificação ou revisão independente concluída. O fechamento interno de um capítulo não equivale à publicação de uma edição estável do livro. Consulte o [estado editorial e suas pendências](editorial/publication-status.md).
 
@@ -31,11 +34,11 @@ A obra parte de computação, sistemas operacionais, redes, programação, cript
 
 Pesquisa de vulnerabilidades, engenharia reversa, wireless, mobile, IoT, segurança de IA, privacidade, dark web, investigação de fraudes, Red Team, defesa e atuação profissional também fazem parte do escopo planejado.
 
-O [sumário mestre](editorial/master-outline.md) é um mapa vivo. Capítulos podem ser reorganizados, unidos ou ampliados conforme a escrita revelar necessidades. O número de títulos não mede o progresso da obra.
+O [sumário mestre](editorial/master-outline.md) é um mapa vivo organizado em módulos, capítulos e subcapítulos. Capítulos podem ser reorganizados, unidos ou ampliados conforme a escrita revelar necessidades. O número de títulos não mede o progresso da obra.
 
 ## Como estudar
 
-Leia um capítulo ou uma seção de cada vez. Depois, feche o texto e tente explicar o mecanismo com suas palavras. Use as perguntas propostas e, quando existirem, os exercícios e laboratórios. As soluções comentadas ficam separadas da tentativa.
+Leia um capítulo ou uma seção de cada vez. Depois, feche o texto e tente explicar o mecanismo com suas palavras. Use as perguntas propostas e, quando existirem, os exercícios e laboratórios. As soluções comentadas ficam separadas da tentativa. Laboratórios entram quando acrescentam compreensão e possuem um ambiente documentado; não são requisito para todo capítulo.
 
 Uma dúvida pode revelar tanto um conceito a rever quanto uma explicação que o livro precisa melhorar. Abra um [feedback didático](https://github.com/guferreira1/inside-hacking/issues/new?template=didactic-feedback.md) indicando onde sua compreensão parou.
 
@@ -47,7 +50,7 @@ O texto é desenvolvido com uma sequência didática própria. Referências sust
 
 Há apoio de IA na pesquisa, organização e redação. Respostas de IA não são consideradas fontes nem revisão técnica independente. Fontes consultadas, resultados reproduzidos e pendências de validação devem ser distinguidos. A aprovação de leitura, por si só, não comprova correção técnica.
 
-O manuscrito no Git é a fonte editorial. **O PDF será gerado em uma etapa posterior; ainda não há uma edição em PDF publicada nem pipeline de geração implementado.** Os laboratórios executáveis também serão adicionados progressivamente.
+O manuscrito no Git é a fonte editorial. **O PDF será gerado em uma etapa posterior; ainda não há uma edição em PDF publicada nem pipeline de geração implementado.** Os laboratórios executáveis também serão adicionados progressivamente, quando pertinentes.
 
 ## Participe da revisão
 
@@ -66,7 +69,7 @@ Leia o [guia de contribuição](CONTRIBUTING.md). Não inclua tokens, credenciai
 | [`labs/`](labs/README.md) | Área reservada aos materiais dos laboratórios. |
 | [`assets/`](assets/README.md) | Recursos visuais da obra. |
 
-O [Project Charter](PROJECT_CHARTER.md) registra a proposta original. O sumário mestre contém a arquitetura expandida; documentos iniciais poderão ser sincronizados conforme a obra evoluir.
+O [Project Charter](PROJECT_CHARTER.md) registra a proposta e as decisões editoriais. O sumário mestre contém a arquitetura expandida e revisável.
 
 </details>
 
