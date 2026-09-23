@@ -23,7 +23,7 @@ Uma leitura aprovada confirma uma experiência de leitura; não substitui audito
 | --- | --- | --- |
 | 1 | REVIEW; primeira leitura recebida | Associar fontes às afirmações; verificar a redação de conceitos e ferramentas; revisão técnica independente pendente. |
 | 2 | VALIDATED — versão editorial 1.0; revisão interna concluída | Fontes relacionadas aos trechos, telefonia verificada, redação corrigida e oito respostas comentadas. Sem laboratório executável aplicável. Revisão histórica independente não realizada; permanece etapa da edição estável. [Registro](reviews/capitulo-2.md). |
-| 3 | DRAFT 0.1; leitura do mantenedor em andamento | Aguardar retorno da leitura; revisão técnica e didática independente; revisão jurídica especializada antes de edição estável. Não há laboratório executável neste capítulo. |
+| 3 | VALIDATED — versão editorial 1.0; revisão interna concluída | Primeira leitura concluída; feedback de maior densidade registrado; fontes e soluções presentes. Revisão jurídica especializada e revisão independente permanecem pendentes para edição estável. [Registro](reviews/capitulo-3.md). |
 
 As antigas anotações genéricas de “fact-check primário concluído” não constituem auditoria integral. No Capítulo 2, a anotação foi substituída por referências junto às afirmações e pelo registro desta revisão. O Capítulo 1 mantém suas próprias pendências; a conclusão de outro capítulo não o promove automaticamente.
 
@@ -35,7 +35,7 @@ Os templates de feedback já existentes foram preservados. A divulgação deve d
 
 ## Próximas unidades de trabalho
 
-1. Revisar o Capítulo 3 a partir da leitura e dos comentários recebidos.
+1. Iniciar o Capítulo 4 — Como pensar como investigador de segurança.
 2. Concluir as pendências factuais do Capítulo 1.
 3. Incorporar revisão técnica/histórica independente e, onde aplicável, jurídica especializada à preparação da primeira edição estável.
 4. Planejar a primeira geração de PDF e conferir sua apresentação antes de anunciar uma release, incluindo os avisos das licenças e os créditos aplicáveis.
