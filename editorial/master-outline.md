@@ -6,21 +6,21 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 
 **Regra:** capítulos são planejados antecipadamente; subcapítulos surgem durante pesquisa e escrita quando representam unidades conceituais úteis.
 
-## Parte I — Hacking, segurança e método
+## Módulo I — Hacking, segurança e método
 1. O que é hacking?
 2. História da cultura hacker e da segurança ofensiva
 3. Ética, legalidade, autorização e escopo
 4. Como pensar como investigador de segurança
 5. Ameaças, vulnerabilidades, exploits, risco e superfície de ataque
 
-## Parte II — Computadores por dentro
+## Módulo II — Computadores por dentro
 6. Bits, bytes e representação da informação
 7. Hardware: CPU, memória, armazenamento e dispositivos
 8. Como um programa se torna execução
 9. Memória, processos e arquitetura de computadores
 10. Arquivos, formatos, codificação e serialização
 
-## Parte III — Sistemas operacionais
+## Módulo III — Sistemas operacionais
 11. O papel de um sistema operacional
 12. Linux por dentro
 13. Windows por dentro
@@ -29,7 +29,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 16. Processos, serviços, logs e persistência de estado
 17. Virtualização e isolamento
 
-## Parte IV — Redes e Internet
+## Módulo IV — Redes e Internet
 18. Como computadores se comunicam
 19. Modelos de camadas e encapsulamento
 20. Ethernet, ARP e redes locais
@@ -44,7 +44,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 29. Proxies, VPNs, túneis e anonimização
 30. Observação e análise de tráfego
 
-## Parte V — Programação, dados e aplicações
+## Módulo V — Programação, dados e aplicações
 31. Fundamentos de programação para segurança
 32. Python, shell e automação para investigação
 33. C e memória para segurança
@@ -56,7 +56,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 39. Arquiteturas modernas, microsserviços e mensageria
 40. Git, dependências e cadeia de construção de software
 
-## Parte VI — Fundamentos de segurança
+## Módulo VI — Fundamentos de segurança
 41. Confidencialidade, integridade, disponibilidade e confiança
 42. Modelagem de ameaças e fronteiras de confiança
 43. Criptografia: fundamentos
@@ -68,7 +68,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 49. Segredos, chaves e certificados
 50. Hardening, least privilege e defesa em profundidade
 
-## Parte VII — Laboratório e metodologia ofensiva
+## Módulo VII — Laboratório e metodologia ofensiva
 51. Construindo um laboratório seguro
 52. Kali Linux e o ambiente do pesquisador
 53. Metodologia de pentest
@@ -77,7 +77,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 56. Ferramentas: como escolher, entender e validar
 57. Relatórios, impacto, correção e reteste
 
-## Parte VIII — Reconhecimento e enumeração
+## Módulo VIII — Reconhecimento e enumeração
 58. Reconhecimento passivo e ativo
 59. OSINT aplicado à superfície de ataque
 60. Descoberta de hosts e mapeamento de redes
@@ -89,7 +89,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 66. Descoberta de conteúdo, endpoints e ativos
 67. Vulnerability scanning e seus limites
 
-## Parte IX — Credenciais e acesso inicial
+## Módulo IX — Credenciais e acesso inicial
 68. Ataques a senhas e espaço de busca
 69. Dicionários, regras e cracking offline
 70. Brute force online, password spraying e credential stuffing
@@ -98,7 +98,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 73. Falhas de autenticação e recuperação de contas
 74. Exploração de serviços expostos
 
-## Parte X — Web Hacking
+## Módulo X — Web Hacking
 75. Método de teste de aplicações Web
 76. Burp Suite e proxies de interceptação
 77. Manipulação de requisições e parâmetros
@@ -124,7 +124,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 97. Client-side security e DOM
 98. Validação de impacto, correção e reteste Web
 
-## Parte XI — API Hacking
+## Módulo XI — API Hacking
 99. Metodologia de teste de APIs
 100. REST, RPC, SOAP e outras interfaces
 101. Autenticação e autorização em APIs
@@ -137,7 +137,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 108. Testes automatizados e fuzzing de APIs
 109. Encadeamento de falhas em APIs
 
-## Parte XII — Linux, Windows e pós-exploração
+## Módulo XII — Linux, Windows e pós-exploração
 110. O que muda depois do acesso inicial
 111. Enumeração local em Linux
 112. Escalada de privilégios em Linux
@@ -151,7 +151,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 120. Movimentação lateral
 121. Coleta controlada, impacto e encerramento do teste
 
-## Parte XIII — Active Directory e ambientes corporativos
+## Módulo XIII — Active Directory e ambientes corporativos
 122. Diretórios, domínios e identidade corporativa
 123. Active Directory por dentro
 124. LDAP, DNS e serviços do domínio
@@ -167,7 +167,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 134. AD CS e infraestrutura de certificados
 135. Hardening, detecção e investigação em AD
 
-## Parte XIV — Cloud, containers e supply chain
+## Módulo XIV — Cloud, containers e supply chain
 136. Modelos de cloud e responsabilidade compartilhada
 137. Identidade e IAM em cloud
 138. Redes e exposição em cloud
@@ -182,7 +182,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 147. Escalada, movimento lateral e impacto em cloud
 148. Cloud pentest: escopo, evidências e limites
 
-## Parte XV — Exploit Development e engenharia reversa
+## Módulo XV — Exploit Development e engenharia reversa
 149. Do bug à vulnerabilidade
 150. Assembly e arquitetura para exploração
 151. Debuggers e análise dinâmica
@@ -198,7 +198,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 161. Análise estática e dinâmica de binários
 162. Fundamentos de análise de malware
 
-## Parte XVI — Wireless, mobile, IoT e outras superfícies
+## Módulo XVI — Wireless, mobile, IoT e outras superfícies
 163. Fundamentos de redes Wi-Fi
 164. Segurança e testes em Wi-Fi
 165. Bluetooth e comunicações de curto alcance
@@ -209,7 +209,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 170. Firmware e interfaces de hardware
 171. Introdução a OT/ICS e suas particularidades
 
-## Parte XVII — Segurança de IA
+## Módulo XVII — Segurança de IA
 172. Como sistemas modernos de IA são construídos
 173. LLMs, contexto, tokens e inferência
 174. RAG, embeddings e bancos vetoriais
@@ -227,7 +227,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 186. Avaliação ofensiva e Red Team de sistemas de IA
 187. Guardrails, monitoramento e defesa
 
-## Parte XVIII — Dark Web, privacidade e anonimato
+## Módulo XVIII — Dark Web, privacidade e anonimato
 188. Surface Web, Deep Web e Dark Web
 189. Privacidade, anonimato e modelos de ameaça
 190. Tor por dentro
@@ -238,7 +238,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 195. Vazamentos, data brokers criminosos e negociação de acessos
 196. Investigação segura e limites operacionais
 
-## Parte XIX — OSINT, fraude e investigação digital
+## Módulo XIX — OSINT, fraude e investigação digital
 197. Fundamentos de OSINT
 198. Pesquisa, fontes e avaliação de confiabilidade
 199. Identidades, personas e correlação de informações
@@ -250,7 +250,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 205. Investigação de campanhas e incidentes
 206. Comunicação de achados e escalonamento responsável
 
-## Parte XX — Red Team, defesa e Purple Team
+## Módulo XX — Red Team, defesa e Purple Team
 207. Do pentest ao Red Team
 208. Objetivos, regras de engajamento e OPSEC
 209. Adversary emulation e MITRE ATT&CK
@@ -265,7 +265,7 @@ Este documento define os capítulos previstos para **Por Dentro do Hacking**. A 
 218. Purple Team e validação conjunta
 219. Relatório executivo e técnico de operações
 
-## Parte XXI — Bug Bounty, AppSec e atuação profissional
+## Módulo XXI — Bug Bounty, AppSec e atuação profissional
 220. Como funciona um pentest profissional
 221. Bug Bounty por dentro
 222. Escolha de programas, escopo e regras
