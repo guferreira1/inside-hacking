@@ -12,7 +12,7 @@ Português brasileiro, prosa técnica, didática e agradável. Profundidade não
 2. Explicar mecanismos antes de apresentar ferramentas.
 3. Introduzir termos e siglas antes de depender deles.
 4. Distinguir observação, inferência e hipótese.
-5. Não inventar resultados de laboratório.
+5. Não inventar resultados de laboratório nem criar laboratório apenas para preencher uma estrutura.
 6. Não apresentar uma técnica como universal quando depende de versão, configuração ou contexto.
 7. Usar referências para fundamentar e verificar; escrever explicações autorais.
 8. Relacionar ataque, impacto, mitigação e detecção quando aplicável.
@@ -34,3 +34,12 @@ Contexto histórico será usado quando ajudar a explicar por que uma tecnologia,
 ## Glossário
 
 O glossário serve para consulta e revisão. Ele nunca substitui a primeira explicação adequada de um conceito no corpo do livro.
+
+
+## Prática e laboratórios
+
+A prática deve existir quando houver algo útil e reproduzível a observar ou executar. Laboratório não é requisito para todos os capítulos.
+
+Em capítulos fundamentais ou conceituais, exemplos, cenários, exercícios mentais, análise de comportamento e interpretação de evidências podem ser a forma adequada de prática.
+
+Quando um laboratório for incluído, ele precisa ser real e reproduzível no ambiente descrito. Se a equipe não executou o laboratório, o texto não pode apresentar saídas simuladas como resultados observados.
