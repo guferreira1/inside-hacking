@@ -4,7 +4,7 @@
 
 Este índice reúne somente textos que já existem. Para consultar os assuntos ainda planejados, abra o [mapa completo da obra](../editorial/master-outline.md).
 
-## Parte I · Hacking, segurança e método
+## Módulo I · Hacking, segurança e método
 
 | Capítulo | Leitura | Estado |
 | --- | --- | --- |
