@@ -23,24 +23,9 @@ A leitura, por si só, não será apresentada como garantia de especialização 
 
 ## Escopo
 
-A arquitetura inicial possui 16 grandes partes:
+A arquitetura inicial evoluiu para módulos temáticos, mantidos no sumário mestre como unidades de aprendizagem. O mapa atual possui 21 módulos e permanece revisável:
 
-1. história, cultura hacker e responsabilidade;
-2. funcionamento de computadores;
-3. sistemas operacionais;
-4. redes e Internet;
-5. programação e aplicações;
-6. fundamentos de segurança, criptografia e identidade;
-7. laboratório e método de investigação;
-8. reconhecimento, enumeração e ferramentas;
-9. segurança Web e APIs;
-10. infraestrutura, Linux, Windows e Active Directory;
-11. cloud, containers e cadeia de desenvolvimento;
-12. vulnerabilidades de software, exploits e engenharia reversa;
-13. outras superfícies de ataque;
-14. privacidade, anonimato e dark web;
-15. OSINT, fraudes, inteligência e investigação digital;
-16. atuação profissional, defesa e pesquisa avançada.
+O escopo detalhado e a relação atual de módulos e capítulos ficam em [`editorial/master-outline.md`](editorial/master-outline.md). Essa separação evita duplicar um índice vivo dentro do Charter.
 
 A matriz de cobertura detalhará famílias de vulnerabilidades, técnicas e conhecimentos transversais, incluindo o ciclo ofensivo completo, pós-exploração, escalada de privilégios, credenciais, persistência, pivotamento, movimentação lateral, demonstração de impacto e segurança de sistemas de IA.
 
@@ -48,7 +33,7 @@ A matriz de cobertura detalhará famílias de vulnerabilidades, técnicas e conh
 
 O fluxo preferencial é:
 
-**pesquisar → confrontar fontes → compreender → reproduzir quando aplicável → explicar com voz própria → revisar → publicar.**
+**pesquisar → confrontar fontes → compreender → reproduzir quando houver algo realmente reproduzível e útil → explicar com voz própria → revisar → publicar.**
 
 Referências servem para fundamentar, verificar e aprofundar. A obra não será construída copiando ou meramente parafraseando artigos e documentações.
 
@@ -64,7 +49,7 @@ Devem ser distinguidos explicitamente:
 - resultados observados em laboratório;
 - interpretações dos resultados.
 
-Uma execução que não ocorreu não receberá saída inventada. Procedimentos dependentes de ambiente ou versão devem registrar essas condições.
+Uma execução que não ocorreu não receberá saída inventada. Nem todo capítulo precisa de laboratório: fundamentos podem usar explicações, exemplos, cenários e exercícios de raciocínio. Quando houver uma prática reproduzível que realmente acrescente compreensão, ela deve registrar ambiente, versão e condições.
 
 ## Segurança e autorização
 
@@ -74,7 +59,7 @@ O livro deve ensinar limites, escopo, documentação, proteção de dados e ence
 
 ## Arquitetura editorial
 
-As 16 partes organizam a progressão conceitual da obra. O manuscrito será armazenado fisicamente por capítulos em `book/capitulo-N/`.
+Os módulos organizam a progressão conceitual da obra. O manuscrito será armazenado fisicamente por capítulos em `book/capitulo-N/`.
 
 Capítulos podem ser divididos em subcapítulos numerados (`1.1`, `1.2`, `1.3` etc.) sempre que a divisão melhorar compreensão, navegação, revisão ou manutenção. A granularidade será definida pela unidade conceitual, não por uma quantidade fixa de páginas.
 
