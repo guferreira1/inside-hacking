@@ -11,11 +11,11 @@ A matriz de cobertura existe para impedir que a abrangência da obra dependa da 
 | Categoria | Fundamento, vulnerabilidade, técnica, ferramenta, defesa etc. |
 | Pré-requisitos | Conhecimentos necessários |
 | Teoria | Onde o mecanismo é explicado |
-| Prática | Onde é reproduzido/testado |
+| Aplicação | Onde é demonstrado, exercitado ou reproduzido, quando aplicável |
 | Defesa | Onde prevenção/detecção/mitigação são discutidas |
 | Profundidade | Introdução, intermediário ou aprofundado |
 | Fontes | Referências usadas na pesquisa |
-| Validação | Estado da validação prática/técnica |
+| Validação | Estado da validação factual/técnica e, quando aplicável, prática |
 | Gap | Pendências conhecidas |
 
 ## Cobertura inicial a detalhar
