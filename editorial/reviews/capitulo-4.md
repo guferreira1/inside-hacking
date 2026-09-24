@@ -1,41 +1,29 @@
-# Primeira entrega editorial — Capítulo 4
+# Registro editorial — Capítulo 4
 
-**Data:** 23/09/2026.  
-**Versão:** DRAFT 0.1, leitura online.  
-**Base:** `10a270b34ba1cd0ffb092c302cfe70e1836a4d03`.  
+**Estado atual:** VALIDATED — versão editorial 1.0.  
+**Fechamento interno:** 24/09/2026.  
 **Manuscrito:** [Como pensar como investigador de segurança](../../book/modulo-1/capitulo-4/README.md).
 
-## Objetivo da entrega
+## Histórico
 
-Produzir o capítulo que faltava entre os capítulos 3 e 5, preservando a numeração global e a organização por módulo. O texto é uma primeira redação, não a recuperação de um manuscrito anterior.
+A primeira entrega, de 23/09/2026, foi redigida a partir do commit `10a270b34ba1cd0ffb092c302cfe70e1836a4d03` e publicada no commit `8143687b4bb1f9a31f2eaf95885691d0510221f6`. Preencheu a lacuna entre os capítulos 3 e 5 com quatro seções, seis perguntas opcionais, respostas e referências. Não recuperou um suposto manuscrito anterior.
 
-A entrega reúne quatro seções narrativas, seis perguntas opcionais, respostas comentadas e nove referências identificadas. Não foi criado laboratório obrigatório: o cenário Aurora e os desfechos são exemplos fictícios, explicitamente separados de resultados observados.
+O mantenedor agora informou ter lido e aprovado os capítulos 4 e 5 e pediu o avanço ao próximo. Esse retorno encerra a primeira leitura editorial. Não foram informados tempo de estudo, respostas aos exercícios ou prática executada; nada disso foi inventado ou registrado como domínio demonstrado.
 
-## Decisões didáticas
+## Revisão de fechamento
 
-A investigação começa com uma observação ambígua e acompanha hipóteses concorrentes, conferência de identidade, comparação de acessos, interpretação de sinais e conclusão limitada. Um resultado negativo recebe tratamento completo. O desfecho alternativo demonstra a diferença entre constatar um efeito e conhecer sua causa interna.
+Foram reconferidos os pontos das fontes S1–S9: autorização, planejamento de comparações, limitações de um fator por vez, associação e causa, falsos positivos/negativos, semântica dos códigos HTTP, reutilização de respostas e contexto dos logs. Os trechos e limites permanecem nas [referências](../../book/modulo-1/capitulo-4/referencias.md).
 
-Termos necessários — identidade, sessão, linha de base, requisição, resposta, cache, log, falso positivo e falso negativo — são explicados antes de sustentar conclusões. Não são exigidos conhecimentos prévios de HTTP nem instalação de ferramentas. A sintaxe e os procedimentos de ferramentas ficam para os módulos correspondentes.
+A revisão de coerência preservou o desfecho principal sem falha confirmada e distinguiu o desfecho alternativo. As seis soluções correspondem às perguntas, sem introduzir evidência ausente do cenário. A narrativa não converte recusa de acesso em certificação de segurança nem alerta inconclusivo em falso positivo.
 
-A autorização é delimitada no enredo, sem repetir o desenvolvimento jurídico do capítulo 3. A escrita alterna explicação e acontecimento do caso, em vez de ampliar checklists de conformidade. A opinião do leitor sobre o ritmo desta nova entrega ainda não foi recebida.
+## Critérios
 
-## Verificação interna
-
-- [x] Trechos primários S1–S9 consultados e relacionados aos pontos utilizados.
-- [x] Exemplos e números identificados como fictícios; nenhuma execução alegada.
-- [x] Observação, explicação e causa não tratadas como sinônimos.
-- [x] Ressalva sobre interações entre fatores, sem receita universal de uma variável por vez.
-- [x] Resultado negativo limitado aos casos examinados, sem certificação de segurança.
-- [x] Inconclusivo distinguido de falso positivo e falso negativo.
-- [x] Questões e respostas revisadas internamente contra o enunciado.
-- [ ] Primeira leitura do mantenedor — pendente.
+- [x] Leitura aprovada pelo mantenedor.
+- [x] Pontos técnicos confrontados com as fontes delimitadas.
+- [x] Cenário, resultados e tempos identificados como fictícios.
+- [x] Perguntas e respostas revisadas internamente.
+- [x] Glossário e navegação conferidos nesta entrega.
 - [ ] Revisão técnica/didática independente — não realizada.
-- [ ] PDF gerado e conferido — não realizado nesta entrega.
+- [ ] PDF gerado e conferido — etapa futura da edição.
 
-As fontes foram verificadas por consulta; isso não constitui revisão externa. O capítulo permanece DRAFT e não altera os estados dos capítulos 1, 2, 3 ou 5.
-
-## Continuidade resolvida
-
-O capítulo 5 foi produzido antes do 4. O esclarecimento posterior confirmou que a leitura anterior se referia ao capítulo 3. Esta entrega preenche a lacuna com novo conteúdo, sem atribuir leitura ou aprovação antecipada ao capítulo 4.
-
-A existência dos cinco capítulos permite a sequência de leitura do Módulo I, mas não encerra sua revisão editorial. O capítulo 1 ainda tem pendências próprias e os capítulos 4 e 5 estão em primeira entrega.
+Laboratório executável não se aplica ao objetivo desta unidade. VALIDATED representa o fechamento interno documentado, assistido pela mesma IA participante da escrita; não certificação, revisão externa ou edição estável do livro. O fechamento do capítulo não encerra automaticamente o Módulo I.

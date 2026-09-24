@@ -1,10 +1,10 @@
 # Capítulo 5 — Ameaças, vulnerabilidades, exploits, risco e superfície de ataque
 
-[← Capítulo 4](../capitulo-4/README.md) · [Índice do livro](../../README.md) · [Página inicial](../../../README.md)
+[← Capítulo 4](../capitulo-4/README.md) · [Índice do livro](../../README.md) · [Capítulo 6 →](../../modulo-2/capitulo-6/README.md)
 
 **Módulo I — Hacking, segurança e método**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Fontes consultadas em 23/09/2026. Exemplos fictícios; nenhuma execução de laboratório alegada. Revisão técnica independente pendente.
+> **Status:** VALIDATED — versão editorial 1.0; leitura aprovada e revisão interna concluída em 24/09/2026. Revisão técnica independente pendente. [Registro editorial](../../../editorial/reviews/capitulo-5.md).
 
 Uma biblioteca publica seu catálogo na internet. Qualquer pessoa pode pesquisar um livro, ver se existe um exemplar disponível e consultar o horário de atendimento. Até aqui, a abertura ao público é parte do serviço, não um defeito.
 
@@ -27,3 +27,5 @@ Neste capítulo, acompanharemos a biblioteca fictícia Aurora para construir ess
 As [referências e notas de pesquisa](referencias.md) permitem verificar as definições e seus limites. O cenário Aurora e as comparações ao longo do texto são exemplos autorais, não relatos de incidentes ou resultados experimentais.
 
 **[Começar a seção 5.1 →](5.1-ativos-e-vulnerabilidades.md)**
+
+Depois da leitura, siga para o [Capítulo 6 — Bits, bytes e representação da informação](../../modulo-2/capitulo-6/README.md), que abre o Módulo II.

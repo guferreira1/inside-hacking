@@ -2,7 +2,7 @@
 
 [← Índice do capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 23 de setembro de 2026. **Versão do capítulo:** DRAFT 0.1.
+**Consulta inicial:** 23/09/2026. **Reconferência e fechamento interno:** 24/09/2026. **Versão:** VALIDATED 1.0 editorial.
 
 As definições abaixo foram consultadas para orientar uma explicação original. As situações da biblioteca Aurora são fictícias, inclusive as mudanças de configuração, os caminhos de exploração e as comparações de risco. Não descrevem testes executados. Nenhum laboratório foi criado ou necessário para esta entrega conceitual.
 
@@ -124,4 +124,6 @@ Trechos usados: risco que permanece depois da aplicação de medidas ou resposta
 
 ## Verificação desta entrega
 
-As páginas acima foram consultadas, a redação foi revisada internamente e as distinções técnicas foram relacionadas às fontes. Não houve revisão independente, avaliação de um sistema real, execução de exploração ou medição de risco. O capítulo permanece DRAFT para leitura e revisão; as fontes não representam endosso institucional à obra.
+A leitura foi aprovada pelo mantenedor e o ciclo de revisão interna está concluído para a versão 1.0. Os pontos conceituais foram reconferidos com as referências: distinção entre vulnerabilidade, exploração e ocorrência de incidente; severidade e risco; limites de evidência e contexto. O [registro editorial](../../../editorial/reviews/capitulo-5.md) delimita o fechamento.
+
+Não houve revisão independente, avaliação de um sistema real, execução de exploração ou medição de risco. As fontes não representam endosso institucional à obra, e a aprovação de leitura não foi convertida em registro de prática realizada.

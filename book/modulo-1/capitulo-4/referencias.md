@@ -2,7 +2,7 @@
 
 [← Índice do capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 23 de setembro de 2026. **Entrega:** DRAFT 0.1.
+**Consulta inicial:** 23/09/2026. **Reconferência e fechamento interno:** 24/09/2026. **Versão:** VALIDATED 1.0 editorial.
 
 O percurso da Aurora é uma construção didática original. Contas, documentos, mensagens, identidades e desfechos foram definidos para explicar o raciocínio; não são registros de uma aplicação implementada. As fontes abaixo sustentam conceitos delimitados. Não representam endosso à obra, leitura integral de todos os documentos citados por elas ou revisão independente.
 
@@ -89,6 +89,6 @@ https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
 
 ## Natureza da entrega
 
-Foram pesquisados os trechos identificados e elaborado um texto autoral com revisão interna de coerência, conceitos e navegação. A separação entre observação, inferência, hipótese e previsão é o vocabulário operacional adotado pelo capítulo, não uma taxonomia atribuída a uma instituição.
+O mantenedor informou ter lido e aprovado o capítulo. A revisão interna confrontou novamente os pontos técnicos com os trechos acima e verificou a coerência dos desfechos e das seis respostas. A separação entre observação, inferência, hipótese e previsão continua sendo vocabulário operacional do capítulo, não uma taxonomia atribuída a uma instituição.
 
-Não houve laboratório executável, avaliação de alvo real, medição de tempo, cálculo estatístico ou validação independente. As respostas das questões são modelos de raciocínio sobre o enunciado. A primeira leitura e a revisão técnica independente permanecem pendentes. Consulte o [registro editorial desta entrega](../../../editorial/reviews/capitulo-4.md).
+O ciclo interno está concluído nesta versão. Não houve laboratório executável, avaliação de alvo real, medição de tempo, cálculo estatístico ou revisão independente. A aprovação da leitura não foi registrada como execução de exercícios nem domínio prático. Consulte o [registro editorial](../../../editorial/reviews/capitulo-4.md).

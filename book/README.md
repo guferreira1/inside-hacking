@@ -10,9 +10,10 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 
 | Módulo | Percurso previsto | Situação |
 | --- | --- | --- |
-| [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; revisão do módulo em andamento |
+| [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
+| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Capítulo 6 disponível; demais capítulos planejados |
 
-Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. No planejamento atual, o Módulo II começa no capítulo 6, e o Módulo III, no capítulo 11.
+Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. No planejamento atual, o Módulo III começa no capítulo 11.
 
 ## Capítulos disponíveis no Módulo I
 
@@ -21,10 +22,10 @@ Os demais módulos serão adicionados conforme seus primeiros textos forem produ
 | 1 | [O que é hacking?](modulo-1/capitulo-1/README.md) | Em revisão |
 | 2 | [Da curiosidade à segurança ofensiva: uma breve história da cultura hacker](modulo-1/capitulo-2/README.md) | Revisão interna concluída — v1.0 |
 | 3 | [Ética, legalidade, autorização e escopo](modulo-1/capitulo-3/README.md) | Revisão interna concluída — v1.0 |
-| 4 | [Como pensar como investigador de segurança](modulo-1/capitulo-4/README.md) | Rascunho para leitura — v0.1 |
-| 5 | [Ameaças, vulnerabilidades, exploits, risco e superfície de ataque](modulo-1/capitulo-5/README.md) | Rascunho para leitura — v0.1 |
+| 4 | [Como pensar como investigador de segurança](modulo-1/capitulo-4/README.md) | Revisão interna concluída — v1.0 |
+| 5 | [Ameaças, vulnerabilidades, exploits, risco e superfície de ataque](modulo-1/capitulo-5/README.md) | Revisão interna concluída — v1.0 |
 
-A sequência de leitura está disponível de 1 a 5. Os estados de cada capítulo continuam distintos; consulte o [controle editorial](../editorial/publication-status.md) antes de interpretar o módulo como concluído.
+A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerrados. O capítulo 1 mantém pendências próprias; consulte o [controle editorial](../editorial/publication-status.md) antes de interpretar o módulo como concluído.
 
 ### Material de apoio do Capítulo 2
 
@@ -55,9 +56,24 @@ A sequência de leitura está disponível de 1 a 5. Os estados de cada capítulo
 - [5.3 · Onde o sistema está exposto e o que fazer primeiro](modulo-1/capitulo-5/5.3-superficie-e-risco.md)
 - [Referências e limites da pesquisa](modulo-1/capitulo-5/referencias.md).
 
+## Capítulos disponíveis no Módulo II
+
+| Capítulo | Leitura | Estado |
+| --- | --- | --- |
+| 6 | [Bits, bytes e representação da informação](modulo-2/capitulo-6/README.md) | Rascunho para leitura — v0.1 |
+
+### Dentro do Capítulo 6
+
+- [6.1 · Antes do zero e do um](modulo-2/capitulo-6/6.1-bits-e-estados.md)
+- [6.2 · Contar sem o algarismo dois](modulo-2/capitulo-6/6.2-binario-e-hexadecimal.md)
+- [6.3 · O tamanho muda a pergunta](modulo-2/capitulo-6/6.3-bytes-limites-e-unidades.md)
+- [6.4 · Os mesmos bytes, leituras diferentes](modulo-2/capitulo-6/6.4-texto-e-interpretacao.md)
+- [Respostas comentadas](modulo-2/capitulo-6/solucoes.md) às perguntas opcionais.
+- [Referências e limites da pesquisa](modulo-2/capitulo-6/referencias.md).
+
 ## Como navegar
 
-Os diretórios seguem `modulo-M/capitulo-N/`, como `modulo-1/capitulo-5/` e, quando for produzido, `modulo-2/capitulo-6/`. A leitura segue os índices, não a ordenação alfabética dos diretórios. Subcapítulos são separados quando isso ajuda a compreender, revisar e manter o texto; não há uma quantidade fixa por capítulo.
+Os diretórios seguem `modulo-M/capitulo-N/`, como `modulo-1/capitulo-5/` e `modulo-2/capitulo-6/`. A leitura segue os índices, não a ordenação alfabética dos diretórios. Subcapítulos são separados quando isso ajuda a compreender, revisar e manter o texto; não há uma quantidade fixa por capítulo.
 
 O [guia de estrutura](../editorial/repository-structure.md) documenta a convenção. Glossário e bibliografia permanecem neste nível por serem compartilhados entre módulos.
 

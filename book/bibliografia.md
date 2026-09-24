@@ -4,7 +4,7 @@ A bibliografia é construída junto com o manuscrito.
 
 As fontes servem para verificar fatos, especificações, contexto histórico e resultados de pesquisas. O texto da obra permanece autoral: referências não substituem compreensão, experimentação nem explicação própria.
 
-**Data desta revisão bibliográfica:** 23 de setembro de 2026.
+**Data desta revisão bibliográfica:** 24 de setembro de 2026.
 
 ## Capítulo 1 — O que é hacking?
 
@@ -43,13 +43,21 @@ As [fontes S1–S9 e seus limites](modulo-1/capitulo-4/referencias.md) sustentam
 
 Foram consultados trechos do NIST/SEMATECH e-Handbook, verbetes do NIST CSRC, as RFCs 9110 e 9111 e páginas da OWASP Cheat Sheet Series. O enredo Aurora, as comparações e as decisões são construções didáticas originais. Não houve laboratório executável, medição ou exploração real.
 
-A entrega permanece DRAFT 0.1. O [registro editorial](../editorial/reviews/capitulo-4.md) identifica o que foi revisado internamente e as leituras ainda pendentes; a consulta das fontes não constitui revisão técnica independente.
+A leitura foi aprovada e a revisão interna concluída em 24/09/2026, na versão editorial 1.0. O [registro editorial](../editorial/reviews/capitulo-4.md) identifica o que foi reconferido e os limites remanescentes; consulta de fontes e aprovação de leitura não constituem revisão independente.
 
 ## Capítulo 5 — Ameaças, vulnerabilidades, exploits, risco e superfície de ataque
 
 As [fontes S1–S12](modulo-1/capitulo-5/referencias.md) identificam verbetes do NIST, documentação OWASP, definição de CWE e terminologia do Metasploit. O guia CVSS v4.0 da FIRST sustenta a distinção entre severidade Base e avaliação de risco. Cada fonte tem seu uso delimitado; consultas a glossários não são apresentadas como leitura integral das publicações que eles citam.
 
-A narrativa usa situações fictícias para conectar definições, condições de exploração, exposição e consequências. Não houve exploração executada, medição de probabilidade, cálculo CVSS ou revisão independente. O Capítulo 5 está em DRAFT 0.1 e sua inclusão não encerra o Módulo I.
+A narrativa usa situações fictícias para conectar definições, condições de exploração, exposição e consequências. Não houve exploração executada, medição de probabilidade, cálculo CVSS ou revisão independente. O [fechamento interno](../editorial/reviews/capitulo-5.md) da versão editorial 1.0 foi registrado após a leitura aprovada em 24/09/2026; o Módulo I mantém a pendência do capítulo 1.
+
+## Capítulo 6 — Bits, bytes e representação da informação
+
+As [fontes S1–S8](modulo-2/capitulo-6/referencias.md) relacionam notas do curso Computation Structures, a página de unidades do NIST, as RFCs 20 e 3629, a documentação de conversões de inteiros do Python e materiais do Unicode Consortium.
+
+As explicações constroem representação binária e hexadecimal, largura e sinal de inteiros, ordem de bytes, unidades e codificação de texto. As contas e sequências usadas como exemplos foram conferidas por [testes editoriais](../scripts/tests/test_chapter6_examples.py). Esses testes verificam os exemplos, não substituem revisão independente nem representam laboratório ofensivo.
+
+O capítulo está em DRAFT 0.1, com a primeira leitura pendente. O [registro da entrega](../editorial/reviews/capitulo-6.md) identifica seu escopo e os limites da verificação.
 
 ## Política de referências
 

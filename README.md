@@ -22,12 +22,18 @@ A proposta é permitir que quem está começando entenda computadores, sistemas 
 | [1 · O que é hacking?](book/modulo-1/capitulo-1/README.md) | Conceitos iniciais, investigação, ferramentas e responsabilidade. | Em revisão |
 | [2 · Da curiosidade à segurança ofensiva](book/modulo-1/capitulo-2/README.md) | Uma introdução à história da cultura hacker e da segurança. | Revisão interna concluída — v1.0 |
 | [3 · Ética, legalidade, autorização e escopo](book/modulo-1/capitulo-3/README.md) | Permissões, limites, dados e um estudo de caso com respostas comentadas. | Revisão interna concluída — v1.0 |
-| [4 · Como pensar como investigador de segurança](book/modulo-1/capitulo-4/README.md) | Uma investigação explicada: observação, hipóteses, comparações e conclusões. | Rascunho para leitura — v0.1 |
-| [5 · Ameaças, vulnerabilidades, exploits, risco e superfície de ataque](book/modulo-1/capitulo-5/README.md) | Uma narrativa para distinguir fraquezas, exploração, exposição e consequências. | Rascunho para leitura — v0.1 |
+| [4 · Como pensar como investigador de segurança](book/modulo-1/capitulo-4/README.md) | Uma investigação explicada: observação, hipóteses, comparações e conclusões. | Revisão interna concluída — v1.0 |
+| [5 · Ameaças, vulnerabilidades, exploits, risco e superfície de ataque](book/modulo-1/capitulo-5/README.md) | Uma narrativa para distinguir fraquezas, exploração, exposição e consequências. | Revisão interna concluída — v1.0 |
+
+**[Módulo II — Computadores por dentro](book/modulo-2/README.md)**
+
+| Leitura | O que você encontrará | Estado |
+| --- | --- | --- |
+| [6 · Bits, bytes e representação da informação](book/modulo-2/capitulo-6/README.md) | Representação binária, hexadecimal, limites de números, ordem de bytes e texto. | Rascunho para leitura — v0.1 |
 
 **[Abrir o índice de leitura →](book/README.md)**
 
-Os cinco capítulos do Módulo I estão disponíveis para leitura. O módulo continua em produção: disponibilidade do texto não equivale a revisão editorial concluída.
+Os capítulos 1 a 6 estão disponíveis. O fechamento interno do Módulo I ainda depende da revisão do capítulo 1; o Módulo II começou com a primeira entrega do capítulo 6.
 
 Os estados indicam o andamento editorial, não certificação ou revisão independente concluída. O fechamento interno de um capítulo não equivale à publicação de uma edição estável do livro. Consulte o [estado editorial e suas pendências](editorial/publication-status.md).
 
@@ -70,6 +76,7 @@ Leia o [guia de contribuição](CONTRIBUTING.md). Não inclua tokens, credenciai
 | --- | --- |
 | [`book/`](book/README.md) | Índice geral, glossário, bibliografia e módulos da obra. |
 | [`book/modulo-1/`](book/modulo-1/README.md) | Índice e capítulos do primeiro módulo. |
+| [`book/modulo-2/`](book/modulo-2/README.md) | Fundamentos de representação e funcionamento dos computadores. |
 | [`editorial/`](editorial/README.md) | Planejamento, padrão de escrita e controle de revisão. |
 | [`research/`](research/README.md) | Notas de pesquisa; não são automaticamente conteúdo publicado. |
 | [`labs/`](labs/README.md) | Área reservada aos materiais dos laboratórios. |

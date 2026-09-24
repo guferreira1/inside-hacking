@@ -1,14 +1,18 @@
 # Glossário
 
-[Índice do livro](README.md) · [Módulo I](modulo-1/README.md) · [Bibliografia](bibliografia.md)
+[Índice do livro](README.md) · [Módulo I](modulo-1/README.md) · [Módulo II](modulo-2/README.md) · [Bibliografia](bibliografia.md)
 
 Este glossário acompanha os termos presentes na obra. Cada entrada aponta para uma ocorrência; a definição curta não substitui o capítulo. **Uma menção introdutória não significa que o assunto já foi ensinado em profundidade.**
 
 Não importamos todos os assuntos futuros. OSINT é identificado como menção do planejamento, incluída para esclarecer a sigla solicitada na revisão. Os demais verbetes se relacionam ao texto ou às referências dos capítulos disponíveis.
 
-**Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [V](#v) · [W](#w) · [X](#x).
+**Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x).
 
 ## A
+
+### Abstração digital
+
+Modelo que trata sinais como valores discretos, por exemplo 0 e 1, sem representar a cada operação todos os detalhes físicos de sua implementação. Suas garantias dependem das condições de funcionamento do dispositivo. [Conceito: 6.1][c61].
 
 ### Active Directory
 
@@ -21,6 +25,10 @@ Circunstância ou evento com potencial de causar consequência adversa de segura
 ### API
 
 Application Programming Interface, interface de programação de aplicações. Define uma forma de componentes de software interagirem; nem toda API é um serviço Web. [Menção introdutória: capítulo 2][c2].
+
+### ASCII
+
+American Standard Code for Information Interchange. Código de sete bits com 128 posições, incluindo letras, dígitos, pontuação e controles. A letra A tem valor decimal 65, ou hexadecimal 41. O ASCII básico não representa todo o texto Unicode. [Conceito: 6.4][c64].
 
 ### Ativo
 
@@ -44,6 +52,22 @@ Amazon Web Services. Provedor de nuvem citado para distinguir testes em recursos
 
 Conjunto organizado de dados mantido para consulta e atualização. A aplicação pode utilizá-lo para guardar registros; o sistema que gerencia os dados não deve ser confundido com a informação armazenada. [Menção: capítulo 1][c1]; [exemplo: 5.1][c51].
 
+### Base numérica
+
+Quantidade de algarismos e fator entre pesos de posições em uma representação posicional. O mesmo valor pode ser escrito em bases diferentes; a mudança de escrita não muda a quantidade representada. [Conceito: 6.2][c62].
+
+### Big-endian
+
+Ordem que coloca primeiro o byte de maior peso de um valor com vários bytes. Não significa inverter os bits de cada byte. [Conceito: 6.3][c63].
+
+### Binário
+
+No sistema de numeração apresentado, base dois: usa os algarismos 0 e 1 e pesos que são potências de dois. O termo também aparece em computação com outros sentidos; o contexto deve identificá-los. [Conceito: 6.2][c62].
+
+### Bit
+
+Binary digit, dígito binário. Posição com dois valores possíveis, 0 ou 1. O significado desses valores depende da convenção; a largura de uma sequência não demonstra sozinha imprevisibilidade. [Conceito: 6.1][c61].
+
 ### Black hat
 
 Rótulo informal associado a atividade ofensiva maliciosa ou não autorizada. Não substitui a análise de permissão, conduta e impacto. [Contexto: capítulo 1][c1].
@@ -63,6 +87,10 @@ Programa que pode recompensar relatos de vulnerabilidades conforme seus critéri
 ### Burp Suite
 
 Conjunto de ferramentas da PortSwigger para segurança Web. O Burp Proxy permite examinar e modificar tráfego que passa por ele; não observa qualquer comunicação apenas por estar aberto. [Menção: capítulo 1][c1]. [Documentação][burp-doc].
+
+### Byte
+
+Unidade de oito bits no escopo desta obra, representada por B nas unidades. Oferece 256 padrões e não equivale necessariamente a um caractere. [Conceito: 6.3][c63].
 
 ## C
 
@@ -85,6 +113,18 @@ Cybersecurity and Infrastructure Security Agency. Organização dos Estados Unid
 ### Cloud
 
 Computação em nuvem: recursos de computação disponibilizados como serviços por rede. A introdução distingue os recursos do cliente da infraestrutura do provedor e suas condições de teste. [Contexto: 3.1][c31].
+
+### Cluster de grafemas
+
+Agrupamento de pontos de código utilizado na segmentação de texto para aproximar uma unidade percebida pelo usuário. Um agrupamento pode conter vários pontos de código e vários bytes; essas contagens não são equivalentes. [Conceito: 6.4][c64].
+
+### Codificação
+
+Regra para representar informação. No caso do texto, especifica como valores de caracteres são convertidos em uma sequência de unidades, como bytes em UTF-8. Não deve ser confundida com criptografia. [Conceito: 6.4][c64].
+
+### Complemento de dois
+
+Convenção de representação de inteiros com sinal em que o bit de maior peso recebe peso negativo. Com oito bits, representa −128 a 127; a sequência de oito uns representa −1. [Conceito: 6.3][c63].
 
 ### Confidencialidade
 
@@ -132,6 +172,10 @@ No contexto brasileiro discutido, informações relacionadas a pessoa natural id
 
 Dados construídos para representar situações sem reproduzir registros pessoais reais. Trocar somente um nome em um registro real não o torna automaticamente sintético. [Exemplos: 3.2][c32].
 
+### Decimal
+
+Sistema de numeração de base dez, com algarismos de 0 a 9. Em notação posicional, cada posição à esquerda tem dez vezes o peso da anterior. Aqui o termo descreve a base, não um tipo específico de dados de uma linguagem. [Conceito: 6.2][c62].
+
 ### Disponibilidade
 
 Possibilidade de acesso e uso por quem está autorizado quando necessário. Recusar todos os pedidos não é correção suficiente se os usos legítimos também deixam de funcionar. [Conceito: 5.1][c51].
@@ -149,6 +193,10 @@ Digital Object Identifier. Identificador persistente usado para referenciar obje
 ### Encadeamento de vulnerabilidades
 
 Combinação de condições em que o resultado de uma etapa permite avançar para outra. Cada ligação exige evidência; leitura indevida não implica automaticamente controle de todo o ambiente. [Conceito: 5.2][c52].
+
+### Endianness
+
+Ordem dos bytes na representação de um valor com vários bytes. Interpretar a mesma sequência em big-endian ou little-endian pode produzir números distintos. O formato precisa definir a convenção. [Conceito: 6.3][c63].
 
 ### Engenharia reversa
 
@@ -228,6 +276,10 @@ Resultado de uma função que transforma uma entrada segundo um algoritmo. No co
 
 Ferramenta de recuperação e auditoria de senhas que testa candidatos contra representações compatíveis, como hashes. Não é uma operação universal para descobrir qualquer senha. [Menção: capítulo 1][c1]. [Documentação][hashcat-doc].
 
+### Hexadecimal
+
+Sistema de base dezesseis, com algarismos 0–9 e A–F. Um algarismo hexadecimal corresponde a quatro bits; um byte pode ser exibido com dois deles. É notação, não criptografia. [Conceito: 6.2][c62].
+
 ### Hipótese
 
 Explicação provisória a confrontar com observações e alternativas. É mais útil quando permite prever um resultado e dizer o que a contrariaria. [Conceito: 4.1][c41].
@@ -258,6 +310,14 @@ Consequência de uma falha ou ação. Distinguir impacto observado de impacto po
 
 Conclusão construída a partir de observações e premissas. Não equivale ao registro bruto produzido por tela ou ferramenta. [Conceito: 4.1][c41].
 
+### Inteiro com sinal
+
+Representação numérica que admite valores negativos e não negativos. É preciso conhecer a convenção, como complemento de dois, e a largura em bits para interpretar o campo. [Conceito: 6.3][c63].
+
+### Inteiro sem sinal
+
+Representação de inteiros não negativos. Em n bits com todos os padrões utilizados, sua faixa é de zero a `2^n − 1`. [Conceito: 6.3][c63].
+
 ### Integridade
 
 Proteção contra alteração ou destruição indevida. Alterar uma data sem permissão é consequência diferente de consultar informação privada. [Conceito: 5.1][c51].
@@ -267,6 +327,10 @@ Proteção contra alteração ou destruição indevida. Alterar uma data sem per
 ### Kali Linux
 
 Distribuição Linux preparada para tarefas de segurança. O ambiente e suas ferramentas não comprovam habilidade nem autorização de quem os utiliza. [Menção: capítulo 1][c1]. [Documentação][kali-doc].
+
+### kB e KiB
+
+kB, kilobyte, representa 1.000 bytes; KiB, kibibyte, representa 1.024 bytes. Os prefixos decimal e binário não são grafias equivalentes da mesma quantidade. [Conceito: 6.3][c63].
 
 ### Kerberos
 
@@ -282,11 +346,19 @@ Lei Geral de Proteção de Dados Pessoais, Lei brasileira nº 13.709/2018. O cap
 
 Referência de comportamento em condições identificadas. Ajuda a comparar um caso legítimo com o investigado sem confundir falha geral do serviço com decisão correta de autorização. [Conceito: 4.2][c42].
 
+### Little-endian
+
+Ordem que coloca primeiro o byte de menor peso de um valor com vários bytes. A convenção deve ser definida pelo formato ou operação, não adivinhada pela aparência dos dados. [Conceito: 6.3][c63].
+
 ### Log
 
 Registro de eventos produzido por um sistema. Seu valor depende dos campos, procedência, cobertura e relação com a operação examinada. [Conceito: 4.3][c43].
 
 ## M
+
+### MB e MiB
+
+MB, megabyte, representa 1.000.000 de bytes; MiB, mebibyte, representa 1.048.576. Uma taxa em Mbit/s mede bits por segundo, não bytes armazenados. [Conceito: 6.3][c63].
 
 ### Metasploit
 
@@ -332,11 +404,19 @@ Network Mapper. Ferramenta de exploração e auditoria de redes, incluindo desco
 
 Informação registrada por um meio identificado. Pode ter limites ou erros de medição e não contém automaticamente a explicação da causa do que foi percebido. [Conceito: 4.1][c41].
 
+### Octeto
+
+Grupo de oito bits. O termo aparece em especificações de protocolos e explicita o tamanho que chamamos de byte no escopo da obra. [Conceito: 6.3][c63].
+
 ### OSINT
 
 Open Source Intelligence, inteligência de fontes abertas. Conhecimento produzido a partir de informações publicamente ou comercialmente disponíveis para responder a necessidades de inteligência. Não é sinônimo de software open source.
 
 **Menção no planejamento, ainda sem capítulo desenvolvido:** [mapa da obra](../editorial/master-outline.md). A entrada esclarece a sigla solicitada, sem registrar o assunto como já ensinado. [Referência institucional][osint-doc].
+
+### Overflow
+
+Estouro: situação em que um resultado não cabe na faixa da representação numérica adotada. Reação, sinalização de erro e eventual retenção de bits dependem das regras do sistema ou linguagem. [Conceito: 6.3][c63].
 
 ### OWASP
 
@@ -363,6 +443,10 @@ Investigação e manipulação de mecanismos de redes telefônicas. O capítulo 
 ### Pivotamento
 
 Uso de um ponto intermediário para alcançar recursos que não eram diretamente acessíveis da origem da investigação. Depende do escopo autorizado. [Menção: capítulo 1][c1].
+
+### Ponto de código
+
+Identificador numérico de uma posição no espaço Unicode, escrito frequentemente como U+ seguido de hexadecimal. Não é sinônimo de byte nem de uma unidade visual de texto. [Conceito: 6.4][c64].
 
 ### Porta de rede
 
@@ -486,6 +570,20 @@ Interface de entrada e saída de texto para interagir com programas, inclusive i
 
 Tech Model Railroad Club, clube de ferromodelismo do MIT presente nos episódios de experimentação. Sua história não estabelece origem única da segurança de computadores. [Contexto: capítulos 1][c1] e [2][c2].
 
+### Truncamento
+
+Corte de uma sequência ou representação para um tamanho menor. Em texto de largura variável, cortar em um byte arbitrário pode interromper uma sequência de caractere; o formato precisa ser respeitado. [Conceito: 6.4][c64].
+
+## U
+
+### Unicode
+
+Padrão para representar caracteres, com pontos de código e formas de codificação. Identificar um ponto de código e escolher seus bytes são etapas distintas; Unicode não significa que toda letra ocupa um ou dois bytes. [Conceito: 6.4][c64].
+
+### UTF-8
+
+Forma de codificação Unicode que utiliza de um a quatro bytes por valor escalar e preserva a representação ASCII. Uma unidade percebida pelo usuário pode reunir vários valores; nem toda sequência arbitrária de bytes é UTF-8 válido. [Conceito: 6.4][c64].
+
 ## V
 
 ### VDP
@@ -528,6 +626,10 @@ As definições metodológicas expressam o vocabulário de trabalho do livro. As
 [c51]: modulo-1/capitulo-5/5.1-ativos-e-vulnerabilidades.md
 [c52]: modulo-1/capitulo-5/5.2-ameacas-e-exploracao.md
 [c53]: modulo-1/capitulo-5/5.3-superficie-e-risco.md
+[c61]: modulo-2/capitulo-6/6.1-bits-e-estados.md
+[c62]: modulo-2/capitulo-6/6.2-binario-e-hexadecimal.md
+[c63]: modulo-2/capitulo-6/6.3-bytes-limites-e-unidades.md
+[c64]: modulo-2/capitulo-6/6.4-texto-e-interpretacao.md
 [c2-ref]: modulo-1/capitulo-2/referencias.md
 [c3-sol]: modulo-1/capitulo-3/solucoes.md
 [c4-ref]: modulo-1/capitulo-4/referencias.md

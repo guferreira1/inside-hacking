@@ -4,7 +4,7 @@
 
 **Módulo I — Hacking, segurança e método**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Pesquisa e revisão interna de redação realizadas; leitura do mantenedor e revisão técnica independente pendentes.
+> **Status:** VALIDATED — versão editorial 1.0; leitura aprovada e revisão interna concluída em 24/09/2026. Revisão técnica independente pendente. [Registro editorial](../../../editorial/reviews/capitulo-4.md).
 
 Você muda um número e aparece o nome de outra pessoa.
 
