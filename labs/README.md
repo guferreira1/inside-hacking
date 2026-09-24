@@ -1,9 +1,9 @@
 # Labs
 
-Materiais **realmente reproduzíveis** dos laboratórios de **Por Dentro do Hacking**.
+[Página inicial](../README.md) · [Índice do livro](../book/README.md) · [Modelo de capítulo](../editorial/chapter-template.md)
 
-Laboratórios não serão criados para todos os capítulos. Eles entram quando a execução acrescenta compreensão e quando existe um ambiente que podemos documentar e reproduzir com honestidade.
+Área reservada a materiais realmente reproduzíveis dos laboratórios de **Por Dentro do Hacking**. Ainda não contém laboratórios executáveis. Um cenário explicado no capítulo não é apresentado como ambiente implementado.
 
-Capítulos conceituais podem usar exemplos, cenários, exercícios de raciocínio e análise de comportamento sem possuir material neste diretório.
+Laboratórios entram quando a execução acrescenta compreensão, não para preencher uma estrutura. Capítulos conceituais podem usar exemplos e análise de comportamento sem exigir instalação.
 
-Quando um laboratório existir, deve usar ambiente próprio ou explicitamente autorizado e registrar requisitos, versões, preparação, evidências esperadas, limites e restauração. Resultados não executados não serão apresentados como observados.
+Quando houver material executável, registrar objetivo, requisitos, versões, preparação, isolamento, resultado esperado, evidências, limites e restauração. Separar previsão de resultado observado e não alegar execução inexistente. Toda prática deve usar ambiente próprio ou explicitamente autorizado.

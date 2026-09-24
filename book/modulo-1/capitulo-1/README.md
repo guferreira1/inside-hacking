@@ -1,6 +1,8 @@
 # Capítulo 1 — O que é hacking?
 
-> **Status:** REVIEW — fact-check primário concluído; revisão pública aberta
+[Índice do módulo](../README.md) · [Glossário](../../glossario.md) · [Capítulo 2 →](../capitulo-2/README.md)
+
+> **Status:** REVIEW — leitura inicial recebida; revisão factual e técnica em andamento. As pendências estão no [controle editorial](../../../editorial/publication-status.md). A conferência de links e glossário não equivale ao fechamento técnico do capítulo.
 
 Antes de instalar Kali Linux, executar um scanner ou falar sobre exploração, precisamos resolver um problema de linguagem: **o que significa hackear?**
 
@@ -65,7 +67,7 @@ Essas perguntas são menos cinematográficas do que “qual chapéu esse hacker 
 
 É fácil conhecer segurança ofensiva pela interface das ferramentas.
 
-Nmap encontra portas. Burp Suite intercepta requisições. Hashcat testa candidatos contra hashes. Metasploit reúne módulos relacionados a exploração. Um terminal executa comandos.
+O [Nmap](https://nmap.org/book/man.html) ajuda a investigar redes, portas e serviços. O [Burp Proxy, componente do Burp Suite](https://portswigger.net/burp/documentation/desktop/tools/proxy), permite inspecionar as requisições que passam por ele. O [Hashcat](https://hashcat.net/wiki/doku.php?id=hashcat) testa candidatos contra representações de senhas compatíveis. O [Metasploit](https://docs.rapid7.com/metasploit/glossary/) reúne módulos para diferentes tarefas de segurança, inclusive exploração. Um terminal oferece a interface de texto para interagir com programas que interpretam comandos; não é o mesmo componente que decide o significado desses comandos.
 
 Tudo isso será estudado neste livro — em profundidade.
 
@@ -109,7 +111,7 @@ Talvez a hipótese esteja errada. Isso não transforma o teste em fracasso.
 
 Descobrir que uma explicação não se sustenta é informação.
 
-Essa postura será especialmente importante quando chegarmos a Bug Bounty e pesquisa de vulnerabilidades. Um alvo real não possui uma placa indicando “SQL Injection aqui”. O pesquisador observa comportamentos, constrói modelos do sistema e procura maneiras de falsificar suas próprias hipóteses.
+Essa postura será especialmente importante quando chegarmos a Bug Bounty e pesquisa de vulnerabilidades. Um alvo real não possui uma placa indicando “SQL Injection aqui”. O pesquisador observa comportamentos, constrói modelos do sistema e procura observações que possam contrariar suas próprias hipóteses.
 
 Hacking competente exige tolerância a resultados negativos.
 
@@ -225,10 +227,12 @@ Antes de seguir para o próximo capítulo, feche o texto e tente responder sem c
 6. Por que conseguir acesso a um sistema não significa que o trabalho ofensivo terminou?
 7. Por que um resultado negativo pode ser útil durante uma investigação?
 
-Se você consegue explicar essas ideias sem repetir frases do capítulo, construiu a base que precisamos para continuar.
+Se você consegue explicar essas ideias sem repetir frases do capítulo, construiu a base conceitual que precisamos para continuar; isso não equivale a demonstração de habilidade prática.
 
 ## Nota de pesquisa
 
-Esta primeira versão foi construída após consulta a materiais históricos do Tech Model Railroad Club do MIT, ao *Internet Security Glossary, Version 2* (RFC 4949), ao *New Hacker's Dictionary* e ao glossário do NIST. As referências completas serão normalizadas na bibliografia durante a revisão editorial.
+As referências iniciais estão na [bibliografia do livro](../../bibliografia.md), e as ferramentas da seção 1.3 apontam para sua documentação. A associação completa das afirmações às fontes e a revisão técnica independente ainda constam como pendências deste capítulo; ele permanece em REVIEW.
 
-A divergência entre definições modernas de *hacker* é intencionalmente apresentada: diferentes fontes institucionais e históricas usam o termo de maneiras diferentes. O livro não trata uma definição isolada como universal.
+A divergência entre definições de *hacker* é intencionalmente apresentada: diferentes fontes institucionais e históricas usam o termo de maneiras diferentes. O livro não trata uma definição isolada como universal.
+
+**[Continuar para o Capítulo 2 →](../capitulo-2/README.md)**

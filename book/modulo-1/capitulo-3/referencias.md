@@ -2,7 +2,7 @@
 
 [← Índice do capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta desta entrega:** 23 de setembro de 2026. As fontes abaixo foram acessadas para esta redação. Políticas e textos legais devem ser consultados novamente antes de sua aplicação em um trabalho real.
+**Consulta da redação inicial:** 23 de setembro de 2026. Políticas e textos legais devem ser consultados novamente antes de sua aplicação em um trabalho real.
 
 Os cenários Aurora, suas regras e suas soluções são construções didáticas originais. Não reproduzem um contrato, cliente ou teste real.
 
@@ -45,7 +45,7 @@ Uso: alcance do arquivo security.txt e sua distinção de autorização de teste
 <a id="s5"></a>
 ## S5 · Safe harbor
 
-HackerOne. *Safe Harbor Overview & FAQ*. Página datada de 16 de janeiro de 2026.
+HackerOne. *Safe Harbor Overview & FAQ*. Página datada de 16 de janeiro de 2026 na consulta inicial.
 
 https://docs.hackerone.com/en/articles/8494502-safe-harbor-overview-faq
 
@@ -72,6 +72,6 @@ https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
 
 Uso: princípios de tratamento, hipóteses legais e medidas de proteção. O capítulo não determina a base legal de uma operação real.
 
-## Limites desta entrega
+## Limites e estado editorial
 
-Houve consulta às fontes e elaboração de um exercício de mesa. Não houve execução de laboratório técnico, revisão jurídica profissional ou revisão técnica independente. O capítulo permanece DRAFT e não deve ser anunciado como parecer jurídico ou conteúdo certificado.
+A redação utilizou fontes documentais e um exercício de mesa. Não houve execução de laboratório técnico, revisão jurídica profissional ou revisão técnica independente. O fechamento editorial interno foi registrado como **VALIDATED — versão 1.0**, conforme o [registro de revisão](../../../editorial/reviews/capitulo-3.md). Esse estado não equivale a parecer jurídico ou conteúdo certificado. Esta página foi sincronizada com o estado do capítulo na revisão de documentação, sem alegar validação jurídica adicional.

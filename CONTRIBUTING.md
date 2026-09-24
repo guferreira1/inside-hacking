@@ -1,85 +1,57 @@
 # Contribuindo com Por Dentro do Hacking
 
-Obrigado por ajudar a melhorar a obra.
+[Página inicial](README.md) · [Índice do livro](book/README.md)
 
-**Por Dentro do Hacking** é um livro técnico em desenvolvimento. Uma contribuição pode corrigir um erro, apontar uma lacuna, melhorar uma explicação, sugerir uma fonte, relatar um laboratório quebrado ou simplesmente indicar um trecho que um leitor iniciante não conseguiu compreender.
+Obrigado por ajudar a melhorar a obra. Uma contribuição pode corrigir um erro, apontar uma lacuna, melhorar uma explicação, sugerir uma fonte, relatar um laboratório quebrado ou indicar um trecho que um iniciante não compreendeu.
 
 ## Antes de contribuir
 
-O objetivo não é acumular conteúdo. Toda mudança deve melhorar pelo menos uma destas dimensões:
-
-- correção técnica;
-- clareza didática;
-- cobertura;
-- reprodutibilidade;
-- atualidade;
-- segurança e responsabilidade.
+O objetivo não é acumular conteúdo. Toda mudança deve melhorar correção técnica, clareza didática, cobertura, reprodutibilidade, atualidade ou responsabilidade.
 
 ## Tipos de feedback
 
 ### Erro técnico
 
-Use quando uma afirmação, mecanismo, exemplo ou conclusão estiver incorreta.
-
-Inclua, sempre que possível:
-
-- trecho afetado;
-- explicação do problema;
-- fonte verificável;
-- versão/configuração relevante;
-- forma de reproduzir ou validar.
+Indique o trecho e explique a possível incorreção. Inclua fonte verificável, versão/configuração e forma de validar quando aplicável. Uma suspeita bem descrita é útil mesmo sem correção pronta.
 
 ### Problema didático
 
-Use quando o conteúdo puder estar tecnicamente correto, mas não estiver ensinando bem.
+Descreva onde a compreensão parou: conceito usado antes de ser explicado, salto de raciocínio, exemplo insuficiente, jargão ou pré-requisito não declarado. Não é necessário ser especialista para relatar dificuldade de leitura.
 
-Exemplos:
+### Conteúdo ausente ou desatualizado
 
-- conceito utilizado antes de ser explicado;
-- salto de raciocínio;
-- exemplo insuficiente;
-- excesso de jargão;
-- seção que exige conhecimento não declarado.
-
-### Conteúdo ausente
-
-Use para sugerir uma lacuna relevante na cobertura. Explique por que o assunto pertence ao escopo e de quais conhecimentos ele depende.
-
-### Conteúdo desatualizado
-
-Informe tecnologia, versão ou comportamento que mudou e, se possível, a documentação atual.
+Explique a relevância do assunto e de quais fundamentos depende. Para mudanças de tecnologia, inclua versão/data e documentação atual quando disponível. O sumário é um planejamento, não uma lista de capítulos já escritos.
 
 ### Laboratório
 
-Relate ambiente, versões, resultado observado, resultado esperado e passos mínimos para reprodução. Nunca publique credenciais, tokens, dados pessoais ou informações privadas de vulnerabilidades.
+Informe ambiente, versões, resultado observado, resultado esperado e passos mínimos. Nunca publique credenciais, tokens, dados pessoais ou informações privadas de vulnerabilidades. Laboratórios não são requisito para capítulos conceituais.
+
+## Glossário na mesma entrega
+
+Todo capítulo novo ou alterado deve conferir o [glossário](book/glossario.md), seguindo a [política de terminologia](editorial/glossary-policy.md). Inclua siglas e termos realmente usados, com definição original e vínculo ao contexto. Registre também quando não há termos novos.
+
+Explique o conceito no capítulo antes de depender dele. O glossário ajuda na consulta, não substitui explicações que faltaram. Menções do planejamento devem ser identificadas, não apresentadas como assuntos já ensinados.
 
 ## Critério editorial
 
-Uma fonte não transforma automaticamente uma afirmação em correta. Uma contribuição pode exigir confronto entre fontes, reprodução prática e revisão técnica.
-
-Conteúdo produzido por IA deve ser verificado pelos mesmos critérios que qualquer outro conteúdo.
+Uma fonte não torna automaticamente toda afirmação correta. A mudança pode exigir confronto entre fontes, reprodução e revisão técnica. Conteúdo produzido com IA segue os mesmos critérios; revisão pela mesma IA não é revisão independente.
 
 ## Segurança
 
-Não envie evidências obtidas por acesso não autorizado. Laboratórios e demonstrações ofensivas devem usar ambientes próprios, CTFs, plataformas de treinamento, programas de Bug Bounty dentro do escopo ou outros ambientes explicitamente autorizados.
+Não envie evidências obtidas por acesso não autorizado. Demonstrações ofensivas devem usar ambientes próprios ou explicitamente autorizados e respeitar as regras de plataformas e programas. Dados do ambiente real não devem ser transportados para exemplos públicos sem tratamento e autorização adequados.
 
-## Pull Requests
+## Pull requests e checagem dupla
 
-Mudanças relevantes devem explicar:
+Explique o problema, a alteração, sua verificação e os capítulos ou laboratórios afetados. Confira os índices, estados e links depois de alterar o conteúdo. Execute a checagem descrita em [scripts/README.md](scripts/README.md); problemas de fontes externas e limites semânticos exigem revisão própria.
 
-1. o problema;
-2. a alteração proposta;
-3. como ela foi verificada;
-4. quais capítulos ou laboratórios são afetados.
-
-A aceitação de uma contribuição não implica que ela entrará imediatamente em uma edição estável.
+A automação verifica navegação, não certifica o conteúdo. A aceitação de uma mudança também não implica inclusão imediata em uma edição estável.
 
 ## Licenças e autoria
 
-O projeto recebe contribuições sob as licenças indicadas em [LICENSE.md](LICENSE.md): **CC BY-SA 4.0 para conteúdo editorial e ilustrações originais; MIT para código, scripts, configurações e exemplos de código**.
+O projeto recebe contribuições sob [LICENSE.md](LICENSE.md): **CC BY-SA 4.0 para conteúdo editorial e ilustrações originais; MIT para código, scripts, configurações e exemplos de código**.
 
-Ao enviar uma contribuição original para integração, disponibilize-a sob a licença aplicável ao material e confirme que possui os direitos necessários. Você mantém os direitos sobre sua contribuição; não há exigência de cessão de titularidade. Preserve os avisos existentes e identifique a autoria de novos materiais quando pertinente.
+Ao enviar uma contribuição original, disponibilize-a sob a licença aplicável e confirme possuir os direitos necessários. Você mantém os direitos sobre sua contribuição; não há exigência de cessão de titularidade. Preserve avisos e identifique autoria quando pertinente.
 
-Material de terceiros deve trazer origem, licença e atribuição adequadas. Não copie texto, figuras ou código de outra fonte apenas porque ela é pública. Se houver dúvida sobre compatibilidade, descreva-a no pull request antes da integração. A presença do material no repositório não altera automaticamente a licença de seu titular.
+Material de terceiros deve trazer origem, licença e atribuição adequadas. Ser público não torna o material livre para copiar. Dúvidas de compatibilidade devem ser descritas antes da integração. O repositório não altera automaticamente a licença de outro titular.
 
-As recomendações de segurança orientam os exercícios e a revisão das contribuições; não acrescentam restrições às licenças abertas adotadas pelo projeto.
+As orientações de segurança tratam da condução dos exercícios; não acrescentam restrições às licenças abertas do projeto.

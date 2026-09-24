@@ -9,7 +9,7 @@
 - Última revisão:
 - Responsáveis:
 
-Consulte o [guia de estrutura](repository-structure.md) para os índices e caminhos relativos. A inclusão ou movimentação de um capítulo deve atualizar o índice do módulo, o índice geral e as referências afetadas no mesmo commit.
+Consulte o [guia de estrutura](repository-structure.md) para os índices e caminhos relativos. A inclusão ou movimentação de um capítulo deve atualizar o índice do módulo, o índice geral, o glossário e as referências afetadas no mesmo conjunto de alterações.
 
 ## Pergunta central
 
@@ -35,6 +35,10 @@ Definir `N.1`, `N.2`, `N.3` etc. por unidade conceitual. Não fragmentar apenas 
 
 Mapa dos conceitos que precisam ser desenvolvidos em prosa.
 
+## Terminologia e glossário
+
+Relacionar os termos e siglas efetivamente utilizados; indicar quais são novos, quais já estão definidos e quais são apenas mencionados. Atualizar [book/glossario.md](../book/glossario.md) junto com a entrega, com definição original e vínculo à ocorrência. Seguir a [política de glossário](glossary-policy.md). Não importar termos de capítulos futuros só para aumentar a lista.
+
 ## Narrativa e exemplos
 
 Como o assunto será introduzido e quais exemplos serão usados?
@@ -43,18 +47,9 @@ Como o assunto será introduzido e quais exemplos serão usados?
 
 Escolher somente o formato que realmente acrescenta compreensão ao capítulo. **Laboratório não é requisito universal.**
 
-Quando houver laboratório reproduzível, registrar:
+Quando houver laboratório reproduzível, registrar objetivo, ambiente, versões, preparação, observações esperadas, evidências, restauração e limites de autorização.
 
-- objetivo;
-- ambiente;
-- versões;
-- preparação;
-- observações esperadas;
-- evidências;
-- restauração;
-- limites de autorização.
-
-Quando não houver, usar exemplos, cenários, análise de comportamento, exercícios de raciocínio ou demonstrações conceituais sem alegar execução.
+Quando não houver, usar exemplos, cenários, análise de comportamento, exercícios de raciocínio ou demonstrações conceituais sem alegar execução. Um comportamento esperado fundamentado pode ser explicado como previsão; ele não deve ser apresentado como resultado observado.
 
 ## Verificação de compreensão
 
@@ -70,15 +65,18 @@ Fontes primárias, especificações, documentação, pesquisas e materiais compl
 
 ## Validação
 
-- [ ] Pesquisa revisada
-- [ ] Afirmações técnicas verificadas
-- [ ] Exemplos revisados
-- [ ] Prática/laboratório reproduzido quando aplicável; caso contrário, marcado como N/A
-- [ ] Soluções revisadas
-- [ ] Revisão editorial
-- [ ] Revisão técnica
-- [ ] Renderização PDF conferida
+- [ ] Pesquisa revisada; fontes e limites de consulta registrados.
+- [ ] Afirmações técnicas verificadas ou pendências explicitadas.
+- [ ] Siglas e termos explicados antes de serem exigidos.
+- [ ] Glossário atualizado nesta entrega ou conferido sem novos termos.
+- [ ] Cada verbete novo tem ocorrência e fonte/contexto identificados.
+- [ ] Exemplos e soluções revisados, quando existentes.
+- [ ] Prática/laboratório reproduzido quando aplicável; caso contrário, N/A ou pendência explícita.
+- [ ] Índices, estados, navegação e links relativos conferidos.
+- [ ] `python3 scripts/check_docs.py` executado após as alterações.
+- [ ] Revisão editorial; revisão técnica e sua independência identificadas.
+- [ ] Renderização PDF conferida, somente quando esta entrega incluir PDF.
 
 ## Gaps conhecidos
 
-Pendências e pontos que ainda exigem investigação.
+Pendências e pontos que ainda exigem investigação. Uma checklist não executada não é evidência de conclusão.
