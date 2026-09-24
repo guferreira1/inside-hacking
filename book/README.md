@@ -10,7 +10,7 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 
 | Módulo | Percurso previsto | Situação |
 | --- | --- | --- |
-| [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Em produção; capítulo 4 ainda não disponível |
+| [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; revisão do módulo em andamento |
 
 Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. No planejamento atual, o Módulo II começa no capítulo 6, e o Módulo III, no capítulo 11.
 
@@ -21,9 +21,10 @@ Os demais módulos serão adicionados conforme seus primeiros textos forem produ
 | 1 | [O que é hacking?](modulo-1/capitulo-1/README.md) | Em revisão |
 | 2 | [Da curiosidade à segurança ofensiva: uma breve história da cultura hacker](modulo-1/capitulo-2/README.md) | Revisão interna concluída — v1.0 |
 | 3 | [Ética, legalidade, autorização e escopo](modulo-1/capitulo-3/README.md) | Revisão interna concluída — v1.0 |
+| 4 | [Como pensar como investigador de segurança](modulo-1/capitulo-4/README.md) | Rascunho para leitura — v0.1 |
 | 5 | [Ameaças, vulnerabilidades, exploits, risco e superfície de ataque](modulo-1/capitulo-5/README.md) | Rascunho para leitura — v0.1 |
 
-**Continuidade editorial:** o Capítulo 4, “Como pensar como investigador de segurança”, ainda não está disponível nesta branch. Sua numeração foi preservada; a disponibilização do Capítulo 5 não significa que o Módulo I esteja concluído. Veja o [controle editorial](../editorial/publication-status.md).
+A sequência de leitura está disponível de 1 a 5. Os estados de cada capítulo continuam distintos; consulte o [controle editorial](../editorial/publication-status.md) antes de interpretar o módulo como concluído.
 
 ### Material de apoio do Capítulo 2
 
@@ -37,6 +38,15 @@ Os demais módulos serão adicionados conforme seus primeiros textos forem produ
 - [3.3 · Antes da primeira requisição: estudo de caso](modulo-1/capitulo-3/3.3-estudo-de-caso.md)
 - [Soluções comentadas](modulo-1/capitulo-3/solucoes.md) — consulte depois de tentar.
 - [Fontes e notas de pesquisa](modulo-1/capitulo-3/referencias.md).
+
+### Dentro do Capítulo 4
+
+- [4.1 · Uma tela não conta a história inteira](modulo-1/capitulo-4/4.1-observacao-e-hipoteses.md)
+- [4.2 · Escolher o teste antes da ferramenta](modulo-1/capitulo-4/4.2-testes-e-comparacoes.md)
+- [4.3 · Quando a ferramenta parece ter a resposta](modulo-1/capitulo-4/4.3-resultados-e-evidencias.md)
+- [4.4 · Uma conclusão do tamanho da evidência](modulo-1/capitulo-4/4.4-conclusoes-e-limites.md)
+- [Respostas comentadas](modulo-1/capitulo-4/solucoes.md) às perguntas opcionais.
+- [Referências e limites da pesquisa](modulo-1/capitulo-4/referencias.md).
 
 ### Dentro do Capítulo 5
 

@@ -1,6 +1,6 @@
 # Capítulo 3 — Ética, legalidade, autorização e escopo
 
-[← Capítulo 2](../capitulo-2/README.md) · [Índice do livro](../../README.md) · [Página inicial](../../../README.md)
+[← Capítulo 2](../capitulo-2/README.md) · [Índice do livro](../../README.md) · [Página inicial](../../../README.md) · [Capítulo 4 →](../capitulo-4/README.md)
 
 > **Status:** VALIDATED — versão editorial 1.0; fechamento da revisão interna em 23/09/2026. Primeira leitura concluída pelo mantenedor. Revisão jurídica especializada e revisão independente permanecem pendentes para uma edição estável. [Registro da revisão](../../../editorial/reviews/capitulo-3.md).
 
@@ -31,3 +31,5 @@ Este capítulo combina orientações operacionais propostas pelo livro, exemplos
 A discussão jurídica é educacional, não um parecer sobre um caso concreto. Testes profissionais e dúvidas envolvendo legislação, contratos, dados pessoais ou mais de um país exigem avaliação qualificada das circunstâncias.
 
 **[Começar a seção 3.1 →](3.1-autorizacao-e-escopo.md)**
+
+Após concluir o percurso, siga para o [Capítulo 4 — Como pensar como investigador de segurança](../capitulo-4/README.md).

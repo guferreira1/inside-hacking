@@ -13,10 +13,10 @@ O percurso começa com o significado de hacking e alguns episódios de sua hist�
 | 1 | [O que é hacking?](capitulo-1/README.md) | Em revisão |
 | 2 | [Da curiosidade à segurança ofensiva: uma breve história da cultura hacker](capitulo-2/README.md) | Revisão interna concluída — v1.0 |
 | 3 | [Ética, legalidade, autorização e escopo](capitulo-3/README.md) | Revisão interna concluída — v1.0 |
-| 4 | Como pensar como investigador de segurança | Ainda não disponível no repositório |
+| 4 | [Como pensar como investigador de segurança](capitulo-4/README.md) | Rascunho para leitura — v0.1 |
 | 5 | [Ameaças, vulnerabilidades, exploits, risco e superfície de ataque](capitulo-5/README.md) | Rascunho para leitura — v0.1 |
 
-**Módulo em produção.** A organização dos arquivos não altera o estado dos capítulos. O capítulo 4 ainda precisa ser disponibilizado, e os capítulos 1 e 5 mantêm suas pendências. O [controle editorial](../../editorial/publication-status.md) detalha os critérios e limites da revisão.
+**Módulo em produção, com os cinco capítulos disponíveis.** O capítulo 1 mantém pendências de revisão, e os capítulos 4 e 5 estão em primeira entrega. O [controle editorial](../../editorial/publication-status.md) detalha os critérios e limites antes do fechamento do módulo.
 
 ## Como acompanhar a leitura
 

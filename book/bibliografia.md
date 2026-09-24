@@ -37,6 +37,14 @@ Incluem PTES, política de divulgação do get.gov/CISA, política de pentest da
 
 Os exemplos Aurora são fictícios e não representam execuções reais. A discussão jurídica permanece educacional e pendente de revisão especializada.
 
+## Capítulo 4 — Como pensar como investigador de segurança
+
+As [fontes S1–S9 e seus limites](modulo-1/capitulo-4/referencias.md) sustentam os conceitos de autorização, planejamento experimental, interações entre fatores, associação e causalidade, falsos positivos e negativos, códigos HTTP, cache e registros de eventos.
+
+Foram consultados trechos do NIST/SEMATECH e-Handbook, verbetes do NIST CSRC, as RFCs 9110 e 9111 e páginas da OWASP Cheat Sheet Series. O enredo Aurora, as comparações e as decisões são construções didáticas originais. Não houve laboratório executável, medição ou exploração real.
+
+A entrega permanece DRAFT 0.1. O [registro editorial](../editorial/reviews/capitulo-4.md) identifica o que foi revisado internamente e as leituras ainda pendentes; a consulta das fontes não constitui revisão técnica independente.
+
 ## Capítulo 5 — Ameaças, vulnerabilidades, exploits, risco e superfície de ataque
 
 As [fontes S1–S12](modulo-1/capitulo-5/referencias.md) identificam verbetes do NIST, documentação OWASP, definição de CWE e terminologia do Metasploit. O guia CVSS v4.0 da FIRST sustenta a distinção entre severidade Base e avaliação de risco. Cada fonte tem seu uso delimitado; consultas a glossários não são apresentadas como leitura integral das publicações que eles citam.

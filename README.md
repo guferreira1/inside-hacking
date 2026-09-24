@@ -22,11 +22,12 @@ A proposta é permitir que quem está começando entenda computadores, sistemas 
 | [1 · O que é hacking?](book/modulo-1/capitulo-1/README.md) | Conceitos iniciais, investigação, ferramentas e responsabilidade. | Em revisão |
 | [2 · Da curiosidade à segurança ofensiva](book/modulo-1/capitulo-2/README.md) | Uma introdução à história da cultura hacker e da segurança. | Revisão interna concluída — v1.0 |
 | [3 · Ética, legalidade, autorização e escopo](book/modulo-1/capitulo-3/README.md) | Permissões, limites, dados e um estudo de caso com respostas comentadas. | Revisão interna concluída — v1.0 |
+| [4 · Como pensar como investigador de segurança](book/modulo-1/capitulo-4/README.md) | Uma investigação explicada: observação, hipóteses, comparações e conclusões. | Rascunho para leitura — v0.1 |
 | [5 · Ameaças, vulnerabilidades, exploits, risco e superfície de ataque](book/modulo-1/capitulo-5/README.md) | Uma narrativa para distinguir fraquezas, exploração, exposição e consequências. | Rascunho para leitura — v0.1 |
 
 **[Abrir o índice de leitura →](book/README.md)**
 
-O Capítulo 4 ainda não está disponível nesta branch. A sequência completa do Módulo I permanece em produção; capítulos disponíveis não equivalem a um módulo concluído.
+Os cinco capítulos do Módulo I estão disponíveis para leitura. O módulo continua em produção: disponibilidade do texto não equivale a revisão editorial concluída.
 
 Os estados indicam o andamento editorial, não certificação ou revisão independente concluída. O fechamento interno de um capítulo não equivale à publicação de uma edição estável do livro. Consulte o [estado editorial e suas pendências](editorial/publication-status.md).
 

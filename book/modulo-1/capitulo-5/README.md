@@ -1,6 +1,6 @@
 # Capítulo 5 — Ameaças, vulnerabilidades, exploits, risco e superfície de ataque
 
-[Índice do livro](../../README.md) · [Página inicial](../../../README.md)
+[← Capítulo 4](../capitulo-4/README.md) · [Índice do livro](../../README.md) · [Página inicial](../../../README.md)
 
 **Módulo I — Hacking, segurança e método**
 
