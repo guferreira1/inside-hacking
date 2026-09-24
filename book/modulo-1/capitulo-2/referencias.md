@@ -1,6 +1,6 @@
 # Capítulo 2 — Referências e limites da pesquisa
 
-[← Voltar ao capítulo](README.md) · [Bibliografia geral](../bibliografia.md)
+[← Voltar ao capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
 **Consulta desta revisão:** 23 de setembro de 2026. As fontes abaixo foram abertas nesta rodada. Nos PDFs históricos, as páginas relevantes também foram inspecionadas visualmente quando necessário para conferir a documentação. Não foram incorporados fac-símiles ou textos extensos de terceiros ao livro.
 
@@ -144,4 +144,4 @@ Fonte: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
 
 Os exemplos de computadores conectados e do programa que trava são fictícios. Não representam testes executados. As interpretações que conectam os episódios são autorais e estão separadas dos acontecimentos documentados.
 
-A verificação factual/editorial desta entrega foi interna e assistida por IA. Não houve revisão por um historiador independente nem endosso das instituições citadas. Consulte o [registro de fechamento](../../editorial/reviews/capitulo-2.md) para conhecer o que foi corrigido e os limites remanescentes.
+A verificação factual/editorial desta entrega foi interna e assistida por IA. Não houve revisão por um historiador independente nem endosso das instituições citadas. Consulte o [registro de fechamento](../../../editorial/reviews/capitulo-2.md) para conhecer o que foi corrigido e os limites remanescentes.

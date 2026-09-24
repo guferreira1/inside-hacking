@@ -21,7 +21,7 @@ As fontes não adotam uma definição única de *hacker*. A RFC 4949 registra se
 
 ## Capítulo 2 — Da curiosidade à segurança ofensiva
 
-As referências completas e a delimitação dos trechos utilizados estão em [Referências e limites da pesquisa do Capítulo 2](capitulo-2/referencias.md). Os identificadores R1–R14 aparecem junto às afirmações correspondentes no manuscrito.
+As referências completas e a delimitação dos trechos utilizados estão em [Referências e limites da pesquisa do Capítulo 2](modulo-1/capitulo-2/referencias.md). Os identificadores R1–R14 aparecem junto às afirmações correspondentes no manuscrito.
 
 A revisão reúne o relato do TMRC publicado no MIT e o dicionário do clube; documentação técnica do Bell System sobre sinalização; um relato retrospectivo de Steve Wozniak; a RFC 1135 e o histórico do SEI sobre o Morris Worm e o CERT/CC; o relatório Ware e o registro da NBS TN 827 sobre segurança anterior a 1988; além de referências metodológicas, de divulgação, Web e IA para as conexões introdutórias do capítulo.
 
@@ -31,7 +31,7 @@ A consulta das fontes não equivale a revisão histórica independente. O [regis
 
 ## Capítulo 3 — Ética, legalidade, autorização e escopo
 
-As referências desta entrega estão em [Fontes e notas de pesquisa do Capítulo 3](capitulo-3/referencias.md), com identificadores utilizados ao longo do texto, localização dos trechos pertinentes, data de consulta e limites da revisão.
+As referências desta entrega estão em [Fontes e notas de pesquisa do Capítulo 3](modulo-1/capitulo-3/referencias.md), com identificadores utilizados ao longo do texto, localização dos trechos pertinentes, data de consulta e limites da revisão.
 
 Incluem PTES, política de divulgação do get.gov/CISA, política de pentest da AWS, RFC 9116, documentação de safe harbor da HackerOne, art. 154-A do Código Penal brasileiro e artigos pertinentes da LGPD. São fontes de mecanismos e regras específicos, não endosso institucional à obra.
 
@@ -39,7 +39,7 @@ Os exemplos Aurora são fictícios e não representam execuções reais. A discu
 
 ## Capítulo 5 — Ameaças, vulnerabilidades, exploits, risco e superfície de ataque
 
-As [fontes S1–S12](capitulo-5/referencias.md) identificam verbetes do NIST, documentação OWASP, definição de CWE e terminologia do Metasploit. O guia CVSS v4.0 da FIRST sustenta a distinção entre severidade Base e avaliação de risco. Cada fonte tem seu uso delimitado; consultas a glossários não são apresentadas como leitura integral das publicações que eles citam.
+As [fontes S1–S12](modulo-1/capitulo-5/referencias.md) identificam verbetes do NIST, documentação OWASP, definição de CWE e terminologia do Metasploit. O guia CVSS v4.0 da FIRST sustenta a distinção entre severidade Base e avaliação de risco. Cada fonte tem seu uso delimitado; consultas a glossários não são apresentadas como leitura integral das publicações que eles citam.
 
 A narrativa usa situações fictícias para conectar definições, condições de exploração, exposição e consequências. Não houve exploração executada, medição de probabilidade, cálculo CVSS ou revisão independente. O Capítulo 5 está em DRAFT 0.1 e sua inclusão não encerra o Módulo I.
 

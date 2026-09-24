@@ -59,7 +59,9 @@ O livro deve ensinar limites, escopo, documentação, proteção de dados e ence
 
 ## Arquitetura editorial
 
-Os módulos organizam a progressão conceitual da obra. O manuscrito será armazenado fisicamente por capítulos em `book/capitulo-N/`.
+Os módulos organizam a progressão conceitual da obra e também seus diretórios. O manuscrito é armazenado em `book/modulo-M/capitulo-N/`. Cada módulo possui um `README.md` de abertura e índice; o índice geral, o glossário e a bibliografia permanecem diretamente em `book/`.
+
+A numeração de capítulos é global e não reinicia a cada módulo: o Módulo II está planejado para começar pelo capítulo 6. Mover um capítulo entre módulos não altera automaticamente seu número. O [guia de estrutura](editorial/repository-structure.md) detalha as convenções de navegação e manutenção.
 
 Capítulos podem ser divididos em subcapítulos numerados (`1.1`, `1.2`, `1.3` etc.) sempre que a divisão melhorar compreensão, navegação, revisão ou manutenção. A granularidade será definida pela unidade conceitual, não por uma quantidade fixa de páginas.
 

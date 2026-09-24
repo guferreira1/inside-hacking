@@ -33,7 +33,13 @@ As antigas anotações genéricas de “fact-check primário concluído” não 
 
 Na conferência da branch `main` no commit `eaf066222f8051f80900c22d6d340a5c4828d1d4`, os manuscritos existentes eram os capítulos 1, 2 e 3. A leitura do Capítulo 4 foi informada pelo mantenedor, mas `book/capitulo-4/README.md` não foi localizado e a listagem de branches retornou somente `main`. Isso é uma divergência entre relato de leitura e publicação, não uma conclusão de que a leitura não aconteceu.
 
-A nova entrega atende à solicitação de avançar ao Capítulo 5 sem renumerar os conteúdos ou inventar a publicação do 4. O texto do 5 desenvolve suas definições sem depender de um link inexistente. **O Módulo I continua em produção:** o Capítulo 4 precisa ser disponibilizado/conferido, o 1 mantém pendências e o 5 está em primeira leitura.
+A entrega do Capítulo 5 atendeu à solicitação de avançar sem renumerar os conteúdos ou inventar a publicação do 4. O texto do 5 desenvolve suas definições sem depender de um link inexistente. **O Módulo I continua em produção:** o Capítulo 4 precisa ser disponibilizado/conferido, o 1 mantém pendências e o 5 está em primeira leitura.
+
+## Organização por módulos
+
+Os capítulos existentes passaram a ficar em `book/modulo-1/capitulo-N/`, conforme o [guia de estrutura](repository-structure.md). O [índice do Módulo I](../book/modulo-1/README.md) reúne os capítulos e explicita a lacuna do 4. A numeração é global, sem reinício por módulo.
+
+A migração de diretórios e a correção dos links não alteraram o conteúdo nem o estado editorial dos capítulos. O caminho esperado para a futura entrega do 4 é `book/modulo-1/capitulo-4/README.md`; a referência ao caminho anterior na seção acima registra a conferência histórica daquele commit.
 
 ## Publicação e comunidade
 

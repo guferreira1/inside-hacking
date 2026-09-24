@@ -45,7 +45,7 @@ Laboratório executável: **não aplicável ao objetivo deste capítulo**. Não 
 
 ## Rastreabilidade
 
-As fontes, localizações e limites de uso estão em [referencias.md](../../book/capitulo-2/referencias.md). O registro da NBS TN 827 foi consultado como resumo/metadados, não como leitura integral. Relatos retrospectivos são identificados. As antigas notas genéricas de pesquisa foram substituídas por referências junto às afirmações.
+As fontes, localizações e limites de uso estão em [referencias.md](../../book/modulo-1/capitulo-2/referencias.md). O registro da NBS TN 827 foi consultado como resumo/metadados, não como leitura integral. Relatos retrospectivos são identificados. As antigas notas genéricas de pesquisa foram substituídas por referências junto às afirmações.
 
 ## Manutenção
 

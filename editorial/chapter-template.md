@@ -3,10 +3,13 @@
 ## Metadados
 
 - Módulo:
-- Capítulo:
+- Capítulo (numeração global, sem reinício por módulo):
+- Caminho: `book/modulo-M/capitulo-N/`
 - Status:
 - Última revisão:
 - Responsáveis:
+
+Consulte o [guia de estrutura](repository-structure.md) para os índices e caminhos relativos. A inclusão ou movimentação de um capítulo deve atualizar o índice do módulo, o índice geral e as referências afetadas no mesmo commit.
 
 ## Pergunta central
 

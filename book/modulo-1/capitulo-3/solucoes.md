@@ -36,4 +36,4 @@ Sim, confirme a autorização separada prevista no acordo. Reconstruir a situaç
 
 Em cada decisão, relacione objetivo, ativo, método, dados e condições. Quando todos permanecem dentro do acordo, há base operacional para prosseguir. Quando surge exclusão, condição de parada ou ambiguidade relevante, esclareça antes de ampliar o teste.
 
-[Voltar ao índice do livro →](../README.md)
+[Voltar ao índice do livro →](../../README.md)

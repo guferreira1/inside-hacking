@@ -1,8 +1,8 @@
 # Capítulo 2 — Da curiosidade à segurança ofensiva: uma breve história da cultura hacker
 
-[← Capítulo 1](../capitulo-1/README.md) · [Índice do livro](../README.md) · [Capítulo 3 →](../capitulo-3/README.md)
+[← Capítulo 1](../capitulo-1/README.md) · [Índice do livro](../../README.md) · [Capítulo 3 →](../capitulo-3/README.md)
 
-> **Status:** VALIDATED — versão editorial 1.0; fechamento da revisão interna em 23/09/2026. As fontes e os limites da verificação estão documentados. Revisão histórica independente não realizada; esta versão não é uma release do livro em PDF. [Registro da revisão](../../editorial/reviews/capitulo-2.md).
+> **Status:** VALIDATED — versão editorial 1.0; fechamento da revisão interna em 23/09/2026. As fontes e os limites da verificação estão documentados. Revisão histórica independente não realizada; esta versão não é uma release do livro em PDF. [Registro da revisão](../../../editorial/reviews/capitulo-2.md).
 
 No capítulo anterior, vimos que *hacking* não nasceu como sinônimo de crime digital. Mas essa constatação cria outra pergunta: **como uma cultura de exploração criativa de sistemas se tornou também uma disciplina de segurança, uma profissão e uma atividade associada a ataques?**
 
@@ -229,6 +229,6 @@ Depois da tentativa, consulte as [respostas comentadas](solucoes.md). Elas apres
 
 As marcações R1 a R14 remetem às [referências do capítulo](referencias.md), com autoria, datas, localização dos trechos consultados e limites de uso. Relatos de participantes são identificados como relatos; exemplos fictícios e conexões didáticas são explicações da obra, não novos acontecimentos históricos.
 
-Este capítulo não contém um laboratório executável. A atividade proposta é interpretar os episódios e justificar respostas. O [registro editorial](../../editorial/reviews/capitulo-2.md) documenta a verificação realizada e distingue o fechamento interno de uma revisão especializada independente.
+Este capítulo não contém um laboratório executável. A atividade proposta é interpretar os episódios e justificar respostas. O [registro editorial](../../../editorial/reviews/capitulo-2.md) documenta a verificação realizada e distingue o fechamento interno de uma revisão especializada independente.
 
 **[Continuar para o Capítulo 3 — Ética, legalidade, autorização e escopo →](../capitulo-3/README.md)**

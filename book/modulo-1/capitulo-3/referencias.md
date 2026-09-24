@@ -1,6 +1,6 @@
 # Capítulo 3 · Fontes e notas de pesquisa
 
-[← Índice do capítulo](README.md) · [Bibliografia geral](../bibliografia.md)
+[← Índice do capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
 **Consulta desta entrega:** 23 de setembro de 2026. As fontes abaixo foram acessadas para esta redação. Políticas e textos legais devem ser consultados novamente antes de sua aplicação em um trabalho real.
 

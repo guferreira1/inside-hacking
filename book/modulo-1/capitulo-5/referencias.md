@@ -1,6 +1,6 @@
 # Capítulo 5 · Referências e limites da pesquisa
 
-[← Índice do capítulo](README.md) · [Bibliografia geral](../bibliografia.md)
+[← Índice do capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
 **Consulta:** 23 de setembro de 2026. **Versão do capítulo:** DRAFT 0.1.
 

@@ -1,8 +1,8 @@
 # Capítulo 3 — Ética, legalidade, autorização e escopo
 
-[← Capítulo 2](../capitulo-2/README.md) · [Índice do livro](../README.md) · [Página inicial](../../README.md)
+[← Capítulo 2](../capitulo-2/README.md) · [Índice do livro](../../README.md) · [Página inicial](../../../README.md)
 
-> **Status:** VALIDATED — versão editorial 1.0; fechamento da revisão interna em 23/09/2026. Primeira leitura concluída pelo mantenedor. Revisão jurídica especializada e revisão independente permanecem pendentes para uma edição estável. [Registro da revisão](../../editorial/reviews/capitulo-3.md).
+> **Status:** VALIDATED — versão editorial 1.0; fechamento da revisão interna em 23/09/2026. Primeira leitura concluída pelo mantenedor. Revisão jurídica especializada e revisão independente permanecem pendentes para uma edição estável. [Registro da revisão](../../../editorial/reviews/capitulo-3.md).
 
 Você acaba de descobrir algo interessante. Uma aplicação apresenta um comportamento que parece permitir acesso a informações de outra pessoa. Há duas perguntas possíveis. A primeira é técnica: “consigo confirmar a falha?”. A segunda vem antes dela: **“em quais condições posso investigar isso?”**
 
