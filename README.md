@@ -29,11 +29,12 @@ A proposta é permitir que quem está começando entenda computadores, sistemas 
 
 | Leitura | O que você encontrará | Estado |
 | --- | --- | --- |
-| [6 · Bits, bytes e representação da informação](book/modulo-2/capitulo-6/README.md) | Representação binária, hexadecimal, limites de números, ordem de bytes e texto. | Rascunho para leitura — v0.1 |
+| [6 · Bits, bytes e representação da informação](book/modulo-2/capitulo-6/README.md) | Representação binária, hexadecimal, limites de números, ordem de bytes e texto. | Revisão interna concluída — v1.0 |
+| [7 · Hardware: CPU, memória, armazenamento e dispositivos](book/modulo-2/capitulo-7/README.md) | Processamento, hierarquia de memória, persistência, entrada/saída e firmware. | Rascunho para leitura — v0.1 |
 
 **[Abrir o índice de leitura →](book/README.md)**
 
-Os capítulos 1 a 6 estão disponíveis. O fechamento interno do Módulo I ainda depende da revisão do capítulo 1; o Módulo II começou com a primeira entrega do capítulo 6.
+Os capítulos 1 a 7 estão disponíveis. O fechamento interno do Módulo I ainda depende da revisão do capítulo 1. No Módulo II, o capítulo 6 encerrou sua revisão interna e o 7 está em primeira entrega de leitura.
 
 Os estados indicam o andamento editorial, não certificação ou revisão independente concluída. O fechamento interno de um capítulo não equivale à publicação de uma edição estável do livro. Consulte o [estado editorial e suas pendências](editorial/publication-status.md).
 

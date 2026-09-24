@@ -1,10 +1,10 @@
 # Capítulo 6 — Bits, bytes e representação da informação
 
-[← Capítulo 5](../../modulo-1/capitulo-5/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
+[← Capítulo 5](../../modulo-1/capitulo-5/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md) · [Capítulo 7 →](../capitulo-7/README.md)
 
 **Módulo II — Computadores por dentro**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Referências e exemplos aritméticos conferidos; leitura do mantenedor e revisão técnica independente pendentes. [Registro editorial](../../../editorial/reviews/capitulo-6.md).
+> **Status:** VALIDATED — versão editorial 1.0; retorno favorável do mantenedor e revisão interna concluída em 24/09/2026. Revisão técnica independente pendente. [Registro editorial](../../../editorial/reviews/capitulo-6.md).
 
 Uma ferramenta mostra `41 42 43`. Outra mostra `ABC`. Você olha para o mesmo arquivo e tem a impressão de que uma delas está escondendo alguma coisa.
 

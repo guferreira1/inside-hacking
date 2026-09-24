@@ -11,7 +11,7 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 | Módulo | Percurso previsto | Situação |
 | --- | --- | --- |
 | [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
-| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Capítulo 6 disponível; demais capítulos planejados |
+| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Capítulos 6 e 7 disponíveis; demais capítulos planejados |
 
 Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. No planejamento atual, o Módulo III começa no capítulo 11.
 
@@ -60,7 +60,8 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 
 | Capítulo | Leitura | Estado |
 | --- | --- | --- |
-| 6 | [Bits, bytes e representação da informação](modulo-2/capitulo-6/README.md) | Rascunho para leitura — v0.1 |
+| 6 | [Bits, bytes e representação da informação](modulo-2/capitulo-6/README.md) | Revisão interna concluída — v1.0 |
+| 7 | [Hardware: CPU, memória, armazenamento e dispositivos](modulo-2/capitulo-7/README.md) | Rascunho para leitura — v0.1 |
 
 ### Dentro do Capítulo 6
 
@@ -70,6 +71,16 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 - [6.4 · Os mesmos bytes, leituras diferentes](modulo-2/capitulo-6/6.4-texto-e-interpretacao.md)
 - [Respostas comentadas](modulo-2/capitulo-6/solucoes.md) às perguntas opcionais.
 - [Referências e limites da pesquisa](modulo-2/capitulo-6/referencias.md).
+
+### Dentro do Capítulo 7
+
+- [7.1 · Um computador não é uma peça só](modulo-2/capitulo-7/7.1-componentes-e-caminhos.md)
+- [7.2 · O que o processador realmente executa](modulo-2/capitulo-7/7.2-cpu-e-execucao.md)
+- [7.3 · Nem toda memória é a mesma memória](modulo-2/capitulo-7/7.3-memoria-e-cache.md)
+- [7.4 · Guardar não é apenas receber uma escrita](modulo-2/capitulo-7/7.4-armazenamento-e-persistencia.md)
+- [7.5 · Dispositivos também participam da confiança](modulo-2/capitulo-7/7.5-dispositivos-e-firmware.md)
+- [Respostas comentadas](modulo-2/capitulo-7/solucoes.md) às perguntas opcionais.
+- [Referências e limites da pesquisa](modulo-2/capitulo-7/referencias.md).
 
 ## Como navegar
 

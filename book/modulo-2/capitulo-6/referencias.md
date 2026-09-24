@@ -2,7 +2,7 @@
 
 [← Capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 24/09/2026. **Versão editorial:** DRAFT 0.1.
+**Consulta e reconferência:** 24/09/2026. **Versão editorial:** VALIDATED 1.0 — revisão interna; revisão independente pendente.
 
 As explicações e contas são autorais. Não foram copiados diagramas ou tabelas de terceiros. Os exemplos de estados de livros, contadores e limites de campos são construções didáticas. As conversões numéricas e de texto possuem testes no repositório; isso não representa teste de um alvo nem revisão independente do capítulo.
 
@@ -80,6 +80,6 @@ Uso: distinção entre pontos de código e agrupamentos percebidos como unidades
 
 ## Conferência dos exemplos
 
-Os testes em [test_chapter6_examples.py](../../../scripts/tests/test_chapter6_examples.py) verificam bases numéricas, sinal, ordem de bytes, conversões de unidades e as sequências de texto usadas nesta versão. Foram executados no ambiente de edição em 24/09/2026; o workflow de documentação também os inclui em suas execuções.
+Os testes em [test_chapter6_examples.py](../../../scripts/tests/test_chapter6_examples.py) verificam bases numéricas, sinal, ordem de bytes, conversões de unidades e as sequências de texto usadas nesta versão. Sua execução na entrega inicial está registrada no [workflow do commit d148c59](https://github.com/guferreira1/inside-hacking/actions/runs/36071240309). O workflow de documentação os mantém na suíte das entregas seguintes.
 
-Os testes verificam esses exemplos específicos. Não comprovam todas as possíveis interpretações de arquivos, a correção de um sistema de terceiros ou domínio prático do leitor. Revisão técnica independente permanece pendente.
+O retorno favorável do mantenedor e a reconferência interna do texto, das fontes e das oito respostas foram registrados na [revisão editorial](../../../editorial/reviews/capitulo-6.md). Os testes verificam exemplos específicos. Não comprovam todas as possíveis interpretações de arquivos, a correção de sistemas de terceiros ou domínio prático do leitor. Revisão técnica independente permanece pendente.

@@ -57,7 +57,15 @@ As [fontes S1–S8](modulo-2/capitulo-6/referencias.md) relacionam notas do curs
 
 As explicações constroem representação binária e hexadecimal, largura e sinal de inteiros, ordem de bytes, unidades e codificação de texto. As contas e sequências usadas como exemplos foram conferidas por [testes editoriais](../scripts/tests/test_chapter6_examples.py). Esses testes verificam os exemplos, não substituem revisão independente nem representam laboratório ofensivo.
 
-O capítulo está em DRAFT 0.1, com a primeira leitura pendente. O [registro da entrega](../editorial/reviews/capitulo-6.md) identifica seu escopo e os limites da verificação.
+O ciclo interno da versão editorial 1.0 foi concluído após retorno favorável do mantenedor e reconferência das quatro seções, fontes e respostas. O [registro da revisão](../editorial/reviews/capitulo-6.md) preserva os limites da verificação e a pendência de revisão independente.
+
+## Capítulo 7 — Hardware: CPU, memória, armazenamento e dispositivos
+
+As [fontes S1–S16](modulo-2/capitulo-7/referencias.md) relacionam o curso Computation Structures, documentação de CPU da Intel, materiais de armazenamento da Kingston, guias do kernel Linux, documentação de segurança da Microsoft, verbetes do NIST e o modelo de programação da NVIDIA.
+
+Seu uso é delimitado: mecanismos de processamento e hierarquia, tradução de endereços, confirmação de escrita, DMA, firmware e estágios de inicialização. Não foram importados benchmarks, recomendações de compra ou garantias de segurança integral. Tentativas sem conteúdo recuperável da especificação UEFI não foram registradas como leitura da especificação.
+
+A narrativa do editor e as contas são originais. Quatro [testes de conferência](../scripts/tests/test_chapter7_examples.py) tratam apenas dos modelos numéricos e de endereço, não de desempenho ou proteção de equipamentos reais. O capítulo permanece DRAFT 0.1, conforme seu [registro editorial](../editorial/reviews/capitulo-7.md).
 
 ## Política de referências
 

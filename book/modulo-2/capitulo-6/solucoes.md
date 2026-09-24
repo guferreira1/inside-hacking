@@ -1,6 +1,6 @@
 # Capítulo 6 · Respostas comentadas
 
-[← Perguntas](6.4-texto-e-interpretacao.md#pare-e-explique) · [Índice do capítulo](README.md)
+[← Perguntas](6.4-texto-e-interpretacao.md#pare-e-explique) · [Índice do capítulo](README.md) · [Capítulo 7 →](../capitulo-7/README.md)
 
 Estas respostas utilizam as convenções declaradas no capítulo. Não é necessário memorizar as frases: explicitar a interpretação é parte da solução.
 
@@ -36,4 +36,4 @@ Com as escolhas de pontos de código explicitadas, A utiliza `41`, é utiliza `C
 
 Há 256 padrões de oito bits, mas a regra “sempre zero” determina o valor. Contar os padrões disponíveis não demonstra como foram escolhidos nem o que o observador sabe. Portanto, não é suficiente para afirmar imprevisibilidade ou segurança de uma chave.
 
-[Voltar ao Módulo II](../README.md) · [Consultar o glossário](../../glossario.md)
+[Continuar para o Capítulo 7 →](../capitulo-7/README.md) · [Voltar ao Módulo II](../README.md) · [Consultar o glossário](../../glossario.md)

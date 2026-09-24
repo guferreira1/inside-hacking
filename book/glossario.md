@@ -18,6 +18,10 @@ Modelo que trata sinais como valores discretos, por exemplo 0 e 1, sem represent
 
 Tecnologias de diretório da Microsoft. No contexto de domínios citado, Active Directory Domain Services organiza objetos, como usuários e computadores, e participa da administração de identidades e acesso. [Menção: capítulo 2][c2]. [Documentação][ad-doc].
 
+### ALU
+
+Arithmetic Logic Unit, unidade aritmética e lógica. Componente que realiza operações como somas e comparações no caminho de execução do processador. Seu papel é distinto do armazenamento de um resultado ou da gravação de um arquivo. [Conceito: 7.2][c72].
+
 ### Ameaça
 
 Circunstância ou evento com potencial de causar consequência adversa de segurança. Não designa necessariamente uma pessoa; também pode envolver condições acidentais. [Conceito: 5.2][c52].
@@ -25,6 +29,10 @@ Circunstância ou evento com potencial de causar consequência adversa de segura
 ### API
 
 Application Programming Interface, interface de programação de aplicações. Define uma forma de componentes de software interagirem; nem toda API é um serviço Web. [Menção introdutória: capítulo 2][c2].
+
+### Armazenamento persistente
+
+Armazenamento destinado a conservar dados sem depender apenas do estado de trabalho volátil. A confirmação de uma escrita precisa ser interpretada conforme o contrato das camadas envolvidas; persistente não significa indestrutível. [Conceito: 7.4][c74].
 
 ### ASCII
 
@@ -52,6 +60,10 @@ Amazon Web Services. Provedor de nuvem citado para distinguir testes em recursos
 
 Conjunto organizado de dados mantido para consulta e atualização. A aplicação pode utilizá-lo para guardar registros; o sistema que gerencia os dados não deve ser confundido com a informação armazenada. [Menção: capítulo 1][c1]; [exemplo: 5.1][c51].
 
+### Barramento
+
+Caminho de comunicação entre componentes, associado a regras de transporte de dados, endereços ou comandos. A expressão não implica que toda interconexão seja um único fio compartilhado por todos os dispositivos. [Conceito: 7.1][c71].
+
 ### Base numérica
 
 Quantidade de algarismos e fator entre pesos de posições em uma representação posicional. O mesmo valor pode ser escrito em bases diferentes; a mudança de escrita não muda a quantidade representada. [Conceito: 6.2][c62].
@@ -76,6 +88,14 @@ Rótulo informal associado a atividade ofensiva maliciosa ou não autorizada. N�
 
 Dispositivo histórico empregado para produzir sinais usados em certos sistemas telefônicos. Não era uma chave universal de redes; o exemplo não é apresentado como técnica para telefonia atual. [Contexto: capítulo 2][c2].
 
+### Bootloader
+
+Carregador de inicialização. Software que conduz o carregamento ou a passagem ao próximo estágio de execução necessário ao sistema operacional. Não é sinônimo de todo o firmware da máquina. [Conceito: 7.5][c75].
+
+### Buffer
+
+Área temporária que guarda dados enquanto são produzidos, transferidos ou consumidos. No exemplo de dispositivos, ajuda a intermediar ritmos diferentes de entrada e processamento. [Conceito: 7.5][c75].
+
 ### Bug
 
 Defeito no comportamento ou implementação de um programa. Sua relação com segurança depende das condições e consequências; comportamento estranho não é automaticamente vulnerabilidade. [Conceito: 5.1][c51].
@@ -96,7 +116,19 @@ Unidade de oito bits no escopo desta obra, representada por B nas unidades. Ofer
 
 ### Cache
 
-Armazenamento para reutilização. Em HTTP, conserva respostas sob condições do protocolo. Receber novamente uma resposta não comprova novo processamento na origem. [Conceito: 4.2][c42].
+Armazenamento para reutilização. Em HTTP, conserva respostas sob condições do protocolo. Receber novamente uma resposta não comprova novo processamento na origem. [Conceito: 4.2][c42]. A cache de CPU conserva blocos usados pelo processamento; ela não é o mesmo componente nem segue as mesmas regras do cache HTTP. [Contexto de hardware: 7.3][c73].
+
+### Cache de páginas
+
+Área de memória utilizada pelo sistema para manter conteúdo associado a operações de arquivos. Pode atender leituras ou intermediar escritas antes da persistência; não é a cache interna da CPU. [Conceito: 7.4][c74].
+
+### Cache hit
+
+Situação em que o bloco procurado é encontrado no nível de cache examinado. Reduz a necessidade de buscá-lo em outro nível, conforme o mecanismo. [Conceito: 7.3][c73].
+
+### Cache miss
+
+Situação em que o bloco procurado não está no nível de cache examinado e precisa ser obtido adiante. Não representa automaticamente defeito ou falha de segurança. [Conceito: 7.3][c73].
 
 ### Causalidade
 
@@ -109,6 +141,10 @@ CERT Coordination Center, do Software Engineering Institute da Carnegie Mellon U
 ### CISA
 
 Cybersecurity and Infrastructure Security Agency. Organização dos Estados Unidos responsável pelo get.gov, cuja política aparece como exemplo de delimitação de pesquisa. [Contexto: 3.1][c31].
+
+### Clock
+
+Sinal de temporização. Sua frequência mede ciclos por segundo, não diretamente instruções concluídas. Trabalho por ciclo e frequência efetiva dependem da implementação e das condições. [Conceito: 7.2][c72].
 
 ### Cloud
 
@@ -130,9 +166,21 @@ Convenção de representação de inteiros com sinal em que o bit de maior peso 
 
 Preservação das restrições de acesso e divulgação. Não significa tornar tudo secreto: um catálogo público e um histórico privado têm regras diferentes. [Conceito: 5.1][c51].
 
+### Contador de programa
+
+Program counter, PC. Estado do processador que participa da determinação de qual instrução buscar. Seu significado preciso e sua atualização dependem da arquitetura e do fluxo de execução. [Conceito: 7.2][c72].
+
+### Controlador
+
+Componente que gerencia operações de um dispositivo ou subsistema. Distingue-se do driver, que é software de comunicação e controle utilizado pelo sistema. [Conceito: 7.1][c71].
+
 ### Correlação
 
 Associação observada entre acontecimentos ou variáveis. Pode orientar a investigação, mas não demonstra sozinha que um deles causou o outro. [Conceito: 4.3][c43].
+
+### CPU
+
+Central Processing Unit, unidade central de processamento. Executa instruções que transformam dados e atualizam o estado da execução. Não corresponde ao computador inteiro nem é o único componente capaz de processar informação. [Conceitos: 7.1][c71] e [7.2][c72].
 
 ### Credencial
 
@@ -184,15 +232,39 @@ Possibilidade de acesso e uso por quem está autorizado quando necessário. Recu
 
 Coordenação entre participantes que descobrem, corrigem, utilizam e comunicam informações sobre vulnerabilidades. Não é sinônimo de programa de recompensas. [Contexto: capítulo 2][c2].
 
+### DMA
+
+Direct Memory Access, acesso direto à memória. Permite transferências entre dispositivo e memória sem cópia byte a byte pela CPU principal. Ainda exige preparação, endereços e controle; não significa acesso irrestrito. [Conceito: 7.5][c75].
+
 ### DOI
 
 Digital Object Identifier. Identificador persistente usado para referenciar objetos, como publicações. Não certifica a correção do conteúdo nem substitui sua leitura. [Ocorrência: referências do capítulo 2][c2-ref].
+
+### DRAM
+
+Dynamic Random Access Memory, memória dinâmica. Tecnologia de memória que exige renovação periódica do estado armazenado, o refresh. A DRAM convencional é volátil. [Conceito: 7.3][c73].
+
+### Driver
+
+Software que participa da comunicação e do controle entre sistema operacional e dispositivo. Não é o próprio circuito controlador nem o dado transferido. [Conceitos: 7.1][c71] e [7.5][c75].
 
 ## E
 
 ### Encadeamento de vulnerabilidades
 
 Combinação de condições em que o resultado de uma etapa permite avançar para outra. Cada ligação exige evidência; leitura indevida não implica automaticamente controle de todo o ambiente. [Conceito: 5.2][c52].
+
+### Endereço de memória
+
+Identificador de uma posição dentro de um espaço de endereçamento. O conteúdo da posição pode mudar sem que seu endereço mude; o contexto determina que tipo de endereço está sendo utilizado. [Conceito: 7.3][c73].
+
+### Endereço físico
+
+Endereço relativo à visão física de memória apresentada pela plataforma. Pode ser obtido pela tradução de um endereço virtual; não deve ser confundido automaticamente com o endereço utilizado por um dispositivo em DMA. [Conceitos: 7.3][c73] e [7.5][c75].
+
+### Endereço virtual
+
+Endereço utilizado em um contexto de memória virtual, traduzido para um destino conforme os mapeamentos do sistema. Números iguais em contextos distintos não provam acesso à mesma memória física. [Conceito: 7.3][c73].
 
 ### Endianness
 
@@ -201,6 +273,10 @@ Ordem dos bytes na representação de um valor com vários bytes. Interpretar a 
 ### Engenharia reversa
 
 Análise de um sistema ou artefato para compreender sua estrutura e funcionamento a partir do que está disponível. É citada como especialização, sem técnica detalhada nesta introdução. [Menção: capítulo 2][c2].
+
+### Entrada e saída
+
+E/S; em inglês, Input/Output ou I/O. Operações de comunicação com dispositivos e componentes externos ao processamento considerado, como teclado, tela e armazenamento. Seus caminhos podem envolver drivers, controladores e buffers. [Conceitos: 7.1][c71] e [7.5][c75].
 
 ### Enumeração
 
@@ -240,9 +316,21 @@ Falha em identificar uma condição que o detector deveria reconhecer e que esta
 
 Indicação de uma condição ausente no caso classificado. Um alerta não verificado pode ser inconclusivo, sem ser automaticamente verdadeiro ou falso. [Conceito: 4.3][c43].
 
+### Firmware
+
+Software associado à inicialização ou à operação de um equipamento ou componente. Estar armazenado num dispositivo não o transforma no circuito físico. Pode existir fora dos arquivos substituídos ao reinstalar o sistema operacional. [Conceito: 7.5][c75].
+
 ### FIRST
 
 Forum of Incident Response and Security Teams. Organização responsável pela documentação CVSS citada no capítulo 5. A referência não representa endosso ao livro. [Contexto: 5.3][c53].
+
+### Flash
+
+Tecnologia de memória não volátil utilizada, entre outros dispositivos, em SSDs. No caso NAND apresentado, programação de páginas e apagamento de blocos são operações diferentes, administradas pelo controlador. [Conceito: 7.4][c74].
+
+### Flush
+
+No contexto de escrita, solicitação para escoar dados pendentes ao nível de armazenamento pertinente. Não significa simplesmente apagar a cache nem garantir resistência a toda falha futura. [Conceito: 7.4][c74].
 
 ### Fonte de ameaça
 
@@ -253,6 +341,14 @@ Origem de ação ou condição capaz de explorar ou acionar uma fraqueza. Pode e
 Limite entre contextos com permissões, controle ou suposições de confiança diferentes. Atravessá-lo exige examinar quais decisões e verificações deveriam ocorrer. [Menção: capítulo 1][c1].
 
 ## G
+
+### GHz
+
+Gigahertz: um bilhão de ciclos por segundo. Expressa frequência, não diretamente instruções ou tarefas concluídas. [Conceito: 7.2][c72].
+
+### GPU
+
+Graphics Processing Unit, unidade de processamento gráfico. Também pode executar cálculos paralelos adequados ao seu modelo. A adequação da tarefa e os custos de transferência importam; não substitui universalmente a CPU. [Conceito: 7.5][c75].
 
 ### Gray hat
 
@@ -268,6 +364,10 @@ Termo com diferentes sentidos históricos, como solução engenhosa, modificaç�
 
 Termo que pode designar quem explora sistemas em profundidade ou, em outros contextos, pessoas associadas a intrusões. A palavra isolada não comprova intenção ou autorização. [Conceito: capítulo 1][c1].
 
+### Hardware
+
+Componentes físicos de um sistema computacional. Suas funções cooperam com software e não precisam corresponder a peças removíveis independentes. [Conceito: 7.1][c71].
+
 ### Hash
 
 Resultado de uma função que transforma uma entrada segundo um algoritmo. No contexto de senhas citado, testar candidatos contra hashes não significa descriptografar a senha. [Menção: capítulo 1][c1].
@@ -275,6 +375,14 @@ Resultado de uma função que transforma uma entrada segundo um algoritmo. No co
 ### Hashcat
 
 Ferramenta de recuperação e auditoria de senhas que testa candidatos contra representações compatíveis, como hashes. Não é uma operação universal para descobrir qualquer senha. [Menção: capítulo 1][c1]. [Documentação][hashcat-doc].
+
+### HDD
+
+Hard Disk Drive, unidade de disco rígido. Utiliza superfícies magnéticas em pratos e cabeças de leitura/escrita. Movimentos e posicionamento participam do acesso aos dados. [Conceito: 7.4][c74].
+
+### Hertz
+
+Hz. Unidade de frequência equivalente a um ciclo por segundo. A duração de um ciclo é o inverso da frequência, sob a hipótese de frequência constante. [Conceito: 7.2][c72].
 
 ### Hexadecimal
 
@@ -310,6 +418,10 @@ Consequência de uma falha ou ação. Distinguir impacto observado de impacto po
 
 Conclusão construída a partir de observações e premissas. Não equivale ao registro bruto produzido por tela ou ferramenta. [Conceito: 4.1][c41].
 
+### Instrução de máquina
+
+Operação codificada interpretada pelo processador conforme sua arquitetura. Pode transformar dados, acessar memória ou alterar o fluxo de execução. Não equivale necessariamente a uma linha de uma linguagem de programação. [Conceito: 7.2][c72].
+
 ### Inteiro com sinal
 
 Representação numérica que admite valores negativos e não negativos. É preciso conhecer a convenção, como complemento de dois, e a largura em bits para interpretar o campo. [Conceito: 6.3][c63].
@@ -321,6 +433,18 @@ Representação de inteiros não negativos. Em n bits com todos os padrões util
 ### Integridade
 
 Proteção contra alteração ou destruição indevida. Alterar uma data sem permissão é consequência diferente de consultar informação privada. [Conceito: 5.1][c51].
+
+### Interrupção
+
+Sinal ou evento que encaminha a execução a uma rotina de atendimento conforme as condições do sistema. Pode representar uma ocorrência normal, como entrada disponível, e não necessariamente uma pane. [Conceito: 7.5][c75].
+
+### IOMMU
+
+Input/Output Memory Management Unit. Mecanismo de tradução e restrição de acessos à memória originados por dispositivos. Seu efeito depende de configuração e suporte; não se confunde com a MMU dos acessos do processador. [Conceito: 7.5][c75].
+
+### ISA
+
+Instruction Set Architecture, arquitetura do conjunto de instruções. Interface de instruções e estado relevante ao software, distinta da organização interna que a implementa. Não determina sozinha toda a compatibilidade de um executável. [Conceito: 7.2][c72].
 
 ## K
 
@@ -338,6 +462,10 @@ Protocolo de autenticação em rede baseado em tickets e em uma autoridade de co
 
 ## L
 
+### Latência
+
+Duração de uma operação entre pontos de início e fim definidos. Não é sinônimo de capacidade nem de vazão; a medida precisa identificar o que está sendo observado. [Conceito: 7.1][c71].
+
 ### LGPD
 
 Lei Geral de Proteção de Dados Pessoais, Lei brasileira nº 13.709/2018. O capítulo 3 introduz sua relação com evidências, sem emitir parecer sobre uma operação real. [Contexto: 3.2][c32].
@@ -350,15 +478,39 @@ Referência de comportamento em condições identificadas. Ajuda a comparar um c
 
 Ordem que coloca primeiro o byte de menor peso de um valor com vários bytes. A convenção deve ser definida pelo formato ou operação, não adivinhada pela aparência dos dados. [Conceito: 6.3][c63].
 
+### Localidade espacial
+
+Padrão de acesso a posições próximas de memória. Pode favorecer o aproveitamento de blocos trazidos para uma cache; não é garantia sobre toda aplicação. [Conceito: 7.3][c73].
+
+### Localidade temporal
+
+Reutilização de uma informação em um intervalo próximo. Ajuda a explicar por que uma cache pode reduzir acessos a outros níveis. [Conceito: 7.3][c73].
+
 ### Log
 
 Registro de eventos produzido por um sistema. Seu valor depende dos campos, procedência, cobertura e relação com a operação examinada. [Conceito: 4.3][c43].
 
 ## M
 
+### M.2
+
+Especificação de formato e conexão usada por diferentes dispositivos. Não é sinônimo de NVMe: o formato físico não determina sozinho a interface de armazenamento. [Conceito: 7.4][c74].
+
 ### MB e MiB
 
 MB, megabyte, representa 1.000.000 de bytes; MiB, mebibyte, representa 1.048.576. Uma taxa em Mbit/s mede bits por segundo, não bytes armazenados. [Conceito: 6.3][c63].
+
+### Memória não volátil
+
+Memória que conserva informação sem alimentação contínua. A propriedade não garante disponibilidade eterna, imunidade a defeitos ou segurança contra acesso indevido. [Conceitos: 7.3][c73] e [7.4][c74].
+
+### Memória virtual
+
+Organização que fornece contextos de endereços e mapeamentos utilizados na execução, com participação na tradução e no isolamento. Não se resume a utilizar armazenamento quando a RAM é insuficiente. [Introdução: 7.3][c73].
+
+### Memória volátil
+
+Memória cuja manutenção da informação depende de alimentação. Volatilidade não é um procedimento certificado de eliminação segura de todos os dados sensíveis. [Conceito: 7.3][c73].
 
 ### Metasploit
 
@@ -368,9 +520,17 @@ Framework de segurança com módulos para tarefas distintas, inclusive exploraç
 
 Multifrequency, sinalização multifrequência. Na telefonia histórica discutida, combinações de tons representavam endereçamento. É diferente do tom único de supervisão de certas ligações. [Contexto: capítulo 2][c2].
 
+### Microarquitetura
+
+Organização interna que implementa uma arquitetura de instruções. Implementações da mesma interface podem ter estruturas e desempenhos diferentes. [Conceito: 7.2][c72].
+
 ### MIT
 
 Massachusetts Institute of Technology, instituição à qual pertence o TMRC. A sigla também nomeia uma licença de software no repositório; são usos distintos. [Contexto histórico][c2]. [Licenciamento](../LICENSE.md).
+
+### MMU
+
+Memory Management Unit, unidade de gerenciamento de memória. Participa da tradução de endereços e das verificações associadas aos mapeamentos administrados pelo sistema operacional. [Introdução: 7.3][c73].
 
 ### Modelo de linguagem
 
@@ -397,6 +557,14 @@ National Institute of Standards and Technology. Instituição que mantém refer�
 ### Nmap
 
 Network Mapper. Ferramenta de exploração e auditoria de redes, incluindo descoberta e investigação de portas e serviços. O resultado exige interpretação, não diagnóstico automático de vulnerabilidade. [Menção: capítulo 1][c1]. [Documentação][nmap-doc].
+
+### Núcleo
+
+Core. Unidade de processamento capaz de conduzir execução dentro de um processador. Recursos adicionais ajudam conforme o paralelismo disponível no trabalho; não dividem automaticamente o tempo de qualquer tarefa. [Conceito: 7.2][c72].
+
+### NVMe
+
+Non-Volatile Memory Express. Interface de comandos para armazenamento não volátil, comum sobre PCIe em SSDs locais. Não é formato físico nem garantia isolada de desempenho. [Conceito: 7.4][c74].
 
 ## O
 
@@ -428,13 +596,17 @@ Open Worldwide Application Security Project. Fundação e comunidade que mantêm
 
 No contexto de exploração apresentado, componente que realiza a ação desejada após aproveitar a vulnerabilidade. Nem toda exploração possui payload executável separado. [Conceito: 5.2][c52].
 
+### PCIe
+
+Peripheral Component Interconnect Express. Interconexão utilizada para comunicação entre componentes e dispositivos. É uma camada diferente da interface de comandos NVMe. [Conceito: 7.4][c74].
+
 ### Pentest
 
 Penetration test, teste de intrusão. Avaliação com objetivos, escopo, métodos permitidos e comunicação de resultados; não se resume à obtenção de acesso. [Contexto: capítulo 2][c2] e [capítulo 3][c3].
 
 ### Persistência
 
-Meios de conservar ou recuperar acesso apesar de mudanças, como interrupção de uma sessão. Não é etapa obrigatória nem automaticamente autorizada após exploração. [Menção: capítulo 1][c1].
+Meios de conservar ou recuperar acesso apesar de mudanças, como interrupção de uma sessão. Não é etapa obrigatória nem automaticamente autorizada após exploração. [Menção: capítulo 1][c1]. No contexto de armazenamento, persistência é conservação de dados além do estado de trabalho temporário: é outro uso da palavra, desenvolvido em [7.4][c74].
 
 ### Phone phreaking
 
@@ -443,6 +615,10 @@ Investigação e manipulação de mecanismos de redes telefônicas. O capítulo 
 ### Pivotamento
 
 Uso de um ponto intermediário para alcançar recursos que não eram diretamente acessíveis da origem da investigação. Depende do escopo autorizado. [Menção: capítulo 1][c1].
+
+### Polling
+
+Consulta repetida a um estado para descobrir se há evento ou trabalho disponível. Pode ser uma escolha de projeto adequada; não é automaticamente melhor ou pior que interrupções. [Conceito: 7.5][c75].
 
 ### Ponto de código
 
@@ -464,6 +640,10 @@ Resultado que uma hipótese leva a esperar em condições especificadas, formula
 
 Permissão ou capacidade associada a uma identidade ou contexto de execução. Saber que código foi executado não informa, sozinho, quais permissões ele possuía. [Menção: capítulo 1][c1].
 
+### Processador lógico
+
+Contexto de execução que o hardware apresenta ao sistema. Contextos do mesmo núcleo podem compartilhar recursos; não equivalem automaticamente a núcleos físicos independentes. [Conceito: 7.2][c72].
+
 ### Prompt injection
 
 Manipulação de entradas ou conteúdos processados por uma aplicação com modelo de linguagem para influenciar indevidamente seu comportamento. Os efeitos dependem do contexto e das capacidades da aplicação; não é equivalente a SQL injection. [Menções: capítulos 1][c1] e [2][c2]. [Referência][prompt-doc].
@@ -482,6 +662,10 @@ Penetration Testing Execution Standard. Referência metodológica para testes de
 
 ## R
 
+### RAM
+
+Random Access Memory, memória de acesso aleatório. A expressão descreve o acesso a posições, não geração de valores aleatórios. A memória principal convencional discutida utiliza DRAM volátil. [Conceito: 7.3][c73].
+
 ### Ransomware
 
 Software malicioso usado para restringir acesso a dados ou sistemas e exigir resgate, frequentemente por criptografia de arquivos. A introdução apenas menciona a categoria, sem análise de amostras. [Menção: capítulo 1][c1]. [Referência CISA][ransomware-doc].
@@ -489,6 +673,14 @@ Software malicioso usado para restringir acesso a dados ou sistemas e exigir res
 ### Red Team
 
 Atividade ou equipe que utiliza uma perspectiva adversarial orientada a objetivos para avaliar uma organização e suas defesas. Não é automaticamente sinônimo de pentest. [Menção: capítulo 1][c1].
+
+### Refresh
+
+Renovação periódica do estado armazenado em DRAM para manter a informação durante o funcionamento. Não é releitura de um arquivo nem atualização do software. [Conceito: 7.3][c73].
+
+### Registrador
+
+Pequeno espaço de armazenamento interno utilizado pelo processador na execução. Conservar um valor num registrador não implica gravá-lo num arquivo persistente. [Conceito: 7.2][c72].
 
 ### Regras de engajamento
 
@@ -520,9 +712,17 @@ Risco que permanece depois de controles ou respostas. Uma medida pode melhorar o
 
 Compromisso de uma organização sobre pesquisa de boa-fé, sob condições declaradas. Não amplia automaticamente o escopo nem equivale a imunidade universal perante terceiros. [Conceito: 3.1][c31].
 
+### SATA
+
+Serial ATA. Interface de armazenamento que não deve ser confundida com um formato físico, como M.2. O equipamento precisa oferecer suporte à interface pertinente. [Conceito: 7.4][c74].
+
 ### Scanner
 
 Ferramenta que automatiza observações ou testes. Descoberta de serviços e detecção de vulnerabilidades são tarefas distintas; alerta não substitui investigação. [Menção: capítulo 1][c1]; [conceito: 4.3][c43].
+
+### Secure Boot
+
+Mecanismo de verificação de componentes no caminho de inicialização conforme uma política de confiança. Não comprova que todos os programas do computador estejam livres de defeitos. [Conceito: 7.5][c75].
 
 ### security.txt
 
@@ -548,6 +748,14 @@ Descrição da gravidade de uma vulnerabilidade segundo critérios determinados.
 
 Sinais de controle transmitidos pelo mesmo canal do conteúdo de uso, como voz no exemplo telefônico. Supervisão e endereçamento são funções distintas. [Conceito histórico: capítulo 2][c2].
 
+### Sistema operacional
+
+Software que administra recursos e oferece serviços aos programas. Sua participação entre aplicações e dispositivos é introduzida antes do desenvolvimento detalhado nos capítulos próprios. [Introdução: 7.1][c71].
+
+### Software
+
+Programas e instruções que orientam o funcionamento do sistema. A distinção em relação ao hardware não significa que suas representações existam sem suporte físico. [Conceito: 7.1][c71].
+
 ### SQL
 
 Linguagem de definição, consulta e manipulação de dados em sistemas de banco de dados que a implementam. Aparece na introdução à SQL injection e terá desenvolvimento próprio adiante. [Menção: capítulo 1][c1].
@@ -555,6 +763,14 @@ Linguagem de definição, consulta e manipulação de dados em sistemas de banco
 ### SQL injection
 
 Falha em que uma entrada influencia indevidamente a estrutura ou significado de uma consulta SQL. Não é qualquer erro de banco de dados. [Menção: capítulo 1][c1]. [Referência técnica][sqli-doc].
+
+### SRAM
+
+Static Random Access Memory, memória estática. Tecnologia de memória convencional que conserva seu estado enquanto alimentada sem o mesmo processo periódico de refresh da DRAM. “Estática” não significa não volátil. [Conceito: 7.3][c73].
+
+### SSD
+
+Solid-State Drive, unidade de armazenamento de estado sólido. Nos dispositivos NAND descritos, o controlador administra páginas, blocos e movimentação interna de dados; não há o mesmo movimento de cabeças e pratos de um HDD. [Conceito: 7.4][c74].
 
 ### Superfície de ataque
 
@@ -566,15 +782,27 @@ Pontos e caminhos pelos quais um sistema pode ser alcançado ou influenciado, in
 
 Interface de entrada e saída de texto para interagir com programas, inclusive interpretadores de comandos. Não é o mesmo componente que interpreta a linguagem de comandos. [Menção: capítulo 1][c1].
 
+### Thread
+
+No contexto de software, fluxo de execução que pode ser organizado junto de outros fluxos. Não é necessariamente um núcleo físico nem uma janela de aplicativo. [Conceito: 7.2][c72].
+
 ### TMRC
 
 Tech Model Railroad Club, clube de ferromodelismo do MIT presente nos episódios de experimentação. Sua história não estabelece origem única da segurança de computadores. [Contexto: capítulos 1][c1] e [2][c2].
+
+### TRIM
+
+Mecanismo pelo qual o sistema informa ao dispositivo de armazenamento que determinados dados lógicos não precisam mais ser preservados. Participa da gestão do SSD, mas não comprova sanitização completa do equipamento. [Conceito: 7.4][c74].
 
 ### Truncamento
 
 Corte de uma sequência ou representação para um tamanho menor. Em texto de largura variável, cortar em um byte arbitrário pode interromper uma sequência de caractere; o formato precisa ser respeitado. [Conceito: 6.4][c64].
 
 ## U
+
+### UEFI
+
+Unified Extensible Firmware Interface. Interface de firmware usada no caminho de inicialização de plataformas compatíveis. O firmware prepara o ambiente e participa da passagem ao carregador; não é o próprio sistema operacional. [Introdução: 7.5][c75].
 
 ### Unicode
 
@@ -585,6 +813,10 @@ Padrão para representar caracteres, com pontos de código e formas de codifica�
 Forma de codificação Unicode que utiliza de um a quatro bytes por valor escalar e preserva a representação ASCII. Uma unidade percebida pelo usuário pode reunir vários valores; nem toda sequência arbitrária de bytes é UTF-8 válido. [Conceito: 6.4][c64].
 
 ## V
+
+### Vazão
+
+Throughput. Quantidade de trabalho concluído por unidade de tempo. Não é o espaço total disponível nem a duração de uma operação individual. [Conceito: 7.1][c71].
 
 ### VDP
 
@@ -630,6 +862,11 @@ As definições metodológicas expressam o vocabulário de trabalho do livro. As
 [c62]: modulo-2/capitulo-6/6.2-binario-e-hexadecimal.md
 [c63]: modulo-2/capitulo-6/6.3-bytes-limites-e-unidades.md
 [c64]: modulo-2/capitulo-6/6.4-texto-e-interpretacao.md
+[c71]: modulo-2/capitulo-7/7.1-componentes-e-caminhos.md
+[c72]: modulo-2/capitulo-7/7.2-cpu-e-execucao.md
+[c73]: modulo-2/capitulo-7/7.3-memoria-e-cache.md
+[c74]: modulo-2/capitulo-7/7.4-armazenamento-e-persistencia.md
+[c75]: modulo-2/capitulo-7/7.5-dispositivos-e-firmware.md
 [c2-ref]: modulo-1/capitulo-2/referencias.md
 [c3-sol]: modulo-1/capitulo-3/solucoes.md
 [c4-ref]: modulo-1/capitulo-4/referencias.md
