@@ -44,11 +44,13 @@ A explicação de OSINT foi conferida no documento oficial ICS 206-01, Apêndice
 
 ## Segunda passagem e reprodução
 
-O mesmo [workflow de checagem](../../.github/workflows/docs-check.yml) deve ser executado após as correções. A execução associada ao commit da auditoria fornece as contagens atualizadas e a lista completa de arquivos; o histórico de [execuções](https://github.com/guferreira1/inside-hacking/actions/workflows/docs-check.yml) permite conferir o resultado sem fixar no texto uma contagem que muda a cada novo arquivo.
+Após as correções, a execução [35950478332](https://github.com/guferreira1/inside-hacking/actions/runs/35950478332), no commit `34ffa50917aaccbaa208281bac4211678f0c76d5`, terminou com **success**. Os logs registram **52 arquivos Markdown**, **314 destinos internos distintos por arquivo**, **zero erros internos** e **115 verbetes no glossário**. Os **seis testes automatizados do próprio verificador passaram**. Essas contagens descrevem esse commit, não uma promessa de tamanho final da obra.
 
-Além da varredura do livro, os testes sintéticos verificam detecção de destino/âncora ausente, links HTML, referências Markdown, títulos duplicados, exclusão de exemplos em blocos de código e caminhos que escapam da raiz. Exemplos deliberadamente inválidos pertencem às fixtures de teste, não à navegação publicada.
+Os testes sintéticos verificam detecção de destino/âncora ausente, links HTML, referências Markdown, títulos duplicados, exclusão de exemplos em blocos de código e caminhos que escapam da raiz. Exemplos deliberadamente inválidos pertencem às fixtures de teste, não à navegação publicada.
 
-Para repetir: `python3 -m unittest discover -s scripts/tests -v` e `python3 scripts/check_docs.py --inventory` a partir da raiz. O verificador cobre o subconjunto de Markdown adotado pelo projeto, não todas as extensões possíveis de GFM. URLs externas são apenas inventariadas pelo script; a consulta de rede descrita acima foi separada.
+O [workflow de checagem](../../.github/workflows/docs-check.yml) repete a validação a cada push e pull request. O histórico de [execuções](https://github.com/guferreira1/inside-hacking/actions/workflows/docs-check.yml) permite conferir resultados de commits posteriores, inclusive esta atualização do relatório.
+
+Para repetir: `python3 -m unittest discover -s scripts/tests -v` e `python3 scripts/check_docs.py --inventory` a partir da raiz. O verificador cobre o subconjunto de Markdown adotado pelo projeto, não todas as extensões possíveis de GFM. URLs externas são apenas inventariadas pelo script; a consulta de rede descrita acima foi separada. Sucesso do workflow não é validação semântica automática das definições nem certificação técnica do manuscrito.
 
 ## Limites e continuidade
 
