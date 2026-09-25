@@ -143,7 +143,7 @@ https://man7.org/linux/man-pages/man3/stdin.3.html
 
 https://man7.org/linux/man-pages/man3/printf.3.html
 
-Uso em 8.2 e 8.5: interface de `main`, formato `%d`, quebra de linha, fluxos padrão, descritores e diferença entre saída textual e estado de término. Não se afirma que qualquer programa com retorno zero esteja correto ou seguro, nem que nove códigos tenham significado idêntico em todos os programas. Nosso exemplo mínimo não implementa tratamento completo de erros de E/S.
+Uso em 8.2 e 8.5: interface de `main`, formato `%d`, quebra de linha, fluxos padrão, descritores e diferença entre saída textual e estado de término. Não se afirma que qualquer programa com retorno zero esteja correto ou seguro, nem que os códigos tenham significado idêntico em todos os programas. Nosso exemplo mínimo não implementa tratamento completo de erros de E/S.
 
 <a id="s14"></a>
 ## S14 · Tradução e otimização
