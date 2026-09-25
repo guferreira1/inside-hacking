@@ -1,28 +1,31 @@
-# Primeira entrega editorial — Capítulo 7
+# Fechamento editorial — Capítulo 7
 
-**Data:** 24/09/2026. **Estado:** DRAFT 0.1. **Módulo:** II.  
-**Base da entrega:** `d148c59ffa5dfdedfc06e9586fc203bb7cf295d7`.
+**Data:** 24/09/2026. **Estado:** VALIDATED 1.0, revisão interna. **Módulo:** II.  
+**Texto revisto:** versão da base `05af26d7776887be714fb58a00056124460b24ac`.
 
 [Manuscrito](../../book/modulo-2/capitulo-7/README.md) · [Referências](../../book/modulo-2/capitulo-7/referencias.md)
 
-## Objetivo e recorte
+## Retorno e decisão
 
-Conectar a representação estudada no capítulo 6 às funções de processamento, memória, armazenamento e entrada/saída. O exemplo do editor sem recuperação fornece um fio narrativo. Não é um catálogo de componentes para compra nem um laboratório de montagem.
+O mantenedor avaliou favoravelmente o desenvolvimento e solicitou continuidade para o capítulo seguinte. Não informou duração da leitura, respostas às questões, execução de ferramentas ou medições; nenhum desses resultados foi presumido.
 
-Cinco seções apresentam CPU, registradores, ALU, clock, núcleos, ISA, hierarquia de memória, endereços, persistência de escrita, interfaces de armazenamento, dispositivos, DMA, IOMMU, GPU e firmware. Memória virtual e boot são introduzidos somente no necessário para compreender os limites entre componentes; execução de programas e processos serão aprofundados nos capítulos 8 e 9.
+Foram relidas as cinco seções e as nove respostas, conferindo coerência entre o enredo, as premissas dos modelos e a delimitação das fontes S1–S16. O ciclo editorial interno desta versão foi encerrado. VALIDATED não significa revisão independente nem comprovação de domínio prático do leitor.
 
-## Verificações e escolhas
+## Critérios conferidos
 
-As referências S1–S16 identificam trechos primários efetivamente consultados. Valores históricos de desempenho do material didático não foram importados como especificações atuais. As páginas comerciais de fabricantes foram utilizadas apenas para mecanismos e terminologia, não recomendações de compra.
+- [x] Componentes e relações apresentados por uma narrativa, sem catálogo de compras.
+- [x] Clock distinguido de instruções; núcleos de contextos lógicos.
+- [x] RAM, caches, endereço/conteúdo e persistência separados.
+- [x] MMU e IOMMU explicadas como controles de contextos distintos.
+- [x] M.2 não tratado como sinônimo de NVMe; Secure Boot não tratado como prova de ausência de falhas.
+- [x] Modelos numéricos e respostas coerentes; quatro testes delimitados já incluídos no workflow da entrega anterior.
+- [x] Fontes e suas limitações preservadas, inclusive a consulta não concluída à especificação UEFI.
+- [x] Glossário, índices, bibliografia e controle editorial sincronizados.
+- [ ] Revisão técnica/didática independente — não realizada.
+- [ ] PDF gerado e conferido — não realizado.
 
-O texto distingue ciclos de instruções, núcleos de contextos lógicos, endereços de conteúdo, MMU de IOMMU, formato físico de interface e confirmação temporária de persistência. Secure Boot não é apresentado como prova de ausência de vulnerabilidades. A ausência de conteúdo recuperável em tentativas de acesso à especificação UEFI foi registrada, sem alegar revisão da especificação inteira.
+## Limites preservados
 
-As quatro funções de teste em [test_chapter7_examples.py](../../scripts/tests/test_chapter7_examples.py) verificam contas e um mapeamento didático. Não constituem simulador de CPU, medição de cache, ensaio de perda de energia ou validação de DMA. A execução deve ser conferida no workflow associado ao commit de publicação; não basta a existência do script para declará-lo aprovado.
+Não houve benchmark, ensaio de queda de energia, teste de sanitização, execução de CUDA, desenvolvimento de driver ou alteração de firmware. As fontes foram pesquisadas para o recorte documentado; esta releitura não é uma nova auditoria integral de todos os manuais ou produtos citados.
 
-Nove questões opcionais e respostas foram revisadas contra as premissas do texto. Não há requisito de instalar ferramentas, desmontar hardware ou modificar firmware. Novos termos entram no glossário nesta entrega, com referência à seção correspondente. Índices, navegação, bibliografia, matriz de cobertura e controle editorial acompanham o manuscrito.
-
-## Estado e próxima revisão
-
-Primeira leitura do mantenedor e revisão técnica independente pendentes. Nenhum laboratório ofensivo, benchmark de hardware ou PDF foi produzido. O estado permanece DRAFT; os testes editoriais não o promovem automaticamente.
-
-A próxima revisão deve observar se a narrativa do editor mantém clareza ao alternar camadas, especialmente na passagem entre memória e persistência. O próximo capítulo planejado é **8 — Como um programa se torna execução**.
+A navegação agora permite continuar no **Capítulo 8 — Como um programa se torna execução**. Os estados dos capítulos anteriores não são promovidos por consequência desse fechamento.

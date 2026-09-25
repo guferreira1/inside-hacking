@@ -6,9 +6,13 @@ Este glossário acompanha os termos presentes na obra. Cada entrada aponta para 
 
 Não importamos todos os assuntos futuros. OSINT é identificado como menção do planejamento, incluída para esclarecer a sigla solicitada na revisão. Os demais verbetes se relacionam ao texto ou às referências dos capítulos disponíveis.
 
-**Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x).
+**Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x).
 
 ## A
+
+### ABI
+
+Application Binary Interface, interface binária de aplicação. Conjunto de convenções para interação entre componentes binários, como passagem de argumentos, retorno e uso de registradores. Compartilhar uma ISA não garante compartilhar todas essas convenções. [Conceito: 8.3][c83].
 
 ### Abstração digital
 
@@ -30,13 +34,33 @@ Circunstância ou evento com potencial de causar consequência adversa de segura
 
 Application Programming Interface, interface de programação de aplicações. Define uma forma de componentes de software interagirem; nem toda API é um serviço Web. [Menção introdutória: capítulo 2][c2].
 
+### Argumento
+
+Valor fornecido a uma função, operação ou programa. No início de um programa, argumentos são uma parte do contexto recebido e não se confundem com variáveis de ambiente. [Conceitos: 8.1][c81] e [8.5][c85].
+
 ### Armazenamento persistente
 
 Armazenamento destinado a conservar dados sem depender apenas do estado de trabalho volátil. A confirmação de uma escrita precisa ser interpretada conforme o contrato das camadas envolvidas; persistente não significa indestrutível. [Conceito: 7.4][c74].
 
+### Arquivo executável
+
+Artefato preparado para iniciar um programa num ambiente compatível. Não é o processo já em funcionamento; formato, arquitetura, permissões e dependências participam de sua utilização. [Conceitos: 8.1][c81] e [8.3][c83].
+
+### Arquivo objeto
+
+Resultado de tradução que pode participar da ligação com outras peças. No exemplo ELF relocável, contém código e informações para resolver referências e endereços; não é automaticamente um programa completo. [Conceito: 8.2][c82].
+
+### Artefato
+
+Resultado concreto de uma etapa de construção, como um objeto ou executável. Alterar uma entrada do projeto não modifica automaticamente todos os artefatos já produzidos. [Conceito: 8.1][c81].
+
 ### ASCII
 
 American Standard Code for Information Interchange. Código de sete bits com 128 posições, incluindo letras, dígitos, pontuação e controles. A letra A tem valor decimal 65, ou hexadecimal 41. O ASCII básico não representa todo o texto Unicode. [Conceito: 6.4][c64].
+
+### Assembly
+
+Representação textual de operações e outros elementos associados a uma arquitetura. A montagem a converte em código objeto; a escrita assembly não é a própria sequência binária de instruções. [Conceito: 8.2][c82].
 
 ### Ativo
 
@@ -68,13 +92,21 @@ Caminho de comunicação entre componentes, associado a regras de transporte de 
 
 Quantidade de algarismos e fator entre pesos de posições em uma representação posicional. O mesmo valor pode ser escrito em bases diferentes; a mudança de escrita não muda a quantidade representada. [Conceito: 6.2][c62].
 
+### Biblioteca de software
+
+Conjunto de código e interfaces reutilizáveis por programas. Conhecer a declaração de uma função não é o mesmo que disponibilizar sua implementação. Bibliotecas podem participar de ligações estáticas ou dinâmicas. [Conceito: 8.2][c82].
+
+### Biblioteca compartilhada
+
+Objeto de software utilizado por meio de carregamento e ligação dinâmica. Seu código pode participar do contexto do processo que o carrega; estar num arquivo separado não implica isolamento automático. [Conceitos: 8.2][c82] e [8.5][c85].
+
 ### Big-endian
 
 Ordem que coloca primeiro o byte de maior peso de um valor com vários bytes. Não significa inverter os bits de cada byte. [Conceito: 6.3][c63].
 
 ### Binário
 
-No sistema de numeração apresentado, base dois: usa os algarismos 0 e 1 e pesos que são potências de dois. O termo também aparece em computação com outros sentidos; o contexto deve identificá-los. [Conceito: 6.2][c62].
+No sistema de numeração apresentado, base dois: usa os algarismos 0 e 1 e pesos que são potências de dois. O termo também aparece em computação com outros sentidos; o contexto deve identificá-los. [Conceito: 6.2][c62]. No capítulo 8, “um binário” pode designar um artefato de código já traduzido, não apenas a notação de um número. [Contexto: 8.1][c81].
 
 ### Bit
 
@@ -104,6 +136,10 @@ Defeito no comportamento ou implementação de um programa. Sua relação com se
 
 Programa que pode recompensar relatos de vulnerabilidades conforme seus critérios. Autorização, escopo, divulgação e elegibilidade para pagamento são questões diferentes. [Contexto: capítulo 2][c2] e [3.1][c31].
 
+### Build
+
+Nome em inglês para a construção de artefatos a partir das entradas de um projeto. Neste livro, construir e executar são atividades distintas, mesmo quando uma ferramenta as aciona no mesmo botão. [Conceito: 8.1][c81].
+
 ### Burp Suite
 
 Conjunto de ferramentas da PortSwigger para segurança Web. O Burp Proxy permite examinar e modificar tráfego que passa por ele; não observa qualquer comunicação apenas por estar aberto. [Menção: capítulo 1][c1]. [Documentação][burp-doc].
@@ -112,7 +148,15 @@ Conjunto de ferramentas da PortSwigger para segurança Web. O Burp Proxy permite
 
 Unidade de oito bits no escopo desta obra, representada por B nas unidades. Oferece 256 padrões e não equivale necessariamente a um caractere. [Conceito: 6.3][c63].
 
+### Bytecode
+
+Representação de código destinada a um mecanismo de execução, como uma máquina virtual de linguagem. Não é automaticamente código nativo da CPU nem um formato universal entre versões e implementações. [Conceito: 8.4][c84].
+
 ## C
+
+### Cabeçalho
+
+Header. No percurso C do capítulo 8, arquivo que reúne declarações e outras definições compartilhadas por inclusão. Em formatos como ELF, a palavra designa estruturas de metadados do artefato; são contextos diferentes. [Conceito C: 8.2][c82]; [contexto ELF: 8.3][c83].
 
 ### Cache
 
@@ -130,6 +174,10 @@ Situação em que o bloco procurado é encontrado no nível de cache examinado. 
 
 Situação em que o bloco procurado não está no nível de cache examinado e precisa ser obtido adiante. Não representa automaticamente defeito ou falha de segurança. [Conceito: 7.3][c73].
 
+### Carregador dinâmico
+
+Componente que encontra e prepara objetos compartilhados necessários à execução. No percurso ELF/Linux, não é o mesmo mecanismo que um interpretador de Python nem o bootloader que inicia o sistema operacional. [Conceito: 8.3][c83].
+
 ### Causalidade
 
 Relação em que uma condição ou ação contribui para produzir um efeito. Observar dois acontecimentos juntos não basta para estabelecê-la. [Conceito: 4.3][c43].
@@ -137,6 +185,10 @@ Relação em que uma condição ou ação contribui para produzir um efeito. Obs
 ### CERT/CC
 
 CERT Coordination Center, do Software Engineering Institute da Carnegie Mellon University. Aparece na resposta coordenada após o Morris Worm. É uma instituição, não o autor ou nome do programa. [Contexto: capítulo 2][c2].
+
+### Chamada de sistema
+
+System call. Interface pela qual um programa solicita serviços do kernel. Chamar uma função de biblioteca não implica realizar exatamente uma chamada de sistema: parte do trabalho pode acontecer no próprio processo. [Conceito: 8.3][c83].
 
 ### CISA
 
@@ -158,6 +210,30 @@ Agrupamento de pontos de código utilizado na segmentação de texto para aproxi
 
 Regra para representar informação. No caso do texto, especifica como valores de caracteres são convertidos em uma sequência de unidades, como bytes em UTF-8. Não deve ser confundida com criptografia. [Conceito: 6.4][c64].
 
+### Código de máquina
+
+Representação binária de instruções de uma arquitetura. Sua presença em um arquivo não comprova que ele seja um executável completo nem que seja compatível com todo ambiente que use a mesma CPU. [Conceitos: 8.2][c82] e [8.3][c83].
+
+### Código de saída
+
+Valor utilizado pelo programa ao comunicar seu encerramento normal. Não é o texto que escreveu na saída padrão; outros modos de término também participam do estado observado pelo sistema. [Conceito: 8.5][c85].
+
+### Código-fonte
+
+Descrição escrita segundo uma linguagem de programação. É uma representação armazenada em bytes, distinta do artefato produzido pela construção e da execução que usa esse artefato. [Conceito: 8.1][c81].
+
+### COFF
+
+Common Object File Format. Formato de objetos citado junto à documentação PE da Microsoft. A identificação do formato não garante, sozinha, compatibilidade de arquitetura, ABI ou dependências. [Menção: 8.3][c83]; [fonte S5][c8-ref].
+
+### Compilação
+
+Tradução de uma representação de programa para outra. Pode produzir assembly, código objeto ou representações intermediárias, conforme o percurso. Compilar não é necessariamente executar as operações descritas no fonte. [Conceitos: 8.2][c82] e [8.4][c84].
+
+### Compilador
+
+Programa que realiza uma tradução de código segundo regras da linguagem e do alvo. Não precisa produzir uma instrução por linha nem comprova automaticamente que a aplicação seja segura. [Conceito: 8.1][c81].
+
 ### Complemento de dois
 
 Convenção de representação de inteiros com sinal em que o bit de maior peso recebe peso negativo. Com oito bits, representa −128 a 127; a sequência de oito uns representa −1. [Conceito: 6.3][c63].
@@ -165,6 +241,10 @@ Convenção de representação de inteiros com sinal em que o bit de maior peso 
 ### Confidencialidade
 
 Preservação das restrições de acesso e divulgação. Não significa tornar tudo secreto: um catálogo público e um histórico privado têm regras diferentes. [Conceito: 5.1][c51].
+
+### Construção
+
+Processo que produz artefatos a partir das entradas de um projeto; build. Pode coordenar várias ferramentas e etapas. Alterar um arquivo-fonte não obriga uma construção automática a acontecer. [Conceito: 8.1][c81].
 
 ### Contador de programa
 
@@ -181,6 +261,10 @@ Associação observada entre acontecimentos ou variáveis. Pode orientar a inves
 ### CPU
 
 Central Processing Unit, unidade central de processamento. Executa instruções que transformam dados e atualizam o estado da execução. Não corresponde ao computador inteiro nem é o único componente capaz de processar informação. [Conceitos: 7.1][c71] e [7.2][c72].
+
+### CPython
+
+Implementação de Python usada no percurso do capítulo 8. Compila fonte para objetos de código e executa sua representação; detalhes de bytecode dependem da implementação e versão. Não é sinônimo de todas as implementações possíveis da linguagem. [Conceito: 8.4][c84].
 
 ### Credencial
 
@@ -224,6 +308,18 @@ Dados construídos para representar situações sem reproduzir registros pessoai
 
 Sistema de numeração de base dez, com algarismos de 0 a 9. Em notação posicional, cada posição à esquerda tem dez vezes o peso da anterior. Aqui o termo descreve a base, não um tipo específico de dados de uma linguagem. [Conceito: 6.2][c62].
 
+### Declaração
+
+No exemplo C, apresenta informações como nome, argumentos e retorno de uma função. A declaração sem corpo permite conhecer sua interface, mas não fornece a implementação necessária à ligação. [Conceito: 8.2][c82].
+
+### Descritor de arquivo
+
+Identificador de um recurso aberto no contexto de um processo. Apesar do nome, pode se relacionar a recursos que não são documentos em armazenamento persistente. [Conceito: 8.5][c85].
+
+### Diretório de trabalho
+
+Diretório corrente de um processo, usado como base em operações comuns com caminhos relativos. O mesmo nome relativo pode alcançar arquivos diferentes quando essa base muda. [Conceito: 8.5][c85].
+
 ### Disponibilidade
 
 Possibilidade de acesso e uso por quem está autorizado quando necessário. Recusar todos os pedidos não é correção suficiente se os usos legítimos também deixam de funcionar. [Conceito: 5.1][c51].
@@ -249,6 +345,10 @@ Dynamic Random Access Memory, memória dinâmica. Tecnologia de memória que exi
 Software que participa da comunicação e do controle entre sistema operacional e dispositivo. Não é o próprio circuito controlador nem o dado transferido. [Conceitos: 7.1][c71] e [7.5][c75].
 
 ## E
+
+### ELF
+
+Executable and Linkable Format. Formato que descreve diferentes artefatos, como objetos relocáveis, executáveis e bibliotecas compartilhadas. Tipo, arquitetura e organização precisam ser examinados; a assinatura do formato não demonstra o papel inteiro do arquivo. [Conceito: 8.3][c83].
 
 ### Encadeamento de vulnerabilidades
 
@@ -298,6 +398,10 @@ Hacking ético. Na obra, investigação ofensiva conduzida com autorização, es
 
 Informação que sustenta ou contraria uma afirmação sob condições identificadas. A procedência e os limites importam; uma tela não comprova automaticamente a explicação atribuída a ela. [Conceito: 4.3][c43].
 
+### execve
+
+Interface Linux que, quando bem-sucedida, substitui a imagem de programa executada por um processo existente. Seu PID é preservado; outros atributos seguem regras específicas. Não é sinônimo de criar um processo novo. [Conceito: 8.3][c83].
+
 ### Exploit
 
 Método ou artefato que aproveita uma vulnerabilidade. Não é a própria fraqueza; publicar um código não comprova vulnerabilidade de qualquer instalação do produto. [Conceito: 5.2][c52].
@@ -336,11 +440,23 @@ No contexto de escrita, solicitação para escoar dados pendentes ao nível de a
 
 Origem de ação ou condição capaz de explorar ou acionar uma fraqueza. Pode envolver intenção adversarial ou circunstâncias acidentais. [Conceito: 5.2][c52].
 
+### fork
+
+Interface que cria um processo filho no percurso Linux discutido. É uma operação diferente da substituição de imagem feita por `execve`; nem todo lançador precisa usar esse par exatamente da mesma maneira. [Conceito: 8.3][c83].
+
 ### Fronteira de confiança
 
 Limite entre contextos com permissões, controle ou suposições de confiança diferentes. Atravessá-lo exige examinar quais decisões e verificações deveriam ocorrer. [Menção: capítulo 1][c1].
 
+### Função
+
+Unidade de operações que pode ser chamada por outra parte de um programa. A interface informa argumentos e retorno; o corpo define o comportamento. Uma função de biblioteca não é necessariamente uma chamada de sistema. [Conceitos: 8.1][c81] e [8.3][c83].
+
 ## G
+
+### GCC
+
+GNU Compiler Collection. No exemplo, o comando `gcc` coordena etapas de tradução, montagem e ligação conforme as opções utilizadas. Não precisa executar todas essas etapas em toda invocação. [Conceito: 8.2][c82].
 
 ### GHz
 
@@ -434,6 +550,10 @@ Representação de inteiros não negativos. Em n bits com todos os padrões util
 
 Proteção contra alteração ou destruição indevida. Alterar uma data sem permissão é consequência diferente de consultar informação privada. [Conceito: 5.1][c51].
 
+### Interpretador
+
+Programa que implementa a execução de uma linguagem ou representação. Ele também depende de execução real na plataforma; não faz a CPU entender diretamente qualquer texto recebido. O interpretador indicado num ELF pode ser um carregador dinâmico, outro uso contextual do termo. [Conceitos: 8.4][c84] e [8.3][c83].
+
 ### Interrupção
 
 Sinal ou evento que encaminha a execução a uma rotina de atendimento conforme as condições do sistema. Pode representar uma ocorrência normal, como entrada disponível, e não necessariamente uma pane. [Conceito: 7.5][c75].
@@ -445,6 +565,16 @@ Input/Output Memory Management Unit. Mecanismo de tradução e restrição de ac
 ### ISA
 
 Instruction Set Architecture, arquitetura do conjunto de instruções. Interface de instruções e estado relevante ao software, distinta da organização interna que a implementa. Não determina sozinha toda a compatibilidade de um executável. [Conceito: 7.2][c72].
+
+## J
+
+### JIT
+
+Just-in-time compilation, compilação durante a execução. Pode combinar-se com interpretação e outras estratégias; não é obrigatório presumir que todo método foi compilado em toda execução de uma máquina virtual. [Conceito: 8.4][c84].
+
+### JVM
+
+Java Virtual Machine. Máquina abstrata que especifica representações e comportamento de programas, como o formato `class`. Uma implementação possui escolhas sobre como realizar a execução. Não é a mesma abstração que uma máquina virtual para instalar um sistema operacional convidado. [Conceito: 8.4][c84].
 
 ## K
 
@@ -460,6 +590,10 @@ kB, kilobyte, representa 1.000 bytes; KiB, kibibyte, representa 1.024 bytes. Os 
 
 Protocolo de autenticação em rede baseado em tickets e em uma autoridade de confiança. É mencionado como mecanismo de identidade que terá desenvolvimento próprio. [Menção: capítulo 1][c1]. [Especificação V5][kerberos-rfc].
 
+### Kernel
+
+Parte central do sistema operacional, responsável por funções essenciais de administração e mediação de recursos. Não se confunde com todo programa ou biblioteca disponível no sistema. [Introdução: 8.3][c83].
+
 ## L
 
 ### Latência
@@ -469,6 +603,22 @@ Duração de uma operação entre pontos de início e fim definidos. Não é sin
 ### LGPD
 
 Lei Geral de Proteção de Dados Pessoais, Lei brasileira nº 13.709/2018. O capítulo 3 introduz sua relação com evidências, sem emitir parecer sobre uma operação real. [Contexto: 3.2][c32].
+
+### Ligação
+
+Etapa que combina objetos e trata referências para produzir um artefato utilizável. Conhecer a declaração de uma função não garante que sua definição esteja disponível ao ligador. [Conceito: 8.2][c82].
+
+### Ligação dinâmica
+
+Ligação em que dependências são atendidas com participação de bibliotecas compartilhadas e do carregador dinâmico. Copiar somente o executável pode não transportar tudo de que ele precisa. [Conceitos: 8.2][c82] e [8.3][c83].
+
+### Ligação estática
+
+Ligação que pode incorporar código necessário de bibliotecas ao resultado construído. Um programa pode combinar decisões estáticas e dinâmicas; o comando abreviado não basta para inferir toda a composição do artefato. [Conceito: 8.2][c82].
+
+### Ligador
+
+Linker. Ferramenta que combina objetos, resolve referências a símbolos e realiza ajustes associados à ligação. Pode ser acionada por um coordenador como GCC. [Conceito: 8.2][c82].
 
 ### Linha de base
 
@@ -495,6 +645,10 @@ Registro de eventos produzido por um sistema. Seu valor depende dos campos, proc
 ### M.2
 
 Especificação de formato e conexão usada por diferentes dispositivos. Não é sinônimo de NVMe: o formato físico não determina sozinho a interface de armazenamento. [Conceito: 7.4][c74].
+
+### main
+
+Função usada como entrada principal no programa C convencional apresentado. Sua execução pode ser precedida por carregamento e inicialização; não é necessariamente a primeira instrução do executável nem da máquina. [Conceitos: 8.2][c82] e [8.3][c83].
 
 ### MB e MiB
 
@@ -535,6 +689,10 @@ Memory Management Unit, unidade de gerenciamento de memória. Participa da tradu
 ### Modelo de linguagem
 
 Modelo computacional usado para processar ou gerar linguagem. A introdução menciona aplicações que recebem contexto e instruções; nem todo modelo possui ferramentas externas. [Menção: capítulo 2][c2].
+
+### Montagem
+
+Conversão da representação assembly em código objeto, realizada por um montador ou assembler. É uma responsabilidade distinta da ligação das peças e da execução do programa resultante. [Conceito: 8.2][c82].
 
 ### Morris Worm
 
@@ -600,6 +758,10 @@ No contexto de exploração apresentado, componente que realiza a ação desejad
 
 Peripheral Component Interconnect Express. Interconexão utilizada para comunicação entre componentes e dispositivos. É uma camada diferente da interface de comandos NVMe. [Conceito: 7.4][c74].
 
+### PE
+
+Portable Executable. Formato de imagem executável descrito na documentação Windows. O nome não promete executar o mesmo artefato em qualquer sistema; arquitetura, ABI e dependências continuam relevantes. [Introdução: 8.3][c83].
+
 ### Pentest
 
 Penetration test, teste de intrusão. Avaliação com objetivos, escopo, métodos permitidos e comunicação de resultados; não se resume à obtenção de acesso. [Contexto: capítulo 2][c2] e [capítulo 3][c3].
@@ -611,6 +773,10 @@ Meios de conservar ou recuperar acesso apesar de mudanças, como interrupção d
 ### Phone phreaking
 
 Investigação e manipulação de mecanismos de redes telefônicas. O capítulo discute episódios históricos, sem generalizar métodos para redes atuais ou autorizá-los. [Contexto: capítulo 2][c2].
+
+### PID
+
+Process identifier, identificador de processo. No percurso Linux, a substituição de imagem por `execve` preserva o PID. O número identifica um contexto de processo, não uma versão imutável do programa. [Conceito: 8.3][c83].
 
 ### Pivotamento
 
@@ -624,6 +790,10 @@ Consulta repetida a um estado para descobrir se há evento ou trabalho disponív
 
 Identificador numérico de uma posição no espaço Unicode, escrito frequentemente como U+ seguido de hexadecimal. Não é sinônimo de byte nem de uma unidade visual de texto. [Conceito: 6.4][c64].
 
+### Ponto de entrada
+
+Posição de entrada indicada para um estágio de execução. No executável, não deve ser identificada automaticamente com `main`, pois carregamento e preparação do runtime podem preceder a função principal. [Conceito: 8.3][c83].
+
 ### Porta de rede
 
 Identificador usado por protocolos de transporte para distinguir pontos de comunicação. O número isolado não certifica qual serviço está sendo executado. [Menção: capítulo 1][c1].
@@ -631,6 +801,10 @@ Identificador usado por protocolos de transporte para distinguir pontos de comun
 ### Pós-exploração
 
 Análise e atividades posteriores ao acesso obtido por exploração, como investigar contexto, permissões e alcance. O objetivo determina o que é necessário e autorizado. [Introdução: capítulo 1][c1].
+
+### Pré-processamento
+
+Etapa que trata diretivas como inclusões de cabeçalhos antes da tradução C propriamente dita. O resultado textual não constitui a execução das operações descritas pelo programa. [Conceito: 8.2][c82].
 
 ### Previsão
 
@@ -643,6 +817,10 @@ Permissão ou capacidade associada a uma identidade ou contexto de execução. S
 ### Processador lógico
 
 Contexto de execução que o hardware apresenta ao sistema. Contextos do mesmo núcleo podem compartilhar recursos; não equivalem automaticamente a núcleos físicos independentes. [Conceito: 7.2][c72].
+
+### Processo
+
+Instância de execução administrada pelo sistema operacional, com estado, espaço de endereços e referências a recursos. Diferentes processos podem utilizar o mesmo programa sem compartilhar todo seu estado. [Conceito: 8.3][c83].
 
 ### Prompt injection
 
@@ -686,6 +864,10 @@ Pequeno espaço de armazenamento interno utilizado pelo processador na execuçã
 
 Condições sobre como conduzir o teste, incluindo métodos, janela de execução, comunicação e interrupção. Complementam a definição de escopo. [Conceito: 3.1][c31].
 
+### Relocação
+
+Ajuste de referências de endereço conforme a disposição atribuída às partes de um programa. Pode participar da preparação de componentes binários; não é simplesmente renomear ou mover um arquivo numa pasta. [Conceito: 8.2][c82].
+
 ### Requisição
 
 Mensagem em que um componente solicita uma operação a outro. Em HTTP, seu significado depende de método, destino e demais elementos, a serem aprofundados no módulo de redes. [Introdução: 4.3][c43].
@@ -706,6 +888,10 @@ Relação entre possibilidade de um evento adverso e consequências no contexto 
 
 Risco que permanece depois de controles ou respostas. Uma medida pode melhorar o cenário sem eliminar todas as possibilidades relevantes. [Conceito: 5.3][c53].
 
+### Runtime
+
+Ambiente de execução da linguagem: mecanismos que sustentam o processamento de código e suas operações. Pode incluir interpretação, bibliotecas e gerenciamento de objetos; não precisa ser um único arquivo isolado. [Conceito: 8.4][c84].
+
 ## S
 
 ### Safe harbor
@@ -720,6 +906,10 @@ Serial ATA. Interface de armazenamento que não deve ser confundida com um forma
 
 Ferramenta que automatiza observações ou testes. Descoberta de serviços e detecção de vulnerabilidades são tarefas distintas; alerta não substitui investigação. [Menção: capítulo 1][c1]; [conceito: 4.3][c43].
 
+### Seção de ELF
+
+Unidade de organização de material no formato ELF, utilizada, por exemplo, na ligação e na análise. Não é sinônimo de segmento de carregamento; as duas visões possuem responsabilidades diferentes. [Conceito: 8.3][c83].
+
 ### Secure Boot
 
 Mecanismo de verificação de componentes no caminho de inicialização conforme uma política de confiança. Não comprova que todos os programas do computador estejam livres de defeitos. [Conceito: 7.5][c75].
@@ -727,6 +917,10 @@ Mecanismo de verificação de componentes no caminho de inicialização conforme
 ### security.txt
 
 Arquivo padronizado pela RFC 9116 para indicar contatos e informações de divulgação de vulnerabilidades. Sua presença não concede, sozinha, autorização para testar. [Conceito: 3.1][c31].
+
+### Segmento de ELF
+
+Descrição de uma região relevante ao carregamento da imagem. Pode reunir mais de uma seção e apresentar tamanho em memória diferente do material armazenado no arquivo. [Conceito: 8.3][c83].
 
 ### SEI
 
@@ -743,6 +937,10 @@ Contexto usado por uma aplicação para associar interações, frequentemente a 
 ### Severidade
 
 Descrição da gravidade de uma vulnerabilidade segundo critérios determinados. Não equivale sozinha ao risco para uma organização específica. [Conceito: 5.3][c53].
+
+### Símbolo
+
+No contexto de ligação, associa um nome a um elemento do programa, como uma função. Resolver uma referência envolve relacionar seu uso à definição correspondente. Não é o mesmo sentido de símbolo visual de texto. [Conceito: 8.2][c82].
 
 ### Sinalização em banda
 
@@ -771,6 +969,10 @@ Static Random Access Memory, memória estática. Tecnologia de memória convenci
 ### SSD
 
 Solid-State Drive, unidade de armazenamento de estado sólido. Nos dispositivos NAND descritos, o controlador administra páginas, blocos e movimentação interna de dados; não há o mesmo movimento de cabeças e pratos de um HDD. [Conceito: 7.4][c74].
+
+### stdin, stdout e stderr
+
+Entrada padrão, saída padrão e saída de erros padrão. São fluxos que podem ser ligados ao terminal, a arquivos ou a outros canais; não são obrigatoriamente teclado e tela. No contexto Unix descrito, relacionam-se aos descritores convencionais 0, 1 e 2. [Conceito: 8.5][c85].
 
 ### Superfície de ataque
 
@@ -813,6 +1015,10 @@ Padrão para representar caracteres, com pontos de código e formas de codifica�
 Forma de codificação Unicode que utiliza de um a quatro bytes por valor escalar e preserva a representação ASCII. Uma unidade percebida pelo usuário pode reunir vários valores; nem toda sequência arbitrária de bytes é UTF-8 válido. [Conceito: 6.4][c64].
 
 ## V
+
+### Variável de ambiente
+
+Par de nome e valor fornecido no contexto de um processo. Pode influenciar configuração e localização de recursos, mas não corresponde automaticamente a uma variável local do fonte ou a um estado global idêntico em todos os processos. [Conceito: 8.5][c85].
 
 ### Vazão
 
@@ -867,10 +1073,16 @@ As definições metodológicas expressam o vocabulário de trabalho do livro. As
 [c73]: modulo-2/capitulo-7/7.3-memoria-e-cache.md
 [c74]: modulo-2/capitulo-7/7.4-armazenamento-e-persistencia.md
 [c75]: modulo-2/capitulo-7/7.5-dispositivos-e-firmware.md
+[c81]: modulo-2/capitulo-8/8.1-codigo-e-construcao.md
+[c82]: modulo-2/capitulo-8/8.2-compilacao-e-ligacao.md
+[c83]: modulo-2/capitulo-8/8.3-carregamento-e-processos.md
+[c84]: modulo-2/capitulo-8/8.4-interpretadores-e-runtimes.md
+[c85]: modulo-2/capitulo-8/8.5-contexto-e-diagnostico.md
 [c2-ref]: modulo-1/capitulo-2/referencias.md
 [c3-sol]: modulo-1/capitulo-3/solucoes.md
 [c4-ref]: modulo-1/capitulo-4/referencias.md
 [c5-ref]: modulo-1/capitulo-5/referencias.md
+[c8-ref]: modulo-2/capitulo-8/referencias.md
 [ad-doc]: https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
 [burp-doc]: https://portswigger.net/burp/documentation/desktop/tools/proxy
 [hashcat-doc]: https://hashcat.net/wiki/doku.php?id=hashcat

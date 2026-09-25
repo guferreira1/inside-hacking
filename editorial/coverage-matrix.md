@@ -32,18 +32,21 @@ A matriz relaciona conteúdos efetivamente desenvolvidos, sua profundidade e o q
 
 ## Módulo II — Computadores por dentro
 
-Pré-requisito editorial: leitura introdutória e disposição para acompanhar exemplos; não é exigida programação. O capítulo 7 utiliza as representações e unidades construídas no 6.
+Pré-requisito editorial: leitura introdutória e disposição para acompanhar exemplos; não é exigida programação prévia. O capítulo 7 utiliza as representações e unidades construídas no 6. O capítulo 8 utiliza esses componentes e explica o código mínimo necessário ao seu percurso.
 
 | ID | Tema / teoria disponível | Aplicação e defesa | Profundidade / fonte e limite |
 | --- | --- | --- | --- |
 | M02-01 | [Bits, bases e unidades](../book/modulo-2/capitulo-6/README.md) | Contas explicadas e testes de conversões. Distingue capacidade de imprevisibilidade, largura de interpretação. | Fundamentos; [fontes S1–S8](../book/modulo-2/capitulo-6/referencias.md). Revisão interna 1.0. Não ensina circuitos completos ou segurança de chaves. |
 | M02-02 | [Texto e interpretação](../book/modulo-2/capitulo-6/6.4-texto-e-interpretacao.md) | ASCII, UTF-8, pontos de código, agrupamentos e cortes; exemplos conferidos. | Introdução a codificações. Não implementa decodificador, normalização completa ou parser seguro. |
-| M02-03 | [CPU e componentes](../book/modulo-2/capitulo-7/README.md) | Percurso didático do editor, ciclo de instrução, clock, núcleo, ISA e microarquitetura. | Introdução funcional; [fontes S1–S16](../book/modulo-2/capitulo-7/referencias.md). DRAFT, não benchmark nem projeto de CPU. |
+| M02-03 | [CPU e componentes](../book/modulo-2/capitulo-7/README.md) | Percurso didático do editor, ciclo de instrução, clock, núcleo, ISA e microarquitetura. | Introdução funcional; [fontes S1–S16](../book/modulo-2/capitulo-7/referencias.md). Revisão interna 1.0; não benchmark nem projeto de CPU. |
 | M02-04 | [Hierarquia de memória](../book/modulo-2/capitulo-7/7.3-memoria-e-cache.md) | RAM, cache, endereço/conteúdo e média hipotética; separa MMU e representação física. | Fundamentos. Memória virtual, processos e permissões ainda exigem aprofundamento no capítulo 9. |
 | M02-05 | [Armazenamento e dispositivos](../book/modulo-2/capitulo-7/7.4-armazenamento-e-persistencia.md) | Persistência, interfaces e controles de escrita; [DMA e firmware](../book/modulo-2/capitulo-7/7.5-dispositivos-e-firmware.md). | Introdução. Sem ensaio de energia, driver, configuração de firmware ou exploração de hardware. |
+| M02-06 | [Fonte, construção e ligação](../book/modulo-2/capitulo-8/8.2-compilacao-e-ligacao.md) | Três arquivos C e testes de estágios, definição ausente e reconstrução. | Fundamentos, DRAFT; [fontes S1–S14](../book/modulo-2/capitulo-8/referencias.md). GCC/Linux como percurso concreto, não todas as toolchains. |
+| M02-07 | [Carregamento e processo](../book/modulo-2/capitulo-8/8.3-carregamento-e-processos.md) | ELF, ABI, imagem, PID, fork/exec e preparação antes de main. | Introdução. Testes de artefatos não instrumentam todo carregamento nem comprovam isolamento do sistema. Memória aprofundada no capítulo 9. |
+| M02-08 | [Runtimes](../book/modulo-2/capitulo-8/8.4-interpretadores-e-runtimes.md) e [contexto](../book/modulo-2/capitulo-8/8.5-contexto-e-diagnostico.md) | CPython, bytecode, JIT, argumentos, ambiente e saída. Testes próprios de contexto Python. | Introdução. JVM e Windows pesquisados por documentação, não executados; nenhum abuso de carregamento ou exploração foi realizado. |
 
 ## Cobertura ainda planejada
 
 A matriz continuará a detalhar redes e sistemas, reconhecimento, autenticação, ataques a credenciais, Web, APIs, injeções, autorização, lógica de negócio, infraestrutura, Linux, Windows, Active Directory, cloud, containers, supply chain, exploração de software, pós-exploração, escalada de privilégios, persistência, pivotamento, movimentação lateral, segurança de IA, redes sem fio, mobile, IoT, privacidade, dark web, OSINT, investigação e defesa.
 
-Esses temas pertencem ao planejamento, não são capítulos concluídos por aparecerem nesta lista. Os capítulos 8–10 e demais módulos não recebem linhas de cobertura efetiva antes da produção do texto. A matriz não afirma completude e não substitui os registros específicos de revisão.
+Esses temas pertencem ao planejamento, não são capítulos concluídos por aparecerem nesta lista. Os capítulos 9 e 10 e os demais módulos não recebem linhas de cobertura efetiva antes da produção do texto. A matriz não afirma completude e não substitui os registros específicos de revisão.

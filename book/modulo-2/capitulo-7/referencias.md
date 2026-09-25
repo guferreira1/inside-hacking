@@ -2,7 +2,7 @@
 
 [← Capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 24/09/2026. **Versão:** DRAFT 0.1.
+**Consulta:** 24/09/2026. **Versão:** VALIDATED 1.0 — fechamento interno, sem revisão independente.
 
 A narrativa do editor, as analogias e as contas são construções autorais. O capítulo apresenta mecanismos, não uma avaliação de hardware real. Foram consultados os trechos delimitados abaixo; isso não equivale à leitura integral de todas as especificações ou à revisão independente.
 
@@ -156,4 +156,4 @@ Uso: GPU como processamento adicional e importância de adequação e movimenta�
 
 [test_chapter7_examples.py](../../../scripts/tests/test_chapter7_examples.py) verifica somente as equivalências de clock, o tempo hipotético em ciclos, a média de acesso construída e a distinção entre endereço e conteúdo no pequeno modelo. Esses testes não simulam fielmente uma CPU, não reproduzem DMA e não medem persistência.
 
-A navegação e os testes editoriais são conferidos pelo workflow de documentação. Seu sucesso não valida automaticamente toda a semântica do manuscrito. O capítulo permanece em primeira leitura; consulte o [registro editorial](../../../editorial/reviews/capitulo-7.md).
+A navegação e os testes editoriais são conferidos pelo workflow de documentação. Seu sucesso não valida automaticamente toda a semântica do manuscrito. O retorno favorável foi recebido e o ciclo de revisão interna da versão 1.0 foi encerrado; a revisão técnica independente continua pendente. Consulte o [registro editorial](../../../editorial/reviews/capitulo-7.md).

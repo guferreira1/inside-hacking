@@ -65,7 +65,15 @@ As [fontes S1–S16](modulo-2/capitulo-7/referencias.md) relacionam o curso Comp
 
 Seu uso é delimitado: mecanismos de processamento e hierarquia, tradução de endereços, confirmação de escrita, DMA, firmware e estágios de inicialização. Não foram importados benchmarks, recomendações de compra ou garantias de segurança integral. Tentativas sem conteúdo recuperável da especificação UEFI não foram registradas como leitura da especificação.
 
-A narrativa do editor e as contas são originais. Quatro [testes de conferência](../scripts/tests/test_chapter7_examples.py) tratam apenas dos modelos numéricos e de endereço, não de desempenho ou proteção de equipamentos reais. O capítulo permanece DRAFT 0.1, conforme seu [registro editorial](../editorial/reviews/capitulo-7.md).
+A narrativa do editor e as contas são originais. Quatro [testes de conferência](../scripts/tests/test_chapter7_examples.py) tratam apenas dos modelos numéricos e de endereço, não de desempenho ou proteção de equipamentos reais. Após o retorno favorável do mantenedor e a reconferência interna de texto, respostas e limites das fontes, o ciclo editorial da versão 1.0 foi encerrado. O [registro editorial](../editorial/reviews/capitulo-7.md) preserva a pendência de revisão independente.
+
+## Capítulo 8 — Como um programa se torna execução
+
+As [fontes S1–S14](modulo-2/capitulo-8/referencias.md) relacionam documentação GCC e GNU, ELF, Linux man-pages, formato PE e convenções binárias da Microsoft, uma interface LSB, materiais da Python Software Foundation e a especificação JVM Java SE 25.
+
+O percurso distingue código-fonte, artefatos, pré-processamento, compilação, montagem, ligação, carregamento e contexto de execução. Interpretadores e runtimes são explicados sem impor uma divisão absoluta entre linguagens compiladas e interpretadas.
+
+Os [três arquivos C](modulo-2/capitulo-8/exemplos/README.md) e os [nove testes editoriais](../scripts/tests/test_chapter8_examples.py) são autorais. A execução realizada em Linux/GCC e Python é delimitada; Windows, JVM, permissões especiais e todos os detalhes de carregamento não foram reproduzidos. O capítulo permanece DRAFT 0.1, conforme seu [registro de entrega](../editorial/reviews/capitulo-8.md).
 
 ## Política de referências
 

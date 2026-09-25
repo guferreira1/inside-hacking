@@ -27,9 +27,10 @@ Uma leitura aprovada confirma uma experiência de leitura; não substitui audito
 | 4 | VALIDATED — versão editorial 1.0; leitura aprovada em 24/09/2026 | Fontes S1–S9 e seis respostas reconferidas; cenário fictício. Sem execução de laboratório alegada; revisão independente pendente. [Registro](reviews/capitulo-4.md). |
 | 5 | VALIDATED — versão editorial 1.0; leitura aprovada em 24/09/2026 | Fontes S1–S12 e relações entre conceitos reconferidas. Exemplos fictícios; nenhuma medição de risco ou exploração alegada. Revisão independente pendente. [Registro](reviews/capitulo-5.md). |
 | 6 | VALIDATED — versão editorial 1.0; retorno favorável em 24/09/2026 | Quatro seções e oito respostas reconferidas; fontes S1–S8 e cinco testes de exemplos numéricos. Revisão técnica independente pendente. [Registro](reviews/capitulo-6.md). |
-| 7 | DRAFT 0.1 — primeira entrega de leitura | Cinco seções, nove questões opcionais, soluções e fontes S1–S16. Quatro testes de modelos aritméticos, sem benchmark de hardware. Primeira leitura e revisão independente pendentes. [Registro](reviews/capitulo-7.md). |
+| 7 | VALIDATED — versão editorial 1.0; retorno favorável em 24/09/2026 | Cinco seções e nove respostas relidas; fontes S1–S16 e quatro testes de modelos delimitados. Sem benchmark ou alteração de hardware; revisão independente pendente. [Registro](reviews/capitulo-7.md). |
+| 8 | DRAFT 0.1 — primeira entrega de leitura | Cinco seções, nove questões e soluções, fontes S1–S14, três arquivos C e nove testes. Execução local Linux/GCC e Python delimitada; primeira leitura e revisão independente pendentes. [Registro](reviews/capitulo-8.md). |
 
-As aprovações dos capítulos 4 a 6 registram os retornos informados pelo mantenedor. Não foram informados duração das sessões, respostas aos exercícios ou execução de ferramentas; esses resultados não foram presumidos. A validação editorial não é uma classificação de domínio prático do leitor.
+As aprovações dos capítulos 4 a 7 registram os retornos informados pelo mantenedor. Não foram informados duração das sessões, respostas aos exercícios ou execução de ferramentas pelo leitor; esses resultados não foram presumidos. A validação editorial não é uma classificação de domínio prático do leitor. Testes executados pela equipe para verificar exemplos são registrados separadamente.
 
 As antigas anotações genéricas de “fact-check primário concluído” não constituem auditoria integral. O capítulo 1 mantém suas próprias pendências; a conclusão de outro capítulo não o promove automaticamente.
 
@@ -39,13 +40,13 @@ O capítulo 5 foi produzido antes do 4. A lacuna foi resolvida com a primeira re
 
 O [Módulo I](../book/modulo-1/README.md) possui os cinco textos e leitura inicial aprovada. Seu fechamento interno ainda depende do capítulo 1. Não foi criada uma release ou publicação de encerramento do módulo.
 
-No [Módulo II](../book/modulo-2/README.md), o [Capítulo 6](../book/modulo-2/capitulo-6/README.md) encerrou o ciclo interno da versão 1.0, e o [Capítulo 7](../book/modulo-2/capitulo-7/README.md) está disponível em primeira entrega. Abrir a próxima unidade de leitura não apaga as pendências editoriais da anterior. Os capítulos 8–10 continuam planejados, sem manuscritos nesta entrega.
+No [Módulo II](../book/modulo-2/README.md), os capítulos [6](../book/modulo-2/capitulo-6/README.md) e [7](../book/modulo-2/capitulo-7/README.md) encerraram seus ciclos internos da versão 1.0. O [Capítulo 8](../book/modulo-2/capitulo-8/README.md) está disponível em primeira entrega. Abrir a próxima unidade não apaga pendências anteriores. Os capítulos 9 e 10 continuam planejados, sem manuscritos nesta entrega.
 
 ## Organização por módulos
 
 Os capítulos ficam em `book/modulo-M/capitulo-N/`, conforme o [guia de estrutura](repository-structure.md). Cada módulo possui índice e estado próprios. A numeração dos capítulos é global, sem reinício por módulo.
 
-A migração anterior de diretórios não alterou o conteúdo nem o estado editorial dos capítulos. As mudanças de conteúdo e os fechamentos são registrados em suas próprias entregas. Atualizações do glossário acompanham cada novo capítulo, conforme a [política de terminologia](glossary-policy.md). A [matriz de cobertura](coverage-matrix.md) distingue introdução, desenvolvimento e pendências.
+A migração anterior de diretórios não alterou o conteúdo nem o estado editorial dos capítulos. As mudanças de conteúdo e os fechamentos são registrados em suas próprias entregas. Atualizações do glossário acompanham cada novo capítulo, conforme a [política de terminologia](glossary-policy.md).
 
 ## Publicação e comunidade
 
@@ -57,9 +58,9 @@ As publicações de continuidade planejadas no LinkedIn usarão o fechamento edi
 
 ## Próximas unidades de trabalho
 
-1. Receber a primeira leitura do Capítulo 7 e revisar sua clareza, principalmente a transição entre memória e persistência.
+1. Receber a primeira leitura do Capítulo 8 e revisar a clareza da passagem entre construção e execução.
 2. Concluir as pendências factuais do Capítulo 1 antes de fechar o Módulo I e preparar seu post de marco.
-3. Prosseguir depois para o Capítulo 8 — Como um programa se torna execução.
+3. Prosseguir depois para o Capítulo 9 — Memória, processos e arquitetura de computadores.
 4. Incorporar revisão independente e, onde aplicável, jurídica especializada à preparação da primeira edição estável.
 5. Planejar a primeira geração de PDF e conferir sua apresentação antes de anunciar uma release, incluindo os avisos das licenças e os créditos aplicáveis.
 

@@ -11,7 +11,7 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 | Módulo | Percurso previsto | Situação |
 | --- | --- | --- |
 | [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
-| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Capítulos 6 e 7 disponíveis; demais capítulos planejados |
+| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Capítulos 6 a 8 disponíveis; demais capítulos planejados |
 
 Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. No planejamento atual, o Módulo III começa no capítulo 11.
 
@@ -61,7 +61,8 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 | Capítulo | Leitura | Estado |
 | --- | --- | --- |
 | 6 | [Bits, bytes e representação da informação](modulo-2/capitulo-6/README.md) | Revisão interna concluída — v1.0 |
-| 7 | [Hardware: CPU, memória, armazenamento e dispositivos](modulo-2/capitulo-7/README.md) | Rascunho para leitura — v0.1 |
+| 7 | [Hardware: CPU, memória, armazenamento e dispositivos](modulo-2/capitulo-7/README.md) | Revisão interna concluída — v1.0 |
+| 8 | [Como um programa se torna execução](modulo-2/capitulo-8/README.md) | Rascunho para leitura — v0.1 |
 
 ### Dentro do Capítulo 6
 
@@ -81,6 +82,16 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 - [7.5 · Dispositivos também participam da confiança](modulo-2/capitulo-7/7.5-dispositivos-e-firmware.md)
 - [Respostas comentadas](modulo-2/capitulo-7/solucoes.md) às perguntas opcionais.
 - [Referências e limites da pesquisa](modulo-2/capitulo-7/referencias.md).
+
+### Dentro do Capítulo 8
+
+- [8.1 · O arquivo que você editou não é necessariamente o que executou](modulo-2/capitulo-8/8.1-codigo-e-construcao.md)
+- [8.2 · Traduzir as peças e encontrar as conexões](modulo-2/capitulo-8/8.2-compilacao-e-ligacao.md)
+- [8.3 · Um arquivo ganha um contexto de execução](modulo-2/capitulo-8/8.3-carregamento-e-processos.md)
+- [8.4 · Interpretar também exige execução](modulo-2/capitulo-8/8.4-interpretadores-e-runtimes.md)
+- [8.5 · O programa não trabalha sozinho](modulo-2/capitulo-8/8.5-contexto-e-diagnostico.md)
+- [Exemplos de construção](modulo-2/capitulo-8/exemplos/README.md), opcionais.
+- [Respostas comentadas](modulo-2/capitulo-8/solucoes.md) e [referências](modulo-2/capitulo-8/referencias.md).
 
 ## Como navegar
 

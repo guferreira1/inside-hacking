@@ -1,10 +1,10 @@
 # Capítulo 7 — Hardware: CPU, memória, armazenamento e dispositivos
 
-[← Capítulo 6](../capitulo-6/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
+[← Capítulo 6](../capitulo-6/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md) · [Capítulo 8 →](../capitulo-8/README.md)
 
 **Módulo II — Computadores por dentro**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Fontes primárias identificadas; modelos e contas delimitados. Leitura do mantenedor e revisão técnica independente pendentes. [Registro editorial](../../../editorial/reviews/capitulo-7.md).
+> **Status:** VALIDATED — versão editorial 1.0; retorno favorável e revisão interna concluída em 24/09/2026. Revisão técnica independente pendente. [Registro editorial](../../../editorial/reviews/capitulo-7.md).
 
 Você escreve uma frase em um editor. Ela aparece na tela. Antes de salvar, falta energia. Quando o computador volta, o arquivo ainda contém a versão anterior.
 
@@ -29,3 +29,5 @@ A frase do editor será nosso fio condutor. Os exemplos são didáticos, não me
 As [referências](referencias.md) delimitam o uso das fontes. No encerramento, há perguntas opcionais e [respostas comentadas](solucoes.md). Os [testes de conferência](../../../scripts/tests/test_chapter7_examples.py) verificam somente contas explícitas do texto, não desempenho ou proteção de hardware.
 
 **[Começar a seção 7.1 →](7.1-componentes-e-caminhos.md)**
+
+Depois deste percurso, siga para o [Capítulo 8 — Como um programa se torna execução](../capitulo-8/README.md).
