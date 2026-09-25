@@ -1,10 +1,10 @@
 # Capítulo 8 — Como um programa se torna execução
 
-[← Capítulo 7](../capitulo-7/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
+[← Capítulo 7](../capitulo-7/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md) · [Capítulo 9 →](../capitulo-9/README.md)
 
 **Módulo II — Computadores por dentro**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Fontes primárias e exemplos identificados; leitura do mantenedor e revisão independente pendentes. [Registro editorial](../../../editorial/reviews/capitulo-8.md).
+> **Status:** VALIDATED — versão editorial 1.0; retorno favorável e revisão interna concluída em 24/09/2026. Revisão técnica independente pendente. [Registro editorial](../../../editorial/reviews/capitulo-8.md).
 
 Você altera uma conta no código de um programa. Antes era `2 + 3`; agora é `2 + 7`. Salva o arquivo, executa o programa e continua recebendo cinco.
 

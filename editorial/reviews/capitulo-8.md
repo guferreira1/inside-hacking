@@ -1,34 +1,32 @@
-# Primeira entrega editorial — Capítulo 8
+# Fechamento editorial — Capítulo 8
 
-**Data:** 24/09/2026. **Estado:** DRAFT 0.1. **Módulo:** II.  
-**Base:** `05af26d7776887be714fb58a00056124460b24ac`.
+**Data:** 24/09/2026. **Estado:** VALIDATED — versão editorial 1.0. **Módulo:** II.  
+**Versão relida:** `6547111cae636b1e4afdefbe131d49f0b8ed94d4`.
 
 [Manuscrito](../../book/modulo-2/capitulo-8/README.md) · [Referências](../../book/modulo-2/capitulo-8/referencias.md) · [Exemplos](../../book/modulo-2/capitulo-8/exemplos/README.md)
 
-## Objetivo e percurso
+## Retorno e decisão
 
-Cinco seções conectam código-fonte, construção, ligação, carregamento, contexto de processo e runtimes. Um programa C em três arquivos torna concreta a diferença entre declaração e definição, fonte editado e executável produzido, saída textual e código de encerramento. Python e JVM ampliam a explicação sem impor uma dicotomia universal entre compilado e interpretado.
+O mantenedor apresentou retorno favorável e solicitou continuidade para o capítulo seguinte. Esse retorno foi registrado como aprovação da experiência de leitura, sem atribuir duração de estudo, respostas aos exercícios, reprodução dos exemplos ou domínio prático que não foram informados.
 
-O texto não exige experiência prévia em C. Os elementos utilizados são explicados; a execução é opcional. Não foi criado laboratório ofensivo ou serviço de rede. O capítulo 9 permanece responsável por aprofundar a organização da memória e dos processos.
+As cinco seções, nove perguntas e respostas, referências delimitadas e relação com os exemplos foram relidas. O ciclo interno desta versão pode ser encerrado. VALIDATED não representa revisão independente ou uma edição publicada em PDF.
 
-## Pesquisa e revisão interna
+## Conteúdo e verificações
 
-As fontes S1–S14 foram consultadas nos trechos documentados. A redação distingue arquivos ELF de tipos diferentes, ABI de ISA, `fork` de `execve`, ponto de entrada de `main`, chamada de biblioteca de chamada de sistema e bytecode de executável nativo. As nove questões foram comparadas às soluções.
+O percurso conecta código-fonte, construção, ligação, carregamento, contexto de processo e runtimes. Mantém as distinções entre declaração e definição, fonte e executável, ELF de tipos diferentes, ABI e ISA, fork e execve, ponto de entrada e main, chamada de biblioteca e chamada de sistema, bytecode e executável nativo.
 
-O caminho Linux/GCC é um exemplo de implementação. PE, convenções Windows, LSB e JVM possuem seus próprios limites identificados, sem alegação de execução ou universalidade. Não se afirma que toda chamada `printf` corresponda a uma única chamada de sistema nem que todo ELF `ET_DYN` seja obrigatoriamente uma biblioteca.
+A rastreabilidade S1–S14 continua vinculada aos mecanismos. O caminho Linux/GCC permanece um exemplo de implementação; PE, Windows, LSB e JVM não recebem alegação de reprodução prática. A consulta inicial das fontes e a releitura editorial são atividades diferentes; não se apresenta uma auditoria externa inexistente.
 
-## Execução efetivamente realizada
+## Evidências preservadas
 
-Os [nove testes](../../scripts/tests/test_chapter8_examples.py) passaram no ambiente de edição: Debian GNU/Linux 13, Linux x86-64, GCC 14.2.0 e Python 3.13.5. Seis conferem artefatos e execução C; três conferem objetos de código e contextos Python. Os programas são próprios, executados em temporários; não houve rede ou coleta de dados do usuário.
+A entrega inicial executou nove testes em Debian GNU/Linux 13, Linux x86-64, GCC 14.2.0 e Python 3.13.5: seis sobre artefatos/execução C e três sobre compilação/contexto Python. A falha esperada de ligação foi verificada como caso negativo. Namespaces Python não foram tratados como isolamento de processos.
 
-Foram conferidos resultados positivos e a falha esperada de ligação quando a implementação é omitida. Falha esperada no cenário negativo é um comportamento examinado pelo teste, não falha da suíte. Renomear um executável foi examinado apenas no ambiente Linux utilizado. Namespaces separados em Python não foram apresentados como isolamento real de processos.
+A suíte permanece no workflow para nova conferência com a entrega do capítulo 9. O resultado de cada execução, incluindo eventual teste ignorado, precisa ser lido no workflow correspondente. A revisão não amplia o alcance dos testes originais.
 
-A checagem do repositório completo deve ser confirmada pelo workflow do commit, pois não houve clone local bem-sucedido do repositório. Execução local dos exemplos não equivale a varredura local de todos os Markdown. Os testes C declaram Linux e GCC como requisitos; um caso ignorado deve permanecer visível nos logs.
+## Documentação e limites
 
-## Documentação e continuidade
+Cabeçalhos, referências, índices, bibliografia, matriz de cobertura e estado editorial foram sincronizados. O glossário foi conferido junto com a ampliação para o capítulo 9, preservando os termos já introduzidos. A navegação agora oferece continuidade ao novo capítulo.
 
-A entrega atualiza README principal, índice geral e do módulo, bibliografia, glossário, matriz de cobertura, estado editorial e a passagem entre capítulos. Os termos novos possuem ocorrência no manuscrito; o glossário não importa capítulos futuros para inflar cobertura.
+Revisão técnica independente permanece pendente. Não houve geração de PDF, pesquisa de malware ou exploração de terceiros. O capítulo 1 conserva suas próprias pendências e nenhum módulo foi encerrado automaticamente.
 
-Primeira leitura do mantenedor e revisão técnica independente do capítulo 8 permanecem pendentes. Não houve geração de PDF. O capítulo 7 encerra seu ciclo interno separadamente; o capítulo 1 continua em revisão e o Módulo I não é declarado encerrado.
-
-**Próxima revisão:** receber a leitura do capítulo 8, observando se a distinção entre etapas ficou clara sem tornar a narrativa um manual de comandos. Próximo capítulo planejado: **9 — Memória, processos e arquitetura de computadores**.
+**Próxima unidade:** Capítulo 9 — Memória, processos e arquitetura de computadores, disponível em primeira entrega.

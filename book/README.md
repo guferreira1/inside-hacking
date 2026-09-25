@@ -11,7 +11,7 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 | Módulo | Percurso previsto | Situação |
 | --- | --- | --- |
 | [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
-| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Capítulos 6 a 8 disponíveis; demais capítulos planejados |
+| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Capítulos 6 a 9 disponíveis; capítulo 10 planejado |
 
 Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. No planejamento atual, o Módulo III começa no capítulo 11.
 
@@ -62,7 +62,8 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 | --- | --- | --- |
 | 6 | [Bits, bytes e representação da informação](modulo-2/capitulo-6/README.md) | Revisão interna concluída — v1.0 |
 | 7 | [Hardware: CPU, memória, armazenamento e dispositivos](modulo-2/capitulo-7/README.md) | Revisão interna concluída — v1.0 |
-| 8 | [Como um programa se torna execução](modulo-2/capitulo-8/README.md) | Rascunho para leitura — v0.1 |
+| 8 | [Como um programa se torna execução](modulo-2/capitulo-8/README.md) | Revisão interna concluída — v1.0 |
+| 9 | [Memória, processos e arquitetura de computadores](modulo-2/capitulo-9/README.md) | Rascunho para leitura — v0.1 |
 
 ### Dentro do Capítulo 6
 
@@ -92,6 +93,16 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 - [8.5 · O programa não trabalha sozinho](modulo-2/capitulo-8/8.5-contexto-e-diagnostico.md)
 - [Exemplos de construção](modulo-2/capitulo-8/exemplos/README.md), opcionais.
 - [Respostas comentadas](modulo-2/capitulo-8/solucoes.md) e [referências](modulo-2/capitulo-8/referencias.md).
+
+### Dentro do Capítulo 9
+
+- [9.1 · Duas execuções, dois contextos](modulo-2/capitulo-9/9.1-processos-threads-e-contextos.md)
+- [9.2 · O endereço precisa de um mapa](modulo-2/capitulo-9/9.2-enderecos-paginas-e-traducao.md)
+- [9.3 · Ter espaço não significa poder usá-lo de qualquer maneira](modulo-2/capitulo-9/9.3-regioes-objetos-e-tempo-de-vida.md)
+- [9.4 · Memória prometida, presente e compartilhada](modulo-2/capitulo-9/9.4-paginacao-copias-e-medidas.md)
+- [9.5 · Proteção não é uma única parede](modulo-2/capitulo-9/9.5-protecao-concorrencia-e-diagnostico.md)
+- [Exemplo opcional de mapeamentos](modulo-2/capitulo-9/exemplos/README.md).
+- [Respostas comentadas](modulo-2/capitulo-9/solucoes.md) e [referências](modulo-2/capitulo-9/referencias.md).
 
 ## Como navegar
 

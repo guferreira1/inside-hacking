@@ -2,7 +2,7 @@
 
 [← Capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 24/09/2026. **Versão:** DRAFT 0.1.
+**Consulta inicial:** 24/09/2026. **Versão editorial:** VALIDATED 1.0 — fechamento interno após retorno favorável; revisão independente pendente.
 
 A narrativa, os programas e as comparações foram desenvolvidos para a obra. As fontes sustentam os mecanismos delimitados abaixo, não endossam o livro. O percurso nativo utiliza Linux, ELF e uma construção C com GCC; as observações desse ambiente não são generalizadas para todas as plataformas.
 
@@ -162,4 +162,4 @@ Foram conferidos pré-processamento, saída assembly, tipos de objeto/executáve
 
 O workflow do repositório executa novamente a suíte ao processar a entrega. Resultado e eventuais saltos de testes devem ser lidos nos logs da execução correspondente; a mera presença dos testes não comprova que rodaram. A parte C exige Linux e GCC e declara essa dependência.
 
-Não houve análise de malware, exploração, teste de Windows/JVM ou revisão técnica independente. As evidências verificam exemplos delimitados, não todas as afirmações do capítulo. Consulte o [registro editorial](../../../editorial/reviews/capitulo-8.md).
+Após o retorno favorável do mantenedor, texto, questões, respostas e limites da rastreabilidade foram relidos para o fechamento interno da versão 1.0. Não houve análise de malware, exploração, teste de Windows/JVM ou revisão técnica independente. As evidências verificam exemplos delimitados, não todas as afirmações possíveis sobre execução. Consulte o [registro editorial](../../../editorial/reviews/capitulo-8.md).

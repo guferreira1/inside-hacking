@@ -6,7 +6,7 @@ Este glossário acompanha os termos presentes na obra. Cada entrada aponta para 
 
 Não importamos todos os assuntos futuros. OSINT é identificado como menção do planejamento, incluída para esclarecer a sigla solicitada na revisão. Os demais verbetes se relacionam ao texto ou às referências dos capítulos disponíveis.
 
-**Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x).
+**Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x).
 
 ## A
 
@@ -21,6 +21,10 @@ Modelo que trata sinais como valores discretos, por exemplo 0 e 1, sem represent
 ### Active Directory
 
 Tecnologias de diretório da Microsoft. No contexto de domínios citado, Active Directory Domain Services organiza objetos, como usuários e computadores, e participa da administração de identidades e acesso. [Menção: capítulo 2][c2]. [Documentação][ad-doc].
+
+### Alocação dinâmica
+
+Obtenção de espaço cujo tamanho ou duração pode ser decidido durante a execução. No percurso C, seu contrato é distinto da duração de variáveis automáticas e estáticas. Um pedido ao alocador não equivale necessariamente a uma nova região física exclusiva. [Conceito: 9.3][c93].
 
 ### ALU
 
@@ -57,6 +61,10 @@ Resultado concreto de uma etapa de construção, como um objeto ou executável. 
 ### ASCII
 
 American Standard Code for Information Interchange. Código de sete bits com 128 posições, incluindo letras, dígitos, pontuação e controles. A letra A tem valor decimal 65, ou hexadecimal 41. O ASCII básico não representa todo o texto Unicode. [Conceito: 6.4][c64].
+
+### ASLR
+
+Address Space Layout Randomization. Variação da disposição de regiões do espaço de endereços, conforme suporte e configuração. Dificulta certas suposições de localização, mas não corrige por si só uma escrita fora de limites. [Conceito: 9.5][c95].
 
 ### Assembly
 
@@ -123,6 +131,10 @@ Dispositivo histórico empregado para produzir sinais usados em certos sistemas 
 ### Bootloader
 
 Carregador de inicialização. Software que conduz o carregamento ou a passagem ao próximo estágio de execução necessário ao sistema operacional. Não é sinônimo de todo o firmware da máquina. [Conceito: 7.5][c75].
+
+### BSS
+
+No ELF discutido, `.bss` é uma seção associada a dados cujo estado inicial zerado não exige ocupar o mesmo espaço em bytes no arquivo. Essa preparação não significa que qualquer alocação posterior, como malloc, também inicialize seus bytes. [Conceito: 9.3][c93].
 
 ### Buffer
 
@@ -238,6 +250,14 @@ Programa que realiza uma tradução de código segundo regras da linguagem e do 
 
 Convenção de representação de inteiros com sinal em que o bit de maior peso recebe peso negativo. Com oito bits, representa −128 a 127; a sequência de oito uns representa −1. [Conceito: 6.3][c63].
 
+### Concorrência
+
+Organização de atividades cujos períodos de progresso se sobrepõem, mesmo quando usam uma unidade de execução em momentos alternados. Não exige paralelismo físico em todo instante. [Conceito: 9.1][c91].
+
+### Condição de corrida
+
+Situação em que a ordem ou o momento relativo das operações afeta um resultado que deveria obedecer a uma regra. O exemplo do contador examina sincronização inadequada sem executar uma data race real. [Conceito: 9.5][c95].
+
 ### Confidencialidade
 
 Preservação das restrições de acesso e divulgação. Não significa tornar tudo secreto: um catálogo público e um histórico privado têm regras diferentes. [Conceito: 5.1][c51].
@@ -253,6 +273,10 @@ Program counter, PC. Estado do processador que participa da determinação de qu
 ### Controlador
 
 Componente que gerencia operações de um dispositivo ou subsistema. Distingue-se do driver, que é software de comunicação e controle utilizado pelo sistema. [Conceito: 7.1][c71].
+
+### Cópia na escrita
+
+Copy-on-write, COW. Estratégia que preserva visões privadas sem copiar antecipadamente todo o conteúdo; uma escrita pode exigir criar uma cópia e ajustar o mapeamento. Não significa que toda escrita necessariamente copie uma página nova. [Conceito: 9.4][c94].
 
 ### Correlação
 
@@ -296,6 +320,10 @@ Common Weakness Enumeration. Catálogo de tipos de fraquezas de software e hardw
 
 Defense Advanced Research Projects Agency. Agência citada por solicitar ao SEI uma capacidade de resposta após o incidente de 1988. [Contexto: capítulo 2][c2].
 
+### Data race
+
+No contexto de memória compartilhada, conflito entre acessos de threads, ao menos um de escrita, sem a coordenação exigida pelo modelo de memória. Em C/C++, não deve ser reduzida a uma previsão de qual escrita vence: pode envolver comportamento indefinido. É um conceito mais específico que a expressão ampla condição de corrida. [Contexto: 9.5][c95]; [fontes S17][c9-ref].
+
 ### Dados pessoais
 
 No contexto brasileiro discutido, informações relacionadas a pessoa natural identificada ou identificável. Um teste não elimina as obrigações sobre seu tratamento. [Contexto: 3.2][c32].
@@ -312,9 +340,17 @@ Sistema de numeração de base dez, com algarismos de 0 a 9. Em notação posici
 
 No exemplo C, apresenta informações como nome, argumentos e retorno de uma função. A declaração sem corpo permite conhecer sua interface, mas não fornece a implementação necessária à ligação. [Conceito: 8.2][c82].
 
+### DEP
+
+Data Execution Prevention, prevenção de execução de dados. Mecanismo que restringe execução a partir de páginas não autorizadas para esse uso. Não valida os limites de cada objeto nem a autorização de negócio da aplicação. [Conceito: 9.5][c95].
+
 ### Descritor de arquivo
 
 Identificador de um recurso aberto no contexto de um processo. Apesar do nome, pode se relacionar a recursos que não são documentos em armazenamento persistente. [Conceito: 8.5][c85].
+
+### Deslocamento
+
+Offset. Posição relativa ao começo de uma unidade, como uma página ou objeto. No modelo de tradução, o deslocamento é combinado ao quadro escolhido pelo mapa; não é um endereço físico universal. [Conceito: 9.2][c92].
 
 ### Diretório de trabalho
 
@@ -364,7 +400,7 @@ Endereço relativo à visão física de memória apresentada pela plataforma. Po
 
 ### Endereço virtual
 
-Endereço utilizado em um contexto de memória virtual, traduzido para um destino conforme os mapeamentos do sistema. Números iguais em contextos distintos não provam acesso à mesma memória física. [Conceito: 7.3][c73].
+Endereço utilizado em um contexto de memória virtual, traduzido para um destino conforme os mapeamentos do sistema. Números iguais em contextos distintos não provam acesso à mesma memória física. [Conceito: 7.3][c73]; [modelo desenvolvido: 9.2][c92].
 
 ### Endianness
 
@@ -386,9 +422,17 @@ Levantamento sistemático de informações sobre elementos de um ambiente, como 
 
 Obtenção de permissões ou capacidades superiores às do contexto inicial. Executar código e executar com privilégio administrativo são situações distintas. [Menção: capítulo 1][c1].
 
+### Escalonador
+
+Componente que decide quais fluxos aptos recebem oportunidade de execução, conforme política e recursos. Um fluxo bloqueado por um evento não progride apenas por ter mais tempo de CPU disponível. [Conceito: 9.1][c91].
+
 ### Escopo
 
 Delimitação do que será avaliado e das condições da avaliação. Descobrir um sistema conectado não amplia automaticamente a autorização. [Conceito: 3.1][c31].
+
+### Espaço de endereços
+
+Contexto no qual os endereços de um processo são interpretados. Visões diferentes podem alcançar destinos distintos ou compartilhar regiões sob regras explícitas; separar visões não exige duplicar fisicamente todo conteúdo. [Conceito: 9.1][c91].
 
 ### Ethical hacking
 
@@ -442,7 +486,11 @@ Origem de ação ou condição capaz de explorar ou acionar uma fraqueza. Pode e
 
 ### fork
 
-Interface que cria um processo filho no percurso Linux discutido. É uma operação diferente da substituição de imagem feita por `execve`; nem todo lançador precisa usar esse par exatamente da mesma maneira. [Conceito: 8.3][c83].
+Interface que cria um processo filho no percurso Linux discutido. É uma operação diferente da substituição de imagem feita por `execve`; nem todo lançador precisa usar esse par exatamente da mesma maneira. [Conceito: 8.3][c83]; [cópia na escrita e compartilhamento: 9.4][c94].
+
+### free
+
+Função de C que libera um bloco obtido por operações de alocação compatíveis. Não é garantia de apagar todas as cópias dos dados nem de reduzir imediatamente a memória residente do processo. [Conceito: 9.3][c93].
 
 ### Fronteira de confiança
 
@@ -495,6 +543,10 @@ Ferramenta de recuperação e auditoria de senhas que testa candidatos contra re
 ### HDD
 
 Hard Disk Drive, unidade de disco rígido. Utiliza superfícies magnéticas em pratos e cabeças de leitura/escrita. Movimentos e posicionamento participam do acesso aos dados. [Conceito: 7.4][c74].
+
+### Heap
+
+Armazenamento administrado para alocações dinâmicas. Não é uma peça física separada da RAM nem corresponde obrigatoriamente a uma única região rotulada na lista de mapas do processo. [Conceito: 9.3][c93].
 
 ### Hertz
 
@@ -561,6 +613,10 @@ Sinal ou evento que encaminha a execução a uma rotina de atendimento conforme 
 ### IOMMU
 
 Input/Output Memory Management Unit. Mecanismo de tradução e restrição de acessos à memória originados por dispositivos. Seu efeito depende de configuração e suporte; não se confunde com a MMU dos acessos do processador. [Conceito: 7.5][c75].
+
+### IPC
+
+Interprocess Communication, comunicação entre processos. Mecanismos que permitem troca de informações entre contextos, por exemplo regiões compartilhadas ou canais de mensagens. Separar espaços de endereços não elimina todos os caminhos de comunicação. [Conceito: 9.5][c95].
 
 ### ISA
 
@@ -650,6 +706,30 @@ Especificação de formato e conexão usada por diferentes dispositivos. Não é
 
 Função usada como entrada principal no programa C convencional apresentado. Sua execução pode ser precedida por carregamento e inicialização; não é necessariamente a primeira instrução do executável nem da máquina. [Conceitos: 8.2][c82] e [8.3][c83].
 
+### Major page fault
+
+No Linux, falta de página cujo atendimento exigiu atividade de entrada/saída, conforme o contador documentado. Major não significa gravidade de uma vulnerabilidade. [Conceito: 9.4][c94].
+
+### malloc
+
+Função de C que solicita um bloco de memória dinâmica e retorna um ponteiro quando obtém sucesso. Não garante inicialização dos bytes; o atendimento e as políticas de recursos precisam ser considerados. [Conceito: 9.3][c93].
+
+### Mapeamento
+
+Relação que organiza uma região virtual, seus acessos e o conteúdo que ela representa. A existência do mapa não demonstra residência imediata de todos os bytes nem o limite de cada objeto mantido na região. [Conceitos: 9.2][c92] e [9.4][c94].
+
+### Mapeamento anônimo
+
+Região de memória sem um arquivo como origem direta de seu conteúdo. Pode ser privada ou compartilhada conforme o mecanismo; anônimo não significa invisível ou livre de controles. [Conceito: 9.4][c94].
+
+### Mapeamento compartilhado
+
+Região com semântica que permite a participantes observar alterações no conteúdo compartilhado. Sua existência não define, sozinha, a ordem das operações concorrentes. [Conceito: 9.4][c94].
+
+### Mapeamento privado
+
+Região cujas alterações privadas não devem aparecer automaticamente nas outras visões. A implementação pode utilizar cópia na escrita para cumprir esse contrato. [Conceito: 9.4][c94].
+
 ### MB e MiB
 
 MB, megabyte, representa 1.000.000 de bytes; MiB, mebibyte, representa 1.048.576. Uma taxa em Mbit/s mede bits por segundo, não bytes armazenados. [Conceito: 6.3][c63].
@@ -660,7 +740,7 @@ Memória que conserva informação sem alimentação contínua. A propriedade n�
 
 ### Memória virtual
 
-Organização que fornece contextos de endereços e mapeamentos utilizados na execução, com participação na tradução e no isolamento. Não se resume a utilizar armazenamento quando a RAM é insuficiente. [Introdução: 7.3][c73].
+Organização que fornece contextos de endereços e mapeamentos utilizados na execução, com participação na tradução e no isolamento. Não se resume a utilizar armazenamento quando a RAM é insuficiente. [Introdução: 7.3][c73]; [desenvolvimento: 9.2][c92] e [9.4][c94].
 
 ### Memória volátil
 
@@ -678,17 +758,29 @@ Multifrequency, sinalização multifrequência. Na telefonia histórica discutid
 
 Organização interna que implementa uma arquitetura de instruções. Implementações da mesma interface podem ter estruturas e desempenhos diferentes. [Conceito: 7.2][c72].
 
+### Minor page fault
+
+No Linux, falta de página atendida sem atividade de entrada/saída, conforme o contador documentado. Pode participar de preparação ou ajustes normais de memória; não significa automaticamente defeito pequeno no programa. [Conceito: 9.4][c94].
+
 ### MIT
 
 Massachusetts Institute of Technology, instituição à qual pertence o TMRC. A sigla também nomeia uma licença de software no repositório; são usos distintos. [Contexto histórico][c2]. [Licenciamento](../LICENSE.md).
 
 ### MMU
 
-Memory Management Unit, unidade de gerenciamento de memória. Participa da tradução de endereços e das verificações associadas aos mapeamentos administrados pelo sistema operacional. [Introdução: 7.3][c73].
+Memory Management Unit, unidade de gerenciamento de memória. Participa da tradução de endereços e das verificações associadas aos mapeamentos administrados pelo sistema operacional. [Introdução: 7.3][c73]; [paginação: 9.2][c92].
 
 ### Modelo de linguagem
 
 Modelo computacional usado para processar ou gerar linguagem. A introdução menciona aplicações que recebem contexto e instruções; nem todo modelo possui ferramentas externas. [Menção: capítulo 2][c2].
+
+### Modo kernel
+
+Nível de execução utilizado por componentes centrais do sistema com acessos e responsabilidades distintos dos programas em modo usuário. Não é sinônimo de uma conta administrativa nem exige, em cada entrada, trocar para outro processo. [Conceito: 9.1][c91].
+
+### Modo usuário
+
+Nível de execução típico de aplicações, com acesso mediado aos serviços e recursos protegidos do sistema. É uma classificação diferente da identidade e das permissões da conta que iniciou o programa. [Conceito: 9.1][c91].
 
 ### Montagem
 
@@ -701,6 +793,10 @@ Programa autorreplicante associado a Robert Tappan Morris e ao incidente de nove
 ### Movimentação lateral
 
 Uso de acesso ou relação de confiança para alcançar outros sistemas ou contextos do ambiente. Pode combinar-se com escalada de privilégios, mas não é a mesma atividade. [Menção: capítulo 1][c1].
+
+### Mutex
+
+Mecanismo de exclusão mútua que coordena a entrada de participantes numa região protegida. Todos os acessos relevantes precisam respeitar o contrato; proteger apenas a escrita final não corrige necessariamente uma decisão baseada numa leitura antiga. [Conceito: 9.5][c95].
 
 ## N
 
@@ -724,6 +820,10 @@ Core. Unidade de processamento capaz de conduzir execução dentro de um process
 
 Non-Volatile Memory Express. Interface de comandos para armazenamento não volátil, comum sobre PCIe em SSDs locais. Não é formato físico nem garantia isolada de desempenho. [Conceito: 7.4][c74].
 
+### NX
+
+No Execute. Designação associada ao suporte para impedir execução em páginas marcadas como não executáveis. Protege uma classe de acesso, não todas as regras do programa. [Conceito: 9.5][c95].
+
 ## O
 
 ### Observação
@@ -734,11 +834,23 @@ Informação registrada por um meio identificado. Pode ter limites ou erros de m
 
 Grupo de oito bits. O termo aparece em especificações de protocolos e explicita o tamanho que chamamos de byte no escopo da obra. [Conceito: 6.3][c63].
 
+### OOM
+
+Out of memory, insuficiência de memória. O OOM killer do Linux pode encerrar tarefas para tentar recuperar recursos. Nem todo encerramento inesperado é OOM; sua causa precisa ser conferida. [Conceito: 9.4][c94].
+
+### Operação atômica
+
+Operação com garantias específicas de indivisibilidade e ordenação segundo a interface e o modelo de memória. Uma sequência de várias operações atômicas não se torna automaticamente uma transação indivisível. [Conceito: 9.5][c95].
+
 ### OSINT
 
 Open Source Intelligence, inteligência de fontes abertas. Conhecimento produzido a partir de informações publicamente ou comercialmente disponíveis para responder a necessidades de inteligência. Não é sinônimo de software open source.
 
 **Menção no planejamento, ainda sem capítulo desenvolvido:** [mapa da obra](../editorial/master-outline.md). A entrada esclarece a sigla solicitada, sem registrar o assunto como já ensinado. [Referência institucional][osint-doc].
+
+### Overcommit
+
+Política que pode admitir compromissos de memória sem reservar imediatamente todos os recursos físicos para seu possível uso. Um pedido aceito não significa garantia universal de atendimento futuro em qualquer condição. [Conceito: 9.4][c94].
 
 ### Overflow
 
@@ -749,6 +861,22 @@ Estouro: situação em que um resultado não cabe na faixa da representação nu
 Open Worldwide Application Security Project. Fundação e comunidade que mantêm projetos e referências sobre segurança de software. Não é ferramenta única nem vulnerabilidade. [Ocorrência: 4.1][c41] e [5.1][c51]. [Sobre a fundação][owasp-about].
 
 ## P
+
+### Page fault
+
+Falta de página: situação que exige tratar um acesso que não pôde prosseguir sob as condições presentes. Pode envolver preparação normal, cópia, E/S ou violação de proteção. Não é sinônimo de TLB miss ou defeito físico da RAM. [Conceitos: 9.2][c92] e [9.4][c94].
+
+### Página
+
+Unidade de organização da memória virtual paginada. O tamanho depende do sistema e da arquitetura; uma página não corresponde necessariamente a um único objeto do programa. [Conceito: 9.2][c92].
+
+### Paginação sob demanda
+
+Preparação de conteúdo ou mapeamentos quando seu uso exige atendimento, em vez de materializar antecipadamente todo espaço virtual possível. Ter uma região virtual não comprova que ela ocupe imediatamente RAM exclusiva. [Conceito: 9.4][c94].
+
+### Paralelismo
+
+Execução simultânea de trabalhos em recursos capazes de realizá-los. Distingue-se da concorrência, que também pode avançar por alternância numa única unidade de execução. [Conceito: 9.1][c91].
 
 ### Payload
 
@@ -778,6 +906,10 @@ Investigação e manipulação de mecanismos de redes telefônicas. O capítulo 
 
 Process identifier, identificador de processo. No percurso Linux, a substituição de imagem por `execve` preserva o PID. O número identifica um contexto de processo, não uma versão imutável do programa. [Conceito: 8.3][c83].
 
+### Pilha de execução
+
+Stack. Organização utilizada para chamadas, retornos e estado associado, conforme ABI e implementação. Nem toda variável local precisa ocupar uma posição visível na pilha, e a pilha própria de um thread não é automaticamente isolada dos demais. [Conceitos: 9.1][c91] e [9.3][c93].
+
 ### Pivotamento
 
 Uso de um ponto intermediário para alcançar recursos que não eram diretamente acessíveis da origem da investigação. Depende do escopo autorizado. [Menção: capítulo 1][c1].
@@ -785,6 +917,10 @@ Uso de um ponto intermediário para alcançar recursos que não eram diretamente
 ### Polling
 
 Consulta repetida a um estado para descobrir se há evento ou trabalho disponível. Pode ser uma escolha de projeto adequada; não é automaticamente melhor ou pior que interrupções. [Conceito: 7.5][c75].
+
+### Ponteiro
+
+Valor usado para referenciar um objeto ou posição conforme as regras da linguagem. Conhecer onde um objeto esteve não prolonga seu tempo de vida nem autoriza acesso além de seu tamanho. [Conceito: 9.3][c93].
 
 ### Ponto de código
 
@@ -820,7 +956,7 @@ Contexto de execução que o hardware apresenta ao sistema. Contextos do mesmo n
 
 ### Processo
 
-Instância de execução administrada pelo sistema operacional, com estado, espaço de endereços e referências a recursos. Diferentes processos podem utilizar o mesmo programa sem compartilhar todo seu estado. [Conceito: 8.3][c83].
+Instância de execução administrada pelo sistema operacional, com estado, espaço de endereços e referências a recursos. Diferentes processos podem utilizar o mesmo programa sem compartilhar todo seu estado. [Conceito: 8.3][c83]; [organização e threads: 9.1][c91].
 
 ### Prompt injection
 
@@ -834,9 +970,23 @@ Convenções que permitem a sistemas interpretar uma comunicação. Conhecê-las
 
 Proof of concept. Demonstração de uma possibilidade em condições determinadas. Não comprova automaticamente comprometimento de produção ou ocorrência de ataque anterior. [Conceito: 5.2][c52].
 
+### PSS
+
+Proportional Set Size. Medida que atribui proporcionalmente a parcela de memória residente compartilhada entre os participantes considerados. Não tem o mesmo significado de RSS nem de todo o tamanho virtual. [Conceito: 9.4][c94].
+
 ### PTES
 
 Penetration Testing Execution Standard. Referência metodológica para testes de intrusão. O capítulo usa sua distinção entre escopo e regras de engajamento, sem adotar toda recomendação histórica como atual. [Contexto: 3.1][c31].
+
+## Q
+
+### Quadro de chamada
+
+Stack frame. Organização associada a uma ativação de função, que pode conservar valores e informações para a continuidade. Forma e existência observável dependem da ABI e das decisões do compilador. [Conceito: 9.3][c93].
+
+### Quadro físico
+
+Page frame. Unidade física correspondente ao tamanho de página considerado num mapeamento. O deslocamento seleciona uma posição dentro do quadro; a tabela fornece a relação com a página virtual. [Conceito: 9.2][c92].
 
 ## R
 
@@ -888,6 +1038,10 @@ Relação entre possibilidade de um evento adverso e consequências no contexto 
 
 Risco que permanece depois de controles ou respostas. Uma medida pode melhorar o cenário sem eliminar todas as possibilidades relevantes. [Conceito: 5.3][c53].
 
+### RSS
+
+Resident Set Size. Medida de memória residente associada a um processo. Somar RSS de processos pode contar as mesmas páginas compartilhadas mais de uma vez; a interpretação precisa declarar o recorte. [Conceito: 9.4][c94].
+
 ### Runtime
 
 Ambiente de execução da linguagem: mecanismos que sustentam o processamento de código e suas operações. Pode incluir interpretação, bibliotecas e gerenciamento de objetos; não precisa ser um único arquivo isolado. [Conceito: 8.4][c84].
@@ -917,6 +1071,10 @@ Mecanismo de verificação de componentes no caminho de inicialização conforme
 ### security.txt
 
 Arquivo padronizado pela RFC 9116 para indicar contatos e informações de divulgação de vulnerabilidades. Sua presença não concede, sozinha, autorização para testar. [Conceito: 3.1][c31].
+
+### Segmentation fault
+
+Falha associada a um acesso de memória que não pôde ser atendido validamente; no percurso Linux, SIGSEGV pode comunicar violações de proteção. O rótulo não identifica sozinho a causa nem prova defeito físico ou exploração bem-sucedida. [Conceito: 9.4][c94].
 
 ### Segmento de ELF
 
@@ -978,7 +1136,19 @@ Entrada padrão, saída padrão e saída de erros padrão. São fluxos que podem
 
 Pontos e caminhos pelos quais um sistema pode ser alcançado ou influenciado, incluindo interfaces, dados e contextos de acesso. É um mapa do que examinar, não lista de falhas confirmadas. [Conceito: 5.3][c53].
 
+### Swap
+
+Armazenamento de apoio que pode conservar conteúdo retirado da RAM conforme a gestão de memória. Não é o significado inteiro de memória virtual, e nem toda página ausente da RAM está em swap. [Conceito: 9.4][c94].
+
 ## T
+
+### Tabela de páginas
+
+Estrutura que descreve mapeamentos e condições de acesso entre páginas virtuais e destinos. Pode ser organizada em níveis; não é uma lista de todos os objetos criados pelo programa. [Conceito: 9.2][c92].
+
+### Tempo de vida
+
+Período em que um objeto existe validamente segundo o contrato da linguagem e da alocação. A permanência de bytes no antigo local não prolonga automaticamente esse período. [Conceito: 9.3][c93].
 
 ### Terminal
 
@@ -986,7 +1156,11 @@ Interface de entrada e saída de texto para interagir com programas, inclusive i
 
 ### Thread
 
-No contexto de software, fluxo de execução que pode ser organizado junto de outros fluxos. Não é necessariamente um núcleo físico nem uma janela de aplicativo. [Conceito: 7.2][c72].
+No contexto de software, fluxo de execução que pode ser organizado junto de outros fluxos. Não é necessariamente um núcleo físico nem uma janela de aplicativo. [Conceito: 7.2][c72]; [compartilhamento e estado próprio: 9.1][c91].
+
+### TLB
+
+Translation Lookaside Buffer. Cache de traduções de endereços, distinta da cache de dados. Um TLB miss pode exigir obter uma tradução por outro caminho, sem demonstrar que houve page fault ou E/S. [Conceito: 9.2][c92].
 
 ### TMRC
 
@@ -995,6 +1169,10 @@ Tech Model Railroad Club, clube de ferromodelismo do MIT presente nos episódios
 ### TRIM
 
 Mecanismo pelo qual o sistema informa ao dispositivo de armazenamento que determinados dados lógicos não precisam mais ser preservados. Participa da gestão do SSD, mas não comprova sanitização completa do equipamento. [Conceito: 7.4][c74].
+
+### Troca de contexto
+
+Conservação e preparação do estado necessário para alternar a execução entre fluxos. Não exige copiar toda a RAM para disco e não é sinônimo de toda passagem do modo usuário para o kernel. [Conceito: 9.1][c91].
 
 ### Truncamento
 
@@ -1010,6 +1188,10 @@ Unified Extensible Firmware Interface. Interface de firmware usada no caminho de
 
 Padrão para representar caracteres, com pontos de código e formas de codificação. Identificar um ponto de código e escolher seus bytes são etapas distintas; Unicode não significa que toda letra ocupa um ou dois bytes. [Conceito: 6.4][c64].
 
+### Use-after-free
+
+Uso de uma referência a memória depois de sua liberação, contrariando o tempo de vida do objeto. O espaço pode ter sido reutilizado; observar bytes familiares não torna o acesso válido. [Conceito: 9.3][c93].
+
 ### UTF-8
 
 Forma de codificação Unicode que utiliza de um a quatro bytes por valor escalar e preserva a representação ASCII. Uma unidade percebida pelo usuário pode reunir vários valores; nem toda sequência arbitrária de bytes é UTF-8 válido. [Conceito: 6.4][c64].
@@ -1019,6 +1201,10 @@ Forma de codificação Unicode que utiliza de um a quatro bytes por valor escala
 ### Variável de ambiente
 
 Par de nome e valor fornecido no contexto de um processo. Pode influenciar configuração e localização de recursos, mas não corresponde automaticamente a uma variável local do fonte ou a um estado global idêntico em todos os processos. [Conceito: 8.5][c85].
+
+### Vazamento de memória
+
+Memory leak. Retenção indevida de recursos de memória que já não são necessários ao trabalho. Não é sinônimo de divulgação de informações, e crescimento de RSS sozinho não comprova esse defeito. [Conceito: 9.3][c93]; [medidas: 9.4][c94].
 
 ### Vazão
 
@@ -1078,11 +1264,17 @@ As definições metodológicas expressam o vocabulário de trabalho do livro. As
 [c83]: modulo-2/capitulo-8/8.3-carregamento-e-processos.md
 [c84]: modulo-2/capitulo-8/8.4-interpretadores-e-runtimes.md
 [c85]: modulo-2/capitulo-8/8.5-contexto-e-diagnostico.md
+[c91]: modulo-2/capitulo-9/9.1-processos-threads-e-contextos.md
+[c92]: modulo-2/capitulo-9/9.2-enderecos-paginas-e-traducao.md
+[c93]: modulo-2/capitulo-9/9.3-regioes-objetos-e-tempo-de-vida.md
+[c94]: modulo-2/capitulo-9/9.4-paginacao-copias-e-medidas.md
+[c95]: modulo-2/capitulo-9/9.5-protecao-concorrencia-e-diagnostico.md
 [c2-ref]: modulo-1/capitulo-2/referencias.md
 [c3-sol]: modulo-1/capitulo-3/solucoes.md
 [c4-ref]: modulo-1/capitulo-4/referencias.md
 [c5-ref]: modulo-1/capitulo-5/referencias.md
 [c8-ref]: modulo-2/capitulo-8/referencias.md
+[c9-ref]: modulo-2/capitulo-9/referencias.md
 [ad-doc]: https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
 [burp-doc]: https://portswigger.net/burp/documentation/desktop/tools/proxy
 [hashcat-doc]: https://hashcat.net/wiki/doku.php?id=hashcat

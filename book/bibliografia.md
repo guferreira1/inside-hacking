@@ -73,7 +73,15 @@ As [fontes S1–S14](modulo-2/capitulo-8/referencias.md) relacionam documentaç�
 
 O percurso distingue código-fonte, artefatos, pré-processamento, compilação, montagem, ligação, carregamento e contexto de execução. Interpretadores e runtimes são explicados sem impor uma divisão absoluta entre linguagens compiladas e interpretadas.
 
-Os [três arquivos C](modulo-2/capitulo-8/exemplos/README.md) e os [nove testes editoriais](../scripts/tests/test_chapter8_examples.py) são autorais. A execução realizada em Linux/GCC e Python é delimitada; Windows, JVM, permissões especiais e todos os detalhes de carregamento não foram reproduzidos. O capítulo permanece DRAFT 0.1, conforme seu [registro de entrega](../editorial/reviews/capitulo-8.md).
+Os [três arquivos C](modulo-2/capitulo-8/exemplos/README.md) e os [nove testes editoriais](../scripts/tests/test_chapter8_examples.py) são autorais. A execução realizada em Linux/GCC e Python é delimitada; Windows, JVM, permissões especiais e todos os detalhes de carregamento não foram reproduzidos. Após retorno favorável e releitura interna, a versão editorial 1.0 foi encerrada, conforme seu [registro de revisão](../editorial/reviews/capitulo-8.md). Revisão independente continua pendente.
+
+## Capítulo 9 — Memória, processos e arquitetura de computadores
+
+As [fontes S1–S18](modulo-2/capitulo-9/referencias.md) relacionam documentação de memória e processos do Linux, descrições de proteção da Microsoft, alocação e quadros de chamada GNU, concorrência em CWE/GCC/LLVM, uma reprodução identificada de POSIX e interfaces Python.
+
+As explicações usam modelos próprios de endereços, objetos, residência e intercalamento. Os [sete testes](../scripts/tests/test_chapter9_examples.py) incluem seis conferências de modelos e um [exemplo Linux](modulo-2/capitulo-9/exemplos/README.md) que verifica valores visíveis em mapeamentos privados e compartilhados. Não foram observados quadros físicos nem medidos faults, RSS/PSS, swap ou eficácia de proteções.
+
+O capítulo permanece DRAFT 0.1, para primeira leitura. O [registro editorial](../editorial/reviews/capitulo-9.md) separa pesquisa, raciocínio, execução e limites da verificação.
 
 ## Política de referências
 
