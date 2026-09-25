@@ -2,7 +2,7 @@
 
 [← Capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 24/09/2026. **Versão:** DRAFT 0.1.
+**Consulta:** 24/09/2026. **Versão:** VALIDATED — 1.0 editorial; revisão interna concluída. Revisão técnica independente pendente.
 
 A narrativa dos contadores, os mapas e as contas são construções autorais. O percurso usa sistemas com memória virtual e MMU, especialmente Linux. Referências Windows e convenções de linguagens têm seu contexto identificado. Não se generaliza um tamanho de página, disposição de memória ou política de escalonamento para todas as plataformas.
 
@@ -192,8 +192,8 @@ Uso nos exemplos: mapeamentos, filho único, espera e término; execução do sc
 
 ## Conferência executada e seus limites
 
-Os [sete testes](../../../scripts/tests/test_chapter9_examples.py) passaram em Linux x86-64, Debian GNU/Linux 13, Python 3.13.5. Seis verificam contas e modelos: tradução, fronteira de página, intervalo, limites de objetos, medidas de memória e intercalamento sequencial. Um executa o script próprio e confere `privado=5` e `compartilhado=9` depois da conclusão do filho.
+Os [sete testes](../../../scripts/tests/test_chapter9_examples.py) passaram na primeira entrega em Linux x86-64, Debian GNU/Linux 13, Python 3.13.5. Seis verificam contas e modelos: tradução, fronteira de página, intervalo, limites de objetos, medidas de memória e intercalamento sequencial. Um executa o script próprio e confere `privado=5` e `compartilhado=9` depois da conclusão do filho.
 
 A execução usou `python3 -I -S` em processo independente. Uma tentativa inicial com a inicialização padrão do ambiente emitiu aviso sobre fork em processo com threads; o procedimento final excluiu essa inicialização e foi executado novamente sem esse aviso. Não se apresenta a tentativa inicial como recomendação de uso em contexto multithread.
 
-Não houve medição de endereços físicos, RSS/PSS, page faults, swap, desempenho ou eficácia de ASLR/DEP; tampouco acesso a outros processos, exploração ou revisão independente. Os exemplos numéricos não simulam integralmente um kernel. A checagem do repositório completo deve ser confirmada pelo workflow associado à entrega, separadamente dos testes locais. Consulte o [registro editorial](../../../editorial/reviews/capitulo-9.md).
+Não houve medição de endereços físicos, RSS/PSS, page faults, swap, desempenho ou eficácia de ASLR/DEP; tampouco acesso a outros processos, exploração ou revisão independente. Os exemplos numéricos não simulam integralmente um kernel. A checagem do repositório completo e a regressão são confirmadas pelo workflow associado à entrega, separadamente dos testes locais. O fechamento interno da versão 1.0 e a reconferência dirigida de fontes estão no [registro editorial](../../../editorial/reviews/capitulo-9.md).

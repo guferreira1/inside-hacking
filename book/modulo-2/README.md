@@ -13,17 +13,17 @@ Antes de analisar uma falha de memória ou uma mensagem de rede, precisamos reco
 | 6 | [Bits, bytes e representação da informação](capitulo-6/README.md) | Revisão interna concluída — v1.0 |
 | 7 | [Hardware: CPU, memória, armazenamento e dispositivos](capitulo-7/README.md) | Revisão interna concluída — v1.0 |
 | 8 | [Como um programa se torna execução](capitulo-8/README.md) | Revisão interna concluída — v1.0 |
-| 9 | [Memória, processos e arquitetura de computadores](capitulo-9/README.md) | Rascunho para leitura — v0.1 |
-| 10 | Arquivos, formatos, codificação e serialização | Planejado |
+| 9 | [Memória, processos e arquitetura de computadores](capitulo-9/README.md) | Revisão interna concluída — v1.0 |
+| 10 | [Arquivos, formatos, codificação e serialização](capitulo-10/README.md) | Rascunho para leitura — v0.1 |
 
-Os capítulos 6 a 9 estão disponíveis. O título 10 orienta a progressão e não representa um arquivo já escrito. A numeração dos capítulos continua global, sem reinício por módulo.
+Os cinco textos previstos estão disponíveis. O capítulo 10 ainda está em primeira entrega, portanto o módulo não está editorialmente encerrado. A numeração dos capítulos continua global, sem reinício por módulo.
 
 ## Como ler
 
-O capítulo 6 desenvolve representações e contas passo a passo. O 7 acompanha o caminho de uma alteração de texto para explicar as funções do hardware. O 8 mostra como código, artefatos e contexto de execução se relacionam, usando um programa pequeno explicado no próprio texto. O 9 aprofunda espaços de memória, objetos, compartilhamento e limites de proteção a partir de dois contadores.
+O capítulo 6 desenvolve representações e contas passo a passo. O 7 acompanha o caminho de uma alteração de texto para explicar as funções do hardware. O 8 mostra como código, artefatos e contexto de execução se relacionam, usando um programa pequeno explicado no próprio texto. O 9 aprofunda espaços de memória, objetos, compartilhamento e limites de proteção a partir de dois contadores. O 10 acompanha um registro que sai do processo para um arquivo e precisa ser interpretado por outro componente.
 
-Não é necessário conhecer programação antecipadamente, montar circuitos ou instalar ferramentas para acompanhar a leitura. A execução dos exemplos dos capítulos 8 e 9 é opcional e possui requisitos próprios identificados. Use o [glossário](../glossario.md) para consulta e as referências de cada capítulo para verificar suas bases.
+Não é necessário conhecer programação antecipadamente, montar circuitos ou instalar ferramentas para acompanhar a leitura. A execução dos exemplos dos capítulos 8 a 10 é opcional e possui requisitos próprios identificados. Use o [glossário](../glossario.md) para consulta e as referências de cada capítulo para verificar suas bases.
 
-Este módulo está em produção. O [controle editorial](../../editorial/publication-status.md) distingue leitura aprovada, revisão interna e edição publicada.
+O [controle editorial](../../editorial/publication-status.md) distingue leitura aprovada, revisão interna e edição publicada. O percurso seguinte planejado é o Módulo III — Sistemas operacionais, começando pelo capítulo 11. Essa indicação ainda não representa um manuscrito publicado.
 
-**[Começar pelo Capítulo 6 →](capitulo-6/README.md)** · **[Continuar no Capítulo 9 →](capitulo-9/README.md)**
+**[Começar pelo Capítulo 6 →](capitulo-6/README.md)** · **[Continuar no Capítulo 10 →](capitulo-10/README.md)**

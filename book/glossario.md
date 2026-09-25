@@ -6,7 +6,7 @@ Este glossário acompanha os termos presentes na obra. Cada entrada aponta para 
 
 Não importamos todos os assuntos futuros. OSINT é identificado como menção do planejamento, incluída para esclarecer a sigla solicitada na revisão. Os demais verbetes se relacionam ao texto ou às referências dos capítulos disponíveis.
 
-**Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x).
+**Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x) · [Y](#y).
 
 ## A
 
@@ -54,6 +54,10 @@ Artefato preparado para iniciar um programa num ambiente compatível. Não é o 
 
 Resultado de tradução que pode participar da ligação com outras peças. No exemplo ELF relocável, contém código e informações para resolver referências e endereços; não é automaticamente um programa completo. [Conceito: 8.2][c82].
 
+### Arquivo regular
+
+Tipo de objeto usado no capítulo para conservar uma sequência de bytes. A classificação no sistema de arquivos é diferente do formato do conteúdo: JSON e PNG podem ser ambos arquivos regulares. [Conceito: 10.1][c101].
+
 ### Artefato
 
 Resultado concreto de uma etapa de construção, como um objeto ou executável. Alterar uma entrada do projeto não modifica automaticamente todos os artefatos já produzidos. [Conceito: 8.1][c81].
@@ -70,9 +74,17 @@ Address Space Layout Randomization. Variação da disposição de regiões do es
 
 Representação textual de operações e outros elementos associados a uma arquitetura. A montagem a converte em código objeto; a escrita assembly não é a própria sequência binária de instruções. [Conceito: 8.2][c82].
 
+### Assinatura de formato
+
+Padrão de bytes usado no reconhecimento de um formato; magic bytes. Não é assinatura digital de autoria e não comprova que toda a estrutura posterior seja válida. [Conceito: 10.2][c102].
+
 ### Ativo
 
 Algo com valor para pessoas ou organizações, como informação, equipamento, serviço ou capacidade. Não é apenas o computador que guarda os dados. [Conceito: 5.1][c51].
+
+### AUR
+
+Nome do formato binário didático criado no capítulo 10. Sua versão 1 transporta título e quantidade sob regras explícitas de tamanho, ordem dos bytes e validade. Não é padrão externo nem aplicação completa da Aurora. [Contrato: 10.2][c102].
 
 ### Autenticação
 
@@ -99,6 +111,14 @@ Caminho de comunicação entre componentes, associado a regras de transporte de 
 ### Base numérica
 
 Quantidade de algarismos e fator entre pesos de posições em uma representação posicional. O mesmo valor pode ser escrito em bases diferentes; a mudança de escrita não muda a quantidade representada. [Conceito: 6.2][c62].
+
+### Base64
+
+Codificação que representa bytes por um alfabeto textual de 64 posições. Na forma com preenchimento estudada, três bytes produzem quatro caracteres; a transformação é reversível sem chave e não equivale a criptografia ou compressão. [Conceito: 10.3][c103].
+
+### Base64url
+
+Variante de Base64 com alterações no alfabeto para determinados contextos de transporte. O protocolo que a utiliza define condições como preenchimento; não se deve misturar variantes por adivinhação. [Introdução: 10.3][c103].
 
 ### Biblioteca de software
 
@@ -168,7 +188,7 @@ Representação de código destinada a um mecanismo de execução, como uma máq
 
 ### Cabeçalho
 
-Header. No percurso C do capítulo 8, arquivo que reúne declarações e outras definições compartilhadas por inclusão. Em formatos como ELF, a palavra designa estruturas de metadados do artefato; são contextos diferentes. [Conceito C: 8.2][c82]; [contexto ELF: 8.3][c83].
+Header. No percurso C do capítulo 8, arquivo que reúne declarações e outras definições compartilhadas por inclusão. Em formatos como ELF, a palavra designa estruturas de metadados do artefato; são contextos diferentes. [Conceito C: 8.2][c82]; [contexto ELF: 8.3][c83]. O cabeçalho AUR reúne os campos necessários para interpretar o registro. [Exemplo: 10.2][c102].
 
 ### Cache
 
@@ -186,6 +206,14 @@ Situação em que o bloco procurado é encontrado no nível de cache examinado. 
 
 Situação em que o bloco procurado não está no nível de cache examinado e precisa ser obtido adiante. Não representa automaticamente defeito ou falha de segurança. [Conceito: 7.3][c73].
 
+### Caminho
+
+Pathname. Expressão usada para localizar um objeto na organização de nomes do sistema. Um caminho relativo exige uma base; nomes diferentes podem alcançar o mesmo objeto e nomes iguais em contextos diferentes podem alcançar objetos distintos. [Conceito: 10.1][c101].
+
+### Canonicalização
+
+Transformação para uma representação definida por regras de um contrato, útil para comparações ou assinaturas. No caso de documentos, pode envolver ordem de campos e escrita de valores; não equivale apenas a normalizar Unicode ou retirar espaços. [Conceito: 10.6][c106].
+
 ### Carregador dinâmico
 
 Componente que encontra e prepara objetos compartilhados necessários à execução. No percurso ELF/Linux, não é o mesmo mecanismo que um interpretador de Python nem o bootloader que inicia o sistema operacional. [Conceito: 8.3][c83].
@@ -201,6 +229,14 @@ CERT Coordination Center, do Software Engineering Institute da Carnegie Mellon U
 ### Chamada de sistema
 
 System call. Interface pela qual um programa solicita serviços do kernel. Chamar uma função de biblioteca não implica realizar exatamente uma chamada de sistema: parte do trabalho pode acontecer no próprio processo. [Conceito: 8.3][c83].
+
+### Checksum
+
+Nome em inglês para soma de verificação. Valor calculado para conferir alterações segundo um mecanismo específico; não é, por si só, prova de autoria ou autorização. [Conceito: 10.6][c106].
+
+### Chunk
+
+Bloco estruturado de um formato. No exemplo PNG, os chunks seguem a assinatura inicial e têm organização própria; reconhecer apenas o início do arquivo não valida todos os blocos. [Introdução: 10.2][c102].
 
 ### CISA
 
@@ -218,9 +254,17 @@ Computação em nuvem: recursos de computação disponibilizados como serviços 
 
 Agrupamento de pontos de código utilizado na segmentação de texto para aproximar uma unidade percebida pelo usuário. Um agrupamento pode conter vários pontos de código e vários bytes; essas contagens não são equivalentes. [Conceito: 6.4][c64].
 
+### Codec
+
+Componente ou conjunto de operações de codificação e decodificação. No exemplo AUR, transforma um registro em bytes e o reconstrói segundo um contrato explícito. O nome não implica compressão nem criptografia. [Exemplo: 10.5][c105].
+
 ### Codificação
 
 Regra para representar informação. No caso do texto, especifica como valores de caracteres são convertidos em uma sequência de unidades, como bytes em UTF-8. Não deve ser confundida com criptografia. [Conceito: 6.4][c64].
+
+### Codificação percentual
+
+Representação de um octeto por % seguido de dois algarismos hexadecimais em URIs. A interpretação depende do componente e da camada; decodificar uma ou duas vezes pode produzir textos diferentes. [Conceito: 10.3][c103].
 
 ### Código de máquina
 
@@ -250,6 +294,10 @@ Programa que realiza uma tradução de código segundo regras da linguagem e do 
 
 Convenção de representação de inteiros com sinal em que o bit de maior peso recebe peso negativo. Com oito bits, representa −128 a 127; a sequência de oito uns representa −1. [Conceito: 6.3][c63].
 
+### Compressão sem perdas
+
+Transformação que produz uma representação da qual o conteúdo original deve ser reconstruído exatamente. Tamanho comprimido e tamanho reconstruído são grandezas distintas, com limites que precisam ser considerados. [Conceito: 10.6][c106].
+
 ### Concorrência
 
 Organização de atividades cujos períodos de progresso se sobrepõem, mesmo quando usam uma unidade de execução em momentos alternados. Não exige paralelismo físico em todo instante. [Conceito: 9.1][c91].
@@ -269,6 +317,10 @@ Processo que produz artefatos a partir das entradas de um projeto; build. Pode c
 ### Contador de programa
 
 Program counter, PC. Estado do processador que participa da determinação de qual instrução buscar. Seu significado preciso e sua atualização dependem da arquitetura e do fluxo de execução. [Conceito: 7.2][c72].
+
+### Content-Type
+
+Campo HTTP que comunica o tipo de mídia da representação. É uma declaração do contexto de comunicação, não uma prova independente de que os bytes obedecem ao formato ou podem ser processados com segurança. [Introdução: 10.2][c102].
 
 ### Controlador
 
@@ -290,6 +342,10 @@ Central Processing Unit, unidade central de processamento. Executa instruções 
 
 Implementação de Python usada no percurso do capítulo 8. Compila fonte para objetos de código e executa sua representação; detalhes de bytecode dependem da implementação e versão. Não é sinônimo de todas as implementações possíveis da linguagem. [Conceito: 8.4][c84].
 
+### CRC
+
+Cyclic Redundancy Check, verificação de redundância cíclica. Valor utilizado para detectar certas corrupções de conteúdo, como nos formatos PNG e gzip. Não exige um segredo do produtor e não equivale a autenticação criptográfica. [Conceito: 10.6][c106].
+
 ### Credencial
 
 Informação ou meio utilizado para comprovar uma identidade, como senha ou chave. Sua posse não comprova autorização para utilizá-la em uma investigação. [Conceito: 5.2][c52]; [exemplo: soluções do capítulo 3][c3-sol].
@@ -297,6 +353,14 @@ Informação ou meio utilizado para comprovar uma identidade, como senha ou chav
 ### CSRC
 
 Computer Security Resource Center, do NIST. Portal de referências e glossários usado nas notas de pesquisa, não uma ferramenta de exploração. [Ocorrência: referências do capítulo 5][c5-ref].
+
+### CSV
+
+Comma-Separated Values. Formato textual de registros e campos, com regras de delimitadores e aspas. Uma vírgula dentro de um campo entre aspas pode ser conteúdo; variantes e tipos de valores precisam de um acordo adicional. [Conceito: 10.4][c104].
+
+### ctime
+
+No Linux, marca de tempo de mudança de estado do inode. Não deve ser lida automaticamente como data de criação do documento. É distinta da data que uma aplicação escreve dentro de um arquivo. [Conceito: 10.1][c101].
 
 ### CTF
 
@@ -346,11 +410,15 @@ Data Execution Prevention, prevenção de execução de dados. Mecanismo que res
 
 ### Descritor de arquivo
 
-Identificador de um recurso aberto no contexto de um processo. Apesar do nome, pode se relacionar a recursos que não são documentos em armazenamento persistente. [Conceito: 8.5][c85].
+Identificador de um recurso aberto no contexto de um processo. Apesar do nome, pode se relacionar a recursos que não são documentos em armazenamento persistente. [Conceito: 8.5][c85]. A relação entre abertura, nomes e conteúdo é retomada em [10.1][c101].
 
 ### Deslocamento
 
-Offset. Posição relativa ao começo de uma unidade, como uma página ou objeto. No modelo de tradução, o deslocamento é combinado ao quadro escolhido pelo mapa; não é um endereço físico universal. [Conceito: 9.2][c92].
+Offset. Posição relativa ao começo de uma unidade, como uma página ou objeto. No modelo de tradução, o deslocamento é combinado ao quadro escolhido pelo mapa; não é um endereço físico universal. [Conceito: 9.2][c92]. Em arquivos e formatos, também indica posição relativa na sequência de bytes. [Aplicação: 10.2][c102].
+
+### Desserialização
+
+Reconstrução de valores ou estruturas a partir de uma representação. As capacidades do mecanismo importam: alguns desserializadores de objetos podem executar comportamento, não apenas ler campos simples. [Conceito: 10.4][c104]; [limites: 10.6][c106].
 
 ### Diretório de trabalho
 
@@ -418,6 +486,10 @@ E/S; em inglês, Input/Output ou I/O. Operações de comunicação com dispositi
 
 Levantamento sistemático de informações sobre elementos de um ambiente, como usuários, serviços ou permissões. Não equivale, sozinho, à exploração de uma falha. [Menções: capítulo 1][c1].
 
+### EOF
+
+End of file, fim de arquivo. No percurso de leitura apresentado, condição de fim da sequência, não um byte obrigatório depois do último caractere. A interpretação do retorno de uma operação depende de seu contrato e do tipo de recurso. [Conceito: 10.1][c101].
+
 ### Escalada de privilégios
 
 Obtenção de permissões ou capacidades superiores às do contexto inicial. Executar código e executar com privilégio administrativo são situações distintas. [Menção: capítulo 1][c1].
@@ -426,6 +498,10 @@ Obtenção de permissões ou capacidades superiores às do contexto inicial. Exe
 
 Componente que decide quais fluxos aptos recebem oportunidade de execução, conforme política e recursos. Um fluxo bloqueado por um evento não progride apenas por ter mais tempo de CPU disponível. [Conceito: 9.1][c91].
 
+### Escape
+
+Representação de conteúdo que possui papel especial numa gramática. As regras dependem do contexto, como uma string JSON; aplicar um escape não produz proteção universal para qualquer destino posterior. [Conceito: 10.3][c103].
+
 ### Escopo
 
 Delimitação do que será avaliado e das condições da avaliação. Descobrir um sistema conectado não amplia automaticamente a autorização. [Conceito: 3.1][c31].
@@ -433,6 +509,10 @@ Delimitação do que será avaliado e das condições da avaliação. Descobrir 
 ### Espaço de endereços
 
 Contexto no qual os endereços de um processo são interpretados. Visões diferentes podem alcançar destinos distintos ou compartilhar regiões sob regras explícitas; separar visões não exige duplicar fisicamente todo conteúdo. [Conceito: 9.1][c91].
+
+### Esquema
+
+Schema. Descrição da estrutura, tipos, campos e restrições esperados. Pode definir um perfil mais restrito que a gramática geral do formato; aceitar o esquema não substitui a autorização de uma operação. [Conceito: 10.4][c104].
 
 ### Ethical hacking
 
@@ -453,6 +533,10 @@ Método ou artefato que aproveita uma vulnerabilidade. Não é a própria fraque
 ### Exposição
 
 Condição de alcance: quem consegue interagir, por qual caminho e sob quais circunstâncias. Uma função exposta não é necessariamente vulnerável. [Conceito: 5.3][c53].
+
+### Extensão de arquivo
+
+Sufixo do nome, como .json ou .txt, utilizado por ferramentas para classificação ou seleção de leitura. Renomeá-lo não converte, por si só, os bytes para outro formato. [Conceito: 10.2][c102].
 
 ## F
 
@@ -488,6 +572,10 @@ Origem de ação ou condição capaz de explorar ou acionar uma fraqueza. Pode e
 
 Interface que cria um processo filho no percurso Linux discutido. É uma operação diferente da substituição de imagem feita por `execve`; nem todo lançador precisa usar esse par exatamente da mesma maneira. [Conceito: 8.3][c83]; [cópia na escrita e compartilhamento: 9.4][c94].
 
+### Formato
+
+Conjunto de regras sobre a estrutura, representação e significado de um conteúdo. Identificar o formato é diferente de confirmar que toda entrada respeita suas regras. [Conceito: 10.2][c102].
+
 ### free
 
 Função de C que libera um bloco obtido por operações de alocação compatíveis. Não é garantia de apagar todas as cópias dos dados nem de reduzir imediatamente a memória residente do processo. [Conceito: 9.3][c93].
@@ -518,6 +606,10 @@ Graphics Processing Unit, unidade de processamento gráfico. Também pode execut
 
 Rótulo informal usado para situações que misturam características atribuídas a white hat e black hat. Não constitui autorização nem categoria jurídica adotada pelo livro. [Contexto: capítulo 1][c1].
 
+### gzip
+
+Formato de dados comprimidos com cabeçalho, conteúdo comprimido e verificações finais. Seu tamanho externo não limita sozinho os dados reconstruídos ou o trabalho de processamento. [Conceito: 10.6][c106].
+
 ## H
 
 ### Hack
@@ -528,13 +620,17 @@ Termo com diferentes sentidos históricos, como solução engenhosa, modificaç�
 
 Termo que pode designar quem explora sistemas em profundidade ou, em outros contextos, pessoas associadas a intrusões. A palavra isolada não comprova intenção ou autorização. [Conceito: capítulo 1][c1].
 
+### Hard link
+
+Ligação física. Outro nome para o mesmo objeto no sistema de arquivos, não uma cópia independente dos dados. A semântica é apresentada no contexto Linux. [Conceito: 10.1][c101].
+
 ### Hardware
 
 Componentes físicos de um sistema computacional. Suas funções cooperam com software e não precisam corresponder a peças removíveis independentes. [Conceito: 7.1][c71].
 
 ### Hash
 
-Resultado de uma função que transforma uma entrada segundo um algoritmo. No contexto de senhas citado, testar candidatos contra hashes não significa descriptografar a senha. [Menção: capítulo 1][c1].
+Resultado de uma função que transforma uma entrada segundo um algoritmo. No contexto de senhas citado, testar candidatos contra hashes não significa descriptografar a senha. [Menção: capítulo 1][c1]. No capítulo 10, o hash criptográfico ajuda a comparar bytes; o valor esperado ainda precisa de uma referência confiável. [Contexto: 10.6][c106].
 
 ### Hashcat
 
@@ -586,6 +682,10 @@ Consequência de uma falha ou ação. Distinguir impacto observado de impacto po
 
 Conclusão construída a partir de observações e premissas. Não equivale ao registro bruto produzido por tela ou ferramenta. [Conceito: 4.1][c41].
 
+### Inode
+
+Estrutura de metadados de um arquivo no modelo Linux apresentado. Seu número só identifica o objeto no contexto do sistema de arquivos pertinente; não é uma identidade universal e eterna para um documento. [Conceito: 10.1][c101].
+
 ### Instrução de máquina
 
 Operação codificada interpretada pelo processador conforme sua arquitetura. Pode transformar dados, acessar memória ou alterar o fluxo de execução. Não equivale necessariamente a uma linha de uma linguagem de programação. [Conceito: 7.2][c72].
@@ -624,9 +724,17 @@ Instruction Set Architecture, arquitetura do conjunto de instruções. Interface
 
 ## J
 
+### JCS
+
+JSON Canonicalization Scheme. Esquema que define uma representação canônica de JSON segundo regras específicas de valores e ordenação. Não se reduz a ordenar chaves nem aplica normalização Unicode automaticamente. [Conceito: 10.6][c106].
+
 ### JIT
 
 Just-in-time compilation, compilação durante a execução. Pode combinar-se com interpretação e outras estratégias; não é obrigatório presumir que todo método foi compilado em toda execução de uma máquina virtual. [Conceito: 8.4][c84].
+
+### JSON
+
+JavaScript Object Notation. Formato textual de dados com objetos, arrays, strings, números, booleanos e null. A gramática não define sozinha os campos obrigatórios e os limites da aplicação; JSON não é uma ordem para executar JavaScript. [Conceito: 10.4][c104].
 
 ### JVM
 
@@ -679,6 +787,10 @@ Linker. Ferramenta que combina objetos, resolve referências a símbolos e reali
 ### Linha de base
 
 Referência de comportamento em condições identificadas. Ajuda a comparar um caso legítimo com o investigado sem confundir falha geral do serviço com decisão correta de autorização. [Conceito: 4.2][c42].
+
+### Link simbólico
+
+Objeto que guarda um caminho para outro destino. O caminho será resolvido no contexto pertinente e pode apontar para um destino ausente; não é uma cópia dos dados desse destino. [Conceito: 10.1][c101].
 
 ### Little-endian
 
@@ -746,6 +858,10 @@ Organização que fornece contextos de endereços e mapeamentos utilizados na ex
 
 Memória cuja manutenção da informação depende de alimentação. Volatilidade não é um procedimento certificado de eliminação segura de todos os dados sensíveis. [Conceito: 7.3][c73].
 
+### Metadados
+
+Informações sobre um objeto, como tamanho, proprietário e marcas de tempo. Podem pertencer ao sistema de arquivos ou ao próprio documento; precisam ser interpretadas conforme sua origem e regra de atualização. [Conceito: 10.1][c101].
+
 ### Metasploit
 
 Framework de segurança com módulos para tarefas distintas, inclusive exploração. O livro usa sua terminologia para separar exploit e payload, sem afirmar que toda falha segue essa arquitetura. [Conceito: 5.2][c52].
@@ -757,6 +873,10 @@ Multifrequency, sinalização multifrequência. Na telefonia histórica discutid
 ### Microarquitetura
 
 Organização interna que implementa uma arquitetura de instruções. Implementações da mesma interface podem ter estruturas e desempenhos diferentes. [Conceito: 7.2][c72].
+
+### MIME
+
+Multipurpose Internet Mail Extensions. No uso “tipo MIME” do capítulo, refere-se à identificação de um tipo de mídia, como application/json. Essa identificação declarada não substitui a validação do conteúdo. [Contexto: 10.2][c102].
 
 ### Minor page fault
 
@@ -794,6 +914,10 @@ Programa autorreplicante associado a Robert Tappan Morris e ao incidente de nove
 
 Uso de acesso ou relação de confiança para alcançar outros sistemas ou contextos do ambiente. Pode combinar-se com escalada de privilégios, mas não é a mesma atividade. [Menção: capítulo 1][c1].
 
+### mtime
+
+No Linux, marca de tempo associada à modificação do conteúdo de um arquivo. Não deve ser confundida com ctime nem com um campo de data escrito pela aplicação dentro do documento. [Conceito: 10.1][c101].
+
 ### Mutex
 
 Mecanismo de exclusão mútua que coordena a entrada de participantes numa região protegida. Todos os acessos relevantes precisam respeitar o contrato; proteger apenas a escrita final não corrige necessariamente uma decisão baseada numa leitura antiga. [Conceito: 9.5][c95].
@@ -811,6 +935,10 @@ National Institute of Standards and Technology. Instituição que mantém refer�
 ### Nmap
 
 Network Mapper. Ferramenta de exploração e auditoria de redes, incluindo descoberta e investigação de portas e serviços. O resultado exige interpretação, não diagnóstico automático de vulnerabilidade. [Menção: capítulo 1][c1]. [Documentação][nmap-doc].
+
+### Normalização Unicode
+
+Transformação segundo formas definidas de equivalência. NFC e NFD tratam equivalência canônica; NFKC e NFKD acrescentam equivalências de compatibilidade. Não significa remover acentos, igualar toda aparência semelhante ou canonicalizar todo documento. [Conceito: 10.3][c103].
 
 ### Núcleo
 
@@ -878,6 +1006,10 @@ Preparação de conteúdo ou mapeamentos quando seu uso exige atendimento, em ve
 
 Execução simultânea de trabalhos em recursos capazes de realizá-los. Distingue-se da concorrência, que também pode avançar por alternância numa única unidade de execução. [Conceito: 9.1][c91].
 
+### Parser
+
+Analisador que reconhece a estrutura ou gramática de uma entrada. Parsing é essa atividade de análise. Reconhecer a sintaxe não substitui conferir regras do domínio, permissões ou orçamento de processamento. [Conceito: 10.5][c105].
+
 ### Payload
 
 No contexto de exploração apresentado, componente que realiza a ação desejada após aproveitar a vulnerabilidade. Nem toda exploração possui payload executável separado. [Conceito: 5.2][c52].
@@ -902,6 +1034,10 @@ Meios de conservar ou recuperar acesso apesar de mudanças, como interrupção d
 
 Investigação e manipulação de mecanismos de redes telefônicas. O capítulo discute episódios históricos, sem generalizar métodos para redes atuais ou autorizá-los. [Contexto: capítulo 2][c2].
 
+### pickle
+
+Mecanismo Python de serialização de objetos. Sua desserialização pode executar comportamento e não deve receber conteúdo não confiável como se fosse um leitor de dados inofensivo. Apenas a capacidade documentada é discutida; nenhum pickle foi executado. [Introdução: 10.6][c106].
+
 ### PID
 
 Process identifier, identificador de processo. No percurso Linux, a substituição de imagem por `execve` preserva o PID. O número identifica um contexto de processo, não uma versão imutável do programa. [Conceito: 8.3][c83].
@@ -913,6 +1049,10 @@ Stack. Organização utilizada para chamadas, retornos e estado associado, confo
 ### Pivotamento
 
 Uso de um ponto intermediário para alcançar recursos que não eram diretamente acessíveis da origem da investigação. Depende do escopo autorizado. [Menção: capítulo 1][c1].
+
+### PNG
+
+Portable Network Graphics. Formato de imagem apresentado como exemplo de assinatura seguida de blocos estruturados. Reconhecer seus bytes iniciais não substitui validar o restante nem identifica criptograficamente o autor. [Menção: 10.2][c102].
 
 ### Polling
 
@@ -961,6 +1101,10 @@ Instância de execução administrada pelo sistema operacional, com estado, espa
 ### Prompt injection
 
 Manipulação de entradas ou conteúdos processados por uma aplicação com modelo de linguagem para influenciar indevidamente seu comportamento. Os efeitos dependem do contexto e das capacidades da aplicação; não é equivalente a SQL injection. [Menções: capítulos 1][c1] e [2][c2]. [Referência][prompt-doc].
+
+### Protobuf
+
+Protocol Buffers. Formato de serialização binária em que números de campo e tipos de transporte são interpretados com apoio de um esquema. A introdução não implementa um codec Protobuf nem promete compatibilidade de qualquer alteração de esquema. [Introdução: 10.4][c104].
 
 ### Protocolo
 
@@ -1038,6 +1182,10 @@ Relação entre possibilidade de um evento adverso e consequências no contexto 
 
 Risco que permanece depois de controles ou respostas. Uma medida pode melhorar o cenário sem eliminar todas as possibilidades relevantes. [Conceito: 5.3][c53].
 
+### Round-trip
+
+Percurso de ida e volta, como serializar e desserializar um registro. Concordância entre as duas operações num caso não elimina a necessidade de expectativas independentes, fronteiras e entradas inválidas. [Conceito: 10.5][c105].
+
 ### RSS
 
 Resident Set Size. Medida de memória residente associada a um processo. Somar RSS de processos pode contar as mesmas páginas compartilhadas mais de uma vez; a interpretação precisa declarar o recorte. [Conceito: 9.4][c94].
@@ -1084,6 +1232,10 @@ Descrição de uma região relevante ao carregamento da imagem. Pode reunir mais
 
 Software Engineering Institute, da Carnegie Mellon University. Instituição associada à criação do CERT/CC no episódio histórico discutido. [Contexto: capítulo 2][c2].
 
+### Serialização
+
+Transformação de uma estrutura de dados numa representação armazenável ou transportável, segundo um formato. Não equivale necessariamente a copiar a disposição de memória do processo nem a preservar suas referências internas. [Conceito: 10.4][c104].
+
 ### Servidor
 
 Programa que atende solicitações; a palavra também pode designar o computador que o executa. Distinguir programa, serviço e equipamento evita conclusões imprecisas. [Conceito: 5.1][c51].
@@ -1095,6 +1247,10 @@ Contexto usado por uma aplicação para associar interações, frequentemente a 
 ### Severidade
 
 Descrição da gravidade de uma vulnerabilidade segundo critérios determinados. Não equivale sozinha ao risco para uma organização específica. [Conceito: 5.3][c53].
+
+### SHA-256
+
+Algoritmo de hash criptográfico utilizado para comparar os bytes de dois documentos no exemplo. Um resumo igual a uma referência não prova, sozinho, origem autorizada ou segurança do arquivo; a referência precisa ser confiável. [Introdução: 10.6][c106].
 
 ### Símbolo
 
@@ -1111,6 +1267,10 @@ Software que administra recursos e oferece serviços aos programas. Sua particip
 ### Software
 
 Programas e instruções que orientam o funcionamento do sistema. A distinção em relação ao hardware não significa que suas representações existam sem suporte físico. [Conceito: 7.1][c71].
+
+### Soma de verificação
+
+Checksum. Valor calculado sobre conteúdo para detectar determinadas alterações. Seu alcance depende do algoritmo e da referência; CRC não autentica quem produziu os dados. [Conceito: 10.6][c106].
 
 ### SQL
 
@@ -1158,6 +1318,10 @@ Interface de entrada e saída de texto para interagir com programas, inclusive i
 
 No contexto de software, fluxo de execução que pode ser organizado junto de outros fluxos. Não é necessariamente um núcleo físico nem uma janela de aplicativo. [Conceito: 7.2][c72]; [compartilhamento e estado próprio: 9.1][c91].
 
+### Tipo de mídia
+
+Identificação de uma representação, como application/json, também chamada de tipo MIME. Comunica a interpretação pretendida; não garante que o conteúdo corresponda a ela ou seja seguro para todo uso. [Conceito: 10.2][c102].
+
 ### TLB
 
 Translation Lookaside Buffer. Cache de traduções de endereços, distinta da cache de dados. Um TLB miss pode exigir obter uma tradução por outro caminho, sem demonstrar que houve page fault ou E/S. [Conceito: 9.2][c92].
@@ -1188,6 +1352,10 @@ Unified Extensible Firmware Interface. Interface de firmware usada no caminho de
 
 Padrão para representar caracteres, com pontos de código e formas de codificação. Identificar um ponto de código e escolher seus bytes são etapas distintas; Unicode não significa que toda letra ocupa um ou dois bytes. [Conceito: 6.4][c64].
 
+### URI
+
+Uniform Resource Identifier, identificador uniforme de recurso. A introdução examina somente as regras de codificação percentual e seus componentes; não desenvolve ainda toda a sintaxe de identificação de recursos na Web. [Introdução: 10.3][c103].
+
 ### Use-after-free
 
 Uso de uma referência a memória depois de sua liberação, contrariando o tempo de vida do objeto. O espaço pode ter sido reutilizado; observar bytes familiares não torna o acesso válido. [Conceito: 9.3][c93].
@@ -1197,6 +1365,14 @@ Uso de uma referência a memória depois de sua liberação, contrariando o temp
 Forma de codificação Unicode que utiliza de um a quatro bytes por valor escalar e preserva a representação ASCII. Uma unidade percebida pelo usuário pode reunir vários valores; nem toda sequência arbitrária de bytes é UTF-8 válido. [Conceito: 6.4][c64].
 
 ## V
+
+### Validação semântica
+
+Conferência do significado dos valores segundo as regras do domínio. Uma quantidade pode ser representável no formato e ainda exceder o limite permitido pela aplicação. [Conceito: 10.5][c105].
+
+### Validação sintática
+
+Conferência da estrutura e da forma de uma entrada segundo a gramática ou contrato pertinente. Não substitui a análise dos valores de domínio nem a autorização para executar a operação. [Conceito: 10.5][c105].
 
 ### Variável de ambiente
 
@@ -1230,9 +1406,19 @@ Programa capaz de se executar independentemente e propagar cópias funcionais pa
 
 ## X
 
+### XML
+
+Extensible Markup Language. Linguagem de representação estruturada com elementos e atributos. Boa formação do documento e conformidade com regras adicionais de validação são perguntas diferentes. [Introdução: 10.4][c104].
+
 ### XSS
 
 Cross-Site Scripting. Classe de falha em que conteúdo controlado por um atacante pode executar código no navegador no contexto de uma aplicação Web. É distinta de SQL injection. [Menção: capítulo 2][c2]. [Referência técnica][xss-doc].
+
+## Y
+
+### YAML
+
+YAML Ain’t Markup Language. Formato textual com mapeamentos, sequências e valores. A resolução de tipos depende da versão e do esquema; o capítulo utiliza a especificação 1.2.2 como referência introdutória, sem executar um parser YAML. [Introdução: 10.4][c104].
 
 ---
 
@@ -1269,6 +1455,12 @@ As definições metodológicas expressam o vocabulário de trabalho do livro. As
 [c93]: modulo-2/capitulo-9/9.3-regioes-objetos-e-tempo-de-vida.md
 [c94]: modulo-2/capitulo-9/9.4-paginacao-copias-e-medidas.md
 [c95]: modulo-2/capitulo-9/9.5-protecao-concorrencia-e-diagnostico.md
+[c101]: modulo-2/capitulo-10/10.1-arquivos-nomes-e-leitura.md
+[c102]: modulo-2/capitulo-10/10.2-formatos-e-estrutura.md
+[c103]: modulo-2/capitulo-10/10.3-codificacoes-e-transformacoes.md
+[c104]: modulo-2/capitulo-10/10.4-serializacao-e-contratos.md
+[c105]: modulo-2/capitulo-10/10.5-parsing-e-validacao.md
+[c106]: modulo-2/capitulo-10/10.6-integridade-e-fronteiras.md
 [c2-ref]: modulo-1/capitulo-2/referencias.md
 [c3-sol]: modulo-1/capitulo-3/solucoes.md
 [c4-ref]: modulo-1/capitulo-4/referencias.md

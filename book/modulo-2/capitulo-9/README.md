@@ -1,10 +1,10 @@
 # Capítulo 9 — Memória, processos e arquitetura de computadores
 
-[← Capítulo 8](../capitulo-8/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
+[← Capítulo 8](../capitulo-8/README.md) · [Índice do módulo](../README.md) · [Capítulo 10 →](../capitulo-10/README.md) · [Glossário](../../glossario.md)
 
 **Módulo II — Computadores por dentro**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Modelos numéricos e exemplo local conferidos; leitura do mantenedor e revisão independente pendentes. [Registro editorial](../../../editorial/reviews/capitulo-9.md).
+> **Status:** VALIDATED — versão editorial 1.0; retorno favorável e revisão interna concluída em 24/09/2026. Revisão técnica independente pendente. [Registro editorial](../../../editorial/reviews/capitulo-9.md).
 
 Duas execuções do mesmo programa mostram um contador com valor cinco. A primeira altera o contador para nove. A segunda continua mostrando cinco. Até aqui, parece natural: cada execução tem seu próprio trabalho.
 
@@ -28,4 +28,4 @@ O cenário dos contadores é didático. Usaremos Linux com MMU como implementaç
 
 As [referências](referencias.md), [respostas comentadas](solucoes.md) e [explicação do exemplo opcional](exemplos/README.md) acompanham o texto. Nenhuma leitura de memória de terceiros, configuração administrativa ou exploração é necessária.
 
-**[Começar a seção 9.1 →](9.1-processos-threads-e-contextos.md)**
+**[Começar a seção 9.1 →](9.1-processos-threads-e-contextos.md)** · [Depois, seguir para o Capítulo 10 →](../capitulo-10/README.md)

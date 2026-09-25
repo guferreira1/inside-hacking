@@ -11,9 +11,9 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 | Módulo | Percurso previsto | Situação |
 | --- | --- | --- |
 | [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
-| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Capítulos 6 a 9 disponíveis; capítulo 10 planejado |
+| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Todos os textos disponíveis; capítulo 10 em primeira leitura |
 
-Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. No planejamento atual, o Módulo III começa no capítulo 11.
+Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. No planejamento atual, o Módulo III começa no capítulo 11. Disponibilidade de todos os textos não equivale a fechamento editorial do módulo.
 
 ## Capítulos disponíveis no Módulo I
 
@@ -63,7 +63,8 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 | 6 | [Bits, bytes e representação da informação](modulo-2/capitulo-6/README.md) | Revisão interna concluída — v1.0 |
 | 7 | [Hardware: CPU, memória, armazenamento e dispositivos](modulo-2/capitulo-7/README.md) | Revisão interna concluída — v1.0 |
 | 8 | [Como um programa se torna execução](modulo-2/capitulo-8/README.md) | Revisão interna concluída — v1.0 |
-| 9 | [Memória, processos e arquitetura de computadores](modulo-2/capitulo-9/README.md) | Rascunho para leitura — v0.1 |
+| 9 | [Memória, processos e arquitetura de computadores](modulo-2/capitulo-9/README.md) | Revisão interna concluída — v1.0 |
+| 10 | [Arquivos, formatos, codificação e serialização](modulo-2/capitulo-10/README.md) | Rascunho para leitura — v0.1 |
 
 ### Dentro do Capítulo 6
 
@@ -103,6 +104,17 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 - [9.5 · Proteção não é uma única parede](modulo-2/capitulo-9/9.5-protecao-concorrencia-e-diagnostico.md)
 - [Exemplo opcional de mapeamentos](modulo-2/capitulo-9/exemplos/README.md).
 - [Respostas comentadas](modulo-2/capitulo-9/solucoes.md) e [referências](modulo-2/capitulo-9/referencias.md).
+
+### Dentro do Capítulo 10
+
+- [10.1 · O nome aponta; os bytes contam outra parte](modulo-2/capitulo-10/10.1-arquivos-nomes-e-leitura.md)
+- [10.2 · Um formato é um acordo sobre posições e significado](modulo-2/capitulo-10/10.2-formatos-e-estrutura.md)
+- [10.3 · Transformar a escrita não transforma tudo na mesma coisa](modulo-2/capitulo-10/10.3-codificacoes-e-transformacoes.md)
+- [10.4 · Levar uma estrutura para fora do processo](modulo-2/capitulo-10/10.4-serializacao-e-contratos.md)
+- [10.5 · Ler o formato é verificar suas promessas](modulo-2/capitulo-10/10.5-parsing-e-validacao.md)
+- [10.6 · O conteúdo vai continuar sua viagem](modulo-2/capitulo-10/10.6-integridade-e-fronteiras.md)
+- [Exemplos opcionais de formato e validação](modulo-2/capitulo-10/exemplos/README.md).
+- [Respostas comentadas](modulo-2/capitulo-10/solucoes.md) e [referências](modulo-2/capitulo-10/referencias.md).
 
 ## Como navegar
 

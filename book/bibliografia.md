@@ -81,7 +81,15 @@ As [fontes S1–S18](modulo-2/capitulo-9/referencias.md) relacionam documentaç�
 
 As explicações usam modelos próprios de endereços, objetos, residência e intercalamento. Os [sete testes](../scripts/tests/test_chapter9_examples.py) incluem seis conferências de modelos e um [exemplo Linux](modulo-2/capitulo-9/exemplos/README.md) que verifica valores visíveis em mapeamentos privados e compartilhados. Não foram observados quadros físicos nem medidos faults, RSS/PSS, swap ou eficácia de proteções.
 
-O capítulo permanece DRAFT 0.1, para primeira leitura. O [registro editorial](../editorial/reviews/capitulo-9.md) separa pesquisa, raciocínio, execução e limites da verificação.
+Após retorno favorável e releitura interna das cinco seções e respostas, o ciclo editorial da versão 1.0 foi encerrado. O [registro editorial](../editorial/reviews/capitulo-9.md) delimita a reconferência de pontos centrais e mantém os limites da execução e da revisão independente.
+
+## Capítulo 10 — Arquivos, formatos, codificação e serialização
+
+As [fontes S1–S18](modulo-2/capitulo-10/referencias.md) relacionam interfaces Linux, RFCs sobre representações e formatos, materiais W3C e Unicode, especificações YAML e Protobuf, documentação Python e orientações OWASP/CWE.
+
+O registro Livro/3 e o formato AUR v1 são criações didáticas. Seis seções separam nomes, bytes, formatos, transformações, serialização, parsing, validação e integridade. Não foi implementado um parser PNG/XML/YAML/Protobuf nem um canonicalizador JCS; essas referências sustentam comparações introdutórias.
+
+O [codec AUR/JSON](modulo-2/capitulo-10/exemplos/README.md) e os [23 testes](../scripts/tests/test_chapter10_examples.py) verificam casos pequenos e próprios, incluindo entradas inválidas. O capítulo está em DRAFT 0.1. Seu [registro editorial](../editorial/reviews/capitulo-10.md) identifica o ambiente, as verificações locais e a separação da checagem completa pelo workflow. A entrega completa a primeira redação dos textos previstos para o Módulo II, não seu fechamento ou uma edição em PDF.
 
 ## Política de referências
 

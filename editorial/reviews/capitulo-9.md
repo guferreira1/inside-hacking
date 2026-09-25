@@ -1,34 +1,34 @@
-# Primeira entrega editorial — Capítulo 9
+# Fechamento editorial — Capítulo 9
 
-**Data:** 24/09/2026. **Estado:** DRAFT 0.1. **Módulo:** II.  
-**Base:** `6547111cae636b1e4afdefbe131d49f0b8ed94d4`.
+**Data:** 24/09/2026. **Estado:** VALIDATED — versão editorial 1.0. **Módulo:** II.  
+**Primeira entrega:** `23435ad3789828f06cb7d87921115e194e9c9c41`.
 
 [Manuscrito](../../book/modulo-2/capitulo-9/README.md) · [Referências](../../book/modulo-2/capitulo-9/referencias.md) · [Exemplo](../../book/modulo-2/capitulo-9/exemplos/README.md)
 
-## Objetivo e recorte
+## Retorno e recorte
 
-Cinco seções aprofundam a organização da execução introduzida nos capítulos 7 e 8. O cenário dos contadores liga processos, threads, tradução por páginas, regiões, objetos, duração, residência, compartilhamento, proteções e concorrência. Dez perguntas opcionais possuem respostas comentadas.
+O mantenedor deu retorno favorável e solicitou continuidade para o próximo capítulo. Esse retorno é registrado como aprovação editorial de leitura, não como avaliação de competência prática. Não foram informados duração da sessão, respostas aos exercícios ou execução do exemplo pelo leitor.
 
-Os números de endereços e medidas são modelos explícitos. Não foram copiados diagramas de terceiros nem exigidos conhecimentos prévios de administração do kernel. O leitor pode acompanhar sem executar programas. Exploração de memória, leitura de processos de terceiros e mudanças nas proteções não fazem parte desta entrega.
+As cinco seções e as dez respostas foram relidas para o fechamento interno. O percurso liga processos, threads, tradução por páginas, regiões, objetos, duração, residência, compartilhamento, proteções e concorrência. Números de endereços e medidas continuam identificados como modelos; a leitura não exige execução.
 
-## Pesquisa e revisão interna
+## Revisão interna realizada
 
-As fontes S1–S18 delimitam trechos da documentação Linux, Microsoft, GNU, LLVM, Python, CWE e uma reprodução identificada de POSIX. A redação distingue thread de processo, troca de contexto de passagem de modo, TLB miss de page fault, mapeamento de objeto, endereço de destino, tamanho virtual de residência, liberação de sanitização e proteção de páginas de autorização de negócio.
+Foram reconferidos pontos centrais na documentação de conceitos de memória do kernel, threads POSIX, mmap, smaps, malloc e mprotect. A rastreabilidade completa S1–S18 da primeira entrega foi preservada. Essa rodada não é declarada como nova leitura integral de todas as especificações citadas.
 
-As respostas foram confrontadas com as premissas. O modelo de intercalamento não é anunciado como execução de data race C. Os tamanhos de página fictícios não são apresentados como configuração universal, e o resultado de mmap não é medição de cópias físicas.
+Critérios: thread distinto de processo; troca de contexto distinta de passagem de modo; TLB miss distinto de page fault; região distinta de objeto; tamanho virtual distinto de residência; liberação distinta de sanitização; proteção de páginas distinta de autorização de negócio. O intercalamento permanece modelo sequencial, não previsão completa de uma data race C real.
 
-## Evidência executada
+O conteúdo e as respostas permaneceram coerentes com as premissas. A versão pode encerrar seu ciclo interno sem afirmar revisão técnica independente, eficácia universal de proteções ou disponibilidade de um PDF.
 
-Sete testes passaram localmente em Debian GNU/Linux 13, Linux x86-64, Python 3.13.5. Seis conferem contas ou modelos sequenciais e um executa o programa Python com mapeamentos privado e compartilhado. A saída observada foi `privado=5` e `compartilhado=9`, com término normal.
+## Evidência preservada
 
-O processo de teste inicia o exemplo com `-I -S`, sem personalizações automáticas de site, em vez de fazer fork de um notebook ou processo hospedeiro multithread. Uma tentativa anterior com a inicialização padrão emitiu um aviso sobre threads e não foi adotada como procedimento recomendado. A execução final foi repetida sem esse aviso. Os argumentos não foram descritos como sandbox.
+Na primeira entrega, sete testes passaram localmente em Debian GNU/Linux 13, Linux x86-64, Python 3.13.5. Seis conferem contas ou modelos sequenciais e um executa o programa Python com mapeamentos privado e compartilhado. A saída observada foi `privado=5` e `compartilhado=9`, com término normal. O workflow da entrega também executou os testes.
 
-O repositório completo deve ser conferido pelo workflow do commit: o clone local não foi concluído por falha de resolução de rede. Não se equipara teste local dos exemplos à auditoria local de todos os arquivos.
+O exemplo inicia com `-I -S`, sem personalizações automáticas de site, em processo independente. A tentativa inicial com a configuração padrão emitiu aviso sobre threads; o procedimento final foi repetido sem ele e continua documentado. As opções não são descritas como sandbox.
 
-## Documentação e estado
+Nesta rodada, a regressão conjunta deve ser confirmada no workflow do novo commit. Não se confunde a execução local de exemplos de outro capítulo com nova execução local desta suíte ou com auditoria local de todos os Markdown. O clone local do repositório não foi concluído por falha de resolução de rede.
 
-Índices, navegação entre capítulos, bibliografia, glossário contextual, matriz de cobertura e controle editorial acompanham a entrega. O capítulo 8 recebe registro separado de retorno favorável e fechamento interno; o capítulo 1 mantém suas pendências. Nenhum módulo ou PDF é declarado lançado.
+## Estado e continuidade
 
-Primeira leitura do capítulo 9 e revisão técnica independente pendentes. Não foram executados benchmark, stress de memória, OOM, medição de RSS/PSS, exploração ou avaliação de eficácia de ASLR/DEP.
+README, referências, índices, bibliografia, matriz e controle editorial foram sincronizados com a versão interna 1.0. Revisão independente continua pendente. Não houve benchmark, stress de memória, OOM, medição de RSS/PSS ou avaliação de eficácia de ASLR/DEP.
 
-**Próxima revisão:** conferir se a passagem entre página, região e objeto permanece clara para quem lê pela primeira vez. Próximo capítulo planejado: **10 — Arquivos, formatos, codificação e serialização**.
+A entrega seguinte é o [Capítulo 10 — Arquivos, formatos, codificação e serialização](../../book/modulo-2/capitulo-10/README.md), em primeira leitura. O capítulo 1 mantém suas pendências e nenhum módulo foi declarado lançado por esta transição.
