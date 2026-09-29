@@ -1,0 +1,42 @@
+# Primeira entrega editorial — Capítulo 12
+
+**Data:** 29/09/2026. **Estado:** DRAFT 0.1. **Módulo:** III.
+**Base:** `9ace0862c456f01b3d8b03e8857349448f086215`.
+
+[Manuscrito](../../book/modulo-3/capitulo-12/README.md) · [Referências](../../book/modulo-3/capitulo-12/referencias.md) · [Exemplo](../../book/modulo-3/capitulo-12/exemplos/README.md)
+
+## Objetivo e recorte
+
+Cinco seções desenvolvem a organização de uma instalação Linux: núcleo e distribuição, árvore de nomes e montagens, procfs/sysfs/dispositivos/tmpfs, drivers e módulos, serviços e cadeia de pacotes. O cenário fictício da Aurora distingue uma origem ausente da visão do serviço de uma recusa de permissão no mesmo caminho. Há dez perguntas opcionais com respostas comentadas.
+
+A leitura independe de instalar Linux, de ter acesso administrativo ou de executar comandos. O capítulo não substitui as unidades futuras sobre terminal, permissões, serviços ou isolamento. O percurso de gerenciamento de pacotes é explicitamente Debian/APT, não uma regra universal de todas as distribuições.
+
+## Pesquisa e redação
+
+As fontes S1–S19 relacionam documentação do kernel, Linux man-pages, Debian, FHS, systemd, kmod, util-linux e Python. A redação e os cenários são autorais. FHS 3.0 é convenção, não fotografia de todo sistema atual; Debian 12 é referência identificada para merged-/usr, não indicação de release corrente; os manuais systemd reproduzidos no man7 não são recomendação para instalar sua versão de desenvolvimento.
+
+São distinguidos diretório raiz e conta root; link e cópia; caminho e montagem; estado e arquivo persistente; assinatura e correção do software; metadados disponíveis, pacote instalado e execução; versão upstream e correção da distribuição. Não foi diagnosticada vulnerabilidade em uma versão concreta.
+
+## Execução local realmente realizada
+
+Linux x86-64, kernel 6.18.44, glibc 2.41, Python 3.13.5. O programa `proc_proprio.py` foi executado separadamente com `python3 -I -S` e produziu as quatro linhas documentadas. Os quatro testes próprios passaram: contrato de plataforma, metadados/leitura e limpeza, limpeza após erro simulado na consulta e saída de processo separado.
+
+A falha simulada altera apenas a referência ao módulo `os` utilizada pelo exemplo, preservando as funções necessárias à limpeza do runtime. Ela não comprova uma política de autorização entre contas. A comparação de dispositivo/inode é local e momentânea; não comprova compartilhamento de posição de leitura. A leitura tem limite de sete bytes para conteúdo próprio de seis bytes.
+
+Nenhuma montagem, instalação de pacote, modificação de serviço, inspeção de processo alheio, escrita em sysfs, carga de módulo, alteração de firmware ou teste ofensivo foi realizada. O procedimento não exige sudo. Uma plataforma não compatível é identificada como tal; não se fabrica saída de sucesso.
+
+O clone local completo não foi obtido por falha de resolução de rede. A execução local cobre o exemplo e seus testes; a regressão de todo o repositório e os links internos são conferidos separadamente no runner.
+
+## Continuidade e documentação
+
+A aprovação da leitura do capítulo 11 é registrada pelo pedido de seguir ao próximo, conforme a convenção do mantenedor. A releitura das cinco seções, dez respostas e referências conserva a separação entre validação editorial interna e revisão independente. Não foram inventadas horas, execução de labs pelo leitor ou domínio prático.
+
+README principal, índice geral, índice do Módulo III, navegação 11→12, bibliografia, glossário, matriz de cobertura e controle editorial acompanham a entrega. O Módulo II mantém seu fechamento interno; a pendência do capítulo 1 permanece independente. Não houve publicação no LinkedIn nem geração de PDF nesta rodada.
+
+## Verificação de conjunto
+
+A preparação da árvore final executa a suíte e a checagem de links antes de disponibilizar o commit. Resultados observados e preservação do glossário serão registrados abaixo pelo processo de preparação; a integração em `main` recebe nova execução do workflow permanente.
+
+<!-- RESULTADOS_C12 -->
+
+**Próxima revisão:** leitura do capítulo 12 e revisão técnica independente. Próxima unidade planejada: **13 — Windows por dentro**.

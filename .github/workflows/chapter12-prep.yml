@@ -1,0 +1,40 @@
+name: Chapter 12 editorial preparation
+on:
+  push:
+    branches: [editorial/chapter-12-prep]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Apply bounded editorial updates
+        run: python3 .editorial_prepare12.py edit
+      - name: Run all tests and capture actual results
+        run: |
+          python3 - <<'PY'
+          import json, sys, unittest
+          from pathlib import Path
+          suite = unittest.defaultTestLoader.discover('scripts/tests')
+          result = unittest.TextTestRunner(verbosity=2).run(suite)
+          Path('/tmp/ch12_tests.json').write_text(json.dumps({
+              'testsRun': result.testsRun,
+              'skipped': len(result.skipped),
+              'successful': result.wasSuccessful(),
+          }))
+          sys.exit(0 if result.wasSuccessful() else 1)
+          PY
+      - name: Check navigation and write factual review results
+        run: |
+          python3 scripts/check_docs.py --inventory
+          python3 .editorial_prepare12.py report
+          git diff --check
+      - name: Publish candidate Git tree without temporary files or ref updates
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .editorial_prepare12.py publish
