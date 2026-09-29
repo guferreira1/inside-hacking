@@ -1,6 +1,6 @@
-# Primeira entrega editorial — Capítulo 11
+# Revisão editorial — Capítulo 11
 
-**Data:** 28/09/2026. **Estado:** DRAFT 0.1. **Módulo:** III.  
+**Primeira entrega:** 28/09/2026. **Fechamento interno:** 29/09/2026. **Estado:** VALIDATED — versão editorial 1.0. **Módulo:** III.
 **Base:** `96c60302e63223ea87e440a3e42059191302ede7`.
 
 [Manuscrito](../../book/modulo-3/capitulo-11/README.md) · [Referências](../../book/modulo-3/capitulo-11/referencias.md) · [Exemplo](../../book/modulo-3/capitulo-11/exemplos/README.md)
@@ -35,6 +35,10 @@ A atualização programática ocorreu em uma branch temporária, com alteraçõe
 
 README principal, índice geral, abertura do Módulo III, continuidade a partir do Módulo II e capítulo 10, bibliografia, glossário, cobertura e controle editorial acompanham a entrega. As entradas do glossário apontam para suas ocorrências; nenhum tema futuro foi importado apenas para aumentar a lista.
 
-A solicitação desta rodada autoriza continuar a escrita. Não contém avaliação explícita da leitura do capítulo 10; seu estado anterior é preservado, sem inventar aprovação, horas ou prática. Também não foi concluída nesta entrega a revisão pendente do capítulo 1 ou a revisão de conjunto dos módulos anteriores. O capítulo 11 permanece em primeira leitura e com revisão independente pendente. Não houve geração de PDF nem publicação no LinkedIn.
+Na primeira entrega, a interpretação de que o pedido de avanço não aprovava a leitura do capítulo 10 deixou uma pendência editorial indevida. Essa interpretação foi corrigida na auditoria do Módulo II: pedir o próximo capítulo registra aprovação de leitura do anterior. A solicitação atual aprova o capítulo 11 sob a mesma convenção. Não são inferidas horas, respostas a exercícios ou prática. O fechamento do Módulo II e a pendência do capítulo 1 são registros separados. Não houve geração de PDF nem publicação no LinkedIn nesta rodada.
 
-**Próxima revisão:** conferir a clareza da passagem entre operação, identidade, recurso e contexto. Próximo capítulo planejado: **12 — Linux por dentro**.
+## Fechamento interno — 29/09/2026
+
+As cinco seções, as dez respostas e os limites de fontes e exemplos foram relidos. Os seis testes originais são reconferidos na regressão da entrega do capítulo 12, sem transformar modelos em medições do kernel. A aprovação de leitura e essas verificações encerram o ciclo interno da versão editorial 1.0. Revisão técnica independente permanece pendente.
+
+**Próxima revisão:** revisão técnica independente e preparação de edição estável. A leitura continua no **Capítulo 12 — Linux por dentro**, em DRAFT 0.1.

@@ -57,7 +57,7 @@ Pré-requisito editorial: leitura introdutória e disposição para acompanhar e
 
 ## Módulo III — Sistemas operacionais
 
-Pré-requisitos: representações, recursos, processos e arquivos apresentados nos capítulos 6 a 10. O capítulo 11 conecta essas peças às responsabilidades do sistema operacional, sem exigir administração prévia ou execução de comandos. Seu estado é DRAFT 0.1; [fontes S1–S14](../book/modulo-3/capitulo-11/referencias.md) e [registro da entrega](reviews/capitulo-11.md) delimitam a validação.
+Pré-requisitos: representações, recursos, processos e arquivos apresentados nos capítulos 6 a 10. O capítulo 11 conecta essas peças às responsabilidades do sistema operacional, sem exigir administração prévia ou execução de comandos. Seu ciclo interno da versão 1.0 foi concluído; [fontes S1–S14](../book/modulo-3/capitulo-11/referencias.md) e [registro da entrega](reviews/capitulo-11.md) delimitam a validação.
 
 | ID | Tema / teoria disponível | Aplicação e defesa | Profundidade / fonte e limite |
 | --- | --- | --- | --- |
@@ -66,9 +66,14 @@ Pré-requisitos: representações, recursos, processos e arquivos apresentados n
 | M03-03 | [Recursos, espera e coordenação](../book/modulo-3/capitulo-11/11.3-recursos-espera-e-coordenacao.md) | Linha do tempo, limites, cgroups e dependência circular. | Modelos explicados e testados, não benchmark, exaustão, deadlock real ou configuração de controladores. |
 | M03-04 | [Identidade e limites](../book/modulo-3/capitulo-11/11.4-identidades-e-limites.md) | Distingue identidade do serviço/cliente, permissões do sistema e autorização da aplicação; menor privilégio. | UID/GID, token Windows, capabilities, LSM, namespaces e containers apenas introduzidos. Nenhuma mudança de credenciais ou avaliação de isolamento. |
 | M03-05 | [Inicialização e serviços](../book/modulo-3/capitulo-11/11.5-inicializacao-servicos-e-investigacao.md) | Caso fictício de diagnóstico por contexto, prontidão, saúde, registros e reteste. | Percurso Linux/systemd e comparação documental Windows. Nenhum serviço ou sistema de boot alterado. |
+| M03-06 | [Kernel, distribuição e contexto](../book/modulo-3/capitulo-12/12.1-kernel-distribuicao-e-contexto.md) | Identificação de kernel versus instalação, composição e dependências. | Fundamentos, DRAFT; [fontes S1–S19](../book/modulo-3/capitulo-12/referencias.md). Sem diagnóstico universal por versão ou prova de container. |
+| M03-07 | [Diretórios e montagens](../book/modulo-3/capitulo-12/12.2-diretorios-e-montagens.md) | FHS, merged-/usr, pontos de montagem e contexto da observação. | Explicação por modelo, sem montar dispositivos, alterar diretórios ou entrar em namespaces. |
+| M03-08 | [Procfs, sysfs e dispositivos](../book/modulo-3/capitulo-12/12.3-proc-sys-e-dev.md) | Distingue documento e interface de estado; exemplo de descritor próprio e tmpfs. | Leitura local limitada; não lê processos alheios, não escreve em sysfs nem comprova isolamento. |
+| M03-09 | [Drivers, módulos e serviços](../book/modulo-3/capitulo-12/12.4-drivers-modulos-e-servicos.md) | Instalado versus carregado, gerenciamento de dispositivos e condição de prontidão. | Introdução por documentação; sem carregar módulos, alterar firmware ou configurar serviços. |
+| M03-10 | [Pacotes e manutenção](../book/modulo-3/capitulo-12/12.5-pacotes-atualizacoes-e-investigacao.md) | dpkg/APT, índices, cadeia de confiança, backports e diagnóstico da Aurora. | Percurso Debian identificado; não instala pacotes nem atesta correção de vulnerabilidade real. |
 
 ## Cobertura ainda planejada
 
 A matriz continuará a detalhar redes e sistemas, reconhecimento, autenticação, ataques a credenciais, Web, APIs, injeções, autorização, lógica de negócio, infraestrutura, Linux, Windows, Active Directory, cloud, containers, supply chain, exploração de software, pós-exploração, escalada de privilégios, persistência, pivotamento, movimentação lateral, segurança de IA, redes sem fio, mobile, IoT, privacidade, dark web, OSINT, investigação e defesa.
 
-Esses temas pertencem ao planejamento, não são capítulos concluídos por aparecerem nesta lista. Os capítulos a partir do 12 não recebem linhas de cobertura efetiva antes da produção dos textos. As introduções a Linux, Windows e isolamento no capítulo 11 não substituem essas unidades futuras. A matriz não afirma completude e não substitui os registros específicos de revisão.
+Esses temas pertencem ao planejamento, não são capítulos concluídos por aparecerem nesta lista. Os capítulos a partir do 13 não recebem linhas de cobertura efetiva antes da produção dos textos. Os capítulos 11 e 12 não substituem o aprofundamento futuro de Windows, administração, permissões ou isolamento. A matriz não afirma completude e não substitui os registros específicos de revisão.

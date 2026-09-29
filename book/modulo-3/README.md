@@ -10,15 +10,15 @@ Este módulo investiga quem organiza essa convivência. Começamos pelo papel do
 
 | Capítulo global | Tema | Estado |
 | --- | --- | --- |
-| 11 | [O papel de um sistema operacional](capitulo-11/README.md) | Rascunho para leitura — v0.1 |
-| 12 | Linux por dentro | Planejado |
+| 11 | [O papel de um sistema operacional](capitulo-11/README.md) | Revisão interna concluída — v1.0 |
+| 12 | [Linux por dentro](capitulo-12/README.md) | Rascunho para leitura — v0.1 |
 | 13 | Windows por dentro | Planejado |
 | 14 | Terminal, shells e automação | Planejado |
 | 15 | Usuários, grupos, permissões e privilégios | Planejado |
 | 16 | Processos, serviços, logs e persistência de estado | Planejado |
 | 17 | Virtualização e isolamento | Planejado |
 
-Somente o capítulo 11 está disponível neste módulo. Os demais títulos indicam a progressão do [sumário mestre](../../editorial/master-outline.md), não arquivos já produzidos. A numeração continua global.
+Os capítulos 11 e 12 estão disponíveis neste módulo. O 11 tem revisão interna concluída; o 12 está em primeira leitura. Os demais títulos indicam a progressão do [sumário mestre](../../editorial/master-outline.md), não arquivos já produzidos. A numeração continua global.
 
 ## Como ler
 
@@ -26,4 +26,6 @@ O capítulo 11 utiliza os fundamentos dos capítulos 6 a 10 e explica os termos 
 
 Consulte o [glossário](../glossario.md) e as referências de cada unidade. A introdução de um mecanismo de proteção não equivale a um treinamento completo de configuração nem à validação de uma máquina real. Os estados e pendências ficam no [controle editorial](../../editorial/publication-status.md).
 
-**[Começar pelo Capítulo 11 →](capitulo-11/README.md)**
+O capítulo 12 concretiza esse mapa em Linux, com diretórios, montagens, interfaces de estado e manutenção de pacotes. Seu exemplo consulta somente um descritor próprio; a leitura não exige operações administrativas.
+
+**[Começar pelo Capítulo 11 →](capitulo-11/README.md)** · **[Continuar no Capítulo 12 →](capitulo-12/README.md)**
