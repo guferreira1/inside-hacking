@@ -33,6 +33,20 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           persist-credentials: false
+      - name: Constrain headings and preserve the stable question anchor
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('.editorial_prepare14.py')
+          text=p.read_text()
+          old=r'^### (.+)\n\n'
+          assert text.count(old)==1
+          p.write_text(text.replace(old,r'^### ([^\n]+)\n\n'))
+          p=Path('book/modulo-3/capitulo-14/14.6-automacao-e-fronteiras-de-confianca.md')
+          text=p.read_text()
+          assert '<a id="para-conferir-a-compreensao"></a>' not in text
+          p.write_text(text.replace('## Para conferir a compreensão','<a id="para-conferir-a-compreensao"></a>\n\n## Para conferir a compreensão'))
+          PY
       - name: Prepare and verify the final manuscript tree
         env:
           GH_TOKEN: ${{ github.token }}
