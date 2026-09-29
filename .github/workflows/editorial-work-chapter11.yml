@@ -1,0 +1,31 @@
+name: Editorial work chapter 11 (temporary)
+on:
+  push:
+    branches: [docs/editorial-work-chapter11-20260928]
+permissions:
+  contents: read
+jobs:
+  documentation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - name: Update glossary and supporting documents with base checks
+        run: |
+          python3 scripts/editorial_work_chapter11.py
+          python3 scripts/editorial_work_chapter11_docs.py
+      - name: Check examples and navigation
+        run: |
+          python3 -m unittest discover -s scripts/tests -v
+          python3 scripts/check_docs.py
+      - name: Commit only the approved documents to the temporary branch
+        run: |
+          test "$GITHUB_REF" = refs/heads/docs/editorial-work-chapter11-20260928
+          python3 scripts/editorial_work_chapter11_docs.py --verify-diff
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- README.md book/README.md book/bibliografia.md book/glossario.md book/modulo-2/README.md book/modulo-2/capitulo-10/README.md book/modulo-2/capitulo-10/10.6-integridade-e-fronteiras.md editorial/coverage-matrix.md editorial/publication-status.md
+          git commit -m 'docs: integrate chapter 11 navigation and glossary'
+          git push origin HEAD:refs/heads/docs/editorial-work-chapter11-20260928
