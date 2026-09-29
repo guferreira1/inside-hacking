@@ -31,7 +31,12 @@ jobs:
           p = Path('.editorial_prepare15.py')
           content = p.read_text(encoding='utf-8')
           assert content.count('changed = set()') == 1
-          p.write_text(content.replace('changed = set()', 'changed = ' + repr({x[0] for x in changes})), encoding='utf-8')
+          content = content.replace('changed = set()', 'changed = ' + repr({x[0] for x in changes}))
+          old = "out = subprocess.check_output([sys.executable, 'scripts/check_docs.py'], text=True)"
+          new = "proc = subprocess.run([sys.executable, 'scripts/check_docs.py'], capture_output=True, text=True)\n    out = proc.stdout\n    print('DOCS_CHECK=' + out, flush=True)"
+          assert content.count(old) == 1
+          p.write_text(content.replace(old, new), encoding='utf-8')
+          Path('editorial/updates/capitulo-15-checks.json').write_text('{}\n', encoding='utf-8')
           PY
       - name: Verify manuscript and prepare an unreferenced tree
         env:
