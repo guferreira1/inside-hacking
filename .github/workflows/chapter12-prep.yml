@@ -13,8 +13,28 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+      - name: Correct temporary helper invocation and table continuity
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('.editorial_prepare12.py')
+          text = path.read_text()
+          old = 'run("python3", "scripts/check_docs.py")'
+          assert text.count(old) == 2
+          text = text.replace(old, 'run("python3", "scripts/check_docs.py", "--inventory")')
+          old = '"\\n## Cobertura ainda planejada", "\\n" + rows'
+          assert text.count(old) == 1
+          text = text.replace(old, '"\\n\\n## Cobertura ainda planejada", "\\n" + rows')
+          path.write_text(text)
+          PY
       - name: Apply bounded editorial updates
-        run: python3 .editorial_prepare12.py edit
+        run: |
+          python3 .editorial_prepare12.py edit
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('editorial/reviews/capitulo-11.md')
+          path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines()) + '\n')
+          PY
       - name: Run all tests and capture actual results
         run: |
           python3 - <<'PY'
@@ -33,6 +53,7 @@ jobs:
         run: |
           python3 scripts/check_docs.py --inventory
           python3 .editorial_prepare12.py report
+          git restore -- .editorial_prepare12.py
           git diff --check
       - name: Publish candidate Git tree without temporary files or ref updates
         env:
