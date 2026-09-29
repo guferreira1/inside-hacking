@@ -89,7 +89,7 @@ As [fontes S1–S18](modulo-2/capitulo-10/referencias.md) relacionam interfaces 
 
 O registro Livro/3 e o formato AUR v1 são criações didáticas. Seis seções separam nomes, bytes, formatos, transformações, serialização, parsing, validação e integridade. Não foi implementado um parser PNG/XML/YAML/Protobuf nem um canonicalizador JCS; essas referências sustentam comparações introdutórias.
 
-O [codec AUR/JSON](modulo-2/capitulo-10/exemplos/README.md) e os [23 testes](../scripts/tests/test_chapter10_examples.py) verificam casos pequenos e próprios, incluindo entradas inválidas. O capítulo está em DRAFT 0.1. Seu [registro editorial](../editorial/reviews/capitulo-10.md) identifica o ambiente, as verificações locais e a separação da checagem completa pelo workflow. A entrega completa a primeira redação dos textos previstos para o Módulo II, não seu fechamento ou uma edição em PDF.
+O [codec AUR/JSON](modulo-2/capitulo-10/exemplos/README.md) e os [23 testes](../scripts/tests/test_chapter10_examples.py) verificam casos pequenos e próprios, incluindo entradas inválidas. Após aprovação de leitura, reconferência editorial e auditoria de conjunto do Módulo II, o capítulo encerrou seu ciclo interno como versão editorial 1.0. Seu [registro editorial](../editorial/reviews/capitulo-10.md) preserva ambiente, limites e verificações. Isso não equivale a revisão independente nem a uma edição em PDF.
 
 ## Capítulo 11 — O papel de um sistema operacional
 

@@ -2,7 +2,7 @@
 
 [← Capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 24/09/2026. **Versão:** DRAFT 0.1.
+**Consulta inicial:** 24/09/2026. **Versão editorial:** VALIDATED 1.0 — fechamento interno em 28/09/2026; revisão independente pendente.
 
 O formato AUR v1, o registro Livro/3, as situações da Aurora e os programas foram criados para a obra. As fontes verificam mecanismos e convenções; não fornecem um texto a ser recomposto nem endossam o livro. AUR não é um padrão externo. Os comportamentos de arquivos são delimitados ao Linux; as conversões executadas usam Python no ambiente identificado ao final.
 
@@ -216,4 +216,4 @@ Os [23 testes](../../../scripts/tests/test_chapter10_examples.py) passaram local
 
 Quatorze testes verificam o codec AUR e o perfil JSON; oito verificam transformações; um verifica a semântica de nomes e arquivo aberto no Linux. Os testes incluem os bytes fixados independentemente do codificador, ida e volta, fronteiras de tamanho, todas as truncagens do exemplo, entrada excedente, versão, codificação, tipos, nomes repetidos e constantes não aceitas.
 
-Nenhuma rede, arquivo pessoal, permissão administrativa, desserialização executável ou entrada de tamanho abusivo foi utilizada. O teste de arquivo cria e remove apenas seus objetos em diretório temporário. O limite do codec começa em bytes já adquiridos; não limita retroativamente a leitura feita pelo chamador. A checagem do repositório completo é confirmada pelo workflow do commit, separadamente desta execução local. Revisão independente pendente.
+Nenhuma rede, arquivo pessoal, permissão administrativa, desserialização executável ou entrada de tamanho abusivo foi utilizada. O teste de arquivo cria e remove apenas seus objetos em diretório temporário. O limite do codec começa em bytes já adquiridos; não limita retroativamente a leitura feita pelo chamador. A checagem do repositório completo é confirmada pelo workflow do commit, separadamente desta execução local. Após aprovação de leitura e revisão de conjunto do Módulo II, o capítulo encerrou seu ciclo interno como versão editorial 1.0. Revisão independente permanece pendente; consulte o [registro editorial](../../../editorial/reviews/capitulo-10.md) e a [auditoria do módulo](../../../editorial/audits/2026-09-28-modulo-2-double-check.md).

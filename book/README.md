@@ -11,7 +11,7 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 | Módulo | Percurso previsto | Situação |
 | --- | --- | --- |
 | [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
-| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Todos os textos disponíveis; capítulo 10 em primeira leitura |
+| [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Ciclo interno concluído — v1.0 nos capítulos 6–10 |
 | [III · Sistemas operacionais](modulo-3/README.md) | Capítulos 11 a 17 | Capítulo 11 disponível; demais planejados |
 
 Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. O Módulo III começa no capítulo 11; o Módulo IV, ainda planejado, começa no capítulo 18. Disponibilidade de todos os textos não equivale a fechamento editorial do módulo.
@@ -65,7 +65,9 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 | 7 | [Hardware: CPU, memória, armazenamento e dispositivos](modulo-2/capitulo-7/README.md) | Revisão interna concluída — v1.0 |
 | 8 | [Como um programa se torna execução](modulo-2/capitulo-8/README.md) | Revisão interna concluída — v1.0 |
 | 9 | [Memória, processos e arquitetura de computadores](modulo-2/capitulo-9/README.md) | Revisão interna concluída — v1.0 |
-| 10 | [Arquivos, formatos, codificação e serialização](modulo-2/capitulo-10/README.md) | Rascunho para leitura — v0.1 |
+| 10 | [Arquivos, formatos, codificação e serialização](modulo-2/capitulo-10/README.md) | Revisão interna concluída — v1.0 |
+
+O Módulo II teve a leitura dos cinco capítulos aprovada e passou por revisão de conjunto em 28/09/2026. O fechamento é interno: não representa revisão técnica independente nem uma release do livro. Consulte a [auditoria final do módulo](../editorial/audits/2026-09-28-modulo-2-double-check.md).
 
 ### Dentro do Capítulo 6
 

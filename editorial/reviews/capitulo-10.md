@@ -1,6 +1,6 @@
-# Primeira entrega editorial — Capítulo 10
+# Revisão editorial — Capítulo 10
 
-**Data:** 24/09/2026. **Estado:** DRAFT 0.1. **Módulo:** II.  
+**Primeira entrega:** 24/09/2026. **Fechamento interno:** 28/09/2026. **Estado:** VALIDATED — versão editorial 1.0. **Módulo:** II.  
 **Base:** `23435ad3789828f06cb7d87921115e194e9c9c41`.
 
 [Manuscrito](../../book/modulo-2/capitulo-10/README.md) · [Referências](../../book/modulo-2/capitulo-10/referencias.md) · [Exemplos](../../book/modulo-2/capitulo-10/exemplos/README.md)
@@ -35,6 +35,10 @@ README principal, índice geral, índice do módulo, passagem entre capítulos 9
 
 O repositório completo é conferido pelo workflow associado ao commit; o clone local não foi concluído por resolução de rede. A aprovação local dos 23 testes não é descrita como auditoria local do restante do repositório. O workflow executa também as suítes anteriores e verifica destinos e âncoras internos; URLs externas são inventariadas, não confirmadas como acessíveis por esse passo.
 
-O capítulo 9 tem fechamento interno separado. O capítulo 10 permanece em primeira leitura e sem revisão técnica independente. Os cinco textos do Módulo II agora existem, mas seu fechamento depende da leitura do 10 e revisão de conjunto. Não houve publicação no LinkedIn ou geração de PDF.
+O capítulo 9 tem fechamento interno separado. A leitura do capítulo 10 foi aprovada pelo mantenedor por meio da solicitação de avanço ao capítulo seguinte, conforme a convenção editorial posteriormente explicitada. O Módulo II passou então por revisão de conjunto, registrada em [auditoria própria](../audits/2026-09-28-modulo-2-double-check.md). Revisão técnica independente permanece pendente. Não houve geração de PDF.
 
-**Próxima revisão:** observar a clareza das passagens entre nome, bytes, formato, transformação e autorização. Próximo capítulo planejado: **11 — O papel de um sistema operacional**, início do Módulo III.
+## Fechamento interno
+
+A segunda passagem reconferiu ortografia, fluidez, coerência entre as seis seções, perguntas e soluções, rastreabilidade das fontes, exemplos executados, navegação e terminologia. Dois ajustes pequenos de redação no conjunto do Módulo II foram feitos sem alterar mecanismos ou conclusões. A suíte e os links foram verificados separadamente na auditoria.
+
+**Próxima revisão:** revisão técnica independente e preparação de uma futura edição estável. O percurso já continua no **Capítulo 11 — O papel de um sistema operacional**, início do Módulo III.

@@ -4,7 +4,7 @@
 
 **Módulo II — Computadores por dentro**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Exemplos próprios e verificações documentados; leitura do mantenedor e revisão independente pendentes. [Registro editorial](../../../editorial/reviews/capitulo-10.md).
+> **Status:** VALIDATED — versão editorial 1.0; leitura aprovada, revisão interna e auditoria de conjunto do Módulo II concluídas em 28/09/2026. Revisão técnica independente pendente. [Registro editorial](../../../editorial/reviews/capitulo-10.md).
 
 A biblioteca Aurora exporta um registro do catálogo. Uma pessoa o salva como `livro.json`; outra muda o nome para `livro.txt`. O editor de texto abre os dois. O importador aceita apenas um deles.
 

@@ -33,7 +33,7 @@ A proposta é permitir que quem está começando entenda computadores, sistemas 
 | [7 · Hardware: CPU, memória, armazenamento e dispositivos](book/modulo-2/capitulo-7/README.md) | Processamento, hierarquia de memória, persistência, entrada/saída e firmware. | Revisão interna concluída — v1.0 |
 | [8 · Como um programa se torna execução](book/modulo-2/capitulo-8/README.md) | Código-fonte, construção, ligação, carregamento, processos e runtimes. | Revisão interna concluída — v1.0 |
 | [9 · Memória, processos e arquitetura de computadores](book/modulo-2/capitulo-9/README.md) | Espaços de endereços, páginas, objetos, compartilhamento, proteção e concorrência. | Revisão interna concluída — v1.0 |
-| [10 · Arquivos, formatos, codificação e serialização](book/modulo-2/capitulo-10/README.md) | Nomes e bytes, estruturas, transformações, serialização e validação de entradas. | Rascunho para leitura — v0.1 |
+| [10 · Arquivos, formatos, codificação e serialização](book/modulo-2/capitulo-10/README.md) | Nomes e bytes, estruturas, transformações, serialização e validação de entradas. | Revisão interna concluída — v1.0 |
 
 **[Módulo III — Sistemas operacionais](book/modulo-3/README.md)**
 
@@ -43,7 +43,7 @@ A proposta é permitir que quem está começando entenda computadores, sistemas 
 
 **[Abrir o índice de leitura →](book/README.md)**
 
-Os capítulos 1 a 11 estão disponíveis. O Módulo III começa com o capítulo 11 em primeira entrega de leitura. O fechamento interno do Módulo I ainda depende da revisão do capítulo 1. O Módulo II possui todos os textos previstos, com os capítulos 6 a 9 em revisão interna concluída e o 10 em primeira entrega; seu fechamento ainda está pendente.
+Os capítulos 1 a 11 estão disponíveis. O Módulo III começa com o capítulo 11 em primeira entrega de leitura. O fechamento interno do Módulo I ainda depende da revisão do capítulo 1. O **Módulo II — Computadores por dentro** concluiu seu ciclo interno da versão 1.0 nos capítulos 6 a 10; revisão independente e uma futura edição estável continuam etapas separadas.
 
 Os estados indicam o andamento editorial, não certificação ou revisão independente concluída. O fechamento interno de um capítulo não equivale à publicação de uma edição estável do livro. Consulte o [estado editorial e suas pendências](editorial/publication-status.md).
 
