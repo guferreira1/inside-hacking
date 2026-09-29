@@ -35,9 +35,15 @@ A proposta é permitir que quem está começando entenda computadores, sistemas 
 | [9 · Memória, processos e arquitetura de computadores](book/modulo-2/capitulo-9/README.md) | Espaços de endereços, páginas, objetos, compartilhamento, proteção e concorrência. | Revisão interna concluída — v1.0 |
 | [10 · Arquivos, formatos, codificação e serialização](book/modulo-2/capitulo-10/README.md) | Nomes e bytes, estruturas, transformações, serialização e validação de entradas. | Rascunho para leitura — v0.1 |
 
+**[Módulo III — Sistemas operacionais](book/modulo-3/README.md)**
+
+| Leitura | O que você encontrará | Estado |
+| --- | --- | --- |
+| [11 · O papel de um sistema operacional](book/modulo-3/capitulo-11/README.md) | Abstrações, interfaces do kernel, recursos, identidades e ciclo de vida de serviços. | Rascunho para leitura — v0.1 |
+
 **[Abrir o índice de leitura →](book/README.md)**
 
-Os capítulos 1 a 10 estão disponíveis. O fechamento interno do Módulo I ainda depende da revisão do capítulo 1. O Módulo II possui todos os textos previstos, com os capítulos 6 a 9 em revisão interna concluída e o 10 em primeira entrega; seu fechamento ainda está pendente.
+Os capítulos 1 a 11 estão disponíveis. O Módulo III começa com o capítulo 11 em primeira entrega de leitura. O fechamento interno do Módulo I ainda depende da revisão do capítulo 1. O Módulo II possui todos os textos previstos, com os capítulos 6 a 9 em revisão interna concluída e o 10 em primeira entrega; seu fechamento ainda está pendente.
 
 Os estados indicam o andamento editorial, não certificação ou revisão independente concluída. O fechamento interno de um capítulo não equivale à publicação de uma edição estável do livro. Consulte o [estado editorial e suas pendências](editorial/publication-status.md).
 
@@ -81,6 +87,7 @@ Leia o [guia de contribuição](CONTRIBUTING.md). Não inclua tokens, credenciai
 | [`book/`](book/README.md) | Índice geral, glossário, bibliografia e módulos da obra. |
 | [`book/modulo-1/`](book/modulo-1/README.md) | Índice e capítulos do primeiro módulo. |
 | [`book/modulo-2/`](book/modulo-2/README.md) | Fundamentos de representação e funcionamento dos computadores. |
+| [`book/modulo-3/`](book/modulo-3/README.md) | Papel do sistema operacional e progressão para Linux, Windows e isolamento. |
 | [`editorial/`](editorial/README.md) | Planejamento, padrão de escrita e controle de revisão. |
 | [`research/`](research/README.md) | Notas de pesquisa; não são automaticamente conteúdo publicado. |
 | [`labs/`](labs/README.md) | Área reservada aos materiais dos laboratórios. |

@@ -1,6 +1,6 @@
 # Estado editorial e critérios de publicação
 
-**Atualização:** 24 de setembro de 2026.
+**Atualização:** 28 de setembro de 2026.
 
 [← Página inicial](../README.md) · [Índice de leitura](../book/README.md)
 
@@ -31,6 +31,7 @@ Uma leitura aprovada confirma uma experiência de leitura; não substitui audito
 | 8 | VALIDATED — versão editorial 1.0; retorno favorável em 24/09/2026 | Cinco seções e nove respostas relidas; rastreabilidade S1–S14 e testes próprios preservados. Linux/GCC e Python como contextos delimitados; revisão independente pendente. [Registro](reviews/capitulo-8.md). |
 | 9 | VALIDATED — versão editorial 1.0; retorno favorável em 24/09/2026 | Cinco seções e dez respostas relidas, pontos centrais de memória reconferidos e rastreabilidade S1–S18 preservada. Sete testes delimitados; revisão independente pendente. [Registro](reviews/capitulo-9.md). |
 | 10 | DRAFT 0.1 — primeira entrega de leitura | Seis seções, doze questões e soluções, fontes S1–S18, codec AUR/JSON e 23 testes locais. Leitura do mantenedor e revisão independente pendentes. [Registro](reviews/capitulo-10.md). |
+| 11 | DRAFT 0.1 — primeira entrega de leitura | Cinco seções, dez questões e soluções, fontes S1–S14 e seis testes delimitados. Exemplo Linux próprio de operações e erros; leitura e revisão independente pendentes. [Registro](reviews/capitulo-11.md). |
 
 As aprovações dos capítulos 4 a 9 registram os retornos informados pelo mantenedor. Não foram informados duração das sessões, respostas aos exercícios ou execução de ferramentas pelo leitor; esses resultados não foram presumidos. A validação editorial não é uma classificação de domínio prático do leitor. Testes executados pela equipe para verificar exemplos são registrados separadamente.
 
@@ -42,7 +43,9 @@ O capítulo 5 foi produzido antes do 4. A lacuna foi resolvida com a primeira re
 
 O [Módulo I](../book/modulo-1/README.md) possui os cinco textos e leitura inicial aprovada. Seu fechamento interno ainda depende do capítulo 1. Não foi criada uma release ou publicação de encerramento do módulo.
 
-O [Módulo II](../book/modulo-2/README.md) possui agora os capítulos 6 a 10 escritos. Os ciclos internos dos capítulos 6 a 9 estão encerrados; o [Capítulo 10](../book/modulo-2/capitulo-10/README.md) está em primeira entrega. O módulo ainda exige essa leitura e revisão de conjunto antes do fechamento. O capítulo 11, previsto como abertura do Módulo III, continua planejado, sem manuscrito nesta entrega.
+O [Módulo II](../book/modulo-2/README.md) possui agora os capítulos 6 a 10 escritos. Os ciclos internos dos capítulos 6 a 9 estão encerrados; o [Capítulo 10](../book/modulo-2/capitulo-10/README.md) está em primeira entrega. O módulo ainda exige essa leitura e revisão de conjunto antes do fechamento. O pedido de continuidade desta rodada não contém avaliação explícita da leitura do capítulo 10; seu estado foi preservado.
+
+O [Módulo III](../book/modulo-3/README.md) começa com o [Capítulo 11](../book/modulo-3/capitulo-11/README.md) em primeira entrega. Os capítulos 12 a 17 continuam planejados. A abertura do módulo não equivale a encerrar os anteriores ou a atribuir domínio prático ao leitor.
 
 ## Organização por módulos
 
@@ -60,9 +63,9 @@ As publicações de continuidade planejadas no LinkedIn usarão o fechamento edi
 
 ## Próximas unidades de trabalho
 
-1. Receber a primeira leitura do Capítulo 10, com atenção às camadas de representação e validação, e revisar o conjunto do Módulo II antes de encerrá-lo.
+1. Receber a leitura do Capítulo 11, com atenção à relação entre operação, identidade, recurso e contexto. Registrar também o retorno ainda pendente do capítulo 10 e revisar o conjunto do Módulo II antes de encerrá-lo.
 2. Concluir as pendências factuais do Capítulo 1 antes de fechar o Módulo I e preparar seu post de marco.
-3. Prosseguir para o Capítulo 11 — O papel de um sistema operacional, abertura do Módulo III, após a unidade atual.
+3. Prosseguir para o Capítulo 12 — Linux por dentro, mantendo glossário, fontes e navegação na mesma entrega.
 4. Incorporar revisão independente e, onde aplicável, jurídica especializada à preparação da primeira edição estável.
 5. Planejar a primeira geração de PDF e conferir sua apresentação antes de anunciar uma release, incluindo os avisos das licenças e os créditos aplicáveis.
 

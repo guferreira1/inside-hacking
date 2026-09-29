@@ -30,3 +30,5 @@ Não é necessário instalar ferramentas. O texto explica o percurso; o [program
 As [referências](referencias.md) delimitam as fontes utilizadas. Ao final, há perguntas opcionais e [respostas comentadas](solucoes.md).
 
 **[Começar a seção 10.1 →](10.1-arquivos-nomes-e-leitura.md)**
+
+**[Próximo capítulo: 11 — O papel de um sistema operacional →](../../modulo-3/capitulo-11/README.md)**

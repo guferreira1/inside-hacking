@@ -12,8 +12,9 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 | --- | --- | --- |
 | [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
 | [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Todos os textos disponíveis; capítulo 10 em primeira leitura |
+| [III · Sistemas operacionais](modulo-3/README.md) | Capítulos 11 a 17 | Capítulo 11 disponível; demais planejados |
 
-Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. No planejamento atual, o Módulo III começa no capítulo 11. Disponibilidade de todos os textos não equivale a fechamento editorial do módulo.
+Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. O Módulo III começa no capítulo 11; o Módulo IV, ainda planejado, começa no capítulo 18. Disponibilidade de todos os textos não equivale a fechamento editorial do módulo.
 
 ## Capítulos disponíveis no Módulo I
 
@@ -115,6 +116,22 @@ A leitura dos capítulos 4 e 5 foi aprovada e seus ciclos internos foram encerra
 - [10.6 · O conteúdo vai continuar sua viagem](modulo-2/capitulo-10/10.6-integridade-e-fronteiras.md)
 - [Exemplos opcionais de formato e validação](modulo-2/capitulo-10/exemplos/README.md).
 - [Respostas comentadas](modulo-2/capitulo-10/solucoes.md) e [referências](modulo-2/capitulo-10/referencias.md).
+
+## Capítulos disponíveis no Módulo III
+
+| Capítulo | Leitura | Estado |
+| --- | --- | --- |
+| 11 | [O papel de um sistema operacional](modulo-3/capitulo-11/README.md) | Rascunho para leitura — v0.1 |
+
+### Dentro do Capítulo 11
+
+- [11.1 · Um equipamento, muitas promessas](modulo-3/capitulo-11/11.1-abstracoes-e-responsabilidades.md)
+- [11.2 · O pedido atravessa uma fronteira](modulo-3/capitulo-11/11.2-interfaces-e-chamadas-de-sistema.md)
+- [11.3 · Executar também é esperar](modulo-3/capitulo-11/11.3-recursos-espera-e-coordenacao.md)
+- [11.4 · Quem pede faz parte da operação](modulo-3/capitulo-11/11.4-identidades-e-limites.md)
+- [11.5 · Ligar a máquina não é concluir o serviço](modulo-3/capitulo-11/11.5-inicializacao-servicos-e-investigacao.md)
+- [Exemplo opcional de operações sobre arquivos próprios](modulo-3/capitulo-11/exemplos/README.md).
+- [Respostas comentadas](modulo-3/capitulo-11/solucoes.md) e [referências](modulo-3/capitulo-11/referencias.md).
 
 ## Como navegar
 

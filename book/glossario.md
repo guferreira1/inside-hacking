@@ -1,6 +1,6 @@
 # Glossário
 
-[Índice do livro](README.md) · [Módulo I](modulo-1/README.md) · [Módulo II](modulo-2/README.md) · [Bibliografia](bibliografia.md)
+[Índice do livro](README.md) · [Módulo I](modulo-1/README.md) · [Módulo II](modulo-2/README.md) · [Módulo III](modulo-3/README.md) · [Bibliografia](bibliografia.md)
 
 Este glossário acompanha os termos presentes na obra. Cada entrada aponta para uma ocorrência; a definição curta não substitui o capítulo. **Uma menção introdutória não significa que o assunto já foi ensinado em profundidade.**
 
@@ -13,6 +13,10 @@ Não importamos todos os assuntos futuros. OSINT é identificado como menção d
 ### ABI
 
 Application Binary Interface, interface binária de aplicação. Conjunto de convenções para interação entre componentes binários, como passagem de argumentos, retorno e uso de registradores. Compartilhar uma ISA não garante compartilhar todas essas convenções. [Conceito: 8.3][c83].
+
+### Abstração
+
+Apresentação de operações e garantias que permite trabalhar sem administrar todos os detalhes internos. Não elimina as condições de existência, acesso, custo ou falha do recurso. [Conceito: 11.1][c111].
 
 ### Abstração digital
 
@@ -214,6 +218,10 @@ Pathname. Expressão usada para localizar um objeto na organização de nomes do
 
 Transformação para uma representação definida por regras de um contrato, útil para comparações ou assinaturas. No caso de documentos, pode envolver ordem de campos e escrita de valores; não equivale apenas a normalizar Unicode ou retirar espaços. [Conceito: 10.6][c106].
 
+### Capabilities (Linux)
+
+Divisão de parte dos privilégios tradicionalmente associados ao superusuário em capacidades específicas do contexto de execução. Não equivale a todo modelo de segurança baseado em capabilities. [Conceito: 11.4][c114].
+
 ### Carregador dinâmico
 
 Componente que encontra e prepara objetos compartilhados necessários à execução. No percurso ELF/Linux, não é o mesmo mecanismo que um interpretador de Python nem o bootloader que inicia o sistema operacional. [Conceito: 8.3][c83].
@@ -225,6 +233,10 @@ Relação em que uma condição ou ação contribui para produzir um efeito. Obs
 ### CERT/CC
 
 CERT Coordination Center, do Software Engineering Institute da Carnegie Mellon University. Aparece na resposta coordenada após o Morris Worm. É uma instituição, não o autor ou nome do programa. [Contexto: capítulo 2][c2].
+
+### Cgroup
+
+Control group. Organização hierárquica de processos para administrar recursos no Linux segundo controladores e configurações. Peso relativo de distribuição e teto de consumo não são a mesma garantia. [Conceito: 11.3][c113].
 
 ### Chamada de sistema
 
@@ -318,6 +330,10 @@ Processo que produz artefatos a partir das entradas de um projeto; build. Pode c
 
 Program counter, PC. Estado do processador que participa da determinação de qual instrução buscar. Seu significado preciso e sua atualização dependem da arquitetura e do fluxo de execução. [Conceito: 7.2][c72].
 
+### Container
+
+Organização de execução e isolamento por uma combinação de mecanismos e configurações. No percurso Linux usual, compartilha o kernel; a separação de uma visão não certifica todos os limites do ambiente. [Conceito: 11.4][c114].
+
 ### Content-Type
 
 Campo HTTP que comunica o tipo de mídia da representação. É uma declaração do contexto de comunicação, não uma prova independente de que os bytes obedecem ao formato ou podem ser processados com segurança. [Introdução: 10.2][c102].
@@ -380,6 +396,10 @@ Common Weakness Enumeration. Catálogo de tipos de fraquezas de software e hardw
 
 ## D
 
+### Daemon
+
+Processo de serviço em segundo plano no vocabulário Unix apresentado. Serviço lógico, processo e unidade de um gerenciador não precisam ter correspondência de um para um. [Conceito: 11.5][c115].
+
 ### DARPA
 
 Defense Advanced Research Projects Agency. Agência citada por solicitar ao SEI uma capacidade de resposta após o incidente de 1988. [Contexto: capítulo 2][c2].
@@ -395,6 +415,10 @@ No contexto brasileiro discutido, informações relacionadas a pessoa natural id
 ### Dados sintéticos
 
 Dados construídos para representar situações sem reproduzir registros pessoais reais. Trocar somente um nome em um registro real não o torna automaticamente sintético. [Exemplos: 3.2][c32].
+
+### Deadlock
+
+Impasse sem progresso sob condições como as do modelo: tarefas mantêm recursos exclusivos e esperam recursos umas das outras sem liberar nem dispor de recuperação. O exemplo do livro é uma dependência desenhada, não um travamento executado. [Conceito: 11.3][c113].
 
 ### Decimal
 
@@ -428,6 +452,10 @@ Diretório corrente de um processo, usado como base em operações comuns com ca
 
 Possibilidade de acesso e uso por quem está autorizado quando necessário. Recusar todos os pedidos não é correção suficiente se os usos legítimos também deixam de funcionar. [Conceito: 5.1][c51].
 
+### Distribuição Linux
+
+Integração do kernel Linux com ferramentas, bibliotecas, pacotes, configurações e manutenção. Compartilhar o kernel não implica que duas instalações ofereçam as mesmas condições de execução. [Conceito: 11.1][c111].
+
 ### Divulgação coordenada
 
 Coordenação entre participantes que descobrem, corrigem, utilizam e comunicam informações sobre vulnerabilidades. Não é sinônimo de programa de recompensas. [Contexto: capítulo 2][c2].
@@ -449,6 +477,14 @@ Dynamic Random Access Memory, memória dinâmica. Tecnologia de memória que exi
 Software que participa da comunicação e do controle entre sistema operacional e dispositivo. Não é o próprio circuito controlador nem o dado transferido. [Conceitos: 7.1][c71] e [7.5][c75].
 
 ## E
+
+### EACCES
+
+Nome simbólico de erro associado a recusa de acesso nas interfaces discutidas. Não identifica sozinho qual componente do caminho ou política ocasionou a recusa. [Conceito: 11.2][c112].
+
+### EBADF
+
+Nome simbólico de erro que pode indicar descritor inválido ou incompatível com a operação. Uma abertura válida somente para leitura pode produzir esse erro quando usada para escrita. [Conceito: 11.2][c112].
 
 ### ELF
 
@@ -478,6 +514,10 @@ Ordem dos bytes na representação de um valor com vários bytes. Interpretar a 
 
 Análise de um sistema ou artefato para compreender sua estrutura e funcionamento a partir do que está disponível. É citada como especialização, sem técnica detalhada nesta introdução. [Menção: capítulo 2][c2].
 
+### ENOENT
+
+Nome simbólico de erro associado à ausência de componente necessário à resolução de um caminho. No exemplo, aparece ao tentar abrir um nome não criado, não ao consumir o fim do arquivo existente. [Conceito: 11.2][c112].
+
 ### Entrada e saída
 
 E/S; em inglês, Input/Output ou I/O. Operações de comunicação com dispositivos e componentes externos ao processamento considerado, como teclado, tela e armazenamento. Seus caminhos podem envolver drivers, controladores e buffers. [Conceitos: 7.1][c71] e [7.5][c75].
@@ -489,6 +529,10 @@ Levantamento sistemático de informações sobre elementos de um ambiente, como 
 ### EOF
 
 End of file, fim de arquivo. No percurso de leitura apresentado, condição de fim da sequência, não um byte obrigatório depois do último caractere. A interpretação do retorno de uma operação depende de seu contrato e do tipo de recurso. [Conceito: 10.1][c101].
+
+### errno
+
+Informação de erro utilizada em interfaces C sob o contrato da função. Deve ser consultada quando a operação indica falha; um valor antigo não comprova erro numa chamada bem-sucedida. Python conserva códigos correspondentes em exceções OSError. [Conceito: 11.2][c112].
 
 ### Escalada de privilégios
 
@@ -509,6 +553,10 @@ Delimitação do que será avaliado e das condições da avaliação. Descobrir 
 ### Espaço de endereços
 
 Contexto no qual os endereços de um processo são interpretados. Visões diferentes podem alcançar destinos distintos ou compartilhar regiões sob regras explícitas; separar visões não exige duplicar fisicamente todo conteúdo. [Conceito: 9.1][c91].
+
+### Espaço de usuário
+
+Userspace. Ambiente de execução de aplicações e componentes fora do kernel. Pode incluir serviços com permissões relevantes; não significa que todo programa ali execute sob uma conta sem privilégios. [Conceito: 11.1][c111].
 
 ### Esquema
 
@@ -594,9 +642,17 @@ Unidade de operações que pode ser chamada por outra parte de um programa. A in
 
 GNU Compiler Collection. No exemplo, o comando `gcc` coordena etapas de tradução, montagem e ligação conforme as opções utilizadas. Não precisa executar todas essas etapas em toda invocação. [Conceito: 8.2][c82].
 
+### Gerenciador de serviços
+
+Componente que organiza ciclo de vida e contexto de serviços conforme sua configuração. Iniciar ou reiniciar um processo não demonstra que todas as funções do serviço estejam saudáveis. [Conceito: 11.5][c115].
+
 ### GHz
 
 Gigahertz: um bilhão de ciclos por segundo. Expressa frequência, não diretamente instruções ou tarefas concluídas. [Conceito: 7.2][c72].
+
+### GID
+
+Group identifier, identificador de grupo. Participa do contexto de credenciais das interfaces Unix/Linux; grupos e variantes de identificadores possuem papéis que precisam ser distinguidos. [Conceito: 11.4][c114].
 
 ### GPU
 
@@ -681,6 +737,10 @@ Consequência de uma falha ou ação. Distinguir impacto observado de impacto po
 ### Inferência
 
 Conclusão construída a partir de observações e premissas. Não equivale ao registro bruto produzido por tela ou ferramenta. [Conceito: 4.1][c41].
+
+### initramfs
+
+Ambiente inicial de sistemas de arquivos em memória que pode participar da preparação antes de alcançar o sistema de arquivos raiz pretendido no percurso Linux. Sua utilização depende da inicialização configurada. [Conceito: 11.5][c115].
 
 ### Inode
 
@@ -808,6 +868,10 @@ Reutilização de uma informação em um intervalo próximo. Ajuda a explicar po
 
 Registro de eventos produzido por um sistema. Seu valor depende dos campos, procedência, cobertura e relação com a operação examinada. [Conceito: 4.3][c43].
 
+### LSM
+
+Linux Security Modules. Arcabouço do kernel para participação de mecanismos adicionais de segurança. Sua presença não informa sozinha quais políticas estão ativas ou quais operações serão permitidas. [Conceito: 11.4][c114].
+
 ## M
 
 ### M.2
@@ -846,6 +910,10 @@ Região cujas alterações privadas não devem aparecer automaticamente nas outr
 
 MB, megabyte, representa 1.000.000 de bytes; MiB, mebibyte, representa 1.048.576. Uma taxa em Mbit/s mede bits por segundo, não bytes armazenados. [Conceito: 6.3][c63].
 
+### Mecanismo
+
+No vocabulário de análise do livro, meio utilizado para realizar uma decisão, como a verificação de uma permissão. A política define o critério; possuir o mecanismo não garante uma política adequada. [Conceito: 11.1][c111].
+
 ### Memória não volátil
 
 Memória que conserva informação sem alimentação contínua. A propriedade não garante disponibilidade eterna, imunidade a defeitos ou segurança contra acesso indevido. [Conceitos: 7.3][c73] e [7.4][c74].
@@ -857,6 +925,10 @@ Organização que fornece contextos de endereços e mapeamentos utilizados na ex
 ### Memória volátil
 
 Memória cuja manutenção da informação depende de alimentação. Volatilidade não é um procedimento certificado de eliminação segura de todos os dados sensíveis. [Conceito: 7.3][c73].
+
+### Menor privilégio
+
+Princípio de conceder a cada componente ou identidade somente as capacidades necessárias às suas responsabilidades. Limitar o serviço não substitui a autorização dos registros que ele entrega a seus clientes. [Conceito: 11.4][c114].
 
 ### Metadados
 
@@ -873,6 +945,10 @@ Multifrequency, sinalização multifrequência. Na telefonia histórica discutid
 ### Microarquitetura
 
 Organização interna que implementa uma arquitetura de instruções. Implementações da mesma interface podem ter estruturas e desempenhos diferentes. [Conceito: 7.2][c72].
+
+### Microkernel
+
+Organização que concentra um conjunto reduzido de mecanismos no núcleo e deixa diversos serviços em componentes externos. A comparação com seL4 não certifica a segurança de qualquer sistema montado dessa maneira. [Conceito: 11.1][c111].
 
 ### MIME
 
@@ -924,6 +1000,10 @@ Mecanismo de exclusão mútua que coordena a entrada de participantes numa regi�
 
 ## N
 
+### Namespace
+
+No Linux, visão particular de uma classe de recursos apresentada a um conjunto de processos. O tipo de namespace determina o que se separa; não equivale automaticamente a um limite de consumo. [Conceito: 11.4][c114].
+
 ### NBS
 
 National Bureau of Standards. Instituição identificada no relatório histórico do workshop de segurança de 1972. A sigla é preservada conforme a fonte histórica. [Contexto: capítulo 2][c2].
@@ -969,6 +1049,14 @@ Out of memory, insuficiência de memória. O OOM killer do Linux pode encerrar t
 ### Operação atômica
 
 Operação com garantias específicas de indivisibilidade e ordenação segundo a interface e o modelo de memória. Uma sequência de várias operações atômicas não se torna automaticamente uma transação indivisível. [Conceito: 9.5][c95].
+
+### Operação bloqueante
+
+Operação que pode manter o fluxo à espera de condições para prosseguir. A espera por E/S não se resolve necessariamente com maior prioridade de CPU. [Conceito: 11.3][c113].
+
+### Operação não bloqueante
+
+Operação que retorna sem aguardar determinada condição e pode informar que ainda não é possível prosseguir. Não significa que o trabalho já terminou; as garantias dependem da interface e do recurso. [Conceito: 11.3][c113].
 
 ### OSINT
 
@@ -1054,6 +1142,10 @@ Uso de um ponto intermediário para alcançar recursos que não eram diretamente
 
 Portable Network Graphics. Formato de imagem apresentado como exemplo de assinatura seguida de blocos estruturados. Reconhecer seus bytes iniciais não substitui validar o restante nem identifica criptograficamente o autor. [Menção: 10.2][c102].
 
+### Política
+
+Critério que orienta decisões de uso, distribuição ou acesso a recursos. Um mecanismo pode aplicar corretamente uma política inadequada ou deixar de aplicar a política pretendida. [Conceito: 11.1][c111].
+
 ### Polling
 
 Consulta repetida a um estado para descobrir se há evento ou trabalho disponível. Pode ser uma escolha de projeto adequada; não é automaticamente melhor ou pior que interrupções. [Conceito: 7.5][c75].
@@ -1082,6 +1174,10 @@ Análise e atividades posteriores ao acesso obtido por exploração, como invest
 
 Etapa que trata diretivas como inclusões de cabeçalhos antes da tradução C propriamente dita. O resultado textual não constitui a execução das operações descritas pelo programa. [Conceito: 8.2][c82].
 
+### Preempção
+
+Interrupção da ocupação da CPU por um fluxo para permitir encaminhar outro segundo as regras de escalonamento. Não garante divisão igual ou atendimento imediato de qualquer tarefa. [Conceito: 11.3][c113].
+
 ### Previsão
 
 Resultado que uma hipótese leva a esperar em condições especificadas, formulado antes de observar a execução. Não é evidência de que ocorreu. [Conceito: 4.1][c41].
@@ -1101,6 +1197,10 @@ Instância de execução administrada pelo sistema operacional, com estado, espa
 ### Prompt injection
 
 Manipulação de entradas ou conteúdos processados por uma aplicação com modelo de linguagem para influenciar indevidamente seu comportamento. Os efeitos dependem do contexto e das capacidades da aplicação; não é equivalente a SQL injection. [Menções: capítulos 1][c1] e [2][c2]. [Referência][prompt-doc].
+
+### Prontidão
+
+Condição de preparação para uma operação ou estágio do ciclo de vida, conforme um contrato. No serviço, uma indicação de inicialização concluída não é garantia permanente de funcionamento de todas as capacidades. [Conceito: 11.5][c115].
 
 ### Protobuf
 
@@ -1170,6 +1270,10 @@ Mensagem em que um componente solicita uma operação a outro. Em HTTP, seu sign
 
 Mensagem devolvida em relação a uma requisição. Código de status e conteúdo precisam ser interpretados juntos, no contexto da operação. [Introdução: 4.3][c43].
 
+### Reteste
+
+Nova verificação após uma alteração, voltada ao comportamento que deveria ser corrigido e às propriedades que deveriam permanecer. No exemplo de acesso, inclui o uso legítimo e a preservação das recusas necessárias. [Conceito: 11.5][c115].
+
 ### RFC
 
 Request for Comments. Documento numerado de uma série de especificações e outros materiais técnicos. Nem toda RFC é um padrão; categoria e contexto importam. [Menção: capítulo 1][c1]; [referências do capítulo 4][c4-ref].
@@ -1236,6 +1340,14 @@ Software Engineering Institute, da Carnegie Mellon University. Instituição ass
 
 Transformação de uma estrutura de dados numa representação armazenável ou transportável, segundo um formato. Não equivale necessariamente a copiar a disposição de memória do processo nem a preservar suas referências internas. [Conceito: 10.4][c104].
 
+### Service Control Manager
+
+Componente Windows que inicia e controla serviços e mantém sua base de configuração. É um exemplo de gerenciador, não o mesmo programa que systemd. [Conceito: 11.5][c115].
+
+### Serviço
+
+Capacidade oferecida por um componente em execução, frequentemente administrado sem interação constante. Pode envolver vários processos; existir um processo não demonstra que a capacidade oferecida está funcionando. [Conceito: 11.5][c115].
+
 ### Servidor
 
 Programa que atende solicitações; a palavra também pode designar o computador que o executa. Distinguir programa, serviço e equipamento evita conclusões imprecisas. [Conceito: 5.1][c51].
@@ -1300,6 +1412,10 @@ Pontos e caminhos pelos quais um sistema pode ser alcançado ou influenciado, in
 
 Armazenamento de apoio que pode conservar conteúdo retirado da RAM conforme a gestão de memória. Não é o significado inteiro de memória virtual, e nem toda página ausente da RAM está em swap. [Conceito: 9.4][c94].
 
+### systemd
+
+Conjunto de componentes que inclui um gerenciador de sistema e serviços. No papel de gerenciador de sistema descrito, executa como PID 1 e coordena unidades. Não é o kernel nem um componente obrigatório de toda distribuição. [Conceito: 11.5][c115].
+
 ## T
 
 ### Tabela de páginas
@@ -1330,6 +1446,10 @@ Translation Lookaside Buffer. Cache de traduções de endereços, distinta da ca
 
 Tech Model Railroad Club, clube de ferromodelismo do MIT presente nos episódios de experimentação. Sua história não estabelece origem única da segurança de computadores. [Contexto: capítulos 1][c1] e [2][c2].
 
+### Token de acesso (Windows)
+
+Objeto que descreve contexto de segurança de um processo ou thread, incluindo identidade, grupos e privilégios. Não é sinônimo de token de sessão Web nem da senha digitada por uma pessoa. [Conceito: 11.4][c114].
+
 ### TRIM
 
 Mecanismo pelo qual o sistema informa ao dispositivo de armazenamento que determinados dados lógicos não precisam mais ser preservados. Participa da gestão do SSD, mas não comprova sanitização completa do equipamento. [Conceito: 7.4][c74].
@@ -1347,6 +1467,10 @@ Corte de uma sequência ou representação para um tamanho menor. Em texto de la
 ### UEFI
 
 Unified Extensible Firmware Interface. Interface de firmware usada no caminho de inicialização de plataformas compatíveis. O firmware prepara o ambiente e participa da passagem ao carregador; não é o próprio sistema operacional. [Introdução: 7.5][c75].
+
+### UID
+
+User identifier, identificador de usuário. Nas interfaces Unix/Linux há variantes com papéis distintos, como identidade real, efetiva e de sistema de arquivos; o nome mostrado numa tela não descreve todo o contexto. [Conceito: 11.4][c114].
 
 ### Unicode
 
@@ -1389,6 +1513,14 @@ Throughput. Quantidade de trabalho concluído por unidade de tempo. Não é o es
 ### VDP
 
 Vulnerability Disclosure Policy, política de divulgação de vulnerabilidades. Define canais e condições para comunicar falhas e pode delimitar pesquisa autorizada. Não significa automaticamente pagamento de recompensas. [Conceito: 3.1][c31].
+
+### Verificação de saúde
+
+Observação deliberada de uma capacidade definida de um serviço. Conferir apenas a existência do processo não demonstra que uma importação ou outra função esteja funcionando. [Conceito: 11.5][c115].
+
+### VFS
+
+Virtual File System. Camada do kernel Linux que fornece uma interface de sistemas de arquivos e permite coexistência de implementações. A abstração não garante que todo pedido seja permitido ou atendido pelo mesmo caminho físico. [Conceito: 11.1][c111].
 
 ### Vulnerabilidade
 
@@ -1480,3 +1612,9 @@ As definições metodológicas expressam o vocabulário de trabalho do livro. As
 [ransomware-doc]: https://www.cisa.gov/stopransomware/ransomware-guide
 [sqli-doc]: https://portswigger.net/web-security/sql-injection
 [xss-doc]: https://portswigger.net/web-security/cross-site-scripting
+
+[c111]: modulo-3/capitulo-11/11.1-abstracoes-e-responsabilidades.md
+[c112]: modulo-3/capitulo-11/11.2-interfaces-e-chamadas-de-sistema.md
+[c113]: modulo-3/capitulo-11/11.3-recursos-espera-e-coordenacao.md
+[c114]: modulo-3/capitulo-11/11.4-identidades-e-limites.md
+[c115]: modulo-3/capitulo-11/11.5-inicializacao-servicos-e-investigacao.md

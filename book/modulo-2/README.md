@@ -24,6 +24,8 @@ O capítulo 6 desenvolve representações e contas passo a passo. O 7 acompanha 
 
 Não é necessário conhecer programação antecipadamente, montar circuitos ou instalar ferramentas para acompanhar a leitura. A execução dos exemplos dos capítulos 8 a 10 é opcional e possui requisitos próprios identificados. Use o [glossário](../glossario.md) para consulta e as referências de cada capítulo para verificar suas bases.
 
-O [controle editorial](../../editorial/publication-status.md) distingue leitura aprovada, revisão interna e edição publicada. O percurso seguinte planejado é o Módulo III — Sistemas operacionais, começando pelo capítulo 11. Essa indicação ainda não representa um manuscrito publicado.
+O [controle editorial](../../editorial/publication-status.md) distingue leitura aprovada, revisão interna e edição publicada. O percurso seguinte já começou no [Módulo III — Sistemas operacionais](../modulo-3/README.md), com o [Capítulo 11 — O papel de um sistema operacional](../modulo-3/capitulo-11/README.md). A abertura desse módulo não encerra as revisões pendentes deste.
 
 **[Começar pelo Capítulo 6 →](capitulo-6/README.md)** · **[Continuar no Capítulo 10 →](capitulo-10/README.md)**
+
+**[Seguir para o Módulo III →](../modulo-3/README.md)**
