@@ -1,6 +1,6 @@
 # Estado editorial e critérios de publicação
 
-**Atualização:** 28 de setembro de 2026.
+**Atualização:** 29 de setembro de 2026.
 
 [← Página inicial](../README.md) · [Índice de leitura](../book/README.md)
 
@@ -31,9 +31,10 @@ Uma leitura aprovada confirma uma experiência de leitura; não substitui audito
 | 8 | VALIDATED — versão editorial 1.0; retorno favorável em 24/09/2026 | Cinco seções e nove respostas relidas; rastreabilidade S1–S14 e testes próprios preservados. Linux/GCC e Python como contextos delimitados; revisão independente pendente. [Registro](reviews/capitulo-8.md). |
 | 9 | VALIDATED — versão editorial 1.0; retorno favorável em 24/09/2026 | Cinco seções e dez respostas relidas, pontos centrais de memória reconferidos e rastreabilidade S1–S18 preservada. Sete testes delimitados; revisão independente pendente. [Registro](reviews/capitulo-9.md). |
 | 10 | VALIDATED — versão editorial 1.0; leitura aprovada e revisão interna concluída em 28/09/2026 | Seis seções, doze questões e soluções, fontes S1–S18, codec AUR/JSON e 23 testes delimitados. Revisão de conjunto do Módulo II concluída; revisão independente pendente. [Registro](reviews/capitulo-10.md). |
-| 11 | DRAFT 0.1 — primeira entrega de leitura | Cinco seções, dez questões e soluções, fontes S1–S14 e seis testes delimitados. Exemplo Linux próprio de operações e erros; leitura e revisão independente pendentes. [Registro](reviews/capitulo-11.md). |
+| 11 | VALIDATED — versão editorial 1.0; leitura aprovada e revisão interna concluída em 29/09/2026 | Cinco seções, dez respostas e fontes S1–S14 relidas; seis testes delimitados preservados e reconferidos na regressão. Revisão independente pendente. [Registro](reviews/capitulo-11.md). |
+| 12 | DRAFT 0.1 — primeira entrega de leitura | Cinco seções, dez questões e respostas, fontes S1–S19 e quatro testes próprios delimitados. Exemplo de descritor próprio em procfs, sem administração da máquina. Leitura e revisão independente pendentes. [Registro](reviews/capitulo-12.md). |
 
-As aprovações dos capítulos 4 a 10 registram os retornos informados pelo mantenedor. Não foram informados duração das sessões, respostas aos exercícios ou execução de ferramentas pelo leitor; esses resultados não foram presumidos. A validação editorial não é uma classificação de domínio prático do leitor. Testes executados pela equipe para verificar exemplos são registrados separadamente.
+As aprovações dos capítulos 4 a 11 registram os retornos informados pelo mantenedor. Não foram informados duração das sessões, respostas aos exercícios ou execução de ferramentas pelo leitor; esses resultados não foram presumidos. A validação editorial não é uma classificação de domínio prático do leitor. Testes executados pela equipe para verificar exemplos são registrados separadamente.
 
 As antigas anotações genéricas de “fact-check primário concluído” não constituem auditoria integral. O capítulo 1 mantém suas próprias pendências; a conclusão de outro capítulo não o promove automaticamente.
 
@@ -45,7 +46,7 @@ O [Módulo I](../book/modulo-1/README.md) possui os cinco textos e leitura inici
 
 O [Módulo II](../book/modulo-2/README.md) possui os capítulos 6 a 10 com ciclos internos da versão 1.0 concluídos. A solicitação de avanço ao capítulo 11 registrou a aprovação de leitura do capítulo 10 conforme a convenção editorial do mantenedor; em seguida, o conjunto passou por [auditoria final em 28/09/2026](audits/2026-09-28-modulo-2-double-check.md). O módulo está **internamente encerrado**, sem que isso implique revisão independente ou release.
 
-O [Módulo III](../book/modulo-3/README.md) começa com o [Capítulo 11](../book/modulo-3/capitulo-11/README.md) em primeira entrega. Os capítulos 12 a 17 continuam planejados. A abertura do módulo não equivale a encerrar os anteriores ou a atribuir domínio prático ao leitor.
+O [Módulo III](../book/modulo-3/README.md) possui o [Capítulo 11](../book/modulo-3/capitulo-11/README.md) com ciclo interno concluído e o [Capítulo 12](../book/modulo-3/capitulo-12/README.md) em primeira entrega. Os capítulos 13 a 17 continuam planejados. O módulo permanece em produção; a aprovação editorial não atribui domínio prático ao leitor.
 
 ## Organização por módulos
 
@@ -63,9 +64,9 @@ As publicações de continuidade planejadas no LinkedIn usarão o fechamento edi
 
 ## Próximas unidades de trabalho
 
-1. Receber a leitura do Capítulo 11, com atenção à relação entre operação, identidade, recurso e contexto.
+1. Receber a leitura do Capítulo 12, com atenção às diferenças entre kernel, instalação, visão de montagens e interfaces de estado.
 2. Concluir as pendências factuais do Capítulo 1 antes de fechar o Módulo I e preparar seu post de marco.
-3. Preparar a comunicação pública do fechamento do Módulo II e, depois da leitura do capítulo 11, prosseguir para o Capítulo 12 — Linux por dentro, mantendo glossário, fontes e navegação na mesma entrega.
+3. A comunicação de fechamento do Módulo II foi preparada; não presumir publicação. Depois da leitura do capítulo 12, prosseguir para o Capítulo 13 — Windows por dentro, mantendo glossário, fontes e navegação na mesma entrega.
 4. Incorporar revisão independente e, onde aplicável, jurídica especializada à preparação da primeira edição estável.
 5. Planejar a primeira geração de PDF e conferir sua apresentação antes de anunciar uma release, incluindo os avisos das licenças e os créditos aplicáveis.
 

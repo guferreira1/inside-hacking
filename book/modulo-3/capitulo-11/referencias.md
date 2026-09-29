@@ -2,7 +2,7 @@
 
 [← Capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 28/09/2026. **Versão:** DRAFT 0.1.
+**Consulta inicial:** 28/09/2026. **Versão editorial:** VALIDATED 1.0 — fechamento interno em 29/09/2026; revisão independente pendente.
 
 A narrativa da Aurora, o diagnóstico do diretório, a linha do tempo e as comparações são construções autorais. As referências sustentam mecanismos específicos; não descrevem uma investigação real na biblioteca. O percurso principal usa interfaces Linux, com comparações identificadas de Windows e seL4. Não se impõe uma divisão universal de componentes a todos os sistemas operacionais.
 
@@ -182,4 +182,4 @@ Os [seis testes](../../../scripts/tests/test_chapter11_examples.py) passaram loc
 
 O script completo foi executado com `python3 -I -S` e produziu as cinco linhas documentadas em 11.2. Não houve execução privilegiada solicitada pelo procedimento, acesso a arquivos do usuário, mudança de identidade, alteração de permissões, criação de serviços, stress de recursos ou rastreamento de syscalls. As opções -I e -S reduzem interferências da inicialização Python; não são uma sandbox.
 
-A checagem do repositório completo é realizada separadamente pelo workflow da entrega. O clone local não pôde ser concluído por falha de resolução de rede. Um teste de EBADF não demonstra uma política de acesso entre contas; um modelo de espera não é medição de escalonamento. Revisão técnica independente e leitura do capítulo 11 permanecem pendentes. Consulte o [registro editorial](../../../editorial/reviews/capitulo-11.md).
+A checagem do repositório completo é realizada separadamente pelo workflow da entrega. O clone local não pôde ser concluído por falha de resolução de rede. Um teste de EBADF não demonstra uma política de acesso entre contas; um modelo de espera não é medição de escalonamento. A leitura foi aprovada e o ciclo interno da versão editorial 1.0 foi encerrado em 29/09/2026. Revisão técnica independente permanece pendente. Consulte o [registro editorial](../../../editorial/reviews/capitulo-11.md).

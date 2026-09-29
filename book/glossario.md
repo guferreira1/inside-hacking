@@ -8,6 +8,7 @@ Não importamos todos os assuntos futuros. OSINT é identificado como menção d
 
 **Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x) · [Y](#y).
 
+
 ## A
 
 ### ABI
@@ -42,6 +43,10 @@ Circunstância ou evento com potencial de causar consequência adversa de segura
 
 Application Programming Interface, interface de programação de aplicações. Define uma forma de componentes de software interagirem; nem toda API é um serviço Web. [Menção introdutória: capítulo 2][c2].
 
+### APT
+
+Advanced Package Tool. Conjunto de ferramentas que trabalha com fontes e metadados de pacotes, resolução de dependências e operações de instalação. Atualizar índices não equivale a atualizar programas instalados. [Conceito: 12.5][c125].
+
 ### Argumento
 
 Valor fornecido a uma função, operação ou programa. No início de um programa, argumentos são uma parte do contexto recebido e não se confundem com variáveis de ambiente. [Conceitos: 8.1][c81] e [8.5][c85].
@@ -49,6 +54,10 @@ Valor fornecido a uma função, operação ou programa. No início de um program
 ### Armazenamento persistente
 
 Armazenamento destinado a conservar dados sem depender apenas do estado de trabalho volátil. A confirmação de uma escrita precisa ser interpretada conforme o contrato das camadas envolvidas; persistente não significa indestrutível. [Conceito: 7.4][c74].
+
+### Arquivo de dispositivo
+
+Objeto especial que oferece acesso a uma interface de dispositivo. Seu contrato não é necessariamente o de um arquivo regular que conserva todos os bytes escritos. [Conceito: 12.3][c123].
 
 ### Arquivo executável
 
@@ -104,6 +113,10 @@ Amazon Web Services. Provedor de nuvem citado para distinguir testes em recursos
 
 ## B
 
+### Backport
+
+Transporte seletivo de uma correção ou mudança para uma versão mantida anteriormente. Na segurança de pacotes, exige verificar a revisão completa e o aviso da distribuição; o termo não prova sozinho que uma instalação esteja corrigida. [Conceito: 12.5][c125].
+
 ### Banco de dados
 
 Conjunto organizado de dados mantido para consulta e atualização. A aplicação pode utilizá-lo para guardar registros; o sistema que gerencia os dados não deve ser confundido com a informação armazenada. [Menção: capítulo 1][c1]; [exemplo: 5.1][c51].
@@ -124,13 +137,13 @@ Codificação que representa bytes por um alfabeto textual de 64 posições. Na 
 
 Variante de Base64 com alterações no alfabeto para determinados contextos de transporte. O protocolo que a utiliza define condições como preenchimento; não se deve misturar variantes por adivinhação. [Introdução: 10.3][c103].
 
-### Biblioteca de software
-
-Conjunto de código e interfaces reutilizáveis por programas. Conhecer a declaração de uma função não é o mesmo que disponibilizar sua implementação. Bibliotecas podem participar de ligações estáticas ou dinâmicas. [Conceito: 8.2][c82].
-
 ### Biblioteca compartilhada
 
 Objeto de software utilizado por meio de carregamento e ligação dinâmica. Seu código pode participar do contexto do processo que o carrega; estar num arquivo separado não implica isolamento automático. [Conceitos: 8.2][c82] e [8.5][c85].
+
+### Biblioteca de software
+
+Conjunto de código e interfaces reutilizáveis por programas. Conhecer a declaração de uma função não é o mesmo que disponibilizar sua implementação. Bibliotecas podem participar de ligações estáticas ou dinâmicas. [Conceito: 8.2][c82].
 
 ### Big-endian
 
@@ -139,6 +152,10 @@ Ordem que coloca primeiro o byte de maior peso de um valor com vários bytes. N�
 ### Binário
 
 No sistema de numeração apresentado, base dois: usa os algarismos 0 e 1 e pesos que são potências de dois. O termo também aparece em computação com outros sentidos; o contexto deve identificá-los. [Conceito: 6.2][c62]. No capítulo 8, “um binário” pode designar um artefato de código já traduzido, não apenas a notação de um número. [Contexto: 8.1][c81].
+
+### Bind mount
+
+Montagem que torna uma árvore existente acessível por outro ponto. Não cria, por si só, uma cópia independente dos arquivos nem uma cópia de segurança. [Conceito: 12.2][c122].
 
 ### Bit
 
@@ -374,13 +391,13 @@ Computer Security Resource Center, do NIST. Portal de referências e glossários
 
 Comma-Separated Values. Formato textual de registros e campos, com regras de delimitadores e aspas. Uma vírgula dentro de um campo entre aspas pode ser conteúdo; variantes e tipos de valores precisam de um acordo adicional. [Conceito: 10.4][c104].
 
-### ctime
-
-No Linux, marca de tempo de mudança de estado do inode. Não deve ser lida automaticamente como data de criação do documento. É distinta da data que uma aplicação escreve dentro de um arquivo. [Conceito: 10.1][c101].
-
 ### CTF
 
 Capture the Flag. Formato de desafio de segurança realizado sob as regras de um ambiente preparado. Sua autorização não se estende a sistemas externos. [Menção: capítulo 1][c1].
+
+### ctime
+
+No Linux, marca de tempo de mudança de estado do inode. Não deve ser lida automaticamente como data de criação do documento. É distinta da data que uma aplicação escreve dentro de um arquivo. [Conceito: 10.1][c101].
 
 ### CVE
 
@@ -396,6 +413,14 @@ Common Weakness Enumeration. Catálogo de tipos de fraquezas de software e hardw
 
 ## D
 
+### Dados pessoais
+
+No contexto brasileiro discutido, informações relacionadas a pessoa natural identificada ou identificável. Um teste não elimina as obrigações sobre seu tratamento. [Contexto: 3.2][c32].
+
+### Dados sintéticos
+
+Dados construídos para representar situações sem reproduzir registros pessoais reais. Trocar somente um nome em um registro real não o torna automaticamente sintético. [Exemplos: 3.2][c32].
+
 ### Daemon
 
 Processo de serviço em segundo plano no vocabulário Unix apresentado. Serviço lógico, processo e unidade de um gerenciador não precisam ter correspondência de um para um. [Conceito: 11.5][c115].
@@ -407,14 +432,6 @@ Defense Advanced Research Projects Agency. Agência citada por solicitar ao SEI 
 ### Data race
 
 No contexto de memória compartilhada, conflito entre acessos de threads, ao menos um de escrita, sem a coordenação exigida pelo modelo de memória. Em C/C++, não deve ser reduzida a uma previsão de qual escrita vence: pode envolver comportamento indefinido. É um conceito mais específico que a expressão ampla condição de corrida. [Contexto: 9.5][c95]; [fontes S17][c9-ref].
-
-### Dados pessoais
-
-No contexto brasileiro discutido, informações relacionadas a pessoa natural identificada ou identificável. Um teste não elimina as obrigações sobre seu tratamento. [Contexto: 3.2][c32].
-
-### Dados sintéticos
-
-Dados construídos para representar situações sem reproduzir registros pessoais reais. Trocar somente um nome em um registro real não o torna automaticamente sintético. [Exemplos: 3.2][c32].
 
 ### Deadlock
 
@@ -432,6 +449,10 @@ No exemplo C, apresenta informações como nome, argumentos e retorno de uma fun
 
 Data Execution Prevention, prevenção de execução de dados. Mecanismo que restringe execução a partir de páginas não autorizadas para esse uso. Não valida os limites de cada objeto nem a autorização de negócio da aplicação. [Conceito: 9.5][c95].
 
+### Dependência de software
+
+Relação declarada entre componentes necessários à instalação ou ao funcionamento de software. Resolver dependências não demonstra toda a correção ou segurança da aplicação. [Conceito: 12.5][c125].
+
 ### Descritor de arquivo
 
 Identificador de um recurso aberto no contexto de um processo. Apesar do nome, pode se relacionar a recursos que não são documentos em armazenamento persistente. [Conceito: 8.5][c85]. A relação entre abertura, nomes e conteúdo é retomada em [10.1][c101].
@@ -448,9 +469,21 @@ Reconstrução de valores ou estruturas a partir de uma representação. As capa
 
 Diretório corrente de um processo, usado como base em operações comuns com caminhos relativos. O mesmo nome relativo pode alcançar arquivos diferentes quando essa base muda. [Conceito: 8.5][c85].
 
+### Diretório raiz
+
+Início da árvore usada para resolver caminhos absolutos, representado por /. Não é a conta root nem seu diretório pessoal /root; a raiz e a visão dependem do contexto do processo. [Conceito: 12.2][c122].
+
 ### Disponibilidade
 
 Possibilidade de acesso e uso por quem está autorizado quando necessário. Recusar todos os pedidos não é correção suficiente se os usos legítimos também deixam de funcionar. [Conceito: 5.1][c51].
+
+### Dispositivo de bloco
+
+Tipo de interface de dispositivo que organiza acesso por blocos. É uma classificação da interface, não um formato de documento nem confirmação de que seu sistema de arquivos esteja montado. [Conceito: 12.3][c123].
+
+### Dispositivo de caractere
+
+Tipo de interface de dispositivo distinto do acesso por blocos. O nome não significa que o recurso armazene apenas texto; cada interface mantém suas próprias operações e garantias. [Conceito: 12.3][c123].
 
 ### Distribuição Linux
 
@@ -467,6 +500,14 @@ Direct Memory Access, acesso direto à memória. Permite transferências entre d
 ### DOI
 
 Digital Object Identifier. Identificador persistente usado para referenciar objetos, como publicações. Não certifica a correção do conteúdo nem substitui sua leitura. [Ocorrência: referências do capítulo 2][c2-ref].
+
+### dpkg
+
+Ferramenta de administração de pacotes Debian e de seu estado local. Instalação pode envolver arquivos, metadados e scripts de manutenção, não apenas copiar um executável. [Conceito: 12.5][c125].
+
+### dpkg-query
+
+Ferramenta que consulta a base local de pacotes Debian, incluindo versões e caminhos registrados. Não é inventário universal de todos os arquivos criados fora desse mecanismo nem das versões em execução. [Conceito: 12.5][c125].
 
 ### DRAM
 
@@ -595,6 +636,14 @@ Falha em identificar uma condição que o detector deveria reconhecer e que esta
 ### Falso positivo
 
 Indicação de uma condição ausente no caso classificado. Um alerta não verificado pode ser inconclusivo, sem ser automaticamente verdadeiro ou falso. [Conceito: 4.3][c43].
+
+### FHS
+
+Filesystem Hierarchy Standard. Documento de convenções para a organização de diretórios e suas funções. O capítulo usa a versão 3.0 como referência, sem presumir conformidade literal de toda instalação atual. [Conceito: 12.2][c122].
+
+### findmnt
+
+Utilitário do projeto util-linux para consultar informações de sistemas de arquivos montados. A interpretação depende das opções e da origem da consulta; a visão do terminal não é automaticamente a de outro serviço. [Conceito: 12.2][c122].
 
 ### Firmware
 
@@ -734,6 +783,10 @@ Valor utilizado para distinguir um objeto ou registro. Conhecê-lo não equivale
 
 Consequência de uma falha ou ação. Distinguir impacto observado de impacto possível e limitar a afirmação ao que as evidências sustentam. [Conceito: 5.2][c52].
 
+### Índice de pacotes
+
+Metadados que descrevem pacotes anunciados por uma fonte. Buscar uma versão nova do índice não significa substituir o software já instalado. [Conceito: 12.5][c125].
+
 ### Inferência
 
 Conclusão construída a partir de observações e premissas. Não equivale ao registro bruto produzido por tela ou ferramenta. [Conceito: 4.1][c41].
@@ -750,6 +803,10 @@ Estrutura de metadados de um arquivo no modelo Linux apresentado. Seu número s�
 
 Operação codificada interpretada pelo processador conforme sua arquitetura. Pode transformar dados, acessar memória ou alterar o fluxo de execução. Não equivale necessariamente a uma linha de uma linguagem de programação. [Conceito: 7.2][c72].
 
+### Integridade
+
+Proteção contra alteração ou destruição indevida. Alterar uma data sem permissão é consequência diferente de consultar informação privada. [Conceito: 5.1][c51].
+
 ### Inteiro com sinal
 
 Representação numérica que admite valores negativos e não negativos. É preciso conhecer a convenção, como complemento de dois, e a largura em bits para interpretar o campo. [Conceito: 6.3][c63].
@@ -757,10 +814,6 @@ Representação numérica que admite valores negativos e não negativos. É prec
 ### Inteiro sem sinal
 
 Representação de inteiros não negativos. Em n bits com todos os padrões utilizados, sua faixa é de zero a `2^n − 1`. [Conceito: 6.3][c63].
-
-### Integridade
-
-Proteção contra alteração ou destruição indevida. Alterar uma data sem permissão é consequência diferente de consultar informação privada. [Conceito: 5.1][c51].
 
 ### Interpretador
 
@@ -817,6 +870,10 @@ Protocolo de autenticação em rede baseado em tickets e em uma autoridade de co
 ### Kernel
 
 Parte central do sistema operacional, responsável por funções essenciais de administração e mediação de recursos. Não se confunde com todo programa ou biblioteca disponível no sistema. [Introdução: 8.3][c83].
+
+### kmod
+
+Conjunto de ferramentas para trabalhar com módulos de kernel Linux, incluindo modprobe. Consultar o estado de módulos e solicitar carga ou remoção são operações diferentes. [Conceito: 12.4][c124].
 
 ## L
 
@@ -930,6 +987,10 @@ Memória cuja manutenção da informação depende de alimentação. Volatilidad
 
 Princípio de conceder a cada componente ou identidade somente as capacidades necessárias às suas responsabilidades. Limitar o serviço não substitui a autorização dos registros que ele entrega a seus clientes. [Conceito: 11.4][c114].
 
+### Merged-/usr
+
+Organização em que determinados caminhos tradicionais, como /bin, são links para equivalentes em /usr. A relação pode ser prevista pela distribuição e não demonstra, sozinha, corrupção da instalação. [Conceito: 12.2][c122].
+
 ### Metadados
 
 Informações sobre um objeto, como tamanho, proprietário e marcas de tempo. Podem pertencer ao sistema de arquivos ou ao próprio documento; precisam ser interpretadas conforme sua origem e regra de atualização. [Conceito: 10.1][c101].
@@ -977,6 +1038,14 @@ Nível de execução utilizado por componentes centrais do sistema com acessos e
 ### Modo usuário
 
 Nível de execução típico de aplicações, com acesso mediado aos serviços e recursos protegidos do sistema. É uma classificação diferente da identidade e das permissões da conta que iniciou o programa. [Conceito: 9.1][c91].
+
+### modprobe
+
+Ferramenta do conjunto kmod que trata inclusão e remoção de módulos Linux considerando dependências. É citada para explicar seu papel, sem execução dessas alterações no capítulo. [Conceito: 12.4][c124].
+
+### Módulo de kernel
+
+Componente que pode ser carregado separadamente para acrescentar funcionalidade ao kernel, conforme a configuração. Não é um processo de usuário isolado; nem todo driver precisa ser fornecido como módulo carregável. [Conceito: 12.4][c124].
 
 ### Montagem
 
@@ -1058,6 +1127,10 @@ Operação que pode manter o fluxo à espera de condições para prosseguir. A e
 
 Operação que retorna sem aguardar determinada condição e pode informar que ainda não é possível prosseguir. Não significa que o trabalho já terminou; as garantias dependem da interface e do recurso. [Conceito: 11.3][c113].
 
+### os-release
+
+Arquivo de identificação da instalação, com campos como ID e PRETTY_NAME. Identifica uma camada diferente da release do kernel em execução e não certifica a integridade de todos os componentes. [Conceito: 12.1][c121].
+
 ### OSINT
 
 Open Source Intelligence, inteligência de fontes abertas. Conhecimento produzido a partir de informações publicamente ou comercialmente disponíveis para responder a necessidades de inteligência. Não é sinônimo de software open source.
@@ -1077,6 +1150,10 @@ Estouro: situação em que um resultado não cabe na faixa da representação nu
 Open Worldwide Application Security Project. Fundação e comunidade que mantêm projetos e referências sobre segurança de software. Não é ferramenta única nem vulnerabilidade. [Ocorrência: 4.1][c41] e [5.1][c51]. [Sobre a fundação][owasp-about].
 
 ## P
+
+### Pacote de software
+
+Unidade de distribuição com arquivos e metadados para instalação e administração, podendo incluir dependências e ações de manutenção. Não se confunde com um pacote de rede. [Conceito: 12.5][c125].
 
 ### Page fault
 
@@ -1162,6 +1239,10 @@ Identificador numérico de uma posição no espaço Unicode, escrito frequenteme
 
 Posição de entrada indicada para um estágio de execução. No executável, não deve ser identificada automaticamente com `main`, pois carregamento e preparação do runtime podem preceder a função principal. [Conceito: 8.3][c83].
 
+### Ponto de montagem
+
+Local de uma árvore de nomes em que uma montagem torna seu conteúdo acessível. O caminho não revela sozinho a origem dos dados nem a visão de todos os processos. [Conceito: 12.2][c122].
+
 ### Porta de rede
 
 Identificador usado por protocolos de transporte para distinguir pontos de comunicação. O número isolado não certifica qual serviço está sendo executado. [Menção: capítulo 1][c1].
@@ -1193,6 +1274,10 @@ Contexto de execução que o hardware apresenta ao sistema. Contextos do mesmo n
 ### Processo
 
 Instância de execução administrada pelo sistema operacional, com estado, espaço de endereços e referências a recursos. Diferentes processos podem utilizar o mesmo programa sem compartilhar todo seu estado. [Conceito: 8.3][c83]; [organização e threads: 9.1][c91].
+
+### Procfs
+
+Sistema de arquivos normalmente montado em /proc que apresenta informações de processos e do sistema em funcionamento. Seus dados são dinâmicos; várias consultas não equivalem necessariamente a uma fotografia atômica do sistema. [Conceito: 12.3][c123].
 
 ### Prompt injection
 
@@ -1262,6 +1347,10 @@ Condições sobre como conduzir o teste, incluindo métodos, janela de execuçã
 
 Ajuste de referências de endereço conforme a disposição atribuída às partes de um programa. Pode participar da preparação de componentes binários; não é simplesmente renomear ou mover um arquivo numa pasta. [Conceito: 8.2][c82].
 
+### Repositório de pacotes
+
+Fonte que disponibiliza pacotes e seus metadados para distribuição e manutenção. É distinto de um repositório Git de código; confiar numa nova fonte altera a cadeia de fornecimento do ambiente. [Conceito: 12.5][c125].
+
 ### Requisição
 
 Mensagem em que um componente solicita uma operação a outro. Em HTTP, seu significado depende de método, destino e demais elementos, a serem aprofundados no módulo de redes. [Introdução: 4.3][c43].
@@ -1285,6 +1374,10 @@ Relação entre possibilidade de um evento adverso e consequências no contexto 
 ### Risco residual
 
 Risco que permanece depois de controles ou respostas. Uma medida pode melhorar o cenário sem eliminar todas as possibilidades relevantes. [Conceito: 5.3][c53].
+
+### root
+
+Conta administrativa no contexto Linux do capítulo. Não é sinônimo de diretório raiz nem do caminho /root; suas capacidades efetivas continuam sujeitas aos mecanismos e políticas do ambiente. [Conceito: 12.2][c122].
 
 ### Round-trip
 
@@ -1412,6 +1505,10 @@ Pontos e caminhos pelos quais um sistema pode ser alcançado ou influenciado, in
 
 Armazenamento de apoio que pode conservar conteúdo retirado da RAM conforme a gestão de memória. Não é o significado inteiro de memória virtual, e nem toda página ausente da RAM está em swap. [Conceito: 9.4][c94].
 
+### Sysfs
+
+Sistema de arquivos normalmente montado em /sys que organiza objetos do kernel e atributos. Algumas escritas acionam operações de controle, não apenas alteram um documento persistente. [Conceito: 12.3][c123].
+
 ### systemd
 
 Conjunto de componentes que inclui um gerenciador de sistema e serviços. No papel de gerenciador de sistema descrito, executa como PID 1 e coordena unidades. Não é o kernel nem um componente obrigatório de toda distribuição. [Conceito: 11.5][c115].
@@ -1442,6 +1539,10 @@ Identificação de uma representação, como application/json, também chamada d
 
 Translation Lookaside Buffer. Cache de traduções de endereços, distinta da cache de dados. Um TLB miss pode exigir obter uma tradução por outro caminho, sem demonstrar que houve page fault ou E/S. [Conceito: 9.2][c92].
 
+### Tmpfs
+
+Sistema de arquivos que utiliza memória virtual e pode usar swap conforme a configuração. Não garante conservação após desmontagem ou reinicialização; o nome /tmp não prova que um diretório use tmpfs. [Conceito: 12.3][c123].
+
 ### TMRC
 
 Tech Model Railroad Club, clube de ferromodelismo do MIT presente nos episódios de experimentação. Sua história não estabelece origem única da segurança de computadores. [Contexto: capítulos 1][c1] e [2][c2].
@@ -1464,6 +1565,10 @@ Corte de uma sequência ou representação para um tamanho menor. Em texto de la
 
 ## U
 
+### udev
+
+Componente de gerenciamento dinâmico de dispositivos que recebe eventos do kernel e aplica regras em espaço de usuário. Não é o driver nem uma garantia universal de automontagem. [Conceito: 12.4][c124].
+
 ### UEFI
 
 Unified Extensible Firmware Interface. Interface de firmware usada no caminho de inicialização de plataformas compatíveis. O firmware prepara o ambiente e participa da passagem ao carregador; não é o próprio sistema operacional. [Introdução: 7.5][c75].
@@ -1472,9 +1577,17 @@ Unified Extensible Firmware Interface. Interface de firmware usada no caminho de
 
 User identifier, identificador de usuário. Nas interfaces Unix/Linux há variantes com papéis distintos, como identidade real, efetiva e de sistema de arquivos; o nome mostrado numa tela não descreve todo o contexto. [Conceito: 11.4][c114].
 
+### uname
+
+Utilitário que apresenta informações do sistema; a opção -r identifica a release do kernel em execução. Não lista todas as imagens de kernel instaladas para uma próxima inicialização. [Conceito: 12.1][c121].
+
 ### Unicode
 
 Padrão para representar caracteres, com pontos de código e formas de codificação. Identificar um ponto de código e escolher seus bytes são etapas distintas; Unicode não significa que toda letra ocupa um ou dois bytes. [Conceito: 6.4][c64].
+
+### Upstream
+
+Projeto de origem em relação a quem integra ou distribui seu software. Sua versão e a revisão mantida por uma distribuição precisam ser distinguidas ao examinar correções. [Conceito: 12.5][c125].
 
 ### URI
 
@@ -1618,3 +1731,9 @@ As definições metodológicas expressam o vocabulário de trabalho do livro. As
 [c113]: modulo-3/capitulo-11/11.3-recursos-espera-e-coordenacao.md
 [c114]: modulo-3/capitulo-11/11.4-identidades-e-limites.md
 [c115]: modulo-3/capitulo-11/11.5-inicializacao-servicos-e-investigacao.md
+
+[c121]: modulo-3/capitulo-12/12.1-kernel-distribuicao-e-contexto.md
+[c122]: modulo-3/capitulo-12/12.2-diretorios-e-montagens.md
+[c123]: modulo-3/capitulo-12/12.3-proc-sys-e-dev.md
+[c124]: modulo-3/capitulo-12/12.4-drivers-modulos-e-servicos.md
+[c125]: modulo-3/capitulo-12/12.5-pacotes-atualizacoes-e-investigacao.md

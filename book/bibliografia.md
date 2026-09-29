@@ -4,7 +4,7 @@ A bibliografia é construída junto com o manuscrito.
 
 As fontes servem para verificar fatos, especificações, contexto histórico e resultados de pesquisas. O texto da obra permanece autoral: referências não substituem compreensão, experimentação nem explicação própria.
 
-**Data desta revisão bibliográfica:** 28 de setembro de 2026.
+**Data desta revisão bibliográfica:** 29 de setembro de 2026.
 
 ## Capítulo 1 — O que é hacking?
 
@@ -97,7 +97,15 @@ As [fontes S1–S14](modulo-3/capitulo-11/referencias.md) relacionam documentaç
 
 As páginas systemd efetivamente consultadas são reproduções identificadas de sua documentação no man7. A comparação de microkernel é introdutória; não houve instalação de seL4, Windows ou configuração de isolamento. O caso Aurora e os modelos de duração e dependência são autorais e fictícios.
 
-O [exemplo opcional](modulo-3/capitulo-11/exemplos/README.md) usa somente arquivos temporários próprios para distinguir leitura, fim de arquivo e erros de operação. Os [seis testes](../scripts/tests/test_chapter11_examples.py) incluem três verificações desse exemplo e três de modelos conceituais. Não demonstram política entre contas nem medem chamadas de sistema ou desempenho. O capítulo permanece DRAFT 0.1, conforme seu [registro editorial](../editorial/reviews/capitulo-11.md); a abertura do Módulo III não encerra revisões anteriores.
+O [exemplo opcional](modulo-3/capitulo-11/exemplos/README.md) usa somente arquivos temporários próprios para distinguir leitura, fim de arquivo e erros de operação. Os [seis testes](../scripts/tests/test_chapter11_examples.py) incluem três verificações desse exemplo e três de modelos conceituais. Não demonstram política entre contas nem medem chamadas de sistema ou desempenho. A leitura foi aprovada e o ciclo interno da versão editorial 1.0 foi encerrado em 29/09/2026, conforme seu [registro editorial](../editorial/reviews/capitulo-11.md). Revisão independente permanece pendente.
+
+## Capítulo 12 — Linux por dentro
+
+As [fontes S1–S19](modulo-3/capitulo-12/referencias.md) relacionam documentação do kernel, Linux man-pages, Debian, FHS, systemd, kmod, util-linux e Python. Delimitam composição da instalação, árvore de nomes, montagens, interfaces de estado, dispositivos, módulos e pacotes. O percurso Debian/APT não é generalizado para todas as distribuições; convenções FHS e merged-/usr são identificadas por suas fontes.
+
+O cenário de visibilidade do catálogo é fictício. O [exemplo opcional](modulo-3/capitulo-12/exemplos/README.md) consulta somente um descritor do próprio processo, sobre arquivo temporário próprio. Os [quatro testes](../scripts/tests/test_chapter12_examples.py) conferem plataforma, metadados/leitura, limpeza e saída documentada; não demonstram uma política entre identidades nem compartilhamento de posição entre aberturas.
+
+O capítulo está em DRAFT 0.1, conforme seu [registro editorial](../editorial/reviews/capitulo-12.md). Não houve montagem, instalação, administração de serviços, carga de módulos ou leitura de processos alheios. Revisão técnica independente e primeira leitura permanecem pendentes.
 
 ## Política de referências
 

@@ -39,11 +39,12 @@ A proposta é permitir que quem está começando entenda computadores, sistemas 
 
 | Leitura | O que você encontrará | Estado |
 | --- | --- | --- |
-| [11 · O papel de um sistema operacional](book/modulo-3/capitulo-11/README.md) | Abstrações, interfaces do kernel, recursos, identidades e ciclo de vida de serviços. | Rascunho para leitura — v0.1 |
+| [11 · O papel de um sistema operacional](book/modulo-3/capitulo-11/README.md) | Abstrações, interfaces do kernel, recursos, identidades e ciclo de vida de serviços. | Revisão interna concluída — v1.0 |
+| [12 · Linux por dentro](book/modulo-3/capitulo-12/README.md) | Distribuição, diretórios, montagens, interfaces de estado, dispositivos e pacotes. | Rascunho para leitura — v0.1 |
 
 **[Abrir o índice de leitura →](book/README.md)**
 
-Os capítulos 1 a 11 estão disponíveis. O Módulo III começa com o capítulo 11 em primeira entrega de leitura. O fechamento interno do Módulo I ainda depende da revisão do capítulo 1. O **Módulo II — Computadores por dentro** concluiu seu ciclo interno da versão 1.0 nos capítulos 6 a 10; revisão independente e uma futura edição estável continuam etapas separadas.
+Os capítulos 1 a 12 estão disponíveis. No Módulo III, o capítulo 11 concluiu seu ciclo interno e o capítulo 12 está em primeira entrega de leitura. O fechamento interno do Módulo I ainda depende da revisão do capítulo 1. O **Módulo II — Computadores por dentro** concluiu seu ciclo interno da versão 1.0 nos capítulos 6 a 10; revisão independente e uma futura edição estável continuam etapas separadas.
 
 Os estados indicam o andamento editorial, não certificação ou revisão independente concluída. O fechamento interno de um capítulo não equivale à publicação de uma edição estável do livro. Consulte o [estado editorial e suas pendências](editorial/publication-status.md).
 

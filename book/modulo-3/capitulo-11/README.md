@@ -4,7 +4,7 @@
 
 **Módulo III — Sistemas operacionais**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Fontes e verificações delimitadas no [registro editorial](../../../editorial/reviews/capitulo-11.md). Revisão técnica independente pendente.
+> **Status:** VALIDATED — versão editorial 1.0; leitura aprovada e revisão interna concluída em 29/09/2026. Fontes e verificações delimitadas no [registro editorial](../../../editorial/reviews/capitulo-11.md). Revisão técnica independente pendente.
 
 O importador da biblioteca Aurora funciona quando uma atendente o inicia no terminal. A equipe prepara o mesmo programa para trabalhar automaticamente depois de ligar o computador. Na manhã seguinte, o serviço inicia, mas não consegue abrir o arquivo do catálogo.
 
@@ -28,4 +28,4 @@ O percurso não exige instalação. Há um [exemplo opcional](exemplos/README.md
 
 As [referências](referencias.md) identificam os contextos das interfaces Linux, dos exemplos Windows e da comparação com microkernel. Dez perguntas opcionais encerram o capítulo; as [respostas comentadas](solucoes.md) ficam separadas.
 
-**[Começar pela seção 11.1 →](11.1-abstracoes-e-responsabilidades.md)**
+**[Começar pela seção 11.1 →](11.1-abstracoes-e-responsabilidades.md)** · **[Próximo capítulo: Linux por dentro →](../capitulo-12/README.md)**
