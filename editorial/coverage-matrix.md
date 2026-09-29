@@ -1,6 +1,6 @@
 # Matriz de cobertura
 
-**Status:** cobertura inicial dos capítulos disponíveis; atualização em 24/09/2026.
+**Status:** cobertura inicial dos capítulos disponíveis; atualização em 28/09/2026.
 
 [Editorial](README.md) · [Sumário mestre](master-outline.md) · [Estado editorial](publication-status.md)
 
@@ -55,8 +55,20 @@ Pré-requisito editorial: leitura introdutória e disposição para acompanhar e
 | M02-17 | [Serialização](../book/modulo-2/capitulo-10/10.4-serializacao-e-contratos.md) e [parsing](../book/modulo-2/capitulo-10/10.5-parsing-e-validacao.md) | Codec AUR/JSON, esquema restrito, duplicatas, tipos e testes positivos/negativos. | Fundamentos aplicados, não importador de produção. XML/YAML/Protobuf apenas por documentação; aquisição precisa de orçamento próprio. |
 | M02-18 | [Integridade e contexto posterior](../book/modulo-2/capitulo-10/10.6-integridade-e-fronteiras.md) | Compressão pequena, CRC, hash, JCS e capacidades de desserialização. | Introdução. Não executa pickle, não implementa JCS nem constrói bomba de descompressão ou bypass de upload. |
 
+## Módulo III — Sistemas operacionais
+
+Pré-requisitos: representações, recursos, processos e arquivos apresentados nos capítulos 6 a 10. O capítulo 11 conecta essas peças às responsabilidades do sistema operacional, sem exigir administração prévia ou execução de comandos. Seu estado é DRAFT 0.1; [fontes S1–S14](../book/modulo-3/capitulo-11/referencias.md) e [registro da entrega](reviews/capitulo-11.md) delimitam a validação.
+
+| ID | Tema / teoria disponível | Aplicação e defesa | Profundidade / fonte e limite |
+| --- | --- | --- | --- |
+| M03-01 | [Abstrações e responsabilidades](../book/modulo-3/capitulo-11/11.1-abstracoes-e-responsabilidades.md) | VFS, mecanismo/política, kernel, espaço de usuário e composição da instalação. | Introdução funcional. Microkernel é comparação documental, não sistema instalado ou garantia universal. |
+| M03-02 | [Interfaces e chamadas de sistema](../book/modulo-3/capitulo-11/11.2-interfaces-e-chamadas-de-sistema.md) | Exemplo Linux próprio de leitura, fim de arquivo, EBADF e ENOENT. | Fundamentos aplicados; sem rastreamento de syscalls ou teste de acesso entre identidades. |
+| M03-03 | [Recursos, espera e coordenação](../book/modulo-3/capitulo-11/11.3-recursos-espera-e-coordenacao.md) | Linha do tempo, limites, cgroups e dependência circular. | Modelos explicados e testados, não benchmark, exaustão, deadlock real ou configuração de controladores. |
+| M03-04 | [Identidade e limites](../book/modulo-3/capitulo-11/11.4-identidades-e-limites.md) | Distingue identidade do serviço/cliente, permissões do sistema e autorização da aplicação; menor privilégio. | UID/GID, token Windows, capabilities, LSM, namespaces e containers apenas introduzidos. Nenhuma mudança de credenciais ou avaliação de isolamento. |
+| M03-05 | [Inicialização e serviços](../book/modulo-3/capitulo-11/11.5-inicializacao-servicos-e-investigacao.md) | Caso fictício de diagnóstico por contexto, prontidão, saúde, registros e reteste. | Percurso Linux/systemd e comparação documental Windows. Nenhum serviço ou sistema de boot alterado. |
+
 ## Cobertura ainda planejada
 
 A matriz continuará a detalhar redes e sistemas, reconhecimento, autenticação, ataques a credenciais, Web, APIs, injeções, autorização, lógica de negócio, infraestrutura, Linux, Windows, Active Directory, cloud, containers, supply chain, exploração de software, pós-exploração, escalada de privilégios, persistência, pivotamento, movimentação lateral, segurança de IA, redes sem fio, mobile, IoT, privacidade, dark web, OSINT, investigação e defesa.
 
-Esses temas pertencem ao planejamento, não são capítulos concluídos por aparecerem nesta lista. Os capítulos a partir do 11 não recebem linhas de cobertura efetiva antes da produção dos textos. A matriz não afirma completude e não substitui os registros específicos de revisão.
+Esses temas pertencem ao planejamento, não são capítulos concluídos por aparecerem nesta lista. Os capítulos a partir do 12 não recebem linhas de cobertura efetiva antes da produção dos textos. As introduções a Linux, Windows e isolamento no capítulo 11 não substituem essas unidades futuras. A matriz não afirma completude e não substitui os registros específicos de revisão.

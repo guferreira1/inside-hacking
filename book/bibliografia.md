@@ -4,7 +4,7 @@ A bibliografia é construída junto com o manuscrito.
 
 As fontes servem para verificar fatos, especificações, contexto histórico e resultados de pesquisas. O texto da obra permanece autoral: referências não substituem compreensão, experimentação nem explicação própria.
 
-**Data desta revisão bibliográfica:** 24 de setembro de 2026.
+**Data desta revisão bibliográfica:** 28 de setembro de 2026.
 
 ## Capítulo 1 — O que é hacking?
 
@@ -90,6 +90,14 @@ As [fontes S1–S18](modulo-2/capitulo-10/referencias.md) relacionam interfaces 
 O registro Livro/3 e o formato AUR v1 são criações didáticas. Seis seções separam nomes, bytes, formatos, transformações, serialização, parsing, validação e integridade. Não foi implementado um parser PNG/XML/YAML/Protobuf nem um canonicalizador JCS; essas referências sustentam comparações introdutórias.
 
 O [codec AUR/JSON](modulo-2/capitulo-10/exemplos/README.md) e os [23 testes](../scripts/tests/test_chapter10_examples.py) verificam casos pequenos e próprios, incluindo entradas inválidas. O capítulo está em DRAFT 0.1. Seu [registro editorial](../editorial/reviews/capitulo-10.md) identifica o ambiente, as verificações locais e a separação da checagem completa pelo workflow. A entrega completa a primeira redação dos textos previstos para o Módulo II, não seu fechamento ou uma edição em PDF.
+
+## Capítulo 11 — O papel de um sistema operacional
+
+As [fontes S1–S14](modulo-3/capitulo-11/referencias.md) relacionam documentação Debian, Linux, Microsoft, seL4, Python, systemd e OWASP. O percurso distingue abstrações, núcleo e espaço de usuário, chamadas de sistema, espera, recursos, contexto de segurança e ciclo de vida de serviços.
+
+As páginas systemd efetivamente consultadas são reproduções identificadas de sua documentação no man7. A comparação de microkernel é introdutória; não houve instalação de seL4, Windows ou configuração de isolamento. O caso Aurora e os modelos de duração e dependência são autorais e fictícios.
+
+O [exemplo opcional](modulo-3/capitulo-11/exemplos/README.md) usa somente arquivos temporários próprios para distinguir leitura, fim de arquivo e erros de operação. Os [seis testes](../scripts/tests/test_chapter11_examples.py) incluem três verificações desse exemplo e três de modelos conceituais. Não demonstram política entre contas nem medem chamadas de sistema ou desempenho. O capítulo permanece DRAFT 0.1, conforme seu [registro editorial](../editorial/reviews/capitulo-11.md); a abertura do Módulo III não encerra revisões anteriores.
 
 ## Política de referências
 
