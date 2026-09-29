@@ -2,7 +2,7 @@
 
 [Abertura](README.md) · [Respostas comentadas](solucoes.md)
 
-**Consulta:** 29/09/2026. **Versão editorial:** DRAFT 0.1.
+**Consulta:** 29/09/2026. **Versão editorial:** VALIDATED 1.0 — fechamento interno em 29/09/2026; revisão independente pendente.
 
 A pesquisa usa documentação primária do GNU, do projeto Linux man-pages, da Microsoft e do Python. O texto é autoral: os links fundamentam e delimitam os mecanismos, não substituem sua explicação.
 

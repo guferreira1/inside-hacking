@@ -1,10 +1,10 @@
 # Capítulo 14 — Terminal, shells e automação
 
-[← Capítulo 13](../capitulo-13/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
+[← Capítulo 13](../capitulo-13/README.md) · [Capítulo 15 →](../capitulo-15/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
 
 **Módulo III — Sistemas operacionais**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Fontes, verificações e limites no [registro editorial](../../../editorial/reviews/capitulo-14.md). Revisão técnica independente pendente.
+> **Status:** VALIDATED — versão editorial 1.0; leitura aprovada e ciclo interno concluído em 29/09/2026. Fontes, verificações e limites no [registro editorial](../../../editorial/reviews/capitulo-14.md). Revisão técnica independente pendente.
 
 A equipe da biblioteca Aurora quer deixar de repetir a mesma conferência todos os dias. Uma pessoa abre um terminal, informa o catálogo e obtém o resultado esperado. Outra coloca uma sequência parecida em um script. O arquivo se chama `catalogo de teste.txt`. Na execução automatizada, o programa passa a receber três nomes em vez de um.
 

@@ -31,3 +31,8 @@ A regressão completa, a atualização do glossário, os índices e a checagem d
 ## Limites
 
 A revisão é interna, assistida por IA; revisão técnica independente permanece pendente. As observações usam o proprietário dos próprios arquivos, não uma matriz de contas reais. Contas de modo e máscaras não são testes completos de ACL. Não houve publicação no LinkedIn nem geração de edição PDF.
+
+
+## Verificação no runner
+
+Os resultados da regressão e da segunda passagem documental estão na [auditoria desta entrega](../audits/2026-09-29-capitulo-15.md), separados da execução local descrita acima.

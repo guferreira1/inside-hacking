@@ -113,7 +113,13 @@ As [44 referências do capítulo](modulo-3/capitulo-13/referencias.md) usam docu
 
 ## Capítulo 14 — Terminal, shells e automação
 
-As [49 referências numeradas](modulo-3/capitulo-14/referencias.md) usam documentação GNU, Linux man-pages, Microsoft e Python. [Quatro scripts próprios](modulo-3/capitulo-14/exemplos/README.md) e os testes associados examinam argumentos, expansão, fluxos, status, escopos e validação. [O registro editorial](../editorial/reviews/capitulo-14.md) separa documentação consultada, execuções reais e limitações de plataforma. Primeira entrega DRAFT 0.1.
+As [49 referências numeradas](modulo-3/capitulo-14/referencias.md) usam documentação GNU, Linux man-pages, Microsoft e Python. [Quatro scripts próprios](modulo-3/capitulo-14/exemplos/README.md) e os testes associados examinam argumentos, expansão, fluxos, status, escopos e validação. [O registro editorial](../editorial/reviews/capitulo-14.md) separa documentação consultada, execuções reais e limitações de plataforma. Leitura aprovada e ciclo interno da versão editorial 1.0 concluído; revisão independente pendente.
+
+## Capítulo 15 — Usuários, grupos, permissões e privilégios
+
+As [47 referências numeradas](modulo-3/capitulo-15/referencias.md) relacionam documentação Linux man-pages, Linux ACL, GNU, shadow-utils, util-linux, sudo, kernel, Microsoft, Python e OWASP. Sete seções desenvolvem identidades, operações, criação e ACLs, tokens e direitos Windows, delegação, camadas, revogação e investigação. Os modelos de acesso Linux e Windows são distinguidos.
+
+O [exemplo opcional](modulo-3/capitulo-15/exemplos/README.md) observa somente arquivos temporários do próprio usuário comum em Linux. Os nove testes separam três verificações de modelo/guarda e seis de operações reais e limpeza. Não houve administração de contas, ACLs ou privilégios, nem execução dos controles Windows. O [registro editorial](../editorial/reviews/capitulo-15.md) preserva ambientes, resultados e limites; o capítulo está em DRAFT 0.1.
 
 ## Política de referências
 

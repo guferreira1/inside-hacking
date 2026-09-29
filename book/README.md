@@ -12,7 +12,7 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 | --- | --- | --- |
 | [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
 | [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Ciclo interno concluído — v1.0 nos capítulos 6–10 |
-| [III · Sistemas operacionais](modulo-3/README.md) | Capítulos 11 a 17 | Capítulos 11 e 12 disponíveis; demais planejados |
+| [III · Sistemas operacionais](modulo-3/README.md) | Capítulos 11 a 17 | Capítulos 11 a 15 disponíveis; 16 e 17 planejados |
 
 Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. O Módulo III começa no capítulo 11; o Módulo IV, ainda planejado, começa no capítulo 18. Disponibilidade de todos os textos não equivale a fechamento editorial do módulo.
 
@@ -126,7 +126,8 @@ O Módulo II teve a leitura dos cinco capítulos aprovada e passou por revisão 
 | 11 | [O papel de um sistema operacional](modulo-3/capitulo-11/README.md) | Revisão interna concluída — v1.0 |
 | 12 | [Linux por dentro](modulo-3/capitulo-12/README.md) | Revisão interna concluída — v1.0 |
 | 13 | [Windows por dentro](modulo-3/capitulo-13/README.md) | Revisão interna concluída — v1.0 |
-| 14 | [Terminal, shells e automação](modulo-3/capitulo-14/README.md) | Rascunho para leitura — v0.1 |
+| 14 | [Terminal, shells e automação](modulo-3/capitulo-14/README.md) | Revisão interna concluída — v1.0 |
+| 15 | [Usuários, grupos, permissões e privilégios](modulo-3/capitulo-15/README.md) | Rascunho para leitura — v0.1 |
 
 ### Dentro do Capítulo 11
 
@@ -168,6 +169,18 @@ O Módulo II teve a leitura dos cinco capítulos aprovada e passou por revisão 
 - [14.6 · Automatizar sem transformar dados em ordens](modulo-3/capitulo-14/14.6-automacao-e-fronteiras-de-confianca.md)
 - [Exemplos opcionais Bash e PowerShell](modulo-3/capitulo-14/exemplos/README.md).
 - [Respostas comentadas](modulo-3/capitulo-14/solucoes.md) e [referências](modulo-3/capitulo-14/referencias.md).
+
+### Dentro do Capítulo 15
+
+- [15.1 · O nome da conta não conta a história inteira](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md)
+- [15.2 · Permissão para fazer o quê?](modulo-3/capitulo-15/15.2-permissoes-linux-e-caminhos.md)
+- [15.3 · Como uma permissão chega ao arquivo](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md)
+- [15.4 · O pedido encontra um token e uma lista](modulo-3/capitulo-15/15.4-tokens-e-acls-no-windows.md)
+- [15.5 · Privilégio não é apenas uma permissão maior](modulo-3/capitulo-15/15.5-privilegios-e-delegacao.md)
+- [15.6 · Uma autorização tem camadas e duração](modulo-3/capitulo-15/15.6-camadas-revogacao-e-menor-privilegio.md)
+- [15.7 · Investigar sem abrir todas as portas](modulo-3/capitulo-15/15.7-investigacao-e-verificacao.md)
+- [Observações opcionais de permissões](modulo-3/capitulo-15/exemplos/README.md).
+- [Respostas comentadas](modulo-3/capitulo-15/solucoes.md) e [referências](modulo-3/capitulo-15/referencias.md).
 
 ## Como navegar
 

@@ -26,9 +26,21 @@ Modelo que trata sinais como valores discretos, por exemplo 0 e 1, sem represent
 
 Access Control Entry. Entrada em uma lista de controle de acesso que relaciona direitos a uma identidade; seu tipo e sua posição importam na interpretação. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
 
+### ACL
+
+Access Control List. Lista de controle de acesso. ACLs POSIX Linux e DACLs Windows possuem modelos distintos, que não devem ser reduzidos a uma única regra de avaliação. [Conceito: 15.3](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md).
+
+### ACL padrão
+
+ACL de um diretório que participa da formação da política inicial de novos objetos. Alterá-la não reescreve automaticamente os objetos já existentes. [Conceito: 15.3](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md).
+
 ### Active Directory
 
 Tecnologias de diretório da Microsoft. No contexto de domínios citado, Active Directory Domain Services organiza objetos, como usuários e computadores, e participa da administração de identidades e acesso. [Menção: capítulo 2][c2]. [Documentação][ad-doc].
+
+### AdjustTokenPrivileges
+
+API Windows para alterar o estado de privilégios presentes num token. Não acrescenta privilégios que o token não possui. [Conceito: 15.5](modulo-3/capitulo-15/15.5-privilegios-e-delegacao.md).
 
 ### Administrador
 
@@ -61,6 +73,10 @@ Circunstância ou evento com potencial de causar consequência adversa de segura
 ### API
 
 Application Programming Interface, interface de programação de aplicações. Define uma forma de componentes de software interagirem; nem toda API é um serviço Web. [Menção introdutória: capítulo 2][c2].
+
+### AppArmor
+
+Mecanismo Linux que aplica controles por perfis associados a programas. É uma camada diferente dos bits tradicionais de modo. [Conceito: 15.6](modulo-3/capitulo-15/15.6-camadas-revogacao-e-menor-privilegio.md).
 
 ### APT
 
@@ -139,6 +155,7 @@ Decisão sobre a permissão para uma ação ou recurso. A autorização aplicada
 ### AWS
 
 Amazon Web Services. Provedor de nuvem citado para distinguir testes em recursos do cliente de testes na infraestrutura do provedor. A menção não autoriza testes. [Contexto: 3.1][c31].
+
 
 ## B
 
@@ -246,6 +263,7 @@ Unidade de oito bits no escopo desta obra, representada por B nas unidades. Ofer
 
 Representação de código destinada a um mecanismo de execução, como uma máquina virtual de linguagem. Não é automaticamente código nativo da CPU nem um formato universal entre versões e implementações. [Conceito: 8.4][c84].
 
+
 ## C
 
 ### Cabeçalho
@@ -275,6 +293,14 @@ Pathname. Expressão usada para localizar um objeto na organização de nomes do
 ### Canonicalização
 
 Transformação para uma representação definida por regras de um contrato, útil para comparações ou assinaturas. No caso de documentos, pode envolver ordem de campos e escrita de valores; não equivale apenas a normalizar Unicode ou retirar espaços. [Conceito: 10.6][c106].
+
+### CAP_CHOWN
+
+Capability Linux associada à autoridade para mudanças de propriedade. É distinta de permissões rwx e de participação num grupo. [Conceito: 15.5](modulo-3/capitulo-15/15.5-privilegios-e-delegacao.md).
+
+### CAP_DAC_OVERRIDE
+
+Capability Linux associada a ignorar determinadas verificações discricionárias de acesso. Não deve ser tratada como uma permissão inofensiva por ser apenas uma entrada numa lista. [Conceito: 15.5](modulo-3/capitulo-15/15.5-privilegios-e-delegacao.md).
 
 ### Capabilities (Linux)
 
@@ -307,6 +333,14 @@ Nó da hierarquia do Registro do Windows. Pode conter subchaves e valores; não 
 ### Checksum
 
 Nome em inglês para soma de verificação. Valor calculado para conferir alterações segundo um mecanismo específico; não é, por si só, prova de autoria ou autorização. [Conceito: 10.6][c106].
+
+### chmod
+
+Alteração dos bits de modo de arquivos e diretórios. Seu efeito depende do tipo de objeto e pode interagir com a máscara de uma ACL; não muda o proprietário. [Conceito: 15.2](modulo-3/capitulo-15/15.2-permissoes-linux-e-caminhos.md).
+
+### chown
+
+Operação de mudança de proprietário e grupo de um arquivo no Linux, sujeita a requisitos de autoridade. Não é equivalente a alterar os bits de modo. [Conceito: 15.3](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md).
 
 ### Chunk
 
@@ -406,6 +440,14 @@ Termo dependente do contexto. No Windows, pode designar a infraestrutura de entr
 
 Processo que produz artefatos a partir das entradas de um projeto; build. Pode coordenar várias ferramentas e etapas. Alterar um arquivo-fonte não obriga uma construção automática a acontecer. [Conceito: 8.1][c81].
 
+### Conta
+
+Identidade administrável associada a uma pessoa ou atividade. Cadastro de conta, autenticação e credenciais de uma execução são estados relacionados, mas distintos. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
+### Conta de serviço
+
+Identidade destinada à execução de uma atividade automática. Deve receber os acessos necessários à função, sem depender da conta pessoal de quem a administra. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
 ### Conta local
 
 Conta administrada no contexto de um computador. A coincidência de nomes entre computadores não demonstra igualdade de identidade. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
@@ -482,11 +524,24 @@ Common Vulnerability Scoring System. Sistema de descrição e pontuação da sev
 
 Common Weakness Enumeration. Catálogo de tipos de fraquezas de software e hardware. Descreve padrões de problema, função diferente da identificação de casos por CVE. [Conceito: 5.1][c51].
 
+
 ## D
+
+### DAC
+
+Discretionary Access Control, controle de acesso discricionário. Permite administração de direitos por proprietários e autoridades delegadas, sem excluir a existência de controles adicionais. [Conceito: 15.6](modulo-3/capitulo-15/15.6-camadas-revogacao-e-menor-privilegio.md).
 
 ### DACL
 
 Discretionary Access Control List. Lista de entradas usada no controle discricionário de acesso a um objeto protegido. Não representa todos os controles de segurança do Windows. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
+### DACL nula
+
+Estado Windows que não impõe a restrição discricionária da DACL. Distingue-se de uma lista vazia e não elimina outros controles da plataforma. [Conceito: 15.4](modulo-3/capitulo-15/15.4-tokens-e-acls-no-windows.md).
+
+### DACL vazia
+
+Lista discricionária Windows sem entradas de concessão. Não deve ser confundida com a ausência de restrição discricionária de uma DACL nula. [Conceito: 15.4](modulo-3/capitulo-15/15.4-tokens-e-acls-no-windows.md).
 
 ### Dados pessoais
 
@@ -609,6 +664,7 @@ Dynamic Random Access Memory, memória dinâmica. Tecnologia de memória que exi
 ### Driver
 
 Software que participa da comunicação e do controle entre sistema operacional e dispositivo. Não é o próprio circuito controlador nem o dado transferido. [Conceitos: 7.1][c71] e [7.5][c75].
+
 
 ## E
 
@@ -760,6 +816,7 @@ Condição de alcance: quem consegue interagir, por qual caminho e sob quais cir
 
 Sufixo do nome, como .json ou .txt, utilizado por ferramentas para classificação ou seleção de leitura. Renomeá-lo não converte, por si só, os bytes para outro formato. [Conceito: 10.2][c102].
 
+
 ## F
 
 ### Falso negativo
@@ -814,11 +871,20 @@ Função de C que libera um bloco obtido por operações de alocação compatív
 
 Limite entre contextos com permissões, controle ou suposições de confiança diferentes. Atravessá-lo exige examinar quais decisões e verificações deveriam ocorrer. [Menção: capítulo 1][c1].
 
+### FSGID
+
+Identificador de grupo de sistema de arquivos no Linux, usado em conjunto com grupos suplementares nas verificações de arquivos. Normalmente acompanha o GID efetivo. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
+### FSUID
+
+Identificador de usuário de sistema de arquivos no Linux, usado nas verificações de arquivos. Normalmente acompanha o UID efetivo, mas é um campo distinto. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
 ### Função
 
 Unidade de operações que pode ser chamada por outra parte de um programa. A interface informa argumentos e retorno; o corpo define o comportamento. Uma função de biblioteca não é necessariamente uma chamada de sistema. [Conceitos: 8.1][c81] e [8.3][c83].
 
 No contexto do capítulo 14: Conjunto nomeado de operações que pode ser chamado. Neste capítulo, refere-se às funções da linguagem do shell, não necessariamente a um novo executável. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
 
 ## G
 
@@ -830,9 +896,17 @@ GNU Compiler Collection. No exemplo, o comando `gcc` coordena etapas de traduç�
 
 Componente que organiza ciclo de vida e contexto de serviços conforme sua configuração. Iniciar ou reiniciar um processo não demonstra que todas as funções do serviço estejam saudáveis. [Conceito: 11.5][c115].
 
+### Get-Acl
+
+Cmdlet PowerShell que consulta um descritor de segurança de recurso suportado. Sua saída não calcula sozinha todo o acesso efetivo de outra execução. [Conceito: 15.7](modulo-3/capitulo-15/15.7-investigacao-e-verificacao.md).
+
 ### Get-Member
 
 Cmdlet usado para examinar tipos e membros dos objetos recebidos no PowerShell. Ajuda a distinguir estrutura de dados da apresentação na tela. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
+### getfacl
+
+Utilitário de consulta das ACLs de um recurso, incluindo máscara e comentários de acesso efetivo quando aplicável. [Conceito: 15.3](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md).
 
 ### GHz
 
@@ -841,6 +915,8 @@ Gigahertz: um bilhão de ciclos por segundo. Expressa frequência, não diretame
 ### GID
 
 Group identifier, identificador de grupo. Participa do contexto de credenciais das interfaces Unix/Linux; grupos e variantes de identificadores possuem papéis que precisam ser distinguidos. [Conceito: 11.4][c114].
+
+Identificador numérico de grupo. O grupo principal de uma conta não esgota os grupos suplementares presentes numa execução. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
 
 ### Globbing
 
@@ -858,6 +934,10 @@ Rótulo informal usado para situações que misturam características atribuída
 
 Ferramenta para selecionar linhas segundo um padrão. O capítulo usa GNU grep com -F para correspondência literal e distingue ausência de correspondência de erro. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
 
+### Grupos suplementares
+
+Conjunto de grupos adicionais presente nas credenciais de uma execução Linux. Mudar o cadastro não reescreve automaticamente os grupos de todos os processos existentes. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
 ### GUID
 
 Identificador utilizado para distinguir entidades. Neste capítulo aparece nos nomes de volumes; não é uma descrição do dispositivo físico. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
@@ -865,6 +945,7 @@ Identificador utilizado para distinguir entidades. Neste capítulo aparece nos n
 ### gzip
 
 Formato de dados comprimidos com cabeçalho, conteúdo comprimido e verificações finais. Seu tamanho externo não limita sozinho os dados reconstruídos ou o trabalho de processamento. [Conceito: 10.6][c106].
+
 
 ## H
 
@@ -940,11 +1021,16 @@ Hypertext Transfer Protocol. Protocolo de requisições e respostas usado na Web
 
 HTTP utilizado por conexão protegida com TLS. Proteger o canal não demonstra correção da aplicação, e o número 443 não certifica o protocolo utilizado. [Menção: capítulo 1][c1]. [Semântica do esquema][https-rfc].
 
+
 ## I
 
 ### IA
 
 Inteligência artificial. A sigla aparece em aplicações com modelos de linguagem e no apoio editorial. Conteúdo produzido por IA não é, por si só, evidência nem revisão independente. [Contexto: 4.4][c44].
+
+### id
+
+Utilitário GNU que consulta dados de usuário/grupo. Sem usuário informado, descreve o processo corrente; informar um usuário consulta dados sobre aquela identidade cadastrada. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
 
 ### Idempotência
 
@@ -1026,6 +1112,7 @@ Interprocess Communication, comunicação entre processos. Mecanismos que permit
 
 Instruction Set Architecture, arquitetura do conjunto de instruções. Interface de instruções e estado relevante ao software, distinta da organização interna que a implementa. Não determina sozinha toda a compatibilidade de um executável. [Conceito: 7.2][c72].
 
+
 ## J
 
 ### JCS
@@ -1048,6 +1135,7 @@ JavaScript Object Notation. Formato textual de dados com objetos, arrays, string
 
 Java Virtual Machine. Máquina abstrata que especifica representações e comportamento de programas, como o formato `class`. Uma implementação possui escolhas sobre como realizar a execução. Não é a mesma abstração que uma máquina virtual para instalar um sistema operacional convidado. [Conceito: 8.4][c84].
 
+
 ## K
 
 ### Kali Linux
@@ -1069,6 +1157,7 @@ Parte central do sistema operacional, responsável por funções essenciais de a
 ### kmod
 
 Conjunto de ferramentas para trabalhar com módulos de kernel Linux, incluindo modprobe. Consultar o estado de módulos e solicitar carga ou remoção são operações diferentes. [Conceito: 12.4][c124].
+
 
 ## L
 
@@ -1136,6 +1225,7 @@ Registro de eventos produzido por um sistema. Seu valor depende dos campos, proc
 
 Linux Security Modules. Arcabouço do kernel para participação de mecanismos adicionais de segurança. Sua presença não informa sozinha quais políticas estão ativas ou quais operações serão permitidas. [Conceito: 11.4][c114].
 
+
 ## M
 
 ### M.2
@@ -1169,6 +1259,10 @@ Região com semântica que permite a participantes observar alterações no cont
 ### Mapeamento privado
 
 Região cujas alterações privadas não devem aparecer automaticamente nas outras visões. A implementação pode utilizar cópia na escrita para cumprir esse contrato. [Conceito: 9.4][c94].
+
+### Máscara de ACL
+
+Entrada de ACL POSIX que limita direitos de usuários nomeados e grupos. Não é a umask e não limita da mesma maneira as entradas do proprietário e de outros. [Conceito: 15.3](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md).
 
 ### MB e MiB
 
@@ -1282,7 +1376,12 @@ No Linux, marca de tempo associada à modificação do conteúdo de um arquivo. 
 
 Mecanismo de exclusão mútua que coordena a entrada de participantes numa região protegida. Todos os acessos relevantes precisam respeitar o contrato; proteger apenas a escrita final não corrige necessariamente uma decisão baseada numa leitura antiga. [Conceito: 9.5][c95].
 
+
 ## N
+
+### namei
+
+Utilitário util-linux que acompanha os componentes de um caminho e pode exibir modos e proprietários. Ajuda a localizar onde a resolução depende de uma passagem permitida. [Conceito: 15.7](modulo-3/capitulo-15/15.7-investigacao-e-verificacao.md).
 
 ### Namespace
 
@@ -1304,6 +1403,14 @@ Network Mapper. Ferramenta de exploração e auditoria de redes, incluindo desco
 
 Transformação segundo formas definidas de equivalência. NFC e NFD tratam equivalência canônica; NFKC e NFKD acrescentam equivalências de compatibilidade. Não significa remover acentos, igualar toda aparência semelhante ou canonicalizar todo documento. [Conceito: 10.3][c103].
 
+### nosuid
+
+Opção de montagem relacionada à desconsideração de transições privilegiadas por execução. É uma condição do mecanismo, não uma alteração do nome do executável. [Conceito: 15.5](modulo-3/capitulo-15/15.5-privilegios-e-delegacao.md).
+
+### NSS
+
+Name Service Switch. Mecanismo de configuração de fontes e ordem de consulta de bases como usuários e grupos. Não é, por si só, a autorização de acesso a um arquivo. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
 ### NTFS
 
 New Technology File System. Sistema de arquivos utilizado pelo Windows, com organização de arquivos, metadados e mecanismos de segurança e consistência. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
@@ -1319,6 +1426,7 @@ Non-Volatile Memory Express. Interface de comandos para armazenamento não volá
 ### NX
 
 No Execute. Designação associada ao suporte para impedir execução em páginas marcadas como não executáveis. Protege uma classe de acesso, não todas as regras do programa. [Conceito: 9.5][c95].
+
 
 ## O
 
@@ -1388,6 +1496,7 @@ Estouro: situação em que um resultado não cabe na faixa da representação nu
 
 Open Worldwide Application Security Project. Fundação e comunidade que mantêm projetos e referências sobre segurança de software. Não é ferramenta única nem vulnerabilidade. [Ocorrência: 4.1][c41] e [5.1][c51]. [Sobre a fundação][owasp-about].
 
+
 ## P
 
 ### Pacote de software
@@ -1451,6 +1560,10 @@ Conjunto de dados e configurações associados a um usuário. Conta, perfil carr
 ### Perfil do shell
 
 Arquivo de personalização executado em determinados contextos de inicialização. Pode definir comportamentos ausentes em outra execução. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
+
+### Permissão de busca
+
+Permissão representada por x em diretórios Linux, necessária para procurar componentes e atravessar o caminho. Não equivale a enumerar os nomes do diretório. [Conceito: 15.2](modulo-3/capitulo-15/15.2-permissoes-linux-e-caminhos.md).
 
 ### Persistência
 
@@ -1592,6 +1705,10 @@ Manipulação de entradas ou conteúdos processados por uma aplicação com mode
 
 Condição de preparação para uma operação ou estágio do ciclo de vida, conforme um contrato. No serviço, uma indicação de inicialização concluída não é garantia permanente de funcionamento de todas as capacidades. [Conceito: 11.5][c115].
 
+### Proprietário
+
+Identidade associada à propriedade de um recurso. Poder administrar sua política e ter uma operação de conteúdo concedida são perguntas diferentes. [Conceito: 15.2](modulo-3/capitulo-15/15.2-permissoes-linux-e-caminhos.md).
+
 ### Protobuf
 
 Protocol Buffers. Formato de serialização binária em que números de campo e tipos de transporte são interpretados com apoio de um esquema. A introdução não implementa um codec Protobuf nem promete compatibilidade de qualquer alteração de esquema. [Introdução: 10.4][c104].
@@ -1624,6 +1741,7 @@ Abreviação de pseudoterminal; no modelo Unix, descreve as interfaces pareadas 
 
 Nome do executável do PowerShell moderno usado nos exemplos; deve ser distinguido de powershell.exe do Windows PowerShell. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
 
+
 ## Q
 
 ### Quadro de chamada
@@ -1638,6 +1756,7 @@ Page frame. Unidade física correspondente ao tamanho de página considerado num
 
 Uso de aspas ou escapes para controlar a interpretação de caracteres. A proteção obtida depende da linguagem, do contexto e do consumidor posterior. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
 
+
 ## R
 
 ### RAM
@@ -1647,6 +1766,10 @@ Random Access Memory, memória de acesso aleatório. A expressão descreve o ace
 ### Ransomware
 
 Software malicioso usado para restringir acesso a dados ou sistemas e exigir resgate, frequentemente por criptografia de arquivos. A introdução apenas menciona a categoria, sem análise de amostras. [Menção: capítulo 1][c1]. [Referência CISA][ransomware-doc].
+
+### READ_CONTROL
+
+Direito Windows de consultar partes do descritor de segurança. Não é simplesmente o direito de ler o conteúdo de um arquivo. [Conceito: 15.4](modulo-3/capitulo-15/15.4-tokens-e-acls-no-windows.md).
 
 ### Red Team
 
@@ -1708,6 +1831,10 @@ Mensagem devolvida em relação a uma requisição. Código de status e conteúd
 
 Nova verificação após uma alteração, voltada ao comportamento que deveria ser corrigido e às propriedades que deveriam permanecer. No exemplo de acesso, inclui o uso legítimo e a preservação das recusas necessárias. [Conceito: 11.5][c115].
 
+### Revogação
+
+Retirada de autoridade cujo alcance deve ser definido: novos pedidos, futuras execuções, sessões ou recursos já abertos. Não implica interrupção instantânea universal. [Conceito: 15.6](modulo-3/capitulo-15/15.6-camadas-revogacao-e-menor-privilegio.md).
+
 ### RFC
 
 Request for Comments. Documento numerado de uma série de especificações e outros materiais técnicos. Nem toda RFC é um padrão; categoria e contexto importam. [Menção: capítulo 1][c1]; [referências do capítulo 4][c4-ref].
@@ -1736,7 +1863,12 @@ Resident Set Size. Medida de memória residente associada a um processo. Somar R
 
 Ambiente de execução da linguagem: mecanismos que sustentam o processamento de código e suas operações. Pode incluir interpretação, bibliotecas e gerenciamento de objetos; não precisa ser um único arquivo isolado. [Conceito: 8.4][c84].
 
+
 ## S
+
+### SACL
+
+System Access Control List. Parte de um descritor de segurança Windows usada para informações como auditoria e rótulos obrigatórios; não é uma segunda DACL somada à primeira. [Conceito: 15.4](modulo-3/capitulo-15/15.4-tokens-e-acls-no-windows.md).
 
 ### Safe harbor
 
@@ -1786,6 +1918,10 @@ Descrição de uma região relevante ao carregamento da imagem. Pode reunir mais
 
 Software Engineering Institute, da Carnegie Mellon University. Instituição associada à criação do CERT/CC no episódio histórico discutido. [Contexto: capítulo 2][c2].
 
+### SELinux
+
+Mecanismo Linux de controle obrigatório baseado em rótulos e política. Conceder acesso discricionário não desativa suas decisões. [Conceito: 15.6](modulo-3/capitulo-15/15.6-camadas-revogacao-e-menor-privilegio.md).
+
 ### Separação em palavras
 
 Word splitting. Divisão de resultados de certas expansões sem aspas em Bash, conforme IFS e o contexto sintático. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
@@ -1825,6 +1961,18 @@ Contexto relacionado à autenticação. No capítulo, sua importância aparece n
 ### set -e
 
 Opção errexit do Bash, com exceções por contexto. Não deve ser interpretada como garantia de que toda falha interromperá qualquer roteiro. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
+
+### setfacl
+
+Utilitário de alteração de ACLs POSIX. O cálculo da máscara faz parte do efeito a conferir após a mudança. [Conceito: 15.3](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md).
+
+### Setgid
+
+Bit especial cujo significado depende do objeto: em diretório participa da herança de grupo; em executável pode participar de uma transição do grupo efetivo. Não concede sozinho todos os acessos ao grupo. [Conceito: 15.3](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md).
+
+### Setuid
+
+Bit especial em executáveis que pode participar de uma transição do usuário efetivo, conforme regras e restrições de execução. Não altera o cadastro da pessoa que iniciou o programa. [Conceito: 15.5](modulo-3/capitulo-15/15.5-privilegios-e-delegacao.md).
 
 ### Severidade
 
@@ -1906,9 +2054,21 @@ Entrada padrão, saída padrão e saída de erros padrão. São fluxos que podem
 
 Nome convencional do fluxo de saída padrão, que pode ser redirecionado para outro destino. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
 
+### Sticky bit
+
+Bit especial que restringe remoção e renomeação em diretórios segundo proprietário e privilégio aplicável. Não impede, sozinho, ler ou alterar conteúdo permitido pelo arquivo. [Conceito: 15.2](modulo-3/capitulo-15/15.2-permissoes-linux-e-caminhos.md).
+
 ### Substituição de comando
 
 Expansão Bash que usa a saída de um comando no lugar da expressão $(...), retirando quebras de linha finais no caso apresentado. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
+### sudo
+
+Execução de comando como outra identidade conforme uma política. O destino não precisa ser root; autenticação, autorização e ambiente precisam ser considerados. [Conceito: 15.5](modulo-3/capitulo-15/15.5-privilegios-e-delegacao.md).
+
+### sudoers
+
+Plugin e formato de política normalmente usados pelo sudo para decidir quem pode executar quais comandos e em qual contexto. Regras por nome de programa não dispensam compreender suas capacidades. [Conceito: 15.5](modulo-3/capitulo-15/15.5-privilegios-e-delegacao.md).
 
 ### Superfície de ataque
 
@@ -1929,6 +2089,7 @@ Diretórios cuja interpretação exige considerar arquitetura e redirecionamento
 ### systemd
 
 Conjunto de componentes que inclui um gerenciador de sistema e serviços. No papel de gerenciador de sistema descrito, executa como PID 1 e coordena unidades. Não é o kernel nem um componente obrigatório de toda distribuição. [Conceito: 11.5][c115].
+
 
 ## T
 
@@ -1968,6 +2129,10 @@ Sistema de arquivos que utiliza memória virtual e pode usar swap conforme a con
 
 Tech Model Railroad Club, clube de ferromodelismo do MIT presente nos episódios de experimentação. Sua história não estabelece origem única da segurança de computadores. [Contexto: capítulos 1][c1] e [2][c2].
 
+### TOCTOU
+
+Time Of Check To Time Of Use. Diferença entre o estado verificado e o estado usado depois, capaz de invalidar uma conclusão de autorização baseada só numa checagem anterior. [Conceito: 15.6](modulo-3/capitulo-15/15.6-camadas-revogacao-e-menor-privilegio.md).
+
 ### Token de acesso (Windows)
 
 Objeto que descreve contexto de segurança de um processo ou thread, incluindo identidade, grupos e privilégios. Não é sinônimo de token de sessão Web nem da senha digitada por uma pessoa. [Conceito: 11.4][c114].
@@ -1990,6 +2155,7 @@ Corte de uma sequência ou representação para um tamanho menor. Em texto de la
 
 No contexto do capítulo 14: Redução do conteúdo de um arquivo, como ocorre em uma abertura para substituir sua saída. A ação pode ocorrer antes de o comando falhar. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
 
+
 ## U
 
 ### UAC
@@ -2007,6 +2173,20 @@ Unified Extensible Firmware Interface. Interface de firmware usada no caminho de
 ### UID
 
 User identifier, identificador de usuário. Nas interfaces Unix/Linux há variantes com papéis distintos, como identidade real, efetiva e de sistema de arquivos; o nome mostrado numa tela não descreve todo o contexto. [Conceito: 11.4][c114].
+
+Identificador numérico de usuário. Na investigação Linux, distinguir os IDs real, efetivo e de sistema de arquivos e não inferir identidade apenas pelo nome mostrado. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
+### UID efetivo
+
+Identificador de usuário que participa das decisões de autoridade da execução. Pode diferir do real; no acesso a arquivos Linux, o FSUID, normalmente igual ao efetivo, tem papel específico. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
+### UID real
+
+Identificador real de usuário associado ao processo; cumpre funções diferentes do UID efetivo e não deve ser confundido com uma variável de ambiente. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
+### umask
+
+Máscara de criação do processo. Sem ACL padrão, remove bits do modo solicitado; não é subtração aritmética nem altera retroativamente arquivos existentes. [Conceito: 15.3](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md).
 
 ### uname
 
@@ -2032,9 +2212,18 @@ Uniform Resource Identifier, identificador uniforme de recurso. A introdução e
 
 Uso de uma referência a memória depois de sua liberação, contrariando o tempo de vida do objeto. O espaço pode ter sido reutilizado; observar bytes familiares não torna o acesso válido. [Conceito: 9.3][c93].
 
+### useradd
+
+Utilitário shadow-utils para criação de contas locais, sujeito a opções e padrões da instalação. Criar um cadastro não equivale a conceder todos os recursos necessários a uma aplicação. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
+### usermod
+
+Utilitário shadow-utils para alterar contas. Modificar associações de grupos exige distinguir acréscimo de substituição; não atualiza automaticamente todas as execuções antigas. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
+
 ### UTF-8
 
 Forma de codificação Unicode que utiliza de um a quatro bytes por valor escalar e preserva a representação ASCII. Uma unidade percebida pelo usuário pode reunir vários valores; nem toda sequência arbitrária de bytes é UTF-8 válido. [Conceito: 6.4][c64].
+
 
 ## V
 
@@ -2090,11 +2279,16 @@ Unidade lógica de armazenamento à qual podem ser associados nomes de acesso. N
 
 Fraqueza em código, configuração, controle, procedimento ou implementação que pode ser explorada ou acionada para produzir consequência adversa. Pode existir sem exploit público. [Conceito: 5.1][c51].
 
+
 ## W
 
 ### White hat
 
 Rótulo informal associado a pesquisa ou avaliação autorizada e voltada à proteção. Não comprova por si só a autorização de uma atividade específica. [Contexto: capítulo 1][c1].
+
+### whoami
+
+Utilitário Windows de consulta do contexto corrente, com opções para identidade, grupos e privilégios. Consultar a sessão do técnico não descreve automaticamente outro serviço. [Conceito: 15.7](modulo-3/capitulo-15/15.7-investigacao-e-verificacao.md).
 
 ### Windows Event Log
 
@@ -2112,6 +2306,15 @@ Programa capaz de se executar independentemente e propagar cópias funcionais pa
 
 Windows 32-bit on Windows 64-bit. Subsistema de compatibilidade para aplicações de 32 bits em Windows de 64 bits, com mecanismos específicos de redirecionamento. [Conceito: 13.3](modulo-3/capitulo-13/13.3-executaveis-bibliotecas-e-carregamento.md).
 
+### WRITE_DAC
+
+Direito Windows de modificar a DACL de um objeto. Administrar a política pode ter consequências diferentes de modificar os dados do objeto. [Conceito: 15.4](modulo-3/capitulo-15/15.4-tokens-e-acls-no-windows.md).
+
+### WRITE_OWNER
+
+Direito Windows relacionado à mudança de proprietário de um objeto. Não é um sinônimo de escrita no conteúdo do arquivo. [Conceito: 15.4](modulo-3/capitulo-15/15.4-tokens-e-acls-no-windows.md).
+
+
 ## X
 
 ### XML
@@ -2121,6 +2324,7 @@ Extensible Markup Language. Linguagem de representação estruturada com element
 ### XSS
 
 Cross-Site Scripting. Classe de falha em que conteúdo controlado por um atacante pode executar código no navegador no contexto de uma aplicação Web. É distinta de SQL injection. [Menção: capítulo 2][c2]. [Referência técnica][xss-doc].
+
 
 ## Y
 

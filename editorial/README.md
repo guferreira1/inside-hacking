@@ -20,3 +20,6 @@ Leitura aprovada, revisão interna, revisão independente e release são marcos 
 
 
 Continuidade: [revisão do capítulo 13](reviews/capitulo-13.md), [entrega do capítulo 14](reviews/capitulo-14.md) e [auditoria de integração dos capítulos 12–14](audits/2026-09-29-capitulos-12-14.md).
+
+
+A [auditoria da entrega do capítulo 15](audits/2026-09-29-capitulo-15.md) registra continuidade, glossário, testes e limites de validação.

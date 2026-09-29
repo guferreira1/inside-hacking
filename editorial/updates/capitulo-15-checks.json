@@ -1,0 +1,372 @@
+{
+  "base": "089792c1facff1b625d609c50e319dab44ffb2bd",
+  "preparation_run": "https://github.com/guferreira1/inside-hacking/actions/runs/36646872315",
+  "tests": {
+    "total": 99,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 99
+  },
+  "versions": {
+    "python": "3.12.3",
+    "os": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "euid": 1001,
+    "bash": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)",
+    "powershell": "7.6.6"
+  },
+  "glossary": {
+    "before": 510,
+    "after": 554,
+    "added": [
+      "Conta",
+      "Conta de serviço",
+      "UID real",
+      "UID efetivo",
+      "FSUID",
+      "FSGID",
+      "NSS",
+      "Grupos suplementares",
+      "id",
+      "useradd",
+      "usermod",
+      "Proprietário",
+      "Permissão de busca",
+      "chmod",
+      "Sticky bit",
+      "umask",
+      "Máscara de ACL",
+      "ACL padrão",
+      "ACL",
+      "getfacl",
+      "setfacl",
+      "chown",
+      "Setgid",
+      "SACL",
+      "READ_CONTROL",
+      "WRITE_DAC",
+      "WRITE_OWNER",
+      "DACL vazia",
+      "DACL nula",
+      "Setuid",
+      "nosuid",
+      "CAP_CHOWN",
+      "CAP_DAC_OVERRIDE",
+      "sudo",
+      "sudoers",
+      "AdjustTokenPrivileges",
+      "DAC",
+      "AppArmor",
+      "SELinux",
+      "TOCTOU",
+      "Revogação",
+      "Get-Acl",
+      "whoami",
+      "namei"
+    ],
+    "extended": [
+      "UID",
+      "GID"
+    ],
+    "preserved_previous_definitions": 510
+  },
+  "documentation": {
+    "markdown_files": 159,
+    "internal_links": 1410,
+    "internal_errors": [],
+    "external_urls": 359,
+    "glossary_entries": 554
+  },
+  "external_urls": [
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/LSM/SELinux.html",
+      "status": 200,
+      "final_url": "https://docs.kernel.org/admin-guide/LSM/SELinux.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/LSM/apparmor.html",
+      "status": 200,
+      "final_url": "https://docs.kernel.org/admin-guide/LSM/apparmor.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://docs.python.org/3/library/os.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/os.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://docs.python.org/3/library/tempfile.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/tempfile.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-acl?view=powershell-7.5",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-acl?view=powershell-7.5",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/whoami",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/whoami",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-impersonateloggedonuser",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-impersonateloggedonuser",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/file-security-and-access-rights",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/fileio/file-security-and-access-rights",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/access-rights-and-access-masks",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/access-rights-and-access-masks",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/access-tokens",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/access-tokens",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/ace-inheritance",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/ace-inheritance",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/client-impersonation",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/client-impersonation",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/how-dacls-control-access-to-an-object",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/how-dacls-control-access-to-an-object",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/impersonation-tokens",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/impersonation-tokens",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/mandatory-integrity-control",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/mandatory-integrity-control",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/null-dacls-and-empty-dacls",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/null-dacls-and-empty-dacls",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/order-of-aces-in-a-dacl",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/order-of-aces-in-a-dacl",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/privileges",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/privileges",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/security-descriptors",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/security-descriptors",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/security-identifiers",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/security-identifiers",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/sid-attributes-in-an-access-token",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/sid-attributes-in-an-access-token",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secbp/changing-privileges-in-a-token",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/secbp/changing-privileges-in-a-token",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man1/getfacl.1.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man1/getfacl.1.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man1/id.1.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man1/id.1.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man1/namei.1.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man1/namei.1.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man1/setfacl.1.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man1/setfacl.1.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/access.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/access.2.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/chmod.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/chmod.2.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/chown.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/chown.2.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/execve.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/execve.2.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/open.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/open.2.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/group.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/group.5.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/nsswitch.conf.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/nsswitch.conf.5.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/passwd.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/passwd.5.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/shadow.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/shadow.5.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/sudoers.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/sudoers.5.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/capabilities.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/capabilities.7.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/credentials.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/credentials.7.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/inode.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/inode.7.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/path_resolution.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/path_resolution.7.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/sudo.8.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man8/sudo.8.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/useradd.8.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man8/useradd.8.html",
+      "classification": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/usermod.8.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man8/usermod.8.html",
+      "classification": "accessible"
+    }
+  ],
+  "independent_review": false,
+  "windows_access_control_executed": false
+}

@@ -1,6 +1,6 @@
-# Primeira entrega editorial — Capítulo 14
+# Revisão editorial — Capítulo 14
 
-**Data:** 29/09/2026. **Estado:** DRAFT 0.1. **Módulo:** III.
+**Data:** 29/09/2026. **Estado atual:** VALIDATED — versão editorial 1.0. **Módulo:** III.
 
 [Capítulo](../../book/modulo-3/capitulo-14/README.md) · [Fontes](../../book/modulo-3/capitulo-14/referencias.md) · [Exemplos](../../book/modulo-3/capitulo-14/exemplos/README.md)
 
@@ -24,9 +24,14 @@ Nenhuma alteração de execution policy, elevação, conta, permissão, serviço
 
 ## Estado editorial
 
-O avanço solicitado confirma a aprovação de leitura do capítulo 13. Essa aprovação não é classificação de domínio prático e não registra horas ou laboratórios que o mantenedor não relatou. O capítulo 14 permanece em primeira leitura; revisão técnica independente pendente.
+O avanço solicitado confirma a aprovação de leitura do capítulo 13. Essa aprovação não é classificação de domínio prático e não registra horas ou laboratórios que o mantenedor não relatou. Na primeira entrega, o capítulo 14 ficou em primeira leitura. O estado atual é registrado no fechamento abaixo; revisão técnica independente permanece pendente.
 
 
 ## Verificação em runners
 
 A [execução](https://github.com/guferreira1/inside-hacking/actions/runs/36643755033) concluiu os nove testes PowerShell em Windows sem skips ou falhas. No runner Linux, a suíte completa encontrou 90 testes, com 90 aprovados e 0 skips. Ambientes e limites constam na [auditoria](../audits/2026-09-29-capitulos-12-14.md). A segunda checagem de links é obrigatória após estas atualizações.
+
+
+## Fechamento interno de 29/09/2026
+
+O pedido do mantenedor de seguir ao próximo capítulo registra sua aprovação de leitura. A revisão de continuidade preservou as seis seções, exemplos e respostas, atualizando apenas estado e navegação. Os testes existentes participam novamente da regressão da entrega do capítulo 15; seus resultados estão na [auditoria](../audits/2026-09-29-capitulo-15.md). O ciclo interno da versão 1.0 está concluído. Não foram presumidos tempo de estudo, execução pelo leitor ou revisão técnica independente.
