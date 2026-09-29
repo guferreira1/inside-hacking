@@ -15,6 +15,24 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           persist-credentials: false
+      - name: Make existing concepts explicit in terminology
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          changes = [
+              ('book/modulo-3/capitulo-15/15.2-permissoes-linux-e-caminhos.md', 'Busca, representada por `x`, permite', 'A **permissão de busca**, representada por `x`, permite'),
+              ('book/modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md', 'A **máscara da ACL** limita', 'A **máscara de ACL** limita'),
+          ]
+          for name, old, new in changes:
+              p = Path(name)
+              content = p.read_text(encoding='utf-8')
+              assert content.count(old) == 1, name
+              p.write_text(content.replace(old, new), encoding='utf-8')
+          p = Path('.editorial_prepare15.py')
+          content = p.read_text(encoding='utf-8')
+          assert content.count('changed = set()') == 1
+          p.write_text(content.replace('changed = set()', 'changed = ' + repr({x[0] for x in changes})), encoding='utf-8')
+          PY
       - name: Verify manuscript and prepare an unreferenced tree
         env:
           GH_TOKEN: ${{ github.token }}
