@@ -31,14 +31,19 @@ jobs:
           issues = []
           for p in files:
               text = p.read_text(encoding="utf-8")
+              in_fence = False
               for n, line in enumerate(text.splitlines(), 1):
+                  stripped = line.lstrip()
+                  if stripped.startswith("```"):
+                      in_fence = not in_fence
+                      continue
+                  if in_fence:
+                      continue
                   if line.rstrip() != line:
                       issues.append((str(p), n, "trailing whitespace", line))
                   if "\t" in line:
                       issues.append((str(p), n, "tab character", line))
                   if re.search(r"(?<! ) {2,}(?! )", line) and not line.startswith("    "):
-                      # Markdown tables/code alignment can contain deliberate spaces;
-                      # only report prose-like lines without pipes/backticks.
                       if "|" not in line and "`" not in line:
                           issues.append((str(p), n, "repeated spaces", line))
                   m = re.search(r"\b([A-Za-zÀ-ÿ]{3,})\s+\1\b", line, re.I)
