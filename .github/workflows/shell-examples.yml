@@ -1,0 +1,29 @@
+name: Shell examples on Windows
+on:
+  push:
+    paths:
+      - 'book/modulo-3/capitulo-14/**'
+      - 'scripts/tests/test_chapter14_examples.py'
+      - '.github/workflows/shell-examples.yml'
+  pull_request:
+    paths:
+      - 'book/modulo-3/capitulo-14/**'
+      - 'scripts/tests/test_chapter14_examples.py'
+      - '.github/workflows/shell-examples.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  powershell:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Require the real runtime and run its nine examples
+        shell: pwsh
+        run: |
+          $PSVersionTable
+          python -c "import sys,unittest;sys.path.insert(0,'scripts/tests');import test_chapter14_examples as m;assert m.PWSH,'pwsh unavailable';s=unittest.defaultTestLoader.loadTestsFromTestCase(m.Chapter14PowerShell);r=unittest.TextTestRunner(verbosity=2).run(s);sys.exit(0 if r.wasSuccessful() and r.testsRun==9 and not r.skipped else 1)"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

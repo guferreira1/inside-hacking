@@ -1,0 +1,41 @@
+name: Prepare chapters 12 to 14
+on:
+  push:
+    branches:
+      - docs/chapter-14-shells-20260929
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    outputs:
+      ps: ${{ steps.verify.outputs.ps }}
+      os: ${{ steps.verify.outputs.os }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - id: verify
+        shell: pwsh
+        run: |
+          python -c "import sys,unittest;sys.path.insert(0,'scripts/tests');import test_chapter14_examples as m;assert m.PWSH,'pwsh unavailable';s=unittest.defaultTestLoader.loadTestsFromTestCase(m.Chapter14PowerShell);r=unittest.TextTestRunner(verbosity=2).run(s);sys.exit(0 if r.wasSuccessful() and r.testsRun==9 and not r.skipped else 1)"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          "ps=$($PSVersionTable.PSVersion.ToString())" >> $env:GITHUB_OUTPUT
+          "os=$($PSVersionTable.OS)" >> $env:GITHUB_OUTPUT
+  prepare:
+    needs: windows
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Prepare and verify the final manuscript tree
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WINDOWS_POWERSHELL: ${{ needs.windows.outputs.ps }}
+          WINDOWS_OS: ${{ needs.windows.outputs.os }}
+        run: python3 .editorial_prepare14.py
