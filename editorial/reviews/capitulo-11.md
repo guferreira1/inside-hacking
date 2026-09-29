@@ -23,11 +23,17 @@ Seis testes locais aprovados em Linux x86-64, kernel 6.18.44, glibc 2.41, Python
 
 O script completo produziu `leitura=Livro`, `fim_da_leitura=0`, `escrita=EBADF`, `ausente=ENOENT` e `conteudo_preservado=sim`. O laço de leitura é limitado e contempla leituras parciais. EBADF é resultado de uma escrita em abertura somente de leitura, não evidência de falta de permissão de outra conta. Não houve rastreamento de chamadas, teste de privilégios, acesso a arquivos pessoais, exaustão ou criação de serviços.
 
-O clone local do repositório falhou por resolução de rede. A suíte completa e a navegação são verificadas separadamente no workflow associado ao commit; aprovação local dos seis testes não é descrita como teste local de todo o livro. Links externos são inventariados pela checagem, não certificados como acessíveis por ela.
+O clone local do repositório falhou por resolução de rede. A suíte completa e a navegação foram verificadas separadamente na preparação da entrega, no [workflow de apoio](https://github.com/guferreira1/inside-hacking/actions/runs/36506254993): **60 testes aprovados**, **113 arquivos Markdown**, **888 destinos internos conferidos** e **nenhum erro interno detectado**. As URLs externas são inventariadas, não certificadas como acessíveis por esse passo. A validação do commit final deve ser conferida em seu próprio workflow, após a retirada dos auxiliares temporários.
+
+## Glossário, preservação e segunda passagem
+
+O glossário passou de **340 para 373 verbetes**, com **33 entradas novas** vinculadas a ocorrências do capítulo 11. A operação conferiu o SHA do arquivo-base e verificou que os 340 blocos originais permanecem intactos. Os novos termos incluem VFS, espaço de usuário, UID/GID, capabilities Linux, cgroup, namespace, daemon e os erros explicados no exemplo.
+
+A atualização programática ocorreu em uma branch temporária, com alterações limitadas aos nove documentos de apoio previstos. Os scripts e o workflow usados apenas para essa edição não integram a entrega na `main`; o workflow permanente de documentação permanece inalterado. O commit final reúne manuscrito, exemplos, testes e documentação, e recebe nova checagem de conjunto antes da integração.
 
 ## Documentação e estado
 
-README principal, índice geral, abertura do Módulo III, continuidade a partir do Módulo II e capítulo 10, bibliografia, glossário, cobertura e controle editorial acompanham a entrega. A edição do glossário preserva os verbetes anteriores e adiciona apenas termos utilizados no capítulo. Os links das ocorrências permitem rastrear cada entrada.
+README principal, índice geral, abertura do Módulo III, continuidade a partir do Módulo II e capítulo 10, bibliografia, glossário, cobertura e controle editorial acompanham a entrega. As entradas do glossário apontam para suas ocorrências; nenhum tema futuro foi importado apenas para aumentar a lista.
 
 A solicitação desta rodada autoriza continuar a escrita. Não contém avaliação explícita da leitura do capítulo 10; seu estado anterior é preservado, sem inventar aprovação, horas ou prática. Também não foi concluída nesta entrega a revisão pendente do capítulo 1 ou a revisão de conjunto dos módulos anteriores. O capítulo 11 permanece em primeira leitura e com revisão independente pendente. Não houve geração de PDF nem publicação no LinkedIn.
 
