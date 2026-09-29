@@ -1,7 +1,7 @@
-# Primeira entrega editorial — Capítulo 12
+# Revisão editorial — Capítulo 12
 
-**Data:** 29/09/2026. **Estado atual:** VALIDATED — versão editorial 1.0. **Módulo:** III.
-**Base:** `9ace0862c456f01b3d8b03e8857349448f086215`.
+**Primeira entrega:** 29/09/2026. **Estado atual:** VALIDATED — versão editorial 1.0. **Módulo:** III.
+**Base da primeira entrega:** `9ace0862c456f01b3d8b03e8857349448f086215`.
 
 [Manuscrito](../../book/modulo-3/capitulo-12/README.md) · [Referências](../../book/modulo-3/capitulo-12/referencias.md) · [Exemplo](../../book/modulo-3/capitulo-12/exemplos/README.md)
 
@@ -9,7 +9,7 @@
 
 Cinco seções desenvolvem a organização de uma instalação Linux: núcleo e distribuição, árvore de nomes e montagens, procfs/sysfs/dispositivos/tmpfs, drivers e módulos, serviços e cadeia de pacotes. O cenário fictício da Aurora distingue uma origem ausente da visão do serviço de uma recusa de permissão no mesmo caminho. Há dez perguntas opcionais com respostas comentadas.
 
-A leitura independe de instalar Linux, de ter acesso administrativo ou de executar comandos. O capítulo não substitui as unidades futuras sobre terminal, permissões, serviços ou isolamento. O percurso de gerenciamento de pacotes é explicitamente Debian/APT, não uma regra universal de todas as distribuições.
+A leitura independe de instalar Linux, de ter acesso administrativo ou de executar comandos. O capítulo não substitui as unidades sobre terminal, permissões, serviços ou isolamento. O percurso de gerenciamento de pacotes é explicitamente Debian/APT, não uma regra universal de todas as distribuições.
 
 ## Pesquisa e redação
 
@@ -29,24 +29,20 @@ O clone local completo não foi obtido por falha de resolução de rede. A execu
 
 ## Continuidade e documentação
 
-A aprovação da leitura do capítulo 11 é registrada pelo pedido de seguir ao próximo, conforme a convenção do mantenedor. A releitura das cinco seções, dez respostas e referências conserva a separação entre validação editorial interna e revisão independente. Não foram inventadas horas, execução de labs pelo leitor ou domínio prático.
+A aprovação da leitura do capítulo 11 foi registrada pelo pedido de seguir ao próximo, conforme a convenção do mantenedor. A releitura das cinco seções, dez respostas e referências conservou a separação entre validação editorial interna e revisão independente. Não foram inventadas horas, execução de labs pelo leitor ou domínio prático.
 
-README principal, índice geral, índice do Módulo III, navegação 11→12, bibliografia, glossário, matriz de cobertura e controle editorial acompanham a entrega. O Módulo II mantém seu fechamento interno; a pendência do capítulo 1 permanece independente. Não houve publicação no LinkedIn nem geração de PDF nesta rodada.
+README principal, índice geral, índice do Módulo III, navegação 11→12, bibliografia, glossário, matriz de cobertura e controle editorial acompanharam a primeira entrega. O Módulo II manteve seu fechamento interno; a pendência do capítulo 1 permaneceu independente. Não houve publicação no LinkedIn nem geração de PDF naquela rodada.
 
-## Verificação de conjunto
-
-A preparação da árvore final executa a suíte e a checagem de links antes de disponibilizar o commit. Resultados observados e preservação do glossário serão registrados abaixo pelo processo de preparação; a integração em `main` recebe nova execução do workflow permanente.
+## Verificação de conjunto da primeira entrega
 
 A preparação no [workflow de apoio](https://github.com/guferreira1/inside-hacking/actions/runs/36615055086) executou **64 testes com sucesso**, incluindo os quatro novos. A checagem global percorreu **124 Markdown**, conferiu **984 destinos internos** e não detectou erro de caminho ou âncora. Esse verificador inventaria URLs externas; não certifica sua disponibilidade por HTTP.
 
 O glossário passou de **373 para 401 verbetes**, com **28 entradas novas** e preservação dos 373 blocos anteriores. As entradas têm ocorrência no capítulo, explicação delimitada e navegação para as respectivas seções. Nenhum assunto apenas planejado foi adicionado.
 
-O workflow e o auxiliar usados apenas para preparar esta alteração são excluídos da árvore final. O workflow permanente permanece inalterado. A aprovação do commit final é conferida separadamente antes e depois da integração.
-
-
-**Próxima revisão:** leitura do capítulo 12 e revisão técnica independente. Próxima unidade planejada: **13 — Windows por dentro**.
-
+O workflow e o auxiliar usados apenas para preparar aquela alteração foram excluídos da árvore final. A publicação da árvore preparada permaneceu pendente até a recuperação documentada na entrega do capítulo 14; a preparação bem-sucedida não foi uma integração automática à main.
 
 ## Aprovação e integração de 29/09/2026
 
-A leitura foi aprovada antes do avanço. O ciclo interno da versão editorial 1.0 está concluído, com os limites de fontes e reprodução preservados. A integração recupera a entrega anterior sem reorganizar capítulos. A [auditoria desta entrega](../audits/2026-09-29-capitulos-12-14.md) registra os testes e a navegação efetivamente executados. Revisão independente permanece pendente.
+A leitura do capítulo 12 foi aprovada antes do avanço ao 13. O ciclo interno da versão editorial 1.0 está concluído, com os limites de fontes e reprodução preservados. A integração recupera a entrega anterior sem reorganizar capítulos. A [auditoria desta entrega](../audits/2026-09-29-capitulos-12-14.md) registra os testes e a navegação efetivamente executados.
+
+**Próxima revisão deste capítulo:** revisão técnica independente e preparação de uma futura edição estável. A leitura do capítulo 12 não está pendente. O percurso já avançou pelo Windows e continua no capítulo 14, sem alterar a ordem original.
