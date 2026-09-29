@@ -1,10 +1,10 @@
 # Capítulo 12 — Linux por dentro
 
-[← Capítulo 11](../capitulo-11/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
+[← Capítulo 11](../capitulo-11/README.md) · [Capítulo 13 →](../capitulo-13/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
 
 **Módulo III — Sistemas operacionais**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Pesquisa, exemplo executado e limites no [registro editorial](../../../editorial/reviews/capitulo-12.md). Revisão técnica independente pendente.
+> **Status:** VALIDATED — versão editorial 1.0; leitura aprovada e ciclo interno concluído em 29/09/2026. Fontes e limites no [registro editorial](../../../editorial/reviews/capitulo-12.md). Revisão técnica independente pendente.
 
 A biblioteca Aurora prepara uma segunda instalação de seu sistema. A equipe copia o programa, organiza seus arquivos e conecta uma unidade com uma exportação do catálogo. A atendente encontra o documento no gerenciador de arquivos, mas o serviço automático procura o mesmo nome e não o encontra.
 

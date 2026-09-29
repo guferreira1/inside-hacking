@@ -25,3 +25,8 @@ Nenhuma alteração de execution policy, elevação, conta, permissão, serviço
 ## Estado editorial
 
 O avanço solicitado confirma a aprovação de leitura do capítulo 13. Essa aprovação não é classificação de domínio prático e não registra horas ou laboratórios que o mantenedor não relatou. O capítulo 14 permanece em primeira leitura; revisão técnica independente pendente.
+
+
+## Verificação em runners
+
+A [execução](https://github.com/guferreira1/inside-hacking/actions/runs/36643755033) concluiu os nove testes PowerShell em Windows sem skips ou falhas. No runner Linux, a suíte completa encontrou 90 testes, com 90 aprovados e 0 skips. Ambientes e limites constam na [auditoria](../audits/2026-09-29-capitulos-12-14.md). A segunda checagem de links é obrigatória após estas atualizações.

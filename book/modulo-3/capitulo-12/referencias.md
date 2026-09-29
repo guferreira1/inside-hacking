@@ -2,7 +2,7 @@
 
 [← Capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 29/09/2026. **Versão:** DRAFT 0.1.
+**Consulta:** 29/09/2026. **Versão editorial:** VALIDATED 1.0 — fechamento interno em 29/09/2026; revisão independente pendente.
 
 A narrativa da Aurora, suas duas instalações e o diagnóstico de montagens são fictícios. As fontes sustentam mecanismos específicos; não constituem uma investigação real nem um texto para reproduzir. Consultas pontuais às seções indicadas não equivalem à leitura integral de todos os manuais. O percurso de pacotes é Debian/APT, não uma descrição universal de todas as distribuições.
 

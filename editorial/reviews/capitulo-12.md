@@ -1,6 +1,6 @@
 # Primeira entrega editorial — Capítulo 12
 
-**Data:** 29/09/2026. **Estado:** DRAFT 0.1. **Módulo:** III.
+**Data:** 29/09/2026. **Estado atual:** VALIDATED — versão editorial 1.0. **Módulo:** III.
 **Base:** `9ace0862c456f01b3d8b03e8857349448f086215`.
 
 [Manuscrito](../../book/modulo-3/capitulo-12/README.md) · [Referências](../../book/modulo-3/capitulo-12/referencias.md) · [Exemplo](../../book/modulo-3/capitulo-12/exemplos/README.md)
@@ -45,3 +45,8 @@ O workflow e o auxiliar usados apenas para preparar esta alteração são exclu�
 
 
 **Próxima revisão:** leitura do capítulo 12 e revisão técnica independente. Próxima unidade planejada: **13 — Windows por dentro**.
+
+
+## Aprovação e integração de 29/09/2026
+
+A leitura foi aprovada antes do avanço. O ciclo interno da versão editorial 1.0 está concluído, com os limites de fontes e reprodução preservados. A integração recupera a entrega anterior sem reorganizar capítulos. A [auditoria desta entrega](../audits/2026-09-29-capitulos-12-14.md) registra os testes e a navegação efetivamente executados. Revisão independente permanece pendente.

@@ -105,7 +105,15 @@ As [fontes S1–S19](modulo-3/capitulo-12/referencias.md) relacionam documentaç
 
 O cenário de visibilidade do catálogo é fictício. O [exemplo opcional](modulo-3/capitulo-12/exemplos/README.md) consulta somente um descritor do próprio processo, sobre arquivo temporário próprio. Os [quatro testes](../scripts/tests/test_chapter12_examples.py) conferem plataforma, metadados/leitura, limpeza e saída documentada; não demonstram uma política entre identidades nem compartilhamento de posição entre aberturas.
 
-O capítulo está em DRAFT 0.1, conforme seu [registro editorial](../editorial/reviews/capitulo-12.md). Não houve montagem, instalação, administração de serviços, carga de módulos ou leitura de processos alheios. Revisão técnica independente e primeira leitura permanecem pendentes.
+O capítulo tem leitura aprovada e revisão interna 1.0 concluída, conforme seu [registro editorial](../editorial/reviews/capitulo-12.md). Não houve montagem, instalação, administração de serviços, carga de módulos ou leitura de processos alheios. Revisão técnica independente permanece pendente.
+
+## Capítulo 13 — Windows por dentro
+
+As [44 referências do capítulo](modulo-3/capitulo-13/referencias.md) usam documentação primária da Microsoft para arquitetura, objetos, caminhos, PE/DLL, contas e tokens, Registro, serviços e eventos. A narrativa é fictícia; não houve reprodução de kernel, UAC, Registro ou SCM. Leitura aprovada e ciclo interno da versão 1.0 concluído, com [limites registrados](../editorial/reviews/capitulo-13.md).
+
+## Capítulo 14 — Terminal, shells e automação
+
+As [49 referências numeradas](modulo-3/capitulo-14/referencias.md) usam documentação GNU, Linux man-pages, Microsoft e Python. [Quatro scripts próprios](modulo-3/capitulo-14/exemplos/README.md) e os testes associados examinam argumentos, expansão, fluxos, status, escopos e validação. [O registro editorial](../editorial/reviews/capitulo-14.md) separa documentação consultada, execuções reais e limitações de plataforma. Primeira entrega DRAFT 0.1.
 
 ## Política de referências
 

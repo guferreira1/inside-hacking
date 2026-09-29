@@ -8,7 +8,6 @@ Não importamos todos os assuntos futuros. OSINT é identificado como menção d
 
 **Consulta:** [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x) · [Y](#y).
 
-
 ## A
 
 ### ABI
@@ -23,9 +22,29 @@ Apresentação de operações e garantias que permite trabalhar sem administrar 
 
 Modelo que trata sinais como valores discretos, por exemplo 0 e 1, sem representar a cada operação todos os detalhes físicos de sua implementação. Suas garantias dependem das condições de funcionamento do dispositivo. [Conceito: 6.1][c61].
 
+### ACE
+
+Access Control Entry. Entrada em uma lista de controle de acesso que relaciona direitos a uma identidade; seu tipo e sua posição importam na interpretação. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
 ### Active Directory
 
 Tecnologias de diretório da Microsoft. No contexto de domínios citado, Active Directory Domain Services organiza objetos, como usuários e computadores, e participa da administração de identidades e acesso. [Menção: capítulo 2][c2]. [Documentação][ad-doc].
+
+### Administrador
+
+Conta ou membro de grupo com atribuições administrativas. A associação a um grupo, a elevação de um processo e seu token efetivo não são a mesma informação. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
+### Administrator protection
+
+Proteção de administrador. Mecanismo documentado pela Microsoft que utiliza uma conta gerenciada pelo sistema e separação de perfil para a execução elevada em ambientes compatíveis. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
+### Agendador de Tarefas
+
+Task Scheduler. Componente que organiza ações a partir de gatilhos e condições. Não é o escalonador de threads que distribui tempo de CPU. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
+### Alias
+
+Nome alternativo que o shell pode resolver para outro comando ou texto, conforme as regras da linguagem. Não é necessariamente um arquivo executável. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
 
 ### Alocação dinâmica
 
@@ -51,6 +70,8 @@ Advanced Package Tool. Conjunto de ferramentas que trabalha com fontes e metadad
 
 Valor fornecido a uma função, operação ou programa. No início de um programa, argumentos são uma parte do contexto recebido e não se confundem com variáveis de ambiente. [Conceitos: 8.1][c81] e [8.5][c85].
 
+No contexto do capítulo 14: Valor fornecido a uma chamada. Preservar onde começa e termina cada argumento é diferente de preservar a aparência da linha digitada. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
 ### Armazenamento persistente
 
 Armazenamento destinado a conservar dados sem depender apenas do estado de trabalho volátil. A confirmação de uma escrita precisa ser interpretada conforme o contrato das camadas envolvidas; persistente não significa indestrutível. [Conceito: 7.4][c74].
@@ -70,6 +91,10 @@ Resultado de tradução que pode participar da ligação com outras peças. No e
 ### Arquivo regular
 
 Tipo de objeto usado no capítulo para conservar uma sequência de bytes. A classificação no sistema de arquivos é diferente do formato do conteúdo: JSON e PNG podem ser ambos arquivos regulares. [Conceito: 10.1][c101].
+
+### Array
+
+Coleção indexada de valores. Neste capítulo, permite conservar argumentos separados, inclusive os que contêm espaços ou asteriscos literais. [Conceito: 14.6](modulo-3/capitulo-14/14.6-automacao-e-fronteiras-de-confianca.md).
 
 ### Artefato
 
@@ -102,6 +127,10 @@ Nome do formato binário didático criado no capítulo 10. Sua versão 1 transpo
 ### Autenticação
 
 Verificação de uma identidade ou alegação de identidade. Reconhecer uma conta não determina, sozinho, quais dados ela pode acessar. [Conceito: 5.1][c51].
+
+### Authenticode
+
+Tecnologia de assinatura de código do ecossistema Windows. Sua verificação trata de autenticidade e integridade sob uma política de confiança; não comprova comportamento benigno. [Conceito: 13.3](modulo-3/capitulo-13/13.3-executaveis-bibliotecas-e-carregamento.md).
 
 ### Autorização
 
@@ -136,6 +165,14 @@ Codificação que representa bytes por um alfabeto textual de 64 posições. Na 
 ### Base64url
 
 Variante de Base64 com alterações no alfabeto para determinados contextos de transporte. O protocolo que a utiliza define condições como preenchimento; não se deve misturar variantes por adivinhação. [Introdução: 10.3][c103].
+
+### Bash
+
+Bourne-Again SHell: interpretador de comandos e linguagem do projeto GNU, com regras próprias de expansão, execução e controle. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
+### BASH_ENV
+
+Variável que pode indicar um arquivo de inicialização lido pelo Bash em certos contextos não interativos. Sua presença pode influenciar um script. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
 
 ### Biblioteca compartilhada
 
@@ -192,6 +229,10 @@ Programa que pode recompensar relatos de vulnerabilidades conforme seus critéri
 ### Build
 
 Nome em inglês para a construção de artefatos a partir das entradas de um projeto. Neste livro, construir e executar são atividades distintas, mesmo quando uma ferramenta as aciona no mesmo botão. [Conceito: 8.1][c81].
+
+### Builtin
+
+Comando implementado pelo próprio shell, em vez de depender necessariamente de um executável separado. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
 
 ### Burp Suite
 
@@ -259,6 +300,10 @@ Control group. Organização hierárquica de processos para administrar recursos
 
 System call. Interface pela qual um programa solicita serviços do kernel. Chamar uma função de biblioteca não implica realizar exatamente uma chamada de sistema: parte do trabalho pode acontecer no próprio processo. [Conceito: 8.3][c83].
 
+### Chave do Registro
+
+Nó da hierarquia do Registro do Windows. Pode conter subchaves e valores; não é uma chave criptográfica nem um diretório comum do sistema de arquivos. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
 ### Checksum
 
 Nome em inglês para soma de verificação. Valor calculado para conferir alterações segundo um mecanismo específico; não é, por si só, prova de autoria ou autorização. [Conceito: 10.6][c106].
@@ -271,6 +316,10 @@ Bloco estruturado de um formato. No exemplo PNG, os chunks seguem a assinatura i
 
 Cybersecurity and Infrastructure Security Agency. Organização dos Estados Unidos responsável pelo get.gov, cuja política aparece como exemplo de delimitação de pesquisa. [Contexto: 3.1][c31].
 
+### CLI
+
+Command-Line Interface, interface de linha de comando. Forma de interação por comandos e argumentos; uma CLI não precisa implementar a linguagem de um shell. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
 ### Clock
 
 Sinal de temporização. Sua frequência mede ciclos por segundo, não diretamente instruções concluídas. Trabalho por ciclo e frequência efetiva dependem da implementação e das condições. [Conceito: 7.2][c72].
@@ -282,6 +331,14 @@ Computação em nuvem: recursos de computação disponibilizados como serviços 
 ### Cluster de grafemas
 
 Agrupamento de pontos de código utilizado na segmentação de texto para aproximar uma unidade percebida pelo usuário. Um agrupamento pode conter vários pontos de código e vários bytes; essas contagens não são equivalentes. [Conceito: 6.4][c64].
+
+### cmd.exe
+
+Processador de comandos do Windows com sintaxe própria; não é outro nome para PowerShell nem para o aplicativo Windows Terminal. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
+### Cmdlet
+
+Comando integrado ao modelo de execução do PowerShell, com parâmetros e saída que pode ser composta de objetos. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
 
 ### Codec
 
@@ -302,6 +359,8 @@ Representação binária de instruções de uma arquitetura. Sua presença em um
 ### Código de saída
 
 Valor utilizado pelo programa ao comunicar seu encerramento normal. Não é o texto que escreveu na saída padrão; outros modos de término também participam do estado observado pelo sistema. [Conceito: 8.5][c85].
+
+No contexto do capítulo 14: Resultado numérico de encerramento de um comando ou processo. Seu significado depende do contrato da ferramenta; não é o texto impresso. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
 
 ### Código-fonte
 
@@ -339,9 +398,17 @@ Situação em que a ordem ou o momento relativo das operações afeta um resulta
 
 Preservação das restrições de acesso e divulgação. Não significa tornar tudo secreto: um catálogo público e um histórico privado têm regras diferentes. [Conceito: 5.1][c51].
 
+### Console
+
+Termo dependente do contexto. No Windows, pode designar a infraestrutura de entrada e saída de aplicações de console; não é automaticamente sinônimo de PowerShell. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
 ### Construção
 
 Processo que produz artefatos a partir das entradas de um projeto; build. Pode coordenar várias ferramentas e etapas. Alterar um arquivo-fonte não obriga uma construção automática a acontecer. [Conceito: 8.1][c81].
+
+### Conta local
+
+Conta administrada no contexto de um computador. A coincidência de nomes entre computadores não demonstra igualdade de identidade. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
 
 ### Contador de programa
 
@@ -358,6 +425,10 @@ Campo HTTP que comunica o tipo de mídia da representação. É uma declaração
 ### Controlador
 
 Componente que gerencia operações de um dispositivo ou subsistema. Distingue-se do driver, que é software de comunicação e controle utilizado pelo sistema. [Conceito: 7.1][c71].
+
+### Controle de fluxo
+
+Regras que escolhem quais operações executar, repetir ou interromper conforme condições e resultados. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
 
 ### Cópia na escrita
 
@@ -413,6 +484,10 @@ Common Weakness Enumeration. Catálogo de tipos de fraquezas de software e hardw
 
 ## D
 
+### DACL
+
+Discretionary Access Control List. Lista de entradas usada no controle discricionário de acesso a um objeto protegido. Não representa todos os controles de segurança do Windows. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
 ### Dados pessoais
 
 No contexto brasileiro discutido, informações relacionadas a pessoa natural identificada ou identificável. Um teste não elimina as obrigações sobre seu tratamento. [Contexto: 3.2][c32].
@@ -457,6 +532,10 @@ Relação declarada entre componentes necessários à instalação ou ao funcion
 
 Identificador de um recurso aberto no contexto de um processo. Apesar do nome, pode se relacionar a recursos que não são documentos em armazenamento persistente. [Conceito: 8.5][c85]. A relação entre abertura, nomes e conteúdo é retomada em [10.1][c101].
 
+### Descritor de segurança
+
+Estrutura que reúne informações de segurança de um objeto, como seu proprietário e informações de controle de acesso. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
 ### Deslocamento
 
 Offset. Posição relativa ao começo de uma unidade, como uma página ou objeto. No modelo de tradução, o deslocamento é combinado ao quadro escolhido pelo mapa; não é um endereço físico universal. [Conceito: 9.2][c92]. Em arquivos e formatos, também indica posição relativa na sequência de bytes. [Aplicação: 10.2][c102].
@@ -468,6 +547,8 @@ Reconstrução de valores ou estruturas a partir de uma representação. As capa
 ### Diretório de trabalho
 
 Diretório corrente de um processo, usado como base em operações comuns com caminhos relativos. O mesmo nome relativo pode alcançar arquivos diferentes quando essa base muda. [Conceito: 8.5][c85].
+
+No contexto do capítulo 13: Diretório usado como contexto para a interpretação de determinados nomes relativos. Não é necessariamente a pasta onde o executável foi instalado. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
 
 ### Diretório raiz
 
@@ -493,6 +574,10 @@ Integração do kernel Linux com ferramentas, bibliotecas, pacotes, configuraç�
 
 Coordenação entre participantes que descobrem, corrigem, utilizam e comunicam informações sobre vulnerabilidades. Não é sinônimo de programa de recompensas. [Contexto: capítulo 2][c2].
 
+### DLL
+
+Dynamic-Link Library. Biblioteca de ligação dinâmica que pode oferecer funções e dados. No uso comum, é carregada no contexto de um processo que a utiliza. [Conceito: 13.3](modulo-3/capitulo-13/13.3-executaveis-bibliotecas-e-carregamento.md).
+
 ### DMA
 
 Direct Memory Access, acesso direto à memória. Permite transferências entre dispositivo e memória sem cópia byte a byte pela CPU principal. Ainda exige preparação, endereços e controle; não significa acesso irrestrito. [Conceito: 7.5][c75].
@@ -500,6 +585,14 @@ Direct Memory Access, acesso direto à memória. Permite transferências entre d
 ### DOI
 
 Digital Object Identifier. Identificador persistente usado para referenciar objetos, como publicações. Não certifica a correção do conteúdo nem substitui sua leitura. [Ocorrência: referências do capítulo 2][c2-ref].
+
+### Domínio
+
+No recorte de identidade Windows, contexto de administração de contas que não deve ser confundido com uma conta local de qualquer computador. O funcionamento de Active Directory será aprofundado em outro módulo. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
+### Dot-sourcing
+
+Execução de um script PowerShell no escopo correspondente do chamador usando o operador ponto, permitindo que definições afetem esse contexto. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
 
 ### dpkg
 
@@ -527,9 +620,17 @@ Nome simbólico de erro associado a recusa de acesso nas interfaces discutidas. 
 
 Nome simbólico de erro que pode indicar descritor inválido ou incompatível com a operação. Uma abertura válida somente para leitura pode produzir esse erro quando usada para escrita. [Conceito: 11.2][c112].
 
+### Elevação
+
+Transição para um contexto administrativo de execução conforme o mecanismo e a política aplicáveis. Não transforma automaticamente um aplicativo em código de kernel. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
 ### ELF
 
 Executable and Linkable Format. Formato que descreve diferentes artefatos, como objetos relocáveis, executáveis e bibliotecas compartilhadas. Tipo, arquitetura e organização precisam ser examinados; a assinatura do formato não demonstra o papel inteiro do arquivo. [Conceito: 8.3][c83].
+
+### Emulador de terminal
+
+Programa que oferece uma interface de terminal em software. Apresenta a interação com aplicações, mas não define sozinho a linguagem do shell hospedado. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
 
 ### Encadeamento de vulnerabilidades
 
@@ -563,6 +664,10 @@ Nome simbólico de erro associado à ausência de componente necessário à reso
 
 E/S; em inglês, Input/Output ou I/O. Operações de comunicação com dispositivos e componentes externos ao processamento considerado, como teclado, tela e armazenamento. Seus caminhos podem envolver drivers, controladores e buffers. [Conceitos: 7.1][c71] e [7.5][c75].
 
+### Entrada padrão
+
+Fluxo convencional pelo qual um programa pode receber dados; em ambientes Unix corresponde ao descritor 0, quando disponível. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
 ### Enumeração
 
 Levantamento sistemático de informações sobre elementos de um ambiente, como usuários, serviços ou permissões. Não equivale, sozinho, à exploração de uma falha. [Menções: capítulo 1][c1].
@@ -574,6 +679,14 @@ End of file, fim de arquivo. No percurso de leitura apresentado, condição de f
 ### errno
 
 Informação de erro utilizada em interfaces C sob o contrato da função. Deve ser consultada quando a operação indica falha; um valor antigo não comprova erro numa chamada bem-sucedida. Python conserva códigos correspondentes em exceções OSError. [Conceito: 11.2][c112].
+
+### Erro padrão
+
+Fluxo convencional separado da saída de resultado, frequentemente usado para diagnósticos; no modelo Unix corresponde ao descritor 2. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
+### ErrorAction
+
+Parâmetro comum do PowerShell que controla o tratamento de erros não terminantes na chamada correspondente. Stop permite convertê-los em erros terminantes, quando aplicável. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
 
 ### Escalada de privilégios
 
@@ -607,13 +720,33 @@ Schema. Descrição da estrutura, tipos, campos e restrições esperados. Pode d
 
 Hacking ético. Na obra, investigação ofensiva conduzida com autorização, escopo e responsabilidade. Intenção de ajudar não substitui permissão. [Contexto: capítulo 1][c1] e [capítulo 3][c3].
 
+### EventID
+
+Identificador de um evento no contexto de seu provedor. Não é uma explicação suficiente quando separado do provedor e dos demais dados do registro. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
+### EventRecordID
+
+Número atribuído a um registro no log de eventos. É diferente do identificador de tipo de evento, EventID. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
 ### Evidência
 
 Informação que sustenta ou contraria uma afirmação sob condições identificadas. A procedência e os limites importam; uma tela não comprova automaticamente a explicação atribuída a ela. [Conceito: 4.3][c43].
 
+### Execution policy
+
+Política de execução de scripts do PowerShell. Não constitui, isoladamente, uma fronteira completa de segurança. [Conceito: 14.6](modulo-3/capitulo-14/14.6-automacao-e-fronteiras-de-confianca.md).
+
+### Executive
+
+Conjunto de componentes em modo kernel do Windows com responsabilidades como memória, objetos, processos, entrada e saída e configuração. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
+
 ### execve
 
 Interface Linux que, quando bem-sucedida, substitui a imagem de programa executada por um processo existente. Seu PID é preservado; outros atributos seguem regras específicas. Não é sinônimo de criar um processo novo. [Conceito: 8.3][c83].
+
+### Expansão
+
+Etapa em que o shell substitui expressões por valores ou nomes segundo o contexto sintático, como uma variável ou padrão de arquivo. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
 
 ### Exploit
 
@@ -685,6 +818,8 @@ Limite entre contextos com permissões, controle ou suposições de confiança d
 
 Unidade de operações que pode ser chamada por outra parte de um programa. A interface informa argumentos e retorno; o corpo define o comportamento. Uma função de biblioteca não é necessariamente uma chamada de sistema. [Conceitos: 8.1][c81] e [8.3][c83].
 
+No contexto do capítulo 14: Conjunto nomeado de operações que pode ser chamado. Neste capítulo, refere-se às funções da linguagem do shell, não necessariamente a um novo executável. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
 ## G
 
 ### GCC
@@ -695,6 +830,10 @@ GNU Compiler Collection. No exemplo, o comando `gcc` coordena etapas de traduç�
 
 Componente que organiza ciclo de vida e contexto de serviços conforme sua configuração. Iniciar ou reiniciar um processo não demonstra que todas as funções do serviço estejam saudáveis. [Conceito: 11.5][c115].
 
+### Get-Member
+
+Cmdlet usado para examinar tipos e membros dos objetos recebidos no PowerShell. Ajuda a distinguir estrutura de dados da apresentação na tela. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
 ### GHz
 
 Gigahertz: um bilhão de ciclos por segundo. Expressa frequência, não diretamente instruções ou tarefas concluídas. [Conceito: 7.2][c72].
@@ -703,6 +842,10 @@ Gigahertz: um bilhão de ciclos por segundo. Expressa frequência, não diretame
 
 Group identifier, identificador de grupo. Participa do contexto de credenciais das interfaces Unix/Linux; grupos e variantes de identificadores possuem papéis que precisam ser distinguidos. [Conceito: 11.4][c114].
 
+### Globbing
+
+Expansão de padrões de nomes, como *.txt, em correspondências de arquivos segundo as regras e opções aplicáveis. Não equivale a expressão regular. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
 ### GPU
 
 Graphics Processing Unit, unidade de processamento gráfico. Também pode executar cálculos paralelos adequados ao seu modelo. A adequação da tarefa e os custos de transferência importam; não substitui universalmente a CPU. [Conceito: 7.5][c75].
@@ -710,6 +853,14 @@ Graphics Processing Unit, unidade de processamento gráfico. Também pode execut
 ### Gray hat
 
 Rótulo informal usado para situações que misturam características atribuídas a white hat e black hat. Não constitui autorização nem categoria jurídica adotada pelo livro. [Contexto: capítulo 1][c1].
+
+### grep
+
+Ferramenta para selecionar linhas segundo um padrão. O capítulo usa GNU grep com -F para correspondência literal e distingue ausência de correspondência de erro. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
+### GUID
+
+Identificador utilizado para distinguir entidades. Neste capítulo aparece nos nomes de volumes; não é uma descrição do dispositivo físico. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
 
 ### gzip
 
@@ -724,6 +875,10 @@ Termo com diferentes sentidos históricos, como solução engenhosa, modificaç�
 ### Hacker
 
 Termo que pode designar quem explora sistemas em profundidade ou, em outros contextos, pessoas associadas a intrusões. A palavra isolada não comprova intenção ou autorização. [Conceito: capítulo 1][c1].
+
+### Handle
+
+Referência opaca usada por uma execução para operar sobre um recurso conforme uma interface. Não é a senha, o conteúdo ou necessariamente o endereço de memória desse recurso. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
 
 ### Hard link
 
@@ -761,6 +916,22 @@ Sistema de base dezesseis, com algarismos 0–9 e A–F. Um algarismo hexadecima
 
 Explicação provisória a confrontar com observações e alternativas. É mais útil quando permite prever um resultado e dizer o que a contrariaria. [Conceito: 4.1][c41].
 
+### Hive
+
+Agrupamento lógico de chaves, subchaves e valores do Registro, associado a armazenamento. Não deve ser equiparado automaticamente a cada chave predefinida exibida na raiz do editor. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
+### HKCU
+
+Abreviação de HKEY_CURRENT_USER. Chave predefinida de acesso a configurações de usuário, com regras de mapeamento relacionadas ao contexto do processo. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
+### HKLM
+
+Abreviação de HKEY_LOCAL_MACHINE. Chave predefinida associada a configurações da máquina. Sua existência não concede acesso irrestrito aos valores. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
+### HKU
+
+Abreviação de HKEY_USERS. Chave predefinida que reúne ramos de perfis de usuário carregados. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
 ### HTTP
 
 Hypertext Transfer Protocol. Protocolo de requisições e respostas usado na Web. O código de status integra a resposta, mas não comprova sozinho qual conteúdo ou decisão de acesso ocorreu. [Conceito: 4.3][c43].
@@ -775,13 +946,25 @@ HTTP utilizado por conexão protegida com TLS. Proteger o canal não demonstra c
 
 Inteligência artificial. A sigla aparece em aplicações com modelos de linguagem e no apoio editorial. Conteúdo produzido por IA não é, por si só, evidência nem revisão independente. [Contexto: 4.4][c44].
 
+### Idempotência
+
+Propriedade de uma operação cujo efeito pretendido não se acumula apenas por repeti-la. Produzir a mesma saída não prova que os efeitos externos sejam idempotentes. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
+
 ### Identificador
 
 Valor utilizado para distinguir um objeto ou registro. Conhecê-lo não equivale a ter permissão para consultar o objeto. [Conceito: 5.1][c51].
 
+### IFS
+
+Internal Field Separator: variável usada pelo Bash na separação de palavras em contextos como expansões sem aspas. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
 ### Impacto
 
 Consequência de uma falha ou ação. Distinguir impacto observado de impacto possível e limitar a afirmação ao que as evidências sustentam. [Conceito: 5.2][c52].
+
+### Impersonação
+
+Uso, por uma thread, de um contexto de segurança de cliente para determinadas operações, sujeito aos mecanismos e permissões aplicáveis. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
 
 ### Índice de pacotes
 
@@ -815,9 +998,17 @@ Representação numérica que admite valores negativos e não negativos. É prec
 
 Representação de inteiros não negativos. Em n bits com todos os padrões utilizados, sua faixa é de zero a `2^n − 1`. [Conceito: 6.3][c63].
 
+### Interpolação
+
+Construção de uma string substituindo expressões por seus valores em contextos que permitem expansão. Não ocorre da mesma forma em strings literais. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
 ### Interpretador
 
 Programa que implementa a execução de uma linguagem ou representação. Ele também depende de execução real na plataforma; não faz a CPU entender diretamente qualquer texto recebido. O interpretador indicado num ELF pode ser um carregador dinâmico, outro uso contextual do termo. [Conceitos: 8.4][c84] e [8.3][c83].
+
+### Interpretador de comandos
+
+Programa que lê comandos conforme uma linguagem e coordena sua execução. É distinto da interface de terminal. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
 
 ### Interrupção
 
@@ -844,6 +1035,10 @@ JSON Canonicalization Scheme. Esquema que define uma representação canônica d
 ### JIT
 
 Just-in-time compilation, compilação durante a execução. Pode combinar-se com interpretação e outras estratégias; não é obrigatório presumir que todo método foi compilado em toda execução de uma máquina virtual. [Conceito: 8.4][c84].
+
+### Job
+
+Unidade acompanhada pelo controle de trabalhos do shell. Um job em segundo plano não equivale a um serviço gerenciado pelo sistema. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
 
 ### JSON
 
@@ -876,6 +1071,10 @@ Parte central do sistema operacional, responsável por funções essenciais de a
 Conjunto de ferramentas para trabalhar com módulos de kernel Linux, incluindo modprobe. Consultar o estado de módulos e solicitar carga ou remoção são operações diferentes. [Conceito: 12.4][c124].
 
 ## L
+
+### LASTEXITCODE
+
+Variável automática do PowerShell que guarda o código do último programa nativo ou script que a definiu; não corresponde a todo erro de cmdlet. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
 
 ### Latência
 
@@ -913,6 +1112,10 @@ Objeto que guarda um caminho para outro destino. O caminho será resolvido no co
 
 Ordem que coloca primeiro o byte de menor peso de um valor com vários bytes. A convenção deve ser definida pelo formato ou operação, não adivinhada pela aparência dos dados. [Conceito: 6.3][c63].
 
+### LocalAppData
+
+Pasta conhecida destinada a dados locais de aplicações de um usuário. Sua localização deve ser obtida pelo mecanismo apropriado, não presumida a partir de um único equipamento. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
+
 ### Localidade espacial
 
 Padrão de acesso a posições próximas de memória. Pode favorecer o aproveitamento de blocos trazidos para uma cache; não é garantia sobre toda aplicação. [Conceito: 7.3][c73].
@@ -920,6 +1123,10 @@ Padrão de acesso a posições próximas de memória. Pode favorecer o aproveita
 ### Localidade temporal
 
 Reutilização de uma informação em um intervalo próximo. Ajuda a explicar por que uma cache pode reduzir acessos a outros níveis. [Conceito: 7.3][c73].
+
+### LocalSystem
+
+Contexto de conta com amplos privilégios locais, também encontrado como `NT AUTHORITY\SYSTEM`. Não equivale a autorização universal sobre recursos remotos. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
 
 ### Log
 
@@ -1003,6 +1210,10 @@ Framework de segurança com módulos para tarefas distintas, inclusive exploraç
 
 Multifrequency, sinalização multifrequência. Na telefonia histórica discutida, combinações de tons representavam endereçamento. É diferente do tom único de supervisão de certas ligações. [Contexto: capítulo 2][c2].
 
+### MIC
+
+Mandatory Integrity Control. Mecanismo de controle obrigatório que utiliza níveis de integridade e políticas adicionais ao controle discricionário. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
 ### Microarquitetura
 
 Organização interna que implementa uma arquitetura de instruções. Implementações da mesma interface podem ter estruturas e desempenhos diferentes. [Conceito: 7.2][c72].
@@ -1035,9 +1246,13 @@ Modelo computacional usado para processar ou gerar linguagem. A introdução men
 
 Nível de execução utilizado por componentes centrais do sistema com acessos e responsabilidades distintos dos programas em modo usuário. Não é sinônimo de uma conta administrativa nem exige, em cada entrada, trocar para outro processo. [Conceito: 9.1][c91].
 
+No contexto do capítulo 13: Modo de execução utilizado por componentes centrais do sistema, com acesso a recursos restritos às aplicações comuns. Não é sinônimo de pertencer ao grupo Administradores. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
+
 ### Modo usuário
 
 Nível de execução típico de aplicações, com acesso mediado aos serviços e recursos protegidos do sistema. É uma classificação diferente da identidade e das permissões da conta que iniciou o programa. [Conceito: 9.1][c91].
+
+No contexto do capítulo 13: Modo de execução em que operam aplicações comuns, com acesso mediado aos serviços e recursos protegidos do sistema. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
 
 ### modprobe
 
@@ -1089,6 +1304,10 @@ Network Mapper. Ferramenta de exploração e auditoria de redes, incluindo desco
 
 Transformação segundo formas definidas de equivalência. NFC e NFD tratam equivalência canônica; NFKC e NFKD acrescentam equivalências de compatibilidade. Não significa remover acentos, igualar toda aparência semelhante ou canonicalizar todo documento. [Conceito: 10.3][c103].
 
+### NTFS
+
+New Technology File System. Sistema de arquivos utilizado pelo Windows, com organização de arquivos, metadados e mecanismos de segurança e consistência. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
+
 ### Núcleo
 
 Core. Unidade de processamento capaz de conduzir execução dentro de um processador. Recursos adicionais ajudam conforme o paralelismo disponível no trabalho; não dividem automaticamente o tempo de qualquer tarefa. [Conceito: 7.2][c72].
@@ -1103,6 +1322,14 @@ No Execute. Designação associada ao suporte para impedir execução em página
 
 ## O
 
+### Object Manager
+
+Gerenciador de objetos do Windows. Participa do gerenciamento de nomes, referências, direitos e tempo de vida de recursos. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
+
+### Objeto do Windows
+
+Representação de um recurso gerenciado pelo sistema, como processo, arquivo, chave do Registro ou token. Não depende do conceito de objeto de uma linguagem específica. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
+
 ### Observação
 
 Informação registrada por um meio identificado. Pode ter limites ou erros de medição e não contém automaticamente a explicação da causa do que foi percebido. [Conceito: 4.1][c41].
@@ -1115,6 +1342,10 @@ Grupo de oito bits. O termo aparece em especificações de protocolos e explicit
 
 Out of memory, insuficiência de memória. O OOM killer do Linux pode encerrar tarefas para tentar recuperar recursos. Nem todo encerramento inesperado é OOM; sua causa precisa ser conferida. [Conceito: 9.4][c94].
 
+### Opção
+
+Argumento que configura o comportamento de um comando conforme sua interface. Nem todo texto precedido por um hífen é interpretado da mesma forma por todos os programas. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
 ### Operação atômica
 
 Operação com garantias específicas de indivisibilidade e ordenação segundo a interface e o modelo de memória. Uma sequência de várias operações atômicas não se torna automaticamente uma transação indivisível. [Conceito: 9.5][c95].
@@ -1126,6 +1357,14 @@ Operação que pode manter o fluxo à espera de condições para prosseguir. A e
 ### Operação não bloqueante
 
 Operação que retorna sem aguardar determinada condição e pode informar que ainda não é possível prosseguir. Não significa que o trabalho já terminou; as garantias dependem da interface e do recurso. [Conceito: 11.3][c113].
+
+### Operador de chamada
+
+Operador & do PowerShell que inicia o comando indicado. Não interpreta automaticamente uma string com comandos e operadores como um novo roteiro. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
+### Operando
+
+Valor sobre o qual um comando opera, distinguido de opções que configuram seu comportamento conforme o contrato da ferramenta. [Conceito: 14.6](modulo-3/capitulo-14/14.6-automacao-e-fronteiras-de-confianca.md).
 
 ### os-release
 
@@ -1171,9 +1410,21 @@ Preparação de conteúdo ou mapeamentos quando seu uso exige atendimento, em ve
 
 Execução simultânea de trabalhos em recursos capazes de realizá-los. Distingue-se da concorrência, que também pode avançar por alternância numa única unidade de execução. [Conceito: 9.1][c91].
 
+### Parâmetro
+
+Posição ou nome declarado para receber um valor em uma função, script ou comando. É diferente do valor concreto fornecido na chamada. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
 ### Parser
 
 Analisador que reconhece a estrutura ou gramática de uma entrada. Parsing é essa atividade de análise. Reconhecer a sintaxe não substitui conferir regras do domínio, permissões ou orçamento de processamento. [Conceito: 10.5][c105].
+
+### Pasta conhecida
+
+Local identificado por interfaces do Windows para uma função, como arquivos de programas ou dados de usuário. Não implica caminho literal universal. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
+
+### PATH
+
+Variável de ambiente que participa da busca de executáveis por nome. Não descreve sozinha toda a resolução de funções, aliases ou comandos internos. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
 
 ### Payload
 
@@ -1187,9 +1438,19 @@ Peripheral Component Interconnect Express. Interconexão utilizada para comunica
 
 Portable Executable. Formato de imagem executável descrito na documentação Windows. O nome não promete executar o mesmo artefato em qualquer sistema; arquitetura, ABI e dependências continuam relevantes. [Introdução: 8.3][c83].
 
+No contexto do capítulo 13: Portable Executable. Formato de imagens executáveis e bibliotecas do Windows, com informações utilizadas no carregamento. O nome não garante compatibilidade com qualquer plataforma. [Conceito: 13.3](modulo-3/capitulo-13/13.3-executaveis-bibliotecas-e-carregamento.md).
+
 ### Pentest
 
 Penetration test, teste de intrusão. Avaliação com objetivos, escopo, métodos permitidos e comunicação de resultados; não se resume à obtenção de acesso. [Contexto: capítulo 2][c2] e [capítulo 3][c3].
+
+### Perfil de usuário
+
+Conjunto de dados e configurações associados a um usuário. Conta, perfil carregado e sessão de logon são conceitos relacionados, mas distintos. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
+
+### Perfil do shell
+
+Arquivo de personalização executado em determinados contextos de inicialização. Pode definir comportamentos ausentes em outra execução. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
 
 ### Persistência
 
@@ -1207,9 +1468,27 @@ Mecanismo Python de serialização de objetos. Sua desserialização pode execut
 
 Process identifier, identificador de processo. No percurso Linux, a substituição de imagem por `execve` preserva o PID. O número identifica um contexto de processo, não uma versão imutável do programa. [Conceito: 8.3][c83].
 
+No contexto do capítulo 13: Process Identifier. Identificador de um processo. Sua interpretação deve preservar o contexto da execução e do momento investigado. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
+
 ### Pilha de execução
 
 Stack. Organização utilizada para chamadas, retornos e estado associado, conforme ABI e implementação. Nem toda variável local precisa ocupar uma posição visível na pilha, e a pilha própria de um thread não é automaticamente isolada dos demais. [Conceitos: 9.1][c91] e [9.3][c93].
+
+### Pipe
+
+Mecanismo de comunicação que, no modelo Unix apresentado, transporta um fluxo de bytes sem fronteiras próprias de mensagens. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
+### pipefail
+
+Opção do Bash que inclui falhas de etapas anteriores no cálculo do status de um pipeline. Não realiza rollback de efeitos. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
+
+### Pipeline
+
+Composição que conecta a saída de uma etapa à entrada de outra. Bash e PowerShell têm modelos e fronteiras diferentes para essa conexão. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
+### PIPESTATUS
+
+Array do Bash com os códigos das etapas do pipeline recente em primeiro plano. Deve ser consultado antes que outra execução substitua a informação. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
 
 ### Pivotamento
 
@@ -1251,6 +1530,10 @@ Identificador usado por protocolos de transporte para distinguir pontos de comun
 
 Análise e atividades posteriores ao acesso obtido por exploração, como investigar contexto, permissões e alcance. O objetivo determina o que é necessário e autorizado. [Introdução: capítulo 1][c1].
 
+### PowerShell
+
+Shell e linguagem de automação com pipeline de objetos e regras próprias de comandos, parâmetros, erros e execução. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
 ### Pré-processamento
 
 Etapa que trata diretivas como inclusões de cabeçalhos antes da tradução C propriamente dita. O resultado textual não constitui a execução das operações descritas pelo programa. [Conceito: 8.2][c82].
@@ -1263,9 +1546,17 @@ Interrupção da ocupação da CPU por um fluxo para permitir encaminhar outro s
 
 Resultado que uma hipótese leva a esperar em condições especificadas, formulado antes de observar a execução. Não é evidência de que ocorreu. [Conceito: 4.1][c41].
 
+### printf
+
+Comando de saída formatada. No Bash, possui uma implementação interna; manter o formato separado dos dados evita entregar o dado como linguagem de formatação. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
 ### Privilégio
 
 Permissão ou capacidade associada a uma identidade ou contexto de execução. Saber que código foi executado não informa, sozinho, quais permissões ele possuía. [Menção: capítulo 1][c1].
+
+### Privilégio do Windows
+
+Direito a determinadas operações relacionadas ao sistema. É distinto de um direito de acesso a um objeto específico e possui estado de habilitação no token. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
 
 ### Processador lógico
 
@@ -1275,9 +1566,23 @@ Contexto de execução que o hardware apresenta ao sistema. Contextos do mesmo n
 
 Instância de execução administrada pelo sistema operacional, com estado, espaço de endereços e referências a recursos. Diferentes processos podem utilizar o mesmo programa sem compartilhar todo seu estado. [Conceito: 8.3][c83]; [organização e threads: 9.1][c91].
 
+No contexto do capítulo 13: Contexto de execução com recursos associados. Não se confunde com o arquivo executável nem com o resultado de negócio que a aplicação deve produzir. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
+
 ### Procfs
 
 Sistema de arquivos normalmente montado em /proc que apresenta informações de processos e do sistema em funcionamento. Seus dados são dinâmicos; várias consultas não equivalem necessariamente a uma fotografia atômica do sistema. [Conceito: 12.3][c123].
+
+### Program Files
+
+Pasta conhecida associada a arquivos de programas. Sua identificação e localização dependem do contexto apropriado da instalação. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
+
+### ProgramData
+
+Pasta conhecida associada a dados de aplicações compartilhados na máquina, distinta das áreas particulares de dados de um usuário. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
+
+### Prompt
+
+Indicação apresentada para interação com o shell. Seu texto ou símbolo pode ser personalizado e não comprova privilégios. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
 
 ### Prompt injection
 
@@ -1299,6 +1604,10 @@ Convenções que permitem a sistemas interpretar uma comunicação. Conhecê-las
 
 Proof of concept. Demonstração de uma possibilidade em condições determinadas. Não comprova automaticamente comprometimento de produção ou ocorrência de ataque anterior. [Conceito: 5.2][c52].
 
+### Pseudoterminal
+
+Par de interfaces que oferece a programas comportamento de terminal sem depender de um terminal físico dedicado. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
 ### PSS
 
 Proportional Set Size. Medida que atribui proporcionalmente a parcela de memória residente compartilhada entre os participantes considerados. Não tem o mesmo significado de RSS nem de todo o tamanho virtual. [Conceito: 9.4][c94].
@@ -1306,6 +1615,14 @@ Proportional Set Size. Medida que atribui proporcionalmente a parcela de memóri
 ### PTES
 
 Penetration Testing Execution Standard. Referência metodológica para testes de intrusão. O capítulo usa sua distinção entre escopo e regras de engajamento, sem adotar toda recomendação histórica como atual. [Contexto: 3.1][c31].
+
+### PTY
+
+Abreviação de pseudoterminal; no modelo Unix, descreve as interfaces pareadas usadas por aplicações de terminal. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
+### pwsh
+
+Nome do executável do PowerShell moderno usado nos exemplos; deve ser distinguido de powershell.exe do Windows PowerShell. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
 
 ## Q
 
@@ -1316,6 +1633,10 @@ Stack frame. Organização associada a uma ativação de função, que pode cons
 ### Quadro físico
 
 Page frame. Unidade física correspondente ao tamanho de página considerado num mapeamento. O deslocamento seleciona uma posição dentro do quadro; a tabela fornece a relação com a página virtual. [Conceito: 9.2][c92].
+
+### Quoting
+
+Uso de aspas ou escapes para controlar a interpretação de caracteres. A proteção obtida depende da linguagem, do contexto e do consumidor posterior. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
 
 ## R
 
@@ -1331,13 +1652,37 @@ Software malicioso usado para restringir acesso a dados ou sistemas e exigir res
 
 Atividade ou equipe que utiliza uma perspectiva adversarial orientada a objetivos para avaliar uma organização e suas defesas. Não é automaticamente sinônimo de pentest. [Menção: capítulo 1][c1].
 
+### Redirecionamento
+
+Mudança do destino ou origem de um fluxo de entrada ou saída. A ordem pode alterar quais mensagens chegam a cada destino. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
 ### Refresh
 
 Renovação periódica do estado armazenado em DRAM para manter a informação durante o funcionamento. Não é releitura de um arquivo nem atualização do software. [Conceito: 7.3][c73].
 
+### REG_BINARY
+
+Tipo de valor do Registro utilizado para dados binários. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
+### REG_DWORD
+
+Tipo de valor do Registro para um inteiro de 32 bits. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
+### REG_EXPAND_SZ
+
+Tipo de valor do Registro para texto que pode conter referências a variáveis de ambiente para expansão. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
+### REG_SZ
+
+Tipo de valor do Registro utilizado para texto. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
 ### Registrador
 
 Pequeno espaço de armazenamento interno utilizado pelo processador na execução. Conservar um valor num registrador não implica gravá-lo num arquivo persistente. [Conceito: 7.2][c72].
+
+### Registro do Windows
+
+Windows Registry. Base hierárquica de configuração com chaves, subchaves e valores tipados. Não é o mesmo mecanismo que o log de eventos. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
 
 ### Regras de engajamento
 
@@ -1397,6 +1742,10 @@ Ambiente de execução da linguagem: mecanismos que sustentam o processamento de
 
 Compromisso de uma organização sobre pesquisa de boa-fé, sob condições declaradas. Não amplia automaticamente o escopo nem equivale a imunidade universal perante terceiros. [Conceito: 3.1][c31].
 
+### Saída padrão
+
+Fluxo convencional de resultado de um programa; no modelo Unix corresponde ao descritor 1. Não precisa ter uma tela como destino. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
 ### SATA
 
 Serial ATA. Interface de armazenamento que não deve ser confundida com um formato físico, como M.2. O equipamento precisa oferecer suporte à interface pertinente. [Conceito: 7.4][c74].
@@ -1404,6 +1753,14 @@ Serial ATA. Interface de armazenamento que não deve ser confundida com um forma
 ### Scanner
 
 Ferramenta que automatiza observações ou testes. Descoberta de serviços e detecção de vulnerabilidades são tarefas distintas; alerta não substitui investigação. [Menção: capítulo 1][c1]; [conceito: 4.3][c43].
+
+### SCM
+
+Service Control Manager. Gerenciador de controle de serviços do Windows; participa da base de serviços, inicialização, controle e acompanhamento de estado. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
+### Script
+
+Arquivo com instruções para um interpretador. A extensão não prova qual linguagem será usada nem torna confiável o conteúdo. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
 
 ### Seção de ELF
 
@@ -1429,6 +1786,10 @@ Descrição de uma região relevante ao carregamento da imagem. Pode reunir mais
 
 Software Engineering Institute, da Carnegie Mellon University. Instituição associada à criação do CERT/CC no episódio histórico discutido. [Contexto: capítulo 2][c2].
 
+### Separação em palavras
+
+Word splitting. Divisão de resultados de certas expansões sem aspas em Bash, conforme IFS e o contexto sintático. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
 ### Serialização
 
 Transformação de uma estrutura de dados numa representação armazenável ou transportável, segundo um formato. Não equivale necessariamente a copiar a disposição de memória do processo nem a preservar suas referências internas. [Conceito: 10.4][c104].
@@ -1441,6 +1802,10 @@ Componente Windows que inicia e controla serviços e mantém sua base de configu
 
 Capacidade oferecida por um componente em execução, frequentemente administrado sem interação constante. Pode envolver vários processos; existir um processo não demonstra que a capacidade oferecida está funcionando. [Conceito: 11.5][c115].
 
+### Serviço do Windows
+
+Unidade integrada ao gerenciamento do SCM, executada em processo próprio ou compartilhado. Um processo em segundo plano não é automaticamente um serviço. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
 ### Servidor
 
 Programa que atende solicitações; a palavra também pode designar o computador que o executa. Distinguir programa, serviço e equipamento evita conclusões imprecisas. [Conceito: 5.1][c51].
@@ -1449,6 +1814,18 @@ Programa que atende solicitações; a palavra também pode designar o computador
 
 Contexto usado por uma aplicação para associar interações, frequentemente a uma identidade autenticada. Duas abas visíveis não comprovam isolamento entre sessões. [Conceito: 4.2][c42].
 
+### Sessão 0
+
+Sessão em que executam serviços, separada das sessões interativas nos Windows modernos. Não deve ser confundida com toda e qualquer sessão de logon. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
+### Sessão de logon
+
+Contexto relacionado à autenticação. No capítulo, sua importância aparece na visibilidade dos mapeamentos de unidades de rede. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
+### set -e
+
+Opção errexit do Bash, com exceções por contexto. Não deve ser interpretada como garantia de que toda falha interromperá qualquer roteiro. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
+
 ### Severidade
 
 Descrição da gravidade de uma vulnerabilidade segundo critérios determinados. Não equivale sozinha ao risco para uma organização específica. [Conceito: 5.3][c53].
@@ -1456,6 +1833,18 @@ Descrição da gravidade de uma vulnerabilidade segundo critérios determinados.
 ### SHA-256
 
 Algoritmo de hash criptográfico utilizado para comparar os bytes de dois documentos no exemplo. Um resumo igual a uma referência não prova, sozinho, origem autorizada ou segurança do arquivo; a referência precisa ser confiável. [Introdução: 10.6][c106].
+
+### Shebang
+
+Linha inicial com #! usada em sistemas compatíveis para indicar o interpretador ao executar diretamente um script. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
+
+### Shell
+
+Interpretador de comandos que também oferece recursos de linguagem para combinar operações; não é sinônimo de terminal. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
+### SID
+
+Security Identifier. Identificador usado pelo Windows para entidades de segurança, como usuários e grupos. Não é uma senha ou o simples nome exibido de uma conta. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
 
 ### Símbolo
 
@@ -1477,6 +1866,14 @@ Programas e instruções que orientam o funcionamento do sistema. A distinção 
 
 Checksum. Valor calculado sobre conteúdo para detectar determinadas alterações. Seu alcance depende do algoritmo e da referência; CRC não autentica quem produziu os dados. [Conceito: 10.6][c106].
 
+### Source
+
+Incorporação de comandos de um arquivo ao contexto atual do Bash, pelo comando source ou ponto; difere de iniciar outro processo. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
+
+### Splatting
+
+Recurso do PowerShell que distribui valores de uma coleção para uma chamada. Não é o mesmo que fornecer uma coleção como valor de um único parâmetro. [Conceito: 14.6](modulo-3/capitulo-14/14.6-automacao-e-fronteiras-de-confianca.md).
+
 ### SQL
 
 Linguagem de definição, consulta e manipulação de dados em sistemas de banco de dados que a implementam. Aparece na introdução à SQL injection e terá desenvolvimento próprio adiante. [Menção: capítulo 1][c1].
@@ -1493,9 +1890,25 @@ Static Random Access Memory, memória estática. Tecnologia de memória convenci
 
 Solid-State Drive, unidade de armazenamento de estado sólido. Nos dispositivos NAND descritos, o controlador administra páginas, blocos e movimentação interna de dados; não há o mesmo movimento de cabeças e pratos de um HDD. [Conceito: 7.4][c74].
 
+### stderr
+
+Nome convencional do fluxo de erro padrão, frequentemente usado para diagnósticos. Escrever nele não determina sozinho o código de saída. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
+### stdin
+
+Nome convencional do fluxo de entrada padrão, que pode vir de arquivo, pipe ou terminal. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
 ### stdin, stdout e stderr
 
 Entrada padrão, saída padrão e saída de erros padrão. São fluxos que podem ser ligados ao terminal, a arquivos ou a outros canais; não são obrigatoriamente teclado e tela. No contexto Unix descrito, relacionam-se aos descritores convencionais 0, 1 e 2. [Conceito: 8.5][c85].
+
+### stdout
+
+Nome convencional do fluxo de saída padrão, que pode ser redirecionado para outro destino. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
+### Substituição de comando
+
+Expansão Bash que usa a saída de um comando no lugar da expressão $(...), retirando quebras de linha finais no caso apresentado. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
 
 ### Superfície de ataque
 
@@ -1508,6 +1921,10 @@ Armazenamento de apoio que pode conservar conteúdo retirado da RAM conforme a g
 ### Sysfs
 
 Sistema de arquivos normalmente montado em /sys que organiza objetos do kernel e atributos. Algumas escritas acionam operações de controle, não apenas alteram um documento persistente. [Conceito: 12.3][c123].
+
+### System32 e SysWOW64
+
+Diretórios cuja interpretação exige considerar arquitetura e redirecionamento. No recorte Windows x64, System32 contém componentes nativos de 64 bits e SysWOW64 está associado aos de 32 bits. [Conceito: 13.3](modulo-3/capitulo-13/13.3-executaveis-bibliotecas-e-carregamento.md).
 
 ### systemd
 
@@ -1527,9 +1944,13 @@ Período em que um objeto existe validamente segundo o contrato da linguagem e d
 
 Interface de entrada e saída de texto para interagir com programas, inclusive interpretadores de comandos. Não é o mesmo componente que interpreta a linguagem de comandos. [Menção: capítulo 1][c1].
 
+No contexto do capítulo 14: Interface de interação com aplicações de texto. Pode hospedar um shell, mas não define por si a linguagem desse shell. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
 ### Thread
 
 No contexto de software, fluxo de execução que pode ser organizado junto de outros fluxos. Não é necessariamente um núcleo físico nem uma janela de aplicativo. [Conceito: 7.2][c72]; [compartilhamento e estado próprio: 9.1][c91].
+
+No contexto do capítulo 13: Unidade de execução que recebe tempo de processador no contexto de um processo. Várias threads podem compartilhar recursos desse processo. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
 
 ### Tipo de mídia
 
@@ -1551,6 +1972,10 @@ Tech Model Railroad Club, clube de ferromodelismo do MIT presente nos episódios
 
 Objeto que descreve contexto de segurança de um processo ou thread, incluindo identidade, grupos e privilégios. Não é sinônimo de token de sessão Web nem da senha digitada por uma pessoa. [Conceito: 11.4][c114].
 
+### Token de acesso do Windows
+
+Objeto que descreve um contexto de segurança, incluindo identidades, grupos e privilégios. Não equivale a um token Web nem a um handle de arquivo. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
 ### TRIM
 
 Mecanismo pelo qual o sistema informa ao dispositivo de armazenamento que determinados dados lógicos não precisam mais ser preservados. Participa da gestão do SSD, mas não comprova sanitização completa do equipamento. [Conceito: 7.4][c74].
@@ -1563,7 +1988,13 @@ Conservação e preparação do estado necessário para alternar a execução en
 
 Corte de uma sequência ou representação para um tamanho menor. Em texto de largura variável, cortar em um byte arbitrário pode interromper uma sequência de caractere; o formato precisa ser respeitado. [Conceito: 6.4][c64].
 
+No contexto do capítulo 14: Redução do conteúdo de um arquivo, como ocorre em uma abertura para substituir sua saída. A ação pode ocorrer antes de o comando falhar. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
 ## U
+
+### UAC
+
+User Account Control. Mecanismo relacionado à elevação administrativa de aplicações. Seu comportamento depende da conta, do modelo de aprovação e da política. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
 
 ### udev
 
@@ -1580,6 +2011,10 @@ User identifier, identificador de usuário. Nas interfaces Unix/Linux há varian
 ### uname
 
 Utilitário que apresenta informações do sistema; a opção -r identifica a release do kernel em execução. Não lista todas as imagens de kernel instaladas para uma próxima inicialização. [Conceito: 12.1][c121].
+
+### UNC
+
+Universal Naming Convention. Forma de nomear recursos de rede, como `\\servidor-lab\acervo\arquivo`. Um nome explícito não concede autorização de acesso. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
 
 ### Unicode
 
@@ -1611,9 +2046,17 @@ Conferência do significado dos valores segundo as regras do domínio. Uma quant
 
 Conferência da estrutura e da forma de uma entrada segundo a gramática ou contrato pertinente. Não substitui a análise dos valores de domínio nem a autorização para executar a operação. [Conceito: 10.5][c105].
 
+### Valor do Registro
+
+Entrada com nome, tipo e dados associada a uma chave do Registro. Sua interpretação depende do tipo e do aplicativo consumidor. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
 ### Variável de ambiente
 
 Par de nome e valor fornecido no contexto de um processo. Pode influenciar configuração e localização de recursos, mas não corresponde automaticamente a uma variável local do fonte ou a um estado global idêntico em todos os processos. [Conceito: 8.5][c85].
+
+No contexto do capítulo 13: Associação entre nome e valor disponibilizada no ambiente de um processo. Modificar outro contexto não atualiza automaticamente todos os processos existentes. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
+No contexto do capítulo 14: Par nome/valor transmitido no contexto de processos. Não equivale automaticamente a toda variável interna do shell. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
 
 ### Vazamento de memória
 
@@ -1635,6 +2078,14 @@ Observação deliberada de uma capacidade definida de um serviço. Conferir apen
 
 Virtual File System. Camada do kernel Linux que fornece uma interface de sistemas de arquivos e permite coexistência de implementações. A abstração não garante que todo pedido seja permitido ou atendido pelo mesmo caminho físico. [Conceito: 11.1][c111].
 
+### Visualizador de Eventos
+
+Event Viewer. Interface de consulta de logs de eventos; a visualização não substitui interpretar origem, contexto e conteúdo do registro. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
+### Volume
+
+Unidade lógica de armazenamento à qual podem ser associados nomes de acesso. Não é sinônimo de uma letra de unidade nem necessariamente de um único disco físico. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
+
 ### Vulnerabilidade
 
 Fraqueza em código, configuração, controle, procedimento ou implementação que pode ser explorada ou acionada para produzir consequência adversa. Pode existir sem exploit público. [Conceito: 5.1][c51].
@@ -1645,9 +2096,21 @@ Fraqueza em código, configuração, controle, procedimento ou implementação q
 
 Rótulo informal associado a pesquisa ou avaliação autorizada e voltada à proteção. Não comprova por si só a autorização de uma atividade específica. [Contexto: capítulo 1][c1].
 
+### Windows Event Log
+
+Infraestrutura de publicação e consulta de eventos do Windows. Não registra automaticamente toda ação de qualquer aplicação. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
+### Windows Terminal
+
+Aplicativo hospedeiro de experiências de linha de comando, capaz de apresentar shells diferentes. Não é o interpretador cmd.exe ou PowerShell. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
+
 ### Worm
 
 Programa capaz de se executar independentemente e propagar cópias funcionais para outras máquinas. No caso Morris Worm, o primeiro termo identifica o autor e o segundo o tipo de programa. [Conceito: capítulo 2][c2].
+
+### WOW64
+
+Windows 32-bit on Windows 64-bit. Subsistema de compatibilidade para aplicações de 32 bits em Windows de 64 bits, com mecanismos específicos de redirecionamento. [Conceito: 13.3](modulo-3/capitulo-13/13.3-executaveis-bibliotecas-e-carregamento.md).
 
 ## X
 

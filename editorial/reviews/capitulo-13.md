@@ -1,6 +1,6 @@
 # Revisão editorial — Capítulo 13
 
-**Primeira entrega e aprovação de leitura:** 29/09/2026. **Estado:** leitura aprovada; integração e checagem global nesta entrega do capítulo 14.
+**Primeira entrega e aprovação de leitura:** 29/09/2026. **Estado:** VALIDATED — versão editorial 1.0; revisão interna concluída. Integração e checagem global nesta entrega do capítulo 14.
 
 [Capítulo](../../book/modulo-3/capitulo-13/README.md) · [Fontes](../../book/modulo-3/capitulo-13/referencias.md)
 
@@ -27,3 +27,8 @@ Não houve acesso aos recursos fictícios da Aurora nem alterações de contas, 
 A primeira entrega existiu como HTML, Markdown e ZIP, sem commit porque a sessão então disponibilizava apenas consultas. A main consultada estava em `9ace0862c456f01b3d8b03e8857349448f086215`.
 
 Na continuidade, a árvore preparada do capítulo 12 foi recuperada no commit `0da3c29cc4d4a9d143c96dce8c7ccdc459826cd9`, sobre aquela main. Os manuscritos do capítulo 13 foram transferidos do pacote aprovado sem mudar a sequência ou recriar um conteúdo diferente. O resultado efetivo da integração, da suíte e da navegação será registrado na auditoria desta entrega.
+
+
+## Aprovação e integração de 29/09/2026
+
+A leitura foi aprovada antes do avanço. O ciclo interno da versão editorial 1.0 está concluído, com os limites de fontes e reprodução preservados. A integração recupera a entrega anterior sem reorganizar capítulos. A [auditoria desta entrega](../audits/2026-09-29-capitulos-12-14.md) registra os testes e a navegação efetivamente executados. Revisão independente permanece pendente.

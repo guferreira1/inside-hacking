@@ -2,7 +2,7 @@
 
 [Abertura](README.md) · [Respostas comentadas](solucoes.md)
 
-**Consulta:** 29/09/2026. **Versão:** DRAFT 0.1.
+**Consulta:** 29/09/2026. **Versão editorial:** VALIDATED 1.0 — fechamento interno em 29/09/2026; revisão independente pendente.
 
 O capítulo foi escrito em português com explicações autorais. As fontes abaixo são documentação primária da Microsoft, usada para verificar mecanismos e delimitar afirmações, não para reproduzir trechos. Os identificadores S1–S44 permitem voltar da explicação ao material que a sustenta.
 

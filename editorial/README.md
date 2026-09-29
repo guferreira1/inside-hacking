@@ -17,3 +17,6 @@ Documentos de planejamento, escrita e manutenção de **Por Dentro do Hacking**.
 | [Verificador de documentação](../scripts/README.md) | Como repetir os testes automáticos. |
 
 Leitura aprovada, revisão interna, revisão independente e release são marcos distintos. Registros antigos de revisão descrevem aquela entrega; o estado corrente é mantido no controle editorial.
+
+
+Continuidade: [revisão do capítulo 13](reviews/capitulo-13.md), [entrega do capítulo 14](reviews/capitulo-14.md) e [auditoria de integração dos capítulos 12–14](audits/2026-09-29-capitulos-12-14.md).

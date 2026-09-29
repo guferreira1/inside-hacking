@@ -124,7 +124,9 @@ O Módulo II teve a leitura dos cinco capítulos aprovada e passou por revisão 
 | Capítulo | Leitura | Estado |
 | --- | --- | --- |
 | 11 | [O papel de um sistema operacional](modulo-3/capitulo-11/README.md) | Revisão interna concluída — v1.0 |
-| 12 | [Linux por dentro](modulo-3/capitulo-12/README.md) | Rascunho para leitura — v0.1 |
+| 12 | [Linux por dentro](modulo-3/capitulo-12/README.md) | Revisão interna concluída — v1.0 |
+| 13 | [Windows por dentro](modulo-3/capitulo-13/README.md) | Revisão interna concluída — v1.0 |
+| 14 | [Terminal, shells e automação](modulo-3/capitulo-14/README.md) | Rascunho para leitura — v0.1 |
 
 ### Dentro do Capítulo 11
 
@@ -145,6 +147,27 @@ O Módulo II teve a leitura dos cinco capítulos aprovada e passou por revisão 
 - [12.5 · Instalar, atualizar e investigar sem adivinhar](modulo-3/capitulo-12/12.5-pacotes-atualizacoes-e-investigacao.md)
 - [Exemplo opcional de descritor próprio](modulo-3/capitulo-12/exemplos/README.md).
 - [Respostas comentadas](modulo-3/capitulo-12/solucoes.md) e [referências](modulo-3/capitulo-12/referencias.md).
+
+### Dentro do Capítulo 13
+
+- [13.1 · O sistema não termina na área de trabalho](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md)
+- [13.2 · Um caminho também carrega contexto](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md)
+- [13.3 · O executável não trabalha sozinho](modulo-3/capitulo-13/13.3-executaveis-bibliotecas-e-carregamento.md)
+- [13.4 · A identidade de uma execução](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md)
+- [13.5 · Configuração tem lugar, tipo e momento](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md)
+- [13.6 · Do sistema iniciado ao trabalho concluído](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md)
+- [Respostas comentadas](modulo-3/capitulo-13/solucoes.md) e [referências](modulo-3/capitulo-13/referencias.md).
+
+### Dentro do Capítulo 14
+
+- [14.1 · A janela não é o interpretador](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md)
+- [14.2 · O programa não recebe a linha que você enxerga](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md)
+- [14.3 · A tela é só um dos destinos](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md)
+- [14.4 · Terminar não é necessariamente dar certo](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md)
+- [14.5 · Da sequência digitada a um contrato repetível](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md)
+- [14.6 · Automatizar sem transformar dados em ordens](modulo-3/capitulo-14/14.6-automacao-e-fronteiras-de-confianca.md)
+- [Exemplos opcionais Bash e PowerShell](modulo-3/capitulo-14/exemplos/README.md).
+- [Respostas comentadas](modulo-3/capitulo-14/solucoes.md) e [referências](modulo-3/capitulo-14/referencias.md).
 
 ## Como navegar
 

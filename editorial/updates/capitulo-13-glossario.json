@@ -1,0 +1,422 @@
+[
+  {
+    "term": "ACE",
+    "definition": "Access Control Entry. Entrada em uma lista de controle de acesso que relaciona direitos a uma identidade; seu tipo e sua posição importam na interpretação.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S26"
+  },
+  {
+    "term": "Administrador",
+    "definition": "Conta ou membro de grupo com atribuições administrativas. A associação a um grupo, a elevação de um processo e seu token efetivo não são a mesma informação.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S18"
+  },
+  {
+    "term": "Administrator protection",
+    "definition": "Proteção de administrador. Mecanismo documentado pela Microsoft que utiliza uma conta gerenciada pelo sistema e separação de perfil para a execução elevada em ambientes compatíveis.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S30"
+  },
+  {
+    "term": "Agendador de Tarefas",
+    "definition": "Task Scheduler. Componente que organiza ações a partir de gatilhos e condições. Não é o escalonador de threads que distribui tempo de CPU.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S42"
+  },
+  {
+    "term": "Authenticode",
+    "definition": "Tecnologia de assinatura de código do ecossistema Windows. Sua verificação trata de autenticidade e integridade sob uma política de confiança; não comprova comportamento benigno.",
+    "section": "13.3",
+    "file": "13.3-executaveis-bibliotecas-e-carregamento.md",
+    "source": "S20"
+  },
+  {
+    "term": "Chave do Registro",
+    "definition": "Nó da hierarquia do Registro do Windows. Pode conter subchaves e valores; não é uma chave criptográfica nem um diretório comum do sistema de arquivos.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S31"
+  },
+  {
+    "term": "Conta local",
+    "definition": "Conta administrada no contexto de um computador. A coincidência de nomes entre computadores não demonstra igualdade de identidade.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S23"
+  },
+  {
+    "term": "DACL",
+    "definition": "Discretionary Access Control List. Lista de entradas usada no controle discricionário de acesso a um objeto protegido. Não representa todos os controles de segurança do Windows.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S26"
+  },
+  {
+    "term": "Descritor de segurança",
+    "definition": "Estrutura que reúne informações de segurança de um objeto, como seu proprietário e informações de controle de acesso.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S25"
+  },
+  {
+    "term": "Diretório de trabalho",
+    "definition": "Diretório usado como contexto para a interpretação de determinados nomes relativos. Não é necessariamente a pasta onde o executável foi instalado.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S10"
+  },
+  {
+    "term": "DLL",
+    "definition": "Dynamic-Link Library. Biblioteca de ligação dinâmica que pode oferecer funções e dados. No uso comum, é carregada no contexto de um processo que a utiliza.",
+    "section": "13.3",
+    "file": "13.3-executaveis-bibliotecas-e-carregamento.md",
+    "source": "S15"
+  },
+  {
+    "term": "Domínio",
+    "definition": "No recorte de identidade Windows, contexto de administração de contas que não deve ser confundido com uma conta local de qualquer computador. O funcionamento de Active Directory será aprofundado em outro módulo.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S22"
+  },
+  {
+    "term": "Elevação",
+    "definition": "Transição para um contexto administrativo de execução conforme o mecanismo e a política aplicáveis. Não transforma automaticamente um aplicativo em código de kernel.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S18"
+  },
+  {
+    "term": "EventID",
+    "definition": "Identificador de um evento no contexto de seu provedor. Não é uma explicação suficiente quando separado do provedor e dos demais dados do registro.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S44"
+  },
+  {
+    "term": "EventRecordID",
+    "definition": "Número atribuído a um registro no log de eventos. É diferente do identificador de tipo de evento, EventID.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S44"
+  },
+  {
+    "term": "Executive",
+    "definition": "Conjunto de componentes em modo kernel do Windows com responsabilidades como memória, objetos, processos, entrada e saída e configuração.",
+    "section": "13.1",
+    "file": "13.1-arquitetura-processos-e-objetos.md",
+    "source": "S2"
+  },
+  {
+    "term": "GUID",
+    "definition": "Identificador utilizado para distinguir entidades. Neste capítulo aparece nos nomes de volumes; não é uma descrição do dispositivo físico.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S7"
+  },
+  {
+    "term": "Handle",
+    "definition": "Referência opaca usada por uma execução para operar sobre um recurso conforme uma interface. Não é a senha, o conteúdo ou necessariamente o endereço de memória desse recurso.",
+    "section": "13.1",
+    "file": "13.1-arquitetura-processos-e-objetos.md",
+    "source": "S6"
+  },
+  {
+    "term": "Hive",
+    "definition": "Agrupamento lógico de chaves, subchaves e valores do Registro, associado a armazenamento. Não deve ser equiparado automaticamente a cada chave predefinida exibida na raiz do editor.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S13"
+  },
+  {
+    "term": "HKCU",
+    "definition": "Abreviação de HKEY_CURRENT_USER. Chave predefinida de acesso a configurações de usuário, com regras de mapeamento relacionadas ao contexto do processo.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S33"
+  },
+  {
+    "term": "HKLM",
+    "definition": "Abreviação de HKEY_LOCAL_MACHINE. Chave predefinida associada a configurações da máquina. Sua existência não concede acesso irrestrito aos valores.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S33"
+  },
+  {
+    "term": "HKU",
+    "definition": "Abreviação de HKEY_USERS. Chave predefinida que reúne ramos de perfis de usuário carregados.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S33"
+  },
+  {
+    "term": "Impersonação",
+    "definition": "Uso, por uma thread, de um contexto de segurança de cliente para determinadas operações, sujeito aos mecanismos e permissões aplicáveis.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S24"
+  },
+  {
+    "term": "LocalAppData",
+    "definition": "Pasta conhecida destinada a dados locais de aplicações de um usuário. Sua localização deve ser obtida pelo mecanismo apropriado, não presumida a partir de um único equipamento.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S12"
+  },
+  {
+    "term": "LocalSystem",
+    "definition": "Contexto de conta com amplos privilégios locais, também encontrado como `NT AUTHORITY\\SYSTEM`. Não equivale a autorização universal sobre recursos remotos.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S40"
+  },
+  {
+    "term": "MIC",
+    "definition": "Mandatory Integrity Control. Mecanismo de controle obrigatório que utiliza níveis de integridade e políticas adicionais ao controle discricionário.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S29"
+  },
+  {
+    "term": "Modo kernel",
+    "definition": "Modo de execução utilizado por componentes centrais do sistema, com acesso a recursos restritos às aplicações comuns. Não é sinônimo de pertencer ao grupo Administradores.",
+    "section": "13.1",
+    "file": "13.1-arquitetura-processos-e-objetos.md",
+    "source": "S1"
+  },
+  {
+    "term": "Modo usuário",
+    "definition": "Modo de execução em que operam aplicações comuns, com acesso mediado aos serviços e recursos protegidos do sistema.",
+    "section": "13.1",
+    "file": "13.1-arquitetura-processos-e-objetos.md",
+    "source": "S1"
+  },
+  {
+    "term": "NTFS",
+    "definition": "New Technology File System. Sistema de arquivos utilizado pelo Windows, com organização de arquivos, metadados e mecanismos de segurança e consistência.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S8"
+  },
+  {
+    "term": "Object Manager",
+    "definition": "Gerenciador de objetos do Windows. Participa do gerenciamento de nomes, referências, direitos e tempo de vida de recursos.",
+    "section": "13.1",
+    "file": "13.1-arquitetura-processos-e-objetos.md",
+    "source": "S5"
+  },
+  {
+    "term": "Objeto do Windows",
+    "definition": "Representação de um recurso gerenciado pelo sistema, como processo, arquivo, chave do Registro ou token. Não depende do conceito de objeto de uma linguagem específica.",
+    "section": "13.1",
+    "file": "13.1-arquitetura-processos-e-objetos.md",
+    "source": "S5"
+  },
+  {
+    "term": "Pasta conhecida",
+    "definition": "Local identificado por interfaces do Windows para uma função, como arquivos de programas ou dados de usuário. Não implica caminho literal universal.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S12"
+  },
+  {
+    "term": "PE",
+    "definition": "Portable Executable. Formato de imagens executáveis e bibliotecas do Windows, com informações utilizadas no carregamento. O nome não garante compatibilidade com qualquer plataforma.",
+    "section": "13.3",
+    "file": "13.3-executaveis-bibliotecas-e-carregamento.md",
+    "source": "S14"
+  },
+  {
+    "term": "Perfil de usuário",
+    "definition": "Conjunto de dados e configurações associados a um usuário. Conta, perfil carregado e sessão de logon são conceitos relacionados, mas distintos.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S13"
+  },
+  {
+    "term": "PID",
+    "definition": "Process Identifier. Identificador de um processo. Sua interpretação deve preservar o contexto da execução e do momento investigado.",
+    "section": "13.1",
+    "file": "13.1-arquitetura-processos-e-objetos.md",
+    "source": "S4"
+  },
+  {
+    "term": "Privilégio do Windows",
+    "definition": "Direito a determinadas operações relacionadas ao sistema. É distinto de um direito de acesso a um objeto específico e possui estado de habilitação no token.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S28"
+  },
+  {
+    "term": "Processo",
+    "definition": "Contexto de execução com recursos associados. Não se confunde com o arquivo executável nem com o resultado de negócio que a aplicação deve produzir.",
+    "section": "13.1",
+    "file": "13.1-arquitetura-processos-e-objetos.md",
+    "source": "S4"
+  },
+  {
+    "term": "Program Files",
+    "definition": "Pasta conhecida associada a arquivos de programas. Sua identificação e localização dependem do contexto apropriado da instalação.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S12"
+  },
+  {
+    "term": "ProgramData",
+    "definition": "Pasta conhecida associada a dados de aplicações compartilhados na máquina, distinta das áreas particulares de dados de um usuário.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S12"
+  },
+  {
+    "term": "REG_BINARY",
+    "definition": "Tipo de valor do Registro utilizado para dados binários.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S32"
+  },
+  {
+    "term": "REG_DWORD",
+    "definition": "Tipo de valor do Registro para um inteiro de 32 bits.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S32"
+  },
+  {
+    "term": "REG_EXPAND_SZ",
+    "definition": "Tipo de valor do Registro para texto que pode conter referências a variáveis de ambiente para expansão.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S32"
+  },
+  {
+    "term": "REG_SZ",
+    "definition": "Tipo de valor do Registro utilizado para texto.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S32"
+  },
+  {
+    "term": "Registro do Windows",
+    "definition": "Windows Registry. Base hierárquica de configuração com chaves, subchaves e valores tipados. Não é o mesmo mecanismo que o log de eventos.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S31"
+  },
+  {
+    "term": "SCM",
+    "definition": "Service Control Manager. Gerenciador de controle de serviços do Windows; participa da base de serviços, inicialização, controle e acompanhamento de estado.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S37"
+  },
+  {
+    "term": "Serviço do Windows",
+    "definition": "Unidade integrada ao gerenciamento do SCM, executada em processo próprio ou compartilhado. Um processo em segundo plano não é automaticamente um serviço.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S38"
+  },
+  {
+    "term": "Sessão 0",
+    "definition": "Sessão em que executam serviços, separada das sessões interativas nos Windows modernos. Não deve ser confundida com toda e qualquer sessão de logon.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S41"
+  },
+  {
+    "term": "Sessão de logon",
+    "definition": "Contexto relacionado à autenticação. No capítulo, sua importância aparece na visibilidade dos mapeamentos de unidades de rede.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S11"
+  },
+  {
+    "term": "SID",
+    "definition": "Security Identifier. Identificador usado pelo Windows para entidades de segurança, como usuários e grupos. Não é uma senha ou o simples nome exibido de uma conta.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S22"
+  },
+  {
+    "term": "System32 e SysWOW64",
+    "definition": "Diretórios cuja interpretação exige considerar arquitetura e redirecionamento. No recorte Windows x64, System32 contém componentes nativos de 64 bits e SysWOW64 está associado aos de 32 bits.",
+    "section": "13.3",
+    "file": "13.3-executaveis-bibliotecas-e-carregamento.md",
+    "source": "S19"
+  },
+  {
+    "term": "Thread",
+    "definition": "Unidade de execução que recebe tempo de processador no contexto de um processo. Várias threads podem compartilhar recursos desse processo.",
+    "section": "13.1",
+    "file": "13.1-arquitetura-processos-e-objetos.md",
+    "source": "S3"
+  },
+  {
+    "term": "Token de acesso do Windows",
+    "definition": "Objeto que descreve um contexto de segurança, incluindo identidades, grupos e privilégios. Não equivale a um token Web nem a um handle de arquivo.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S24"
+  },
+  {
+    "term": "UAC",
+    "definition": "User Account Control. Mecanismo relacionado à elevação administrativa de aplicações. Seu comportamento depende da conta, do modelo de aprovação e da política.",
+    "section": "13.4",
+    "file": "13.4-contas-tokens-e-controle-de-acesso.md",
+    "source": "S18"
+  },
+  {
+    "term": "UNC",
+    "definition": "Universal Naming Convention. Forma de nomear recursos de rede, como `\\\\servidor-lab\\acervo\\arquivo`. Um nome explícito não concede autorização de acesso.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S9"
+  },
+  {
+    "term": "Valor do Registro",
+    "definition": "Entrada com nome, tipo e dados associada a uma chave do Registro. Sua interpretação depende do tipo e do aplicativo consumidor.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S32"
+  },
+  {
+    "term": "Variável de ambiente",
+    "definition": "Associação entre nome e valor disponibilizada no ambiente de um processo. Modificar outro contexto não atualiza automaticamente todos os processos existentes.",
+    "section": "13.5",
+    "file": "13.5-registro-ambiente-e-configuracao.md",
+    "source": "S35"
+  },
+  {
+    "term": "Visualizador de Eventos",
+    "definition": "Event Viewer. Interface de consulta de logs de eventos; a visualização não substitui interpretar origem, contexto e conteúdo do registro.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S43"
+  },
+  {
+    "term": "Volume",
+    "definition": "Unidade lógica de armazenamento à qual podem ser associados nomes de acesso. Não é sinônimo de uma letra de unidade nem necessariamente de um único disco físico.",
+    "section": "13.2",
+    "file": "13.2-volumes-caminhos-e-perfis.md",
+    "source": "S7"
+  },
+  {
+    "term": "Windows Event Log",
+    "definition": "Infraestrutura de publicação e consulta de eventos do Windows. Não registra automaticamente toda ação de qualquer aplicação.",
+    "section": "13.6",
+    "file": "13.6-inicializacao-servicos-e-investigacao.md",
+    "source": "S43"
+  },
+  {
+    "term": "WOW64",
+    "definition": "Windows 32-bit on Windows 64-bit. Subsistema de compatibilidade para aplicações de 32 bits em Windows de 64 bits, com mecanismos específicos de redirecionamento.",
+    "section": "13.3",
+    "file": "13.3-executaveis-bibliotecas-e-carregamento.md",
+    "source": "S19"
+  }
+]

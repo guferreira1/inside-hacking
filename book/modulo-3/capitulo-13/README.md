@@ -1,10 +1,10 @@
 # Capítulo 13 — Windows por dentro
 
-[← Capítulo 12](../capitulo-12/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
+[← Capítulo 12](../capitulo-12/README.md) · [Capítulo 14 →](../capitulo-14/README.md) · [Índice do módulo](../README.md) · [Glossário](../../glossario.md)
 
 **Módulo III — Sistemas operacionais**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Fontes e limites de verificação no [registro editorial](../../../editorial/reviews/capitulo-13.md). Revisão técnica independente pendente.
+> **Status:** VALIDATED — versão editorial 1.0; leitura aprovada e ciclo interno concluído em 29/09/2026. Fontes e limites no [registro editorial](../../../editorial/reviews/capitulo-13.md). Revisão técnica independente pendente.
 
 A biblioteca Aurora recebeu uma versão de seu importador para Windows. A atendente abre o programa, escolhe um arquivo e vê o catálogo atualizado. A equipe então configura a execução automática. O processo aparece em funcionamento, mas nenhum livro novo chega ao catálogo.
 
