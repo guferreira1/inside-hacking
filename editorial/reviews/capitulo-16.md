@@ -33,3 +33,7 @@ As consultas e configurações systemd, cron, SCM e Windows Event Log são expli
 READMEs, índices, glossário, bibliografia, matriz de cobertura e estados acompanham a entrega. Os verbetes adicionados exigem ocorrência textual e vínculo à seção. A checagem automática cobre navegação e regressão, não revisão técnica independente. O capítulo 1 conserva sua pendência, o Módulo II conserva seu fechamento e o Módulo III continua em produção.
 
 A verificação de conjunto e o estado da integração serão registrados na auditoria desta entrega depois da execução, sem antecipar sucesso de CI. Não houve publicação no LinkedIn nem geração de PDF.
+
+## Verificação de conjunto
+
+Os resultados executados constam na [auditoria desta entrega](../audits/2026-09-29-capitulo-16.md) e no [registro de verificações](../updates/capitulo-16-checks.json). A integração em main e a checagem posterior são etapas distintas.

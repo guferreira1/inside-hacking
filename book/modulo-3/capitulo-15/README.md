@@ -4,7 +4,7 @@
 
 **Módulo III — Sistemas operacionais**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Fontes, verificações e limites no [registro editorial](../../../editorial/reviews/capitulo-15.md). Revisão técnica independente pendente.
+> **Status:** VALIDATED — versão editorial 1.0; leitura aprovada e ciclo interno concluído em 29/09/2026. Fontes e verificações anteriores preservadas; revisão técnica independente pendente. [Registro editorial](../../../editorial/reviews/capitulo-15.md).
 
 O roteiro de importação da biblioteca Aurora finalmente recebe os argumentos corretos. Os caminhos estão explícitos, os erros não são mais escondidos e o serviço procura o catálogo no lugar esperado. Mesmo assim, a importação falha: acesso negado.
 

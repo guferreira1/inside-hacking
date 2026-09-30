@@ -2,7 +2,7 @@
 
 [← Capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 29/09/2026. **Versão:** DRAFT 0.1.
+**Consulta:** 29/09/2026. **Versão:** VALIDATED 1.0 — fechamento interno em 29/09/2026; revisão independente pendente.
 
 A narrativa e os exemplos de contas, modos e políticas são autorais. As fontes sustentam mecanismos delimitados, não o relato de um incidente. As consultas concentraram-se nas seções relacionadas ao texto; não representam leitura integral de todos os manuais. Páginas reproduzidas no man7 identificam seus projetos de origem. Versão da documentação não deve ser confundida com versão de software executada.
 

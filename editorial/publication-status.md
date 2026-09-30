@@ -35,9 +35,10 @@ Uma leitura aprovada confirma uma experiência de leitura; não substitui audito
 | 12 | VALIDATED — versão editorial 1.0; leitura aprovada e ciclo interno concluído em 29/09/2026 | Manuscrito recuperado sem reorganização. Exemplo de descritor próprio e quatro testes preservados; revisão independente pendente. [Registro](reviews/capitulo-12.md). |
 | 13 | VALIDATED — versão editorial 1.0; leitura aprovada e ciclo interno concluído em 29/09/2026 | Seis seções, doze respostas e 44 referências Microsoft preservadas da entrega local. Sem laboratório Windows de kernel, Registro ou UAC; revisão independente pendente. [Registro](reviews/capitulo-13.md). |
 | 14 | VALIDATED — versão editorial 1.0; leitura aprovada e ciclo interno concluído em 29/09/2026 | Seis seções, doze respostas, 49 referências e quatro scripts preservados. Regressão reconferida; revisão independente pendente. [Registro](reviews/capitulo-14.md). |
-| 15 | DRAFT 0.1 — primeira entrega de leitura | Sete seções, quatorze respostas, 47 referências e nove testes próprios delimitados. Observações Linux em arquivos próprios; controles Windows por documentação, sem execução. Leitura e revisão independente pendentes. [Registro](reviews/capitulo-15.md). |
+| 15 | VALIDATED — versão editorial 1.0; leitura aprovada e ciclo interno concluído em 29/09/2026 | Manuscrito, 47 referências, quatorze respostas e nove testes preservados. Validação anterior e nova regressão identificadas; revisão independente pendente. [Registro](reviews/capitulo-15.md). |
+| 16 | DRAFT 0.1 — primeira entrega de leitura | Sete seções, quatorze respostas, 44 referências, dois exemplos e 14 testes próprios. Serviços e consultas Windows por documentação; sem laboratório de administração. Leitura e revisão independente pendentes. [Registro](reviews/capitulo-16.md). |
 
-As aprovações dos capítulos 4 a 14 registram os retornos informados pelo mantenedor. Não foram informados duração das sessões, respostas aos exercícios ou execução de ferramentas pelo leitor; esses resultados não foram presumidos. A validação editorial não é uma classificação de domínio prático do leitor. Testes executados pela equipe para verificar exemplos são registrados separadamente.
+As aprovações dos capítulos 4 a 15 registram os retornos informados pelo mantenedor. Não foram informados duração das sessões, respostas aos exercícios ou execução de ferramentas pelo leitor; esses resultados não foram presumidos. A validação editorial não é uma classificação de domínio prático do leitor. Testes executados pela equipe para verificar exemplos são registrados separadamente.
 
 As antigas anotações genéricas de “fact-check primário concluído” não constituem auditoria integral. O capítulo 1 mantém suas próprias pendências; a conclusão de outro capítulo não o promove automaticamente.
 
@@ -49,7 +50,7 @@ O [Módulo I](../book/modulo-1/README.md) possui os cinco textos e leitura inici
 
 O [Módulo II](../book/modulo-2/README.md) possui os capítulos 6 a 10 com ciclos internos da versão 1.0 concluídos. A solicitação de avanço ao capítulo 11 registrou a aprovação de leitura do capítulo 10 conforme a convenção editorial do mantenedor; em seguida, o conjunto passou por [auditoria final em 28/09/2026](audits/2026-09-28-modulo-2-double-check.md). O módulo está **internamente encerrado**, sem que isso implique revisão independente ou release.
 
-O [Módulo III](../book/modulo-3/README.md) possui os capítulos 11 a 14 com ciclos internos concluídos e o [Capítulo 15](../book/modulo-3/capitulo-15/README.md) em primeira entrega. Os capítulos 16 e 17 continuam planejados, na ordem original. O módulo permanece em produção; a aprovação editorial não atribui domínio prático ao leitor.
+O [Módulo III](../book/modulo-3/README.md) possui os capítulos 11 a 15 com ciclos internos concluídos e o [Capítulo 16](../book/modulo-3/capitulo-16/README.md) em primeira entrega. O capítulo 17 permanece planejado, na ordem original. O módulo continua em produção; a aprovação editorial não atribui domínio prático ao leitor.
 
 ## Organização por módulos
 
@@ -67,9 +68,9 @@ As publicações de continuidade planejadas no LinkedIn usarão o fechamento edi
 
 ## Próximas unidades de trabalho
 
-1. Receber a leitura do Capítulo 15, acompanhando identidade da execução, operação solicitada, política e limites da concessão.
+1. Receber a leitura do Capítulo 16, acompanhando ciclo de vida, supervisão, logs e retomada do estado confirmado.
 2. Concluir as pendências factuais do Capítulo 1 antes de fechar o Módulo I e preparar seu post de marco.
-3. A comunicação de fechamento do Módulo II foi preparada; não presumir publicação. Depois da leitura do capítulo 15, prosseguir para o Capítulo 16 — Processos, serviços, logs e persistência de estado, mantendo glossário, fontes e navegação na mesma entrega.
+3. A comunicação de fechamento do Módulo II foi preparada; não presumir publicação. Depois da leitura do capítulo 16, prosseguir para o Capítulo 17 — Virtualização e isolamento, mantendo glossário, fontes e navegação na mesma entrega.
 4. Incorporar revisão independente e, onde aplicável, jurídica especializada à preparação da primeira edição estável.
 5. Planejar a primeira geração de PDF e conferir sua apresentação antes de anunciar uma release, incluindo os avisos das licenças e os créditos aplicáveis.
 

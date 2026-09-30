@@ -156,8 +156,11 @@ Decisão sobre a permissão para uma ação ou recurso. A autorização aplicada
 
 Amazon Web Services. Provedor de nuvem citado para distinguir testes em recursos do cliente de testes na infraestrutura do provedor. A menção não autoriza testes. [Contexto: 3.1][c31].
 
-
 ## B
+
+### Backoff
+
+Política de espaçamento entre tentativas. No exemplo, é uma decisão de projeto; um atraso fixo não é automaticamente uma política progressiva. [Conceito: 16.3](modulo-3/capitulo-16/16.3-configuracao-parada-e-reinicio.md).
 
 ### Backport
 
@@ -263,7 +266,6 @@ Unidade de oito bits no escopo desta obra, representada por B nas unidades. Ofer
 
 Representação de código destinada a um mecanismo de execução, como uma máquina virtual de linguagem. Não é automaticamente código nativo da CPU nem um formato universal entre versões e implementações. [Conceito: 8.4][c84].
 
-
 ## C
 
 ### Cabeçalho
@@ -329,6 +331,10 @@ System call. Interface pela qual um programa solicita serviços do kernel. Chama
 ### Chave do Registro
 
 Nó da hierarquia do Registro do Windows. Pode conter subchaves e valores; não é uma chave criptográfica nem um diretório comum do sistema de arquivos. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
+### Checkpoint
+
+No exemplo da aplicação, registro de progresso usado na retomada. É diferente do campo de progresso de uma transição de serviço Windows. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
 
 ### Checksum
 
@@ -403,6 +409,10 @@ Descrição escrita segundo uma linguagem de programação. É uma representaç�
 ### COFF
 
 Common Object File Format. Formato de objetos citado junto à documentação PE da Microsoft. A identificação do formato não garante, sozinha, compatibilidade de arquitetura, ABI ou dependências. [Menção: 8.3][c83]; [fonte S5][c8-ref].
+
+### Commit
+
+Confirmação de uma transação. No exemplo, pode terminar antes de o processo emitir uma resposta a quem o iniciou. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
 
 ### Compilação
 
@@ -496,6 +506,14 @@ Cyclic Redundancy Check, verificação de redundância cíclica. Valor utilizado
 
 Informação ou meio utilizado para comprovar uma identidade, como senha ou chave. Sua posse não comprova autorização para utilizá-la em uma investigação. [Conceito: 5.2][c52]; [exemplo: soluções do capítulo 3][c3-sol].
 
+### Cron
+
+Daemon de agendamento no percurso Cronie documentado. Seu ambiente não é automaticamente o da sessão interativa. [Conceito: 16.4](modulo-3/capitulo-16/16.4-agendamento-e-sobreposicao.md).
+
+### Crontab
+
+Tabela de programação de comandos para cron. Entradas de usuário e de sistema têm diferenças de campos que precisam ser respeitadas. [Conceito: 16.4](modulo-3/capitulo-16/16.4-agendamento-e-sobreposicao.md).
+
 ### CSRC
 
 Computer Security Resource Center, do NIST. Portal de referências e glossários usado nas notas de pesquisa, não uma ferramenta de exploração. [Ocorrência: referências do capítulo 5][c5-ref].
@@ -523,7 +541,6 @@ Common Vulnerability Scoring System. Sistema de descrição e pontuação da sev
 ### CWE
 
 Common Weakness Enumeration. Catálogo de tipos de fraquezas de software e hardware. Descreve padrões de problema, função diferente da identificação de casos por CVE. [Conceito: 5.1][c51].
-
 
 ## D
 
@@ -555,6 +572,8 @@ Dados construídos para representar situações sem reproduzir registros pessoai
 
 Processo de serviço em segundo plano no vocabulário Unix apresentado. Serviço lógico, processo e unidade de um gerenciador não precisam ter correspondência de um para um. [Conceito: 11.5][c115].
 
+Processo que presta serviço em segundo plano no vocabulário Unix. O modelo de inicialização supervisionado não exige repetir o destacamento tradicional do terminal. [Conceito: 16.2](modulo-3/capitulo-16/16.2-servicos-e-supervisao.md).
+
 ### DARPA
 
 Defense Advanced Research Projects Agency. Agência citada por solicitar ao SEI uma capacidade de resposta após o incidente de 1988. [Contexto: capítulo 2][c2].
@@ -574,6 +593,10 @@ Sistema de numeração de base dez, com algarismos de 0 a 9. Em notação posici
 ### Declaração
 
 No exemplo C, apresenta informações como nome, argumentos e retorno de uma função. A declaração sem corpo permite conhecer sua interface, mas não fornece a implementação necessária à ligação. [Conceito: 8.2][c82].
+
+### Deduplicação
+
+Reconhecimento de operações consideradas equivalentes para evitar repetição indevida. Exige identidade e critério de comparação de conteúdo. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
 
 ### DEP
 
@@ -608,6 +631,10 @@ No contexto do capítulo 13: Diretório usado como contexto para a interpretaç�
 ### Diretório raiz
 
 Início da árvore usada para resolver caminhos absolutos, representado por /. Não é a conta root nem seu diretório pessoal /root; a raiz e a visão dependem do contexto do processo. [Conceito: 12.2][c122].
+
+### Disparo
+
+Ocorrência que solicita ou habilita o início de uma atividade agendada. Não demonstra sua conclusão. [Conceito: 16.4](modulo-3/capitulo-16/16.4-agendamento-e-sobreposicao.md).
 
 ### Disponibilidade
 
@@ -665,6 +692,13 @@ Dynamic Random Access Memory, memória dinâmica. Tecnologia de memória que exi
 
 Software que participa da comunicação e do controle entre sistema operacional e dispositivo. Não é o próprio circuito controlador nem o dado transferido. [Conceitos: 7.1][c71] e [7.5][c75].
 
+### Drop-in
+
+Arquivo complementar de configuração de uma unidade systemd, sujeito a regras de localização e precedência. [Conceito: 16.3](modulo-3/capitulo-16/16.3-configuracao-parada-e-reinicio.md).
+
+### Durabilidade
+
+Conservação de um resultado confirmado diante das falhas abrangidas pelo contrato. Confirmar uma escrita não implica todas as garantias de armazenamento. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
 
 ## E
 
@@ -772,6 +806,10 @@ Userspace. Ambiente de execução de aplicações e componentes fora do kernel. 
 
 Schema. Descrição da estrutura, tipos, campos e restrições esperados. Pode definir um perfil mais restrito que a gramática geral do formato; aceitar o esquema não substitui a autorização de uma operação. [Conceito: 10.4][c104].
 
+### Estado de processo
+
+Condição da execução descrita pelo sistema, como prontidão, espera ou término. Não é, isoladamente, uma avaliação da saúde da aplicação. [Conceito: 16.1](modulo-3/capitulo-16/16.1-ciclo-de-vida-e-processos.md).
+
 ### Ethical hacking
 
 Hacking ético. Na obra, investigação ofensiva conduzida com autorização, escopo e responsabilidade. Intenção de ajudar não substitui permissão. [Contexto: capítulo 1][c1] e [capítulo 3][c3].
@@ -815,7 +853,6 @@ Condição de alcance: quem consegue interagir, por qual caminho e sob quais cir
 ### Extensão de arquivo
 
 Sufixo do nome, como .json ou .txt, utilizado por ferramentas para classificação ou seleção de leitura. Renomeá-lo não converte, por si só, os bytes para outro formato. [Conceito: 10.2][c102].
-
 
 ## F
 
@@ -879,12 +916,15 @@ Identificador de grupo de sistema de arquivos no Linux, usado em conjunto com gr
 
 Identificador de usuário de sistema de arquivos no Linux, usado nas verificações de arquivos. Normalmente acompanha o UID efetivo, mas é um campo distinto. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
 
+### fsync
+
+Interface de sincronização de um arquivo no Linux. A persistência da entrada de diretório é uma questão adicional. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
+
 ### Função
 
 Unidade de operações que pode ser chamada por outra parte de um programa. A interface informa argumentos e retorno; o corpo define o comportamento. Uma função de biblioteca não é necessariamente uma chamada de sistema. [Conceitos: 8.1][c81] e [8.3][c83].
 
 No contexto do capítulo 14: Conjunto nomeado de operações que pode ser chamado. Neste capítulo, refere-se às funções da linguagem do shell, não necessariamente a um novo executável. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
-
 
 ## G
 
@@ -945,7 +985,6 @@ Identificador utilizado para distinguir entidades. Neste capítulo aparece nos n
 ### gzip
 
 Formato de dados comprimidos com cabeçalho, conteúdo comprimido e verificações finais. Seu tamanho externo não limita sozinho os dados reconstruídos ou o trabalho de processamento. [Conceito: 10.6][c106].
-
 
 ## H
 
@@ -1021,7 +1060,6 @@ Hypertext Transfer Protocol. Protocolo de requisições e respostas usado na Web
 
 HTTP utilizado por conexão protegida com TLS. Proteger o canal não demonstra correção da aplicação, e o número 443 não certifica o protocolo utilizado. [Menção: capítulo 1][c1]. [Semântica do esquema][https-rfc].
 
-
 ## I
 
 ### IA
@@ -1036,9 +1074,15 @@ Utilitário GNU que consulta dados de usuário/grupo. Sem usuário informado, de
 
 Propriedade de uma operação cujo efeito pretendido não se acumula apenas por repeti-la. Produzir a mesma saída não prova que os efeitos externos sejam idempotentes. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
 
+No exemplo transacional do capítulo 16, repetir o mesmo lote com o mesmo conteúdo não incrementa o total novamente. A garantia está limitada ao contrato e ao banco do exemplo. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
+
 ### Identificador
 
 Valor utilizado para distinguir um objeto ou registro. Conhecê-lo não equivale a ter permissão para consultar o objeto. [Conceito: 5.1][c51].
+
+### Identificador de correlação
+
+Valor utilizado para relacionar observações de uma operação. Lote, tentativa e processo podem precisar de identificadores distintos. [Conceito: 16.5](modulo-3/capitulo-16/16.5-logs-tempo-e-evidencias.md).
 
 ### IFS
 
@@ -1112,7 +1156,6 @@ Interprocess Communication, comunicação entre processos. Mecanismos que permit
 
 Instruction Set Architecture, arquitetura do conjunto de instruções. Interface de instruções e estado relevante ao software, distinta da organização interna que a implementa. Não determina sozinha toda a compatibilidade de um executável. [Conceito: 7.2][c72].
 
-
 ## J
 
 ### JCS
@@ -1127,6 +1170,10 @@ Just-in-time compilation, compilação durante a execução. Pode combinar-se co
 
 Unidade acompanhada pelo controle de trabalhos do shell. Um job em segundo plano não equivale a um serviço gerenciado pelo sistema. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
 
+### Journal
+
+No percurso de logs Linux, registro estruturado administrado pelo journald. O rollback journal SQLite, citado no mesmo capítulo, tem outra função: recuperação transacional. [Conceito: 16.5](modulo-3/capitulo-16/16.5-logs-tempo-e-evidencias.md).
+
 ### JSON
 
 JavaScript Object Notation. Formato textual de dados com objetos, arrays, strings, números, booleanos e null. A gramática não define sozinha os campos obrigatórios e os limites da aplicação; JSON não é uma ordem para executar JavaScript. [Conceito: 10.4][c104].
@@ -1134,7 +1181,6 @@ JavaScript Object Notation. Formato textual de dados com objetos, arrays, string
 ### JVM
 
 Java Virtual Machine. Máquina abstrata que especifica representações e comportamento de programas, como o formato `class`. Uma implementação possui escolhas sobre como realizar a execução. Não é a mesma abstração que uma máquina virtual para instalar um sistema operacional convidado. [Conceito: 8.4][c84].
-
 
 ## K
 
@@ -1157,7 +1203,6 @@ Parte central do sistema operacional, responsável por funções essenciais de a
 ### kmod
 
 Conjunto de ferramentas para trabalhar com módulos de kernel Linux, incluindo modprobe. Consultar o estado de módulos e solicitar carga ou remoção são operações diferentes. [Conceito: 12.4][c124].
-
 
 ## L
 
@@ -1224,7 +1269,6 @@ Registro de eventos produzido por um sistema. Seu valor depende dos campos, proc
 ### LSM
 
 Linux Security Modules. Arcabouço do kernel para participação de mecanismos adicionais de segurança. Sua presença não informa sozinha quais políticas estão ativas ou quais operações serão permitidas. [Conceito: 11.4][c114].
-
 
 ## M
 
@@ -1376,7 +1420,6 @@ No Linux, marca de tempo associada à modificação do conteúdo de um arquivo. 
 
 Mecanismo de exclusão mútua que coordena a entrada de participantes numa região protegida. Todos os acessos relevantes precisam respeitar o contrato; proteger apenas a escrita final não corrige necessariamente uma decisão baseada numa leitura antiga. [Conceito: 9.5][c95].
 
-
 ## N
 
 ### namei
@@ -1427,7 +1470,6 @@ Non-Volatile Memory Express. Interface de comandos para armazenamento não volá
 
 No Execute. Designação associada ao suporte para impedir execução em páginas marcadas como não executáveis. Protege uma classe de acesso, não todas as regras do programa. [Conceito: 9.5][c95].
 
-
 ## O
 
 ### Object Manager
@@ -1445,6 +1487,10 @@ Informação registrada por um meio identificado. Pode ter limites ou erros de m
 ### Octeto
 
 Grupo de oito bits. O termo aparece em especificações de protocolos e explicita o tamanho que chamamos de byte no escopo da obra. [Conceito: 6.3][c63].
+
+### Oneshot
+
+No tipo de serviço systemd apresentado, execução de trabalho finito. A configuração pode manter a unidade considerada ativa após o término dos processos. [Conceito: 16.2](modulo-3/capitulo-16/16.2-servicos-e-supervisao.md).
 
 ### OOM
 
@@ -1495,7 +1541,6 @@ Estouro: situação em que um resultado não cabe na faixa da representação nu
 ### OWASP
 
 Open Worldwide Application Security Project. Fundação e comunidade que mantêm projetos e referências sobre segurança de software. Não é ferramenta única nem vulnerabilidade. [Ocorrência: 4.1][c41] e [5.1][c51]. [Sobre a fundação][owasp-about].
-
 
 ## P
 
@@ -1647,6 +1692,10 @@ Análise e atividades posteriores ao acesso obtido por exploração, como invest
 
 Shell e linguagem de automação com pipeline de objetos e regras próprias de comandos, parâmetros, erros e execução. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
 
+### PPID
+
+Parent Process ID, identificador do processo pai no contexto observado. Não é um identificador permanente de uma aplicação. [Conceito: 16.1](modulo-3/capitulo-16/16.1-ciclo-de-vida-e-processos.md).
+
 ### Pré-processamento
 
 Etapa que trata diretivas como inclusões de cabeçalhos antes da tradução C propriamente dita. O resultado textual não constitui a execução das operações descritas pelo programa. [Conceito: 8.2][c82].
@@ -1681,6 +1730,14 @@ Instância de execução administrada pelo sistema operacional, com estado, espa
 
 No contexto do capítulo 13: Contexto de execução com recursos associados. Não se confunde com o arquivo executável nem com o resultado de negócio que a aplicação deve produzir. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
 
+### Processo órfão
+
+Processo que perdeu seu pai e pode ser adotado por outro responsável. Não precisa estar encerrado nem ser um zumbi. [Conceito: 16.1](modulo-3/capitulo-16/16.1-ciclo-de-vida-e-processos.md).
+
+### Processo zumbi
+
+No modelo Linux, processo encerrado que conserva informações mínimas de término ainda não recolhidas pelo responsável. Não continua executando o programa. [Conceito: 16.1](modulo-3/capitulo-16/16.1-ciclo-de-vida-e-processos.md).
+
 ### Procfs
 
 Sistema de arquivos normalmente montado em /proc que apresenta informações de processos e do sistema em funcionamento. Seus dados são dinâmicos; várias consultas não equivalem necessariamente a uma fotografia atômica do sistema. [Conceito: 12.3][c123].
@@ -1704,6 +1761,8 @@ Manipulação de entradas ou conteúdos processados por uma aplicação com mode
 ### Prontidão
 
 Condição de preparação para uma operação ou estágio do ciclo de vida, conforme um contrato. No serviço, uma indicação de inicialização concluída não é garantia permanente de funcionamento de todas as capacidades. [Conceito: 11.5][c115].
+
+Condição definida para começar a atender determinada função. Criar um processo, concluir a inicialização e confirmar uma operação são marcos diferentes. [Conceito: 16.2](modulo-3/capitulo-16/16.2-servicos-e-supervisao.md).
 
 ### Proprietário
 
@@ -1741,7 +1800,6 @@ Abreviação de pseudoterminal; no modelo Unix, descreve as interfaces pareadas 
 
 Nome do executável do PowerShell moderno usado nos exemplos; deve ser distinguido de powershell.exe do Windows PowerShell. [Conceito: 14.5](modulo-3/capitulo-14/14.5-scripts-contexto-e-repetibilidade.md).
 
-
 ## Q
 
 ### Quadro de chamada
@@ -1755,7 +1813,6 @@ Page frame. Unidade física correspondente ao tamanho de página considerado num
 ### Quoting
 
 Uso de aspas ou escapes para controlar a interpretação de caracteres. A proteção obtida depende da linguagem, do contexto e do consumidor posterior. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
-
 
 ## R
 
@@ -1811,9 +1868,17 @@ Windows Registry. Base hierárquica de configuração com chaves, subchaves e va
 
 Condições sobre como conduzir o teste, incluindo métodos, janela de execução, comunicação e interrupção. Complementam a definição de escopo. [Conceito: 3.1][c31].
 
+### Reload
+
+Recarga de configuração. É necessário identificar quem a relê: aplicação e gerenciador não são o mesmo componente. [Conceito: 16.3](modulo-3/capitulo-16/16.3-configuracao-parada-e-reinicio.md).
+
 ### Relocação
 
 Ajuste de referências de endereço conforme a disposição atribuída às partes de um programa. Pode participar da preparação de componentes binários; não é simplesmente renomear ou mover um arquivo numa pasta. [Conceito: 8.2][c82].
+
+### Relógio monotônico
+
+Relógio usado para medir intervalos sob um contrato independente de ajustes descontínuos do calendário. Não fornece sozinho um horário universal entre máquinas. [Conceito: 16.5](modulo-3/capitulo-16/16.5-logs-tempo-e-evidencias.md).
 
 ### Repositório de pacotes
 
@@ -1826,6 +1891,18 @@ Mensagem em que um componente solicita uma operação a outro. Em HTTP, seu sign
 ### Resposta
 
 Mensagem devolvida em relação a uma requisição. Código de status e conteúdo precisam ser interpretados juntos, no contexto da operação. [Introdução: 4.3][c43].
+
+### Restart
+
+Parada seguida de nova inicialização da unidade ou aplicação, conforme seu contrato. Não equivale a reiniciar todo o equipamento nem a recuperar o estado de negócio. [Conceito: 16.3](modulo-3/capitulo-16/16.3-configuracao-parada-e-reinicio.md).
+
+### Resultado desconhecido
+
+Situação em que o solicitante não sabe se o efeito foi confirmado. Ausência de resposta de sucesso não demonstra ausência de efeito. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
+
+### Retenção
+
+Política de conservação dos registros por tempo, espaço ou outras condições. Um recorte sem eventos não prova ausência de atividade passada. [Conceito: 16.5](modulo-3/capitulo-16/16.5-logs-tempo-e-evidencias.md).
 
 ### Reteste
 
@@ -1847,9 +1924,17 @@ Relação entre possibilidade de um evento adverso e consequências no contexto 
 
 Risco que permanece depois de controles ou respostas. Uma medida pode melhorar o cenário sem eliminar todas as possibilidades relevantes. [Conceito: 5.3][c53].
 
+### Rollback
+
+Desfazimento das alterações de uma transação ainda não confirmada, conforme o contrato do mecanismo utilizado. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
+
 ### root
 
 Conta administrativa no contexto Linux do capítulo. Não é sinônimo de diretório raiz nem do caminho /root; suas capacidades efetivas continuam sujeitas aos mecanismos e políticas do ambiente. [Conceito: 12.2][c122].
+
+### Rotação de logs
+
+Administração do crescimento e da separação dos arquivos de registro. Estratégia de reabertura e janelas de perda precisam ser consideradas. [Conceito: 16.5](modulo-3/capitulo-16/16.5-logs-tempo-e-evidencias.md).
 
 ### Round-trip
 
@@ -1862,7 +1947,6 @@ Resident Set Size. Medida de memória residente associada a um processo. Somar R
 ### Runtime
 
 Ambiente de execução da linguagem: mecanismos que sustentam o processamento de código e suas operações. Pode incluir interpretação, bibliotecas e gerenciamento de objetos; não precisa ser um único arquivo isolado. [Conceito: 8.4][c84].
-
 
 ## S
 
@@ -1994,9 +2078,21 @@ Interpretador de comandos que também oferece recursos de linguagem para combina
 
 Security Identifier. Identificador usado pelo Windows para entidades de segurança, como usuários e grupos. Não é uma senha ou o simples nome exibido de uma conta. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
 
+### SIGKILL
+
+Sinal Linux que não pode ser capturado, bloqueado ou ignorado. Não oferece à aplicação uma rotina de encerramento para confirmar seu trabalho. [Conceito: 16.1](modulo-3/capitulo-16/16.1-ciclo-de-vida-e-processos.md).
+
+### SIGTERM
+
+Sinal cujo comportamento padrão é terminar; uma aplicação pode tratá-lo para organizar sua saída. Não garante salvar o trabalho automaticamente. [Conceito: 16.1](modulo-3/capitulo-16/16.1-ciclo-de-vida-e-processos.md).
+
 ### Símbolo
 
 No contexto de ligação, associa um nome a um elemento do programa, como uma função. Resolver uma referência envolve relacionar seu uso à definição correspondente. Não é o mesmo sentido de símbolo visual de texto. [Conceito: 8.2][c82].
+
+### Sinal
+
+Mecanismo de notificação a processos ou threads no percurso Linux. A reação depende do sinal, da disposição e do contexto. [Conceito: 16.1](modulo-3/capitulo-16/16.1-ciclo-de-vida-e-processos.md).
 
 ### Sinalização em banda
 
@@ -2005,6 +2101,10 @@ Sinais de controle transmitidos pelo mesmo canal do conteúdo de uso, como voz n
 ### Sistema operacional
 
 Software que administra recursos e oferece serviços aos programas. Sua participação entre aplicações e dispositivos é introduzida antes do desenvolvimento detalhado nos capítulos próprios. [Introdução: 7.1][c71].
+
+### Sobreposição de execuções
+
+Condição em que uma nova instância é iniciada enquanto outra ainda trabalha. Sua prevenção não elimina automaticamente repetições sequenciais do mesmo efeito. [Conceito: 16.4](modulo-3/capitulo-16/16.4-agendamento-e-sobreposicao.md).
 
 ### Software
 
@@ -2029,6 +2129,10 @@ Linguagem de definição, consulta e manipulação de dados em sistemas de banco
 ### SQL injection
 
 Falha em que uma entrada influencia indevidamente a estrutura ou significado de uma consulta SQL. Não é qualquer erro de banco de dados. [Menção: capítulo 1][c1]. [Referência técnica][sqli-doc].
+
+### SQLite
+
+Mecanismo de banco de dados utilizado no exemplo local para relacionar efeito, identificação e confirmação transacional. Não torna ações externas parte dessa transação. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
 
 ### SRAM
 
@@ -2074,6 +2178,10 @@ Plugin e formato de política normalmente usados pelo sudo para decidir quem pod
 
 Pontos e caminhos pelos quais um sistema pode ser alcançado ou influenciado, incluindo interfaces, dados e contextos de acesso. É um mapa do que examinar, não lista de falhas confirmadas. [Conceito: 5.3][c53].
 
+### Supervisor
+
+Componente que acompanha uma atividade segundo regras de início, acompanhamento e encerramento. A existência do processo não demonstra o resultado de negócio. [Conceito: 16.2](modulo-3/capitulo-16/16.2-servicos-e-supervisao.md).
+
 ### Swap
 
 Armazenamento de apoio que pode conservar conteúdo retirado da RAM conforme a gestão de memória. Não é o significado inteiro de memória virtual, e nem toda página ausente da RAM está em swap. [Conceito: 9.4][c94].
@@ -2089,7 +2197,6 @@ Diretórios cuja interpretação exige considerar arquitetura e redirecionamento
 ### systemd
 
 Conjunto de componentes que inclui um gerenciador de sistema e serviços. No papel de gerenciador de sistema descrito, executa como PID 1 e coordena unidades. Não é o kernel nem um componente obrigatório de toda distribuição. [Conceito: 11.5][c115].
-
 
 ## T
 
@@ -2112,6 +2219,10 @@ No contexto do capítulo 14: Interface de interação com aplicações de texto.
 No contexto de software, fluxo de execução que pode ser organizado junto de outros fluxos. Não é necessariamente um núcleo físico nem uma janela de aplicativo. [Conceito: 7.2][c72]; [compartilhamento e estado próprio: 9.1][c91].
 
 No contexto do capítulo 13: Unidade de execução que recebe tempo de processador no contexto de um processo. Várias threads podem compartilhar recursos desse processo. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
+
+### Timer
+
+No systemd, unidade de temporização que pode ativar outra unidade por calendário ou referência monotônica. Não conserva por si só o progresso do negócio. [Conceito: 16.4](modulo-3/capitulo-16/16.4-agendamento-e-sobreposicao.md).
 
 ### Tipo de mídia
 
@@ -2141,6 +2252,10 @@ Objeto que descreve contexto de segurança de um processo ou thread, incluindo i
 
 Objeto que descreve um contexto de segurança, incluindo identidades, grupos e privilégios. Não equivale a um token Web nem a um handle de arquivo. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
 
+### Transação
+
+Conjunto de operações submetidas a um contrato de confirmação. O exemplo mantém efeito e identificação do lote no mesmo banco e na mesma transação. [Conceito: 16.6](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md).
+
 ### TRIM
 
 Mecanismo pelo qual o sistema informa ao dispositivo de armazenamento que determinados dados lógicos não precisam mais ser preservados. Participa da gestão do SSD, mas não comprova sanitização completa do equipamento. [Conceito: 7.4][c74].
@@ -2154,7 +2269,6 @@ Conservação e preparação do estado necessário para alternar a execução en
 Corte de uma sequência ou representação para um tamanho menor. Em texto de largura variável, cortar em um byte arbitrário pode interromper uma sequência de caractere; o formato precisa ser respeitado. [Conceito: 6.4][c64].
 
 No contexto do capítulo 14: Redução do conteúdo de um arquivo, como ocorre em uma abertura para substituir sua saída. A ação pode ocorrer antes de o comando falhar. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
-
 
 ## U
 
@@ -2200,6 +2314,10 @@ Universal Naming Convention. Forma de nomear recursos de rede, como `\\servidor-
 
 Padrão para representar caracteres, com pontos de código e formas de codificação. Identificar um ponto de código e escolher seus bytes são etapas distintas; Unicode não significa que toda letra ocupa um ou dois bytes. [Conceito: 6.4][c64].
 
+### Unidade systemd
+
+Recurso administrado pelo systemd, como serviço, timer ou montagem, com identidade e configuração próprias. Uma unidade não é um PID. [Conceito: 16.2](modulo-3/capitulo-16/16.2-servicos-e-supervisao.md).
+
 ### Upstream
 
 Projeto de origem em relação a quem integra ou distribui seu software. Sua versão e a revisão mantida por uma distribuição precisam ser distinguidas ao examinar correções. [Conceito: 12.5][c125].
@@ -2223,7 +2341,6 @@ Utilitário shadow-utils para alterar contas. Modificar associações de grupos 
 ### UTF-8
 
 Forma de codificação Unicode que utiliza de um a quatro bytes por valor escalar e preserva a representação ASCII. Uma unidade percebida pelo usuário pode reunir vários valores; nem toda sequência arbitrária de bytes é UTF-8 válido. [Conceito: 6.4][c64].
-
 
 ## V
 
@@ -2279,8 +2396,11 @@ Unidade lógica de armazenamento à qual podem ser associados nomes de acesso. N
 
 Fraqueza em código, configuração, controle, procedimento ou implementação que pode ser explorada ou acionada para produzir consequência adversa. Pode existir sem exploit público. [Conceito: 5.1][c51].
 
-
 ## W
+
+### Watchdog
+
+Mecanismo de acompanhamento de notificações periódicas segundo um contrato. Sua evidência depende do que a aplicação verifica antes de notificar. [Conceito: 16.2](modulo-3/capitulo-16/16.2-servicos-e-supervisao.md).
 
 ### White hat
 
@@ -2314,7 +2434,6 @@ Direito Windows de modificar a DACL de um objeto. Administrar a política pode t
 
 Direito Windows relacionado à mudança de proprietário de um objeto. Não é um sinônimo de escrita no conteúdo do arquivo. [Conceito: 15.4](modulo-3/capitulo-15/15.4-tokens-e-acls-no-windows.md).
 
-
 ## X
 
 ### XML
@@ -2324,7 +2443,6 @@ Extensible Markup Language. Linguagem de representação estruturada com element
 ### XSS
 
 Cross-Site Scripting. Classe de falha em que conteúdo controlado por um atacante pode executar código no navegador no contexto de uma aplicação Web. É distinta de SQL injection. [Menção: capítulo 2][c2]. [Referência técnica][xss-doc].
-
 
 ## Y
 

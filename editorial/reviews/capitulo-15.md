@@ -1,6 +1,6 @@
 # Primeira entrega editorial — Capítulo 15
 
-**Data:** 29/09/2026. **Estado:** DRAFT 0.1. **Módulo:** III.
+**Data:** 29/09/2026. **Estado atual:** VALIDATED — versão editorial 1.0. **Módulo:** III.
 
 [Capítulo](../../book/modulo-3/capitulo-15/README.md) · [Referências](../../book/modulo-3/capitulo-15/referencias.md) · [Exemplo](../../book/modulo-3/capitulo-15/exemplos/README.md)
 
@@ -36,3 +36,7 @@ A revisão é interna, assistida por IA; revisão técnica independente permanec
 ## Verificação no runner
 
 Os resultados da regressão e da segunda passagem documental estão na [auditoria desta entrega](../audits/2026-09-29-capitulo-15.md), separados da execução local descrita acima.
+
+## Aprovação e fechamento interno
+
+O pedido de continuidade do mantenedor registra aprovação da leitura do capítulo 15. Foram preservados o manuscrito, as fontes, os nove testes e os limites da validação anterior, com atualização de estado e navegação. A regressão desta entrega é registrada na [auditoria do capítulo 16](../audits/2026-09-29-capitulo-16.md). Não houve revisão técnica independente nem atribuição de domínio prático ao leitor.

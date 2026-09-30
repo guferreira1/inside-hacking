@@ -12,7 +12,7 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 | --- | --- | --- |
 | [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
 | [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Ciclo interno concluído — v1.0 nos capítulos 6–10 |
-| [III · Sistemas operacionais](modulo-3/README.md) | Capítulos 11 a 17 | Capítulos 11 a 15 disponíveis; 16 e 17 planejados |
+| [III · Sistemas operacionais](modulo-3/README.md) | Capítulos 11 a 17 | Capítulos 11 a 16 disponíveis; 17 planejado |
 
 Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. O Módulo III começa no capítulo 11; o Módulo IV, ainda planejado, começa no capítulo 18. Disponibilidade de todos os textos não equivale a fechamento editorial do módulo.
 
@@ -127,7 +127,8 @@ O Módulo II teve a leitura dos cinco capítulos aprovada e passou por revisão 
 | 12 | [Linux por dentro](modulo-3/capitulo-12/README.md) | Revisão interna concluída — v1.0 |
 | 13 | [Windows por dentro](modulo-3/capitulo-13/README.md) | Revisão interna concluída — v1.0 |
 | 14 | [Terminal, shells e automação](modulo-3/capitulo-14/README.md) | Revisão interna concluída — v1.0 |
-| 15 | [Usuários, grupos, permissões e privilégios](modulo-3/capitulo-15/README.md) | Rascunho para leitura — v0.1 |
+| 15 | [Usuários, grupos, permissões e privilégios](modulo-3/capitulo-15/README.md) | Revisão interna concluída — v1.0 |
+| 16 | [Processos, serviços, logs e persistência de estado](modulo-3/capitulo-16/README.md) | Rascunho para leitura — v0.1 |
 
 ### Dentro do Capítulo 11
 
@@ -181,6 +182,17 @@ O Módulo II teve a leitura dos cinco capítulos aprovada e passou por revisão 
 - [15.7 · Investigar sem abrir todas as portas](modulo-3/capitulo-15/15.7-investigacao-e-verificacao.md)
 - [Observações opcionais de permissões](modulo-3/capitulo-15/exemplos/README.md).
 - [Respostas comentadas](modulo-3/capitulo-15/solucoes.md) e [referências](modulo-3/capitulo-15/referencias.md).
+
+### Dentro do Capítulo 16
+
+- [16.1 — Uma execução tem começo, espera e fim](modulo-3/capitulo-16/16.1-ciclo-de-vida-e-processos.md)
+- [16.2 — Trabalhar sem a janela aberta](modulo-3/capitulo-16/16.2-servicos-e-supervisao.md)
+- [16.3 — Mudar a configuração não é mudar a execução](modulo-3/capitulo-16/16.3-configuracao-parada-e-reinicio.md)
+- [16.4 — O horário não faz o trabalho](modulo-3/capitulo-16/16.4-agendamento-e-sobreposicao.md)
+- [16.5 — O registro não é o acontecimento inteiro](modulo-3/capitulo-16/16.5-logs-tempo-e-evidencias.md)
+- [16.6 — O processo acaba; o estado precisa de um contrato](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md)
+- [16.7 — Reconstruir a execução antes de mudar o sistema](modulo-3/capitulo-16/16.7-investigacao-e-verificacao.md)
+- [Exemplos opcionais](modulo-3/capitulo-16/exemplos/README.md), [respostas comentadas](modulo-3/capitulo-16/solucoes.md) e [referências](modulo-3/capitulo-16/referencias.md).
 
 ## Como navegar
 

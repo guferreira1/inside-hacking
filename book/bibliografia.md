@@ -119,7 +119,13 @@ As [49 referências numeradas](modulo-3/capitulo-14/referencias.md) usam documen
 
 As [47 referências numeradas](modulo-3/capitulo-15/referencias.md) relacionam documentação Linux man-pages, Linux ACL, GNU, shadow-utils, util-linux, sudo, kernel, Microsoft, Python e OWASP. Sete seções desenvolvem identidades, operações, criação e ACLs, tokens e direitos Windows, delegação, camadas, revogação e investigação. Os modelos de acesso Linux e Windows são distinguidos.
 
-O [exemplo opcional](modulo-3/capitulo-15/exemplos/README.md) observa somente arquivos temporários do próprio usuário comum em Linux. Os nove testes separam três verificações de modelo/guarda e seis de operações reais e limpeza. Não houve administração de contas, ACLs ou privilégios, nem execução dos controles Windows. O [registro editorial](../editorial/reviews/capitulo-15.md) preserva ambientes, resultados e limites; o capítulo está em DRAFT 0.1.
+O [exemplo opcional](modulo-3/capitulo-15/exemplos/README.md) observa somente arquivos temporários do próprio usuário comum em Linux. Os nove testes separam três verificações de modelo/guarda e seis de operações reais e limpeza. Não houve administração de contas, ACLs ou privilégios, nem execução dos controles Windows. O [registro editorial](../editorial/reviews/capitulo-15.md) preserva ambientes, resultados e limites; o capítulo está em VALIDATED 1.0, com leitura aprovada e limites de revisão independente preservados.
+
+## Capítulo 16 — Processos, serviços, logs e persistência de estado
+
+As [44 referências](modulo-3/capitulo-16/referencias.md) relacionam documentação Linux, systemd, procps-ng, Cronie, logrotate, Microsoft, Python, SQLite e OWASP. As reproduções de manuais são identificadas; não se confunde versão documental com ambiente executado.
+
+Os [dois exemplos próprios](modulo-3/capitulo-16/exemplos/README.md) e os [14 testes](../scripts/tests/test_chapter16_examples.py) separam inicialização, término, diagnóstico, efeito confirmado e resposta ausente. O exemplo SQLite usa apenas um banco temporário e interrupções de processo em dois pontos conhecidos, sem simular falha de energia ou sistema distribuído. O capítulo permanece DRAFT 0.1; [registro editorial](../editorial/reviews/capitulo-16.md) e [auditoria](../editorial/audits/2026-09-29-capitulo-16.md) delimitam fontes, execuções e revisão.
 
 ## Política de referências
 

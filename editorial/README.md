@@ -23,3 +23,7 @@ Continuidade: [revisão do capítulo 13](reviews/capitulo-13.md), [entrega do ca
 
 
 A [auditoria da entrega do capítulo 15](audits/2026-09-29-capitulo-15.md) registra continuidade, glossário, testes e limites de validação.
+
+### Entrega do capítulo 16
+
+[Registro editorial](reviews/capitulo-16.md) · [Auditoria](audits/2026-09-29-capitulo-16.md). Aprovação do capítulo 15 preservada, capítulo 16 em primeira leitura e ordem original mantida.

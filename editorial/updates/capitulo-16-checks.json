@@ -1,0 +1,343 @@
+{
+  "base": "1d3817567d78a03aa12c174ac5eb1e71e57b437b",
+  "run_url": "https://github.com/guferreira1/inside-hacking/actions/runs/36648420336",
+  "tests": {
+    "total": 113,
+    "passed": 113,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "versions": {
+    "python": "3.12.3",
+    "os": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "sqlite": "3.45.1",
+    "euid": 1001
+  },
+  "glossary": {
+    "before": 554,
+    "after": 588,
+    "added": [
+      "PPID",
+      "Estado de processo",
+      "Processo zumbi",
+      "Processo órfão",
+      "Sinal",
+      "SIGTERM",
+      "SIGKILL",
+      "Supervisor",
+      "Unidade systemd",
+      "Oneshot",
+      "Watchdog",
+      "Drop-in",
+      "Reload",
+      "Restart",
+      "Backoff",
+      "Disparo",
+      "Cron",
+      "Crontab",
+      "Timer",
+      "Sobreposição de execuções",
+      "Journal",
+      "Retenção",
+      "Rotação de logs",
+      "Identificador de correlação",
+      "Relógio monotônico",
+      "Checkpoint",
+      "Durabilidade",
+      "Transação",
+      "Commit",
+      "Rollback",
+      "Deduplicação",
+      "Resultado desconhecido",
+      "SQLite",
+      "fsync"
+    ],
+    "extended": [
+      "Daemon",
+      "Prontidão",
+      "Idempotência"
+    ],
+    "preserved_previous_definitions": 554
+  },
+  "first_docs": {
+    "markdown_files": 172,
+    "internal_links": 1545,
+    "internal_errors": [],
+    "external_urls": 392,
+    "glossary_entries": 588
+  },
+  "external_urls": [
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.python.org/3/library/json.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/json.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.python.org/3/library/os.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/os.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.python.org/3/library/sqlite3.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/sqlite3.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.python.org/3/library/subprocess.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/subprocess.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-7.5",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-7.5",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-7.5",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-7.5",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-service?view=powershell-7.5",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-service?view=powershell-7.5",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_failure_actionsa",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_failure_actionsa",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_status",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_status",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/terminating-a-process",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/procthread/terminating-a-process",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/services/service-status-transitions",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/services/service-status-transitions",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/tasksettings-multipleinstances",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/tasksettings-multipleinstances",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/tasksettings-startwhenavailable",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/taskschd/tasksettings-startwhenavailable",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/wes/eventschema-systempropertiestype-complextype",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/wes/eventschema-systempropertiestype-complextype",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man1/journalctl.1.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man1/journalctl.1.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man1/ps.1.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man1/ps.1.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man1/systemctl.1.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man1/systemctl.1.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/clock_gettime.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/clock_gettime.2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/fsync.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/fsync.2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/open.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/open.2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/rename.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/rename.2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/waitpid.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/waitpid.2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/write.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/write.2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man3/sd_notify.3.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man3/sd_notify.3.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/crontab.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/crontab.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/journald.conf.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/journald.conf.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/systemd.exec.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/systemd.exec.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/systemd.kill.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/systemd.kill.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/systemd.resource-control.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/systemd.resource-control.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/systemd.service.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/systemd.service.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/systemd.timer.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/systemd.timer.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/systemd.unit.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/systemd.unit.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/daemon.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/daemon.7.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/signal.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/signal.7.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/systemd.journal-fields.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/systemd.journal-fields.7.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/logrotate.8.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man8/logrotate.8.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://sqlite.org/lang_createtable.html",
+      "status": 200,
+      "final_url": "https://sqlite.org/lang_createtable.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://sqlite.org/lang_transaction.html",
+      "status": 200,
+      "final_url": "https://sqlite.org/lang_transaction.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://sqlite.org/pragma.html",
+      "status": 200,
+      "final_url": "https://sqlite.org/pragma.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://www.sqlite.org/atomiccommit.html",
+      "status": 200,
+      "final_url": "https://www.sqlite.org/atomiccommit.html",
+      "result": "accessible"
+    }
+  ],
+  "second_docs": {
+    "markdown_files": 172,
+    "internal_links": 1548,
+    "internal_errors": [],
+    "external_urls": 393,
+    "glossary_entries": 588
+  }
+}
