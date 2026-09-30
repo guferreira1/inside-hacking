@@ -66,6 +66,10 @@ Obtenção de espaço cujo tamanho ou duração pode ser decidido durante a exec
 
 Arithmetic Logic Unit, unidade aritmética e lógica. Componente que realiza operações como somas e comparações no caminho de execução do processador. Seu papel é distinto do armazenamento de um resultado ou da gravação de um arquivo. [Conceito: 7.2][c72].
 
+### Ambiente virtual Python
+
+Ambiente de interpretador e pacotes organizado, por exemplo, com venv. Seu recorte de dependências não é uma promessa de confinamento de todo o código executado. [Conceito: 17.1](modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md).
+
 ### Ameaça
 
 Circunstância ou evento com potencial de causar consequência adversa de segurança. Não designa necessariamente uma pessoa; também pode envolver condições acidentais. [Conceito: 5.2][c52].
@@ -166,6 +170,10 @@ Política de espaçamento entre tentativas. No exemplo, é uma decisão de proje
 
 Transporte seletivo de uma correção ou mudança para uma versão mantida anteriormente. Na segurança de pacotes, exige verificar a revisão completa e o aviso da distribuição; o termo não prova sozinho que uma instalação esteja corrigida. [Conceito: 12.5][c125].
 
+### Backup
+
+Cópia acompanhada de estratégia de recuperação compatível com as falhas que se pretende suportar. Pontos de retorno na mesma cadeia e armazenamento não oferecem automaticamente independência da origem. [Conceito: 17.6](modulo-3/capitulo-17/17.6-imagens-snapshots-e-recuperacao.md).
+
 ### Banco de dados
 
 Conjunto organizado de dados mantido para consulta e atualização. A aplicação pode utilizá-lo para guardar registros; o sistema que gerencia os dados não deve ser confundido com a informação armazenada. [Menção: capítulo 1][c1]; [exemplo: 5.1][c51].
@@ -173,6 +181,10 @@ Conjunto organizado de dados mantido para consulta e atualização. A aplicaçã
 ### Barramento
 
 Caminho de comunicação entre componentes, associado a regras de transporte de dados, endereços ou comandos. A expressão não implica que toda interconexão seja um único fio compartilhado por todos os dispositivos. [Conceito: 7.1][c71].
+
+### Base de confiança
+
+Conjunto de componentes cujo funcionamento correto é necessário para uma garantia específica. O recorte muda conforme se pretende proteger o hospedeiro do convidado ou o convidado de parte da plataforma. [Conceito: 17.1](modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md).
 
 ### Base numérica
 
@@ -214,6 +226,8 @@ No sistema de numeração apresentado, base dois: usa os algarismos 0 e 1 e peso
 
 Montagem que torna uma árvore existente acessível por outro ponto. Não cria, por si só, uma cópia independente dos arquivos nem uma cópia de segurança. [Conceito: 12.2][c122].
 
+Disponibilização de um arquivo ou diretório do hospedeiro do daemon no container, sem criar uma cópia independente por definição. Origem, destino e acesso de escrita precisam ser avaliados. [Conceito: 17.4](modulo-3/capitulo-17/17.4-compartilhamentos-e-autoridade.md).
+
 ### Bit
 
 Binary digit, dígito binário. Posição com dois valores possíveis, 0 ou 1. O significado desses valores depende da convenção; a largura de uma sequência não demonstra sozinha imprevisibilidade. [Conceito: 6.1][c61].
@@ -229,6 +243,10 @@ Dispositivo histórico empregado para produzir sinais usados em certos sistemas 
 ### Bootloader
 
 Carregador de inicialização. Software que conduz o carregamento ou a passagem ao próximo estágio de execução necessário ao sistema operacional. Não é sinônimo de todo o firmware da máquina. [Conceito: 7.5][c75].
+
+### Bridge
+
+No modo VirtualBox comparado, conecta o convidado à rede da interface física selecionada. O mesmo nome em outro produto precisa ser interpretado pelo contrato correspondente. [Conceito: 17.5](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md).
 
 ### BSS
 
@@ -348,6 +366,10 @@ Alteração dos bits de modo de arquivos e diretórios. Seu efeito depende do ti
 
 Operação de mudança de proprietário e grupo de um arquivo no Linux, sujeita a requisitos de autoridade. Não é equivalente a alterar os bits de modo. [Conceito: 15.3](modulo-3/capitulo-15/15.3-criacao-propriedade-e-acls.md).
 
+### chroot
+
+Operação Linux que muda a raiz de determinada resolução de caminhos. Não fecha descritores nem constitui sozinha uma barreira completa de segurança. [Conceito: 17.1](modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md).
+
 ### Chunk
 
 Bloco estruturado de um formato. No exemplo PNG, os chunks seguem a assinatura inicial e têm organização própria; reconhecer apenas o início do arquivo não valida todos os blocos. [Introdução: 10.2][c102].
@@ -363,6 +385,14 @@ Command-Line Interface, interface de linha de comando. Forma de interação por 
 ### Clock
 
 Sinal de temporização. Sua frequência mede ciclos por segundo, não diretamente instruções concluídas. Trabalho por ciclo e frequência efetiva dependem da implementação e das condições. [Conceito: 7.2][c72].
+
+### Clone completo
+
+No VirtualBox, cópia dos discos necessários para operar independentemente da VM de origem. Essa independência não certifica segurança do conteúdo nem um plano completo de backup. [Conceito: 17.6](modulo-3/capitulo-17/17.6-imagens-snapshots-e-recuperacao.md).
+
+### Clone vinculado
+
+Cópia de uma VM que mantém dependências de imagens anteriores no modelo apresentado do VirtualBox. É diferente de uma cópia independente para recuperação. [Conceito: 17.6](modulo-3/capitulo-17/17.6-imagens-snapshots-e-recuperacao.md).
 
 ### Cloud
 
@@ -430,6 +460,10 @@ Convenção de representação de inteiros com sinal em que o bit de maior peso 
 
 Transformação que produz uma representação da qual o conteúdo original deve ser reconstruído exatamente. Tamanho comprimido e tamanho reconstruído são grandezas distintas, com limites que precisam ser considerados. [Conceito: 10.6][c106].
 
+### Computação confidencial
+
+Mecanismos adicionais, dependentes de hardware, firmware e plataforma, destinados a reduzir parte da confiança necessária no hospedeiro. Menção introdutória, sem configuração executada. [Conceito: 17.1](modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md).
+
 ### Concorrência
 
 Organização de atividades cujos períodos de progresso se sobrepõem, mesmo quando usam uma unidade de execução em momentos alternados. Não exige paralelismo físico em todo instante. [Conceito: 9.1][c91].
@@ -481,6 +515,10 @@ Componente que gerencia operações de um dispositivo ou subsistema. Distingue-s
 ### Controle de fluxo
 
 Regras que escolhem quais operações executar, repetir ou interromper conforme condições e resultados. [Conceito: 14.4](modulo-3/capitulo-14/14.4-status-condicoes-e-controle.md).
+
+### Convidado
+
+Guest: sistema executado no ambiente virtual. Pode ter seu próprio sistema operacional sem que todos os dados e dispositivos sejam exclusivos. [Conceito: 17.1](modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md).
 
 ### Cópia na escrita
 
@@ -622,6 +660,10 @@ Offset. Posição relativa ao começo de uma unidade, como uma página ou objeto
 
 Reconstrução de valores ou estruturas a partir de uma representação. As capacidades do mecanismo importam: alguns desserializadores de objetos podem executar comportamento, não apenas ler campos simples. [Conceito: 10.4][c104]; [limites: 10.6][c106].
 
+### Digest
+
+Resumo criptográfico utilizado para identificar conteúdo de uma imagem. Fixa a identidade do artefato, não sua segurança, e exige atualização deliberada quando a base muda. [Conceito: 17.6](modulo-3/capitulo-17/17.6-imagens-snapshots-e-recuperacao.md).
+
 ### Diretório de trabalho
 
 Diretório corrente de um processo, usado como base em operações comuns com caminhos relativos. O mesmo nome relativo pode alcançar arquivos diferentes quando essa base muda. [Conceito: 8.5][c85].
@@ -718,6 +760,10 @@ Transição para um contexto administrativo de execução conforme o mecanismo e
 
 Executable and Linkable Format. Formato que descreve diferentes artefatos, como objetos relocáveis, executáveis e bibliotecas compartilhadas. Tipo, arquitetura e organização precisam ser examinados; a assinatura do formato não demonstra o papel inteiro do arquivo. [Conceito: 8.3][c83].
 
+### Emulação
+
+Reprodução do comportamento de uma máquina ou componente em software. Não oferece automaticamente as mesmas garantias de contenção de uma configuração suportada de virtualização. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
 ### Emulador de terminal
 
 Programa que oferece uma interface de terminal em software. Apresenta a interação com aplicações, mas não define sozinho a linguagem do shell hospedado. [Conceito: 14.1](modulo-3/capitulo-14/14.1-terminal-shell-e-comandos.md).
@@ -789,6 +835,10 @@ Componente que decide quais fluxos aptos recebem oportunidade de execução, con
 ### Escape
 
 Representação de conteúdo que possui papel especial numa gramática. As regras dependem do contexto, como uma string JSON; aplicar um escape não produz proteção universal para qualquer destino posterior. [Conceito: 10.3][c103].
+
+### Escape de isolamento
+
+Travessia de uma fronteira que deveria impedir a ação, por exemplo devido a defeito na implementação. Usar uma passagem explicitamente concedida não demonstra, por si só, um escape. [Conceito: 17.4](modulo-3/capitulo-17/17.4-compartilhamentos-e-autoridade.md).
 
 ### Escopo
 
@@ -912,6 +962,10 @@ Limite entre contextos com permissões, controle ou suposições de confiança d
 
 Identificador de grupo de sistema de arquivos no Linux, usado em conjunto com grupos suplementares nas verificações de arquivos. Normalmente acompanha o GID efetivo. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
 
+### fstat
+
+Operação que consulta metadados do objeto referenciado por um descritor aberto. No exemplo, dispositivo e inode identificam namespaces apenas no kernel e contexto observados. [Conceito: 17.7](modulo-3/capitulo-17/17.7-investigacao-e-verificacao.md).
+
 ### FSUID
 
 Identificador de usuário de sistema de arquivos no Linux, usado nas verificações de arquivos. Normalmente acompanha o UID efetivo, mas é um campo distinto. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
@@ -978,6 +1032,10 @@ Ferramenta para selecionar linhas segundo um padrão. O capítulo usa GNU grep c
 
 Conjunto de grupos adicionais presente nas credenciais de uma execução Linux. Mudar o cadastro não reescreve automaticamente os grupos de todos os processos existentes. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
 
+### Guest Additions
+
+Componentes de integração do VirtualBox que oferecem recursos entre convidado e hospedeiro, incluindo pastas compartilhadas. Essas passagens não dependem necessariamente da rede virtual. [Conceito: 17.4](modulo-3/capitulo-17/17.4-compartilhamentos-e-autoridade.md).
+
 ### GUID
 
 Identificador utilizado para distinguir entidades. Neste capítulo aparece nos nomes de volumes; não é uma descrição do dispositivo físico. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
@@ -1032,6 +1090,10 @@ Hz. Unidade de frequência equivalente a um ciclo por segundo. A duração de um
 
 Sistema de base dezesseis, com algarismos 0–9 e A–F. Um algarismo hexadecimal corresponde a quatro bits; um byte pode ser exibido com dois deles. É notação, não criptografia. [Conceito: 6.2][c62].
 
+### Hipervisor
+
+Componente que controla a execução dos ambientes convidados e arbitra seu acesso aos recursos. A plataforma inclui também outros componentes; não se resume à interface gráfica de administração. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
 ### Hipótese
 
 Explicação provisória a confrontar com observações e alternativas. É mais útil quando permite prever um resultado e dizer o que a contrariaria. [Conceito: 4.1][c41].
@@ -1051,6 +1113,14 @@ Abreviação de HKEY_LOCAL_MACHINE. Chave predefinida associada a configuraçõe
 ### HKU
 
 Abreviação de HKEY_USERS. Chave predefinida que reúne ramos de perfis de usuário carregados. [Conceito: 13.5](modulo-3/capitulo-13/13.5-registro-ambiente-e-configuracao.md).
+
+### Hospedeiro
+
+Host: plataforma que sustenta o ambiente convidado. Sua autoridade e seus componentes confiáveis precisam ser considerados separadamente das permissões internas do convidado. [Conceito: 17.1](modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md).
+
+### Host-only
+
+Modo de rede VirtualBox que conecta hospedeiro e convidados em uma rede própria. Não equivale a impedir acesso ao host, nem descreve outras interfaces existentes. [Conceito: 17.5](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md).
 
 ### HTTP
 
@@ -1087,6 +1157,10 @@ Valor utilizado para relacionar observações de uma operação. Lote, tentativa
 ### IFS
 
 Internal Field Separator: variável usada pelo Bash na separação de palavras em contextos como expansões sem aspas. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
+
+### Imagem de container
+
+Base de camadas de arquivos e metadados usada para criar uma execução. É diferente do processo atual, da camada gravável da instância e de volumes externos. [Conceito: 17.3](modulo-3/capitulo-17/17.3-containers-namespaces-e-recursos.md).
 
 ### Impacto
 
@@ -1156,6 +1230,10 @@ Interprocess Communication, comunicação entre processos. Mecanismos que permit
 
 Instruction Set Architecture, arquitetura do conjunto de instruções. Interface de instruções e estado relevante ao software, distinta da organização interna que a implementa. Não determina sozinha toda a compatibilidade de um executável. [Conceito: 7.2][c72].
 
+### Isolamento
+
+Separação que restringe como um contexto pode observar ou afetar outro. A garantia precisa indicar recurso, ação e ameaça; não é uma propriedade absoluta deduzida do nome do ambiente. [Conceito: 17.1](modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md).
+
 ## J
 
 ### JCS
@@ -1203,6 +1281,10 @@ Parte central do sistema operacional, responsável por funções essenciais de a
 ### kmod
 
 Conjunto de ferramentas para trabalhar com módulos de kernel Linux, incluindo modprobe. Consultar o estado de módulos e solicitar carga ou remoção são operações diferentes. [Conceito: 12.4][c124].
+
+### KVM
+
+Kernel-based Virtual Machine. Interfaces do kernel Linux para criar e controlar máquinas virtuais, memória e processadores virtuais, utilizadas por componentes em espaço de usuário. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
 
 ## L
 
@@ -1266,6 +1348,10 @@ Contexto de conta com amplos privilégios locais, também encontrado como `NT AU
 
 Registro de eventos produzido por um sistema. Seu valor depende dos campos, procedência, cobertura e relação com a operação examinada. [Conceito: 4.3][c43].
 
+### Loopback
+
+Interface para comunicação local dentro de um contexto de rede. O significado de local depende do namespace e da configuração em que o processo executa. [Conceito: 17.5](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md).
+
 ### LSM
 
 Linux Security Modules. Arcabouço do kernel para participação de mecanismos adicionais de segurança. Sua presença não informa sozinha quais políticas estão ativas ou quais operações serão permitidas. [Conceito: 11.4][c114].
@@ -1303,6 +1389,10 @@ Região com semântica que permite a participantes observar alterações no cont
 ### Mapeamento privado
 
 Região cujas alterações privadas não devem aparecer automaticamente nas outras visões. A implementação pode utilizar cópia na escrita para cumprir esse contrato. [Conceito: 9.4][c94].
+
+### Máquina virtual
+
+No recorte de sistema, modelo de computador que oferece CPU, memória e dispositivos para executar um sistema convidado. É distinto de uma máquina virtual de linguagem e de um simples conjunto de dependências. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
 
 ### Máscara de ACL
 
@@ -1404,9 +1494,17 @@ Componente que pode ser carregado separadamente para acrescentar funcionalidade 
 
 Conversão da representação assembly em código objeto, realizada por um montador ou assembler. É uma responsabilidade distinta da ligação das peças e da execução do programa resultante. [Conceito: 8.2][c82].
 
+### Montagem somente para leitura
+
+Restrição de escrita por uma montagem. Não oculta o conteúdo nem comprova ausência de outro caminho de acesso ou de escrita. [Conceito: 17.4](modulo-3/capitulo-17/17.4-compartilhamentos-e-autoridade.md).
+
 ### Morris Worm
 
 Programa autorreplicante associado a Robert Tappan Morris e ao incidente de novembro de 1988. Não é a pessoa do episódio do apito telefônico nem a origem única de cybersecurity. [Contexto: capítulo 2][c2].
+
+### Mount namespace
+
+Namespace Linux que separa a lista de montagens visível. Origens de dados podem continuar compartilhadas, e propagação de montagens depende da configuração. [Conceito: 17.3](modulo-3/capitulo-17/17.3-containers-namespaces-e-recursos.md).
 
 ### Movimentação lateral
 
@@ -1429,6 +1527,12 @@ Utilitário util-linux que acompanha os componentes de um caminho e pode exibir 
 ### Namespace
 
 No Linux, visão particular de uma classe de recursos apresentada a um conjunto de processos. O tipo de namespace determina o que se separa; não equivale automaticamente a um limite de consumo. [Conceito: 11.4][c114].
+
+No Linux, instância ou visão de uma categoria de recursos associada a processos. Cada categoria tem alcance próprio; separar uma visão não separa automaticamente todas as outras. [Conceito: 17.3](modulo-3/capitulo-17/17.3-containers-namespaces-e-recursos.md).
+
+### NAT
+
+Network Address Translation, tradução de endereços de rede. No modo VirtualBox apresentado, pode permitir comunicação iniciada pelo convidado; não significa ausência de comunicação externa. [Conceito: 17.5](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md).
 
 ### NBS
 
@@ -1556,6 +1660,10 @@ Falta de página: situação que exige tratar um acesso que não pôde prossegui
 
 Unidade de organização da memória virtual paginada. O tamanho depende do sistema e da arquitetura; uma página não corresponde necessariamente a um único objeto do programa. [Conceito: 9.2][c92].
 
+### Paginação de segundo nível
+
+Tradução com suporte de hardware entre endereços físicos do convidado e do hospedeiro, no percurso de virtualização descrito. Complementa a tradução administrada pelo convidado. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
 ### Paginação sob demanda
 
 Preparação de conteúdo ou mapeamentos quando seu uso exige atendimento, em vez de materializar antecipadamente todo espaço virtual possível. Ter uma região virtual não comprova que ela ocupe imediatamente RAM exclusiva. [Conceito: 9.4][c94].
@@ -1568,9 +1676,17 @@ Execução simultânea de trabalhos em recursos capazes de realizá-los. Disting
 
 Posição ou nome declarado para receber um valor em uma função, script ou comando. É diferente do valor concreto fornecido na chamada. [Conceito: 14.2](modulo-3/capitulo-14/14.2-argumentos-aspas-e-expansoes.md).
 
+### Paravirtualização
+
+Cooperação consciente de componentes do convidado com a plataforma de virtualização, por interfaces próprias. Não constitui autorização irrestrita de acesso ao hospedeiro. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
 ### Parser
 
 Analisador que reconhece a estrutura ou gramática de uma entrada. Parsing é essa atividade de análise. Reconhecer a sintaxe não substitui conferir regras do domínio, permissões ou orçamento de processamento. [Conceito: 10.5][c105].
+
+### Passthrough de dispositivo
+
+Disponibilização de acesso a um dispositivo ao convidado pelo caminho suportado da virtualização. As operações expostas sobre o recurso real entram na análise de confiança. [Conceito: 17.4](modulo-3/capitulo-17/17.4-compartilhamentos-e-autoridade.md).
 
 ### Pasta conhecida
 
@@ -1628,6 +1744,10 @@ Process identifier, identificador de processo. No percurso Linux, a substituiç�
 
 No contexto do capítulo 13: Process Identifier. Identificador de um processo. Sua interpretação deve preservar o contexto da execução e do momento investigado. [Conceito: 13.1](modulo-3/capitulo-13/13.1-arquitetura-processos-e-objetos.md).
 
+### PID namespace
+
+Contexto hierárquico de identificação e visibilidade de processos no Linux. Uma mesma execução pode ter identificadores distintos em camadas diferentes. [Conceito: 17.3](modulo-3/capitulo-17/17.3-containers-namespaces-e-recursos.md).
+
 ### Pilha de execução
 
 Stack. Organização utilizada para chamadas, retornos e estado associado, conforme ABI e implementação. Nem toda variável local precisa ocupar uma posição visível na pilha, e a pilha própria de um thread não é automaticamente isolada dos demais. [Conceitos: 9.1][c91] e [9.3][c93].
@@ -1683,6 +1803,10 @@ Local de uma árvore de nomes em que uma montagem torna seu conteúdo acessível
 ### Porta de rede
 
 Identificador usado por protocolos de transporte para distinguir pontos de comunicação. O número isolado não certifica qual serviço está sendo executado. [Menção: capítulo 1][c1].
+
+### Porta publicada
+
+Associação de um ponto de entrada do hospedeiro ao serviço de um container. Endereço de publicação e controles de rede determinam parte do alcance; acesso local não prova acesso exclusivo local. [Conceito: 17.5](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md).
 
 ### Pós-exploração
 
@@ -1802,6 +1926,10 @@ Nome do executável do PowerShell moderno usado nos exemplos; deve ser distingui
 
 ## Q
 
+### QEMU
+
+Projeto de emulação e virtualização que oferece modelos de máquina e pode utilizar aceleradores. Arquitetura, acelerador, dispositivos e configuração participam do comportamento e do recorte de segurança. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
 ### Quadro de chamada
 
 Stack frame. Organização associada a uma ativação de função, que pode conservar valores e informações para a continuidade. Forma e existência observável dependem da ABI e das decisões do compilador. [Conceito: 9.3][c93].
@@ -1831,6 +1959,10 @@ Direito Windows de consultar partes do descritor de segurança. Não é simplesm
 ### Red Team
 
 Atividade ou equipe que utiliza uma perspectiva adversarial orientada a objetivos para avaliar uma organização e suas defesas. Não é automaticamente sinônimo de pentest. [Menção: capítulo 1][c1].
+
+### Rede interna
+
+No VirtualBox, rede entre convidados participantes, sem acrescentar por esse mecanismo uma interface de participação do host. Não garante sigilo contra quem administra a plataforma. [Conceito: 17.5](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md).
 
 ### Redirecionamento
 
@@ -1932,6 +2064,10 @@ Desfazimento das alterações de uma transação ainda não confirmada, conforme
 
 Conta administrativa no contexto Linux do capítulo. Não é sinônimo de diretório raiz nem do caminho /root; suas capacidades efetivas continuam sujeitas aos mecanismos e políticas do ambiente. [Conceito: 12.2][c122].
 
+### Rootless
+
+No modo Docker apresentado, daemon e containers executam sem privilégios de root no contexto externo. É diferente de somente escolher uma conta não root para a aplicação. [Conceito: 17.3](modulo-3/capitulo-17/17.3-containers-namespaces-e-recursos.md).
+
 ### Rotação de logs
 
 Administração do crescimento e da separação dos arquivos de registro. Estratégia de reabertura e janelas de perda precisam ser consideradas. [Conceito: 16.5](modulo-3/capitulo-16/16.5-logs-tempo-e-evidencias.md).
@@ -1948,6 +2084,10 @@ Resident Set Size. Medida de memória residente associada a um processo. Somar R
 
 Ambiente de execução da linguagem: mecanismos que sustentam o processamento de código e suas operações. Pode incluir interpretação, bibliotecas e gerenciamento de objetos; não precisa ser um único arquivo isolado. [Conceito: 8.4][c84].
 
+### Runtime de container
+
+Componente que prepara e executa o ambiente de container segundo sua configuração. O contexto resultante depende dos recursos, identidades e restrições efetivamente aplicados. [Conceito: 17.3](modulo-3/capitulo-17/17.3-containers-namespaces-e-recursos.md).
+
 ## S
 
 ### SACL
@@ -1961,6 +2101,10 @@ Compromisso de uma organização sobre pesquisa de boa-fé, sob condições decl
 ### Saída padrão
 
 Fluxo convencional de resultado de um programa; no modelo Unix corresponde ao descritor 1. Não precisa ter uma tela como destino. [Conceito: 14.3](modulo-3/capitulo-14/14.3-fluxos-redirecionamentos-e-pipelines.md).
+
+### Sandbox
+
+Ambiente projetado para restringir recursos e operações disponíveis à execução. O termo não identifica uma implementação única nem implica desconexão da rede. [Conceito: 17.5](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md).
 
 ### SATA
 
@@ -1981,6 +2125,10 @@ Arquivo com instruções para um interpretador. A extensão não prova qual ling
 ### Seção de ELF
 
 Unidade de organização de material no formato ELF, utilizada, por exemplo, na ligação e na análise. Não é sinônimo de segmento de carregamento; as duas visões possuem responsabilidades diferentes. [Conceito: 8.3][c83].
+
+### Seccomp
+
+Mecanismo Linux de restrição de chamadas de sistema. Seus filtros são uma camada de proteção, não uma sandbox completa ou uma política integral de arquivos e recursos. [Conceito: 17.4](modulo-3/capitulo-17/17.4-compartilhamentos-e-autoridade.md).
 
 ### Secure Boot
 
@@ -2102,9 +2250,17 @@ Sinais de controle transmitidos pelo mesmo canal do conteúdo de uso, como voz n
 
 Software que administra recursos e oferece serviços aos programas. Sua participação entre aplicações e dispositivos é introduzida antes do desenvolvimento detalhado nos capítulos próprios. [Introdução: 7.1][c71].
 
+### Snapshot
+
+Ponto de estado restaurável segundo o contrato da plataforma. Seu alcance não inclui automaticamente dados compartilhados, armazenamento remoto ou todos os dispositivos. [Conceito: 17.6](modulo-3/capitulo-17/17.6-imagens-snapshots-e-recuperacao.md).
+
 ### Sobreposição de execuções
 
 Condição em que uma nova instância é iniciada enquanto outra ainda trabalha. Sua prevenção não elimina automaticamente repetições sequenciais do mesmo efeito. [Conceito: 16.4](modulo-3/capitulo-16/16.4-agendamento-e-sobreposicao.md).
+
+### Socket do Docker
+
+Uma forma de alcançar a API de administração do daemon. Conceder seu acesso entrega autoridade sobre os recursos que o daemon pode administrar; não é apenas compartilhar um arquivo de entrada. [Conceito: 17.4](modulo-3/capitulo-17/17.4-compartilhamentos-e-autoridade.md).
 
 ### Software
 
@@ -2204,6 +2360,14 @@ Conjunto de componentes que inclui um gerenciador de sistema e serviços. No pap
 
 Estrutura que descreve mapeamentos e condições de acesso entre páginas virtuais e destinos. Pode ser organizada em níveis; não é uma lista de todos os objetos criados pelo programa. [Conceito: 9.2][c92].
 
+### Tag
+
+No contexto de imagens de container, nome que pode ser reassociado a outro conteúdo. Usar a mesma tag em dois momentos não comprova identidade dos artefatos. [Conceito: 17.6](modulo-3/capitulo-17/17.6-imagens-snapshots-e-recuperacao.md).
+
+### TCG
+
+Tiny Code Generator. Mecanismo de tradução do QEMU usado para emular CPUs. A política consultada não lhe atribui a mesma garantia de isolamento dos casos suportados de virtualização. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
 ### Tempo de vida
 
 Período em que um objeto existe validamente segundo o contrato da linguagem e da alocação. A permanência de bytes no antigo local não prolonga automaticamente esse período. [Conceito: 9.3][c93].
@@ -2251,6 +2415,10 @@ Objeto que descreve contexto de segurança de um processo ou thread, incluindo i
 ### Token de acesso do Windows
 
 Objeto que descreve um contexto de segurança, incluindo identidades, grupos e privilégios. Não equivale a um token Web nem a um handle de arquivo. [Conceito: 13.4](modulo-3/capitulo-13/13.4-contas-tokens-e-controle-de-acesso.md).
+
+### Topologia
+
+Organização das conexões entre ambientes, redes e interfaces. Uma única etiqueta de modo de rede não descreve caminhos acrescentados por outras interfaces ou encaminhamentos. [Conceito: 17.5](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md).
 
 ### Transação
 
@@ -2330,6 +2498,10 @@ Uniform Resource Identifier, identificador uniforme de recurso. A introdução e
 
 Uso de uma referência a memória depois de sua liberação, contrariando o tempo de vida do objeto. O espaço pode ter sido reutilizado; observar bytes familiares não torna o acesso válido. [Conceito: 9.3][c93].
 
+### User namespace
+
+Contexto Linux de mapeamento de identificadores de usuário e grupo e de autoridade de capabilities. UID zero dentro de um contexto não descreve sozinho a autoridade fora dele. [Conceito: 17.3](modulo-3/capitulo-17/17.3-containers-namespaces-e-recursos.md).
+
 ### useradd
 
 Utilitário shadow-utils para criação de contas locais, sujeito a opções e padrões da instalação. Criar um cadastro não equivale a conceder todos os recursos necessários a uma aplicação. [Conceito: 15.1](modulo-3/capitulo-15/15.1-identidades-contas-e-contextos.md).
@@ -2372,6 +2544,10 @@ Memory leak. Retenção indevida de recursos de memória que já não são neces
 
 Throughput. Quantidade de trabalho concluído por unidade de tempo. Não é o espaço total disponível nem a duração de uma operação individual. [Conceito: 7.1][c71].
 
+### vCPU
+
+Processador virtual apresentado ao convidado. Sua existência não demonstra uma reserva exclusiva de um núcleo físico. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
 ### VDP
 
 Vulnerability Disclosure Policy, política de divulgação de vulnerabilidades. Define canais e condições para comunicar falhas e pode delimitar pesquisa autorizada. Não significa automaticamente pagamento de recompensas. [Conceito: 3.1][c31].
@@ -2384,13 +2560,33 @@ Observação deliberada de uma capacidade definida de um serviço. Conferir apen
 
 Virtual File System. Camada do kernel Linux que fornece uma interface de sistemas de arquivos e permite coexistência de implementações. A abstração não garante que todo pedido seja permitido ou atendido pelo mesmo caminho físico. [Conceito: 11.1][c111].
 
+### VirtIO
+
+Interfaces de dispositivos projetadas para operação cooperativa com a virtualização. Introdução ao caminho de entrada e saída; nenhum driver foi implementado. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
+### Virtualização
+
+Apresentação de recursos por uma camada que administra sua relação com a implementação subjacente. Não comprova, por si só, exclusividade ou restrição de todos os acessos. [Conceito: 17.1](modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md).
+
 ### Visualizador de Eventos
 
 Event Viewer. Interface de consulta de logs de eventos; a visualização não substitui interpretar origem, contexto e conteúdo do registro. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
 
+### VM
+
+Virtual Machine, máquina virtual. Neste capítulo, designa o ambiente de computador apresentado a um sistema operacional convidado. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
+### VMBus
+
+Canal usado na arquitetura Hyper-V para comunicação entre componentes de virtualização das partições. Menção introdutória, sem configuração ou inspeção executada. [Conceito: 17.2](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md).
+
 ### Volume
 
 Unidade lógica de armazenamento à qual podem ser associados nomes de acesso. Não é sinônimo de uma letra de unidade nem necessariamente de um único disco físico. [Conceito: 13.2](modulo-3/capitulo-13/13.2-volumes-caminhos-e-perfis.md).
+
+### Volumes de container
+
+Recursos de armazenamento cujo ciclo de vida é separado da instância de container. Recriar a instância ligada ao mesmo volume não significa começar sem dados anteriores. [Conceito: 17.6](modulo-3/capitulo-17/17.6-imagens-snapshots-e-recuperacao.md).
 
 ### Vulnerabilidade
 
@@ -2413,6 +2609,10 @@ Utilitário Windows de consulta do contexto corrente, com opções para identida
 ### Windows Event Log
 
 Infraestrutura de publicação e consulta de eventos do Windows. Não registra automaticamente toda ação de qualquer aplicação. [Conceito: 13.6](modulo-3/capitulo-13/13.6-inicializacao-servicos-e-investigacao.md).
+
+### Windows Sandbox
+
+Ambiente descartável do Windows baseado em hipervisor e kernel separado. Rede e integrações possuem configurações próprias; o fragmento do capítulo é documental, não uma avaliação completa executada. [Conceito: 17.5](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md).
 
 ### Windows Terminal
 

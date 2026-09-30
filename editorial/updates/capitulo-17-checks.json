@@ -1,0 +1,343 @@
+{
+  "base_commit": "5b812f65e9eef87f1bf8b968481a7c290dc2370d",
+  "preparation_commit": "5c882cb8576f32c0956d09f5161900260008628a",
+  "run_id": "36650256040",
+  "tests": {
+    "total": 122,
+    "passed": 122,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "environment": {
+    "python": "3.12.3",
+    "os": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "euid": 1001,
+    "bash": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)"
+  },
+  "observation": {
+    "mesmo_namespace": {
+      "ipc": true,
+      "mnt": true,
+      "net": true,
+      "pid": true,
+      "user": true,
+      "uts": true
+    },
+    "namespaces_comparados": 6,
+    "processos_distintos": true
+  },
+  "glossary": {
+    "before": 588,
+    "after": 637,
+    "added": [
+      "Virtualização",
+      "Isolamento",
+      "Hospedeiro",
+      "Convidado",
+      "Base de confiança",
+      "Computação confidencial",
+      "Ambiente virtual Python",
+      "chroot",
+      "Máquina virtual",
+      "VM",
+      "Hipervisor",
+      "Emulação",
+      "KVM",
+      "QEMU",
+      "TCG",
+      "vCPU",
+      "Paginação de segundo nível",
+      "Paravirtualização",
+      "VirtIO",
+      "VMBus",
+      "Runtime de container",
+      "Imagem de container",
+      "Mount namespace",
+      "PID namespace",
+      "User namespace",
+      "Rootless",
+      "Montagem somente para leitura",
+      "Guest Additions",
+      "Socket do Docker",
+      "Passthrough de dispositivo",
+      "Seccomp",
+      "Escape de isolamento",
+      "Topologia",
+      "NAT",
+      "Bridge",
+      "Host-only",
+      "Rede interna",
+      "Loopback",
+      "Porta publicada",
+      "Sandbox",
+      "Windows Sandbox",
+      "Snapshot",
+      "Clone vinculado",
+      "Clone completo",
+      "Backup",
+      "Tag",
+      "Digest",
+      "Volumes de container",
+      "fstat"
+    ],
+    "extended": [
+      "Namespace",
+      "Bind mount"
+    ],
+    "preserved_previous_definitions": 588
+  },
+  "first_docs": {
+    "markdown_files": 185,
+    "internal_links": 1680,
+    "internal_errors": [],
+    "external_urls": 426,
+    "glossary_entries": 637
+  },
+  "external_summary": {
+    "accessible": 39
+  },
+  "external_urls": [
+    {
+      "url": "https://docs.docker.com/build/building/best-practices/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/build/building/best-practices/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/containers/resource_constraints/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/containers/resource_constraints/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/network/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/network/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/network/drivers/none/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/network/drivers/none/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/network/port-publishing/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/network/port-publishing/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/security/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/security/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/security/protect-access/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/security/protect-access/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/security/rootless/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/security/rootless/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/security/seccomp/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/security/seccomp/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/storage/bind-mounts/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/storage/bind-mounts/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/engine/storage/volumes/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/engine/storage/volumes/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "status": 200,
+      "final_url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.kernel.org/userspace-api/seccomp_filter.html",
+      "status": 200,
+      "final_url": "https://docs.kernel.org/userspace-api/seccomp_filter.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.kernel.org/virt/kvm/api.html",
+      "status": 200,
+      "final_url": "https://docs.kernel.org/virt/kvm/api.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.kernel.org/virt/kvm/x86/mmu.html",
+      "status": 200,
+      "final_url": "https://docs.kernel.org/virt/kvm/x86/mmu.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/Introduction.html",
+      "status": 200,
+      "final_url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/Introduction.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/Security.html",
+      "status": 200,
+      "final_url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/Security.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/guestadditions.html",
+      "status": 200,
+      "final_url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/guestadditions.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/networkingdetails.html",
+      "status": 200,
+      "final_url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/networkingdetails.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/working-with-vms.html",
+      "status": 200,
+      "final_url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/working-with-vms.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.python.org/3/library/os.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/os.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.python.org/3/library/subprocess.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/subprocess.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://docs.python.org/3/library/venv.html",
+      "status": 200,
+      "final_url": "https://docs.python.org/3/library/venv.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/architecture",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/architecture",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/",
+      "result": "accessible"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-configure-using-wsb-file",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-configure-using-wsb-file",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/chroot.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/chroot.2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/fork.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/fork.2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/stat.2.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/stat.2.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/proc_pid_ns.5.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/proc_pid_ns.5.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/mount_namespaces.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/mount_namespaces.7.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/namespaces.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/namespaces.7.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/pid_namespaces.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/pid_namespaces.7.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/user_namespaces.7.html",
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/user_namespaces.7.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://www.qemu.org/docs/master/system/confidential-guest-support.html",
+      "status": 200,
+      "final_url": "https://www.qemu.org/docs/master/system/confidential-guest-support.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://www.qemu.org/docs/master/system/introduction.html",
+      "status": 200,
+      "final_url": "https://www.qemu.org/docs/master/system/introduction.html",
+      "result": "accessible"
+    },
+    {
+      "url": "https://www.qemu.org/docs/master/system/security.html",
+      "status": 200,
+      "final_url": "https://www.qemu.org/docs/master/system/security.html",
+      "result": "accessible"
+    }
+  ],
+  "second_docs": {
+    "markdown_files": 185,
+    "internal_links": 1683,
+    "internal_errors": [],
+    "external_urls": 427,
+    "glossary_entries": 637
+  }
+}

@@ -2,7 +2,7 @@
 
 [← Capítulo](README.md) · [Bibliografia geral](../../bibliografia.md)
 
-**Consulta:** 29/09/2026. **Versão:** DRAFT 0.1.
+**Consulta:** 29/09/2026. **Versão:** VALIDATED 1.0 — fechamento interno em 29/09/2026; revisão independente pendente.
 
 Fontes primárias sustentam mecanismos específicos; a explicação e a narrativa são autorais. Consultas pontuais não equivalem à leitura integral dos manuais. As páginas de systemd, procps-ng, Cronie e logrotate abaixo são reproduções identificadas da documentação dos projetos no man7. A abertura direta de cinco manuais systemd no freedesktop retornou 403; isso não foi tratado como desaparecimento da documentação.
 

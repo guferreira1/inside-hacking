@@ -31,3 +31,7 @@ A regressão, as duas passagens de navegação, o glossário e a consulta de URL
 ## Estado e próxima etapa
 
 O capítulo 17 permanece DRAFT para primeira leitura. Com sua escrita, todos os textos previstos do Módulo III existem; o fechamento interno requer a aprovação desta leitura e a revisão de conjunto. Após esse fechamento, a comunicação no LinkedIn é o próximo marco editorial antes de iniciar outro módulo. Não houve postagem nem criação de automação. A pendência do capítulo 1 e o fechamento do Módulo II são preservados. Revisão técnica independente e futura edição PDF continuam etapas distintas.
+
+## Verificação no runner
+
+A [execução de preparação](https://github.com/guferreira1/inside-hacking/actions/runs/36650256040) concluiu 122 testes sem falhas ou skips. A auditoria registra ambientes, observação independente do exemplo, preservação do glossário, consultas HTTP e checagens documentais. A confirmação de integração em main é separada.

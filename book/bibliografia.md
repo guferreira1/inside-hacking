@@ -125,7 +125,13 @@ O [exemplo opcional](modulo-3/capitulo-15/exemplos/README.md) observa somente ar
 
 As [44 referências](modulo-3/capitulo-16/referencias.md) relacionam documentação Linux, systemd, procps-ng, Cronie, logrotate, Microsoft, Python, SQLite e OWASP. As reproduções de manuais são identificadas; não se confunde versão documental com ambiente executado.
 
-Os [dois exemplos próprios](modulo-3/capitulo-16/exemplos/README.md) e os [14 testes](../scripts/tests/test_chapter16_examples.py) separam inicialização, término, diagnóstico, efeito confirmado e resposta ausente. O exemplo SQLite usa apenas um banco temporário e interrupções de processo em dois pontos conhecidos, sem simular falha de energia ou sistema distribuído. O capítulo permanece DRAFT 0.1; [registro editorial](../editorial/reviews/capitulo-16.md) e [auditoria](../editorial/audits/2026-09-29-capitulo-16.md) delimitam fontes, execuções e revisão.
+Os [dois exemplos próprios](modulo-3/capitulo-16/exemplos/README.md) e os [14 testes](../scripts/tests/test_chapter16_examples.py) separam inicialização, término, diagnóstico, efeito confirmado e resposta ausente. O exemplo SQLite usa apenas um banco temporário e interrupções de processo em dois pontos conhecidos, sem simular falha de energia ou sistema distribuído. A leitura foi aprovada e o ciclo interno 1.0 foi concluído; [registro editorial](../editorial/reviews/capitulo-16.md) e [auditoria](../editorial/audits/2026-09-29-capitulo-16.md) delimitam fontes, execuções e revisão.
+
+## Capítulo 17 — Virtualização e isolamento
+
+As [38 referências numeradas](modulo-3/capitulo-17/referencias.md) relacionam 39 URLs de documentação primária Linux, QEMU, Oracle, Docker, Microsoft e Python. O percurso separa representação, restrição, kernel compartilhado, recursos concedidos, conectividade e alcance de restauração. As configurações de VM, containers e Windows Sandbox são documentais, não reproduções alegadas.
+
+O [exemplo próprio](modulo-3/capitulo-17/exemplos/README.md) e os [nove testes](../scripts/tests/test_chapter17_examples.py) comparam namespaces de pai e filho e verificam contratos e limpeza. Não criam isolamento nem avaliam escapes. O capítulo permanece DRAFT 0.1 para leitura; seu [registro editorial](../editorial/reviews/capitulo-17.md) e a [auditoria](../editorial/audits/2026-09-29-capitulo-17.md) distinguem pesquisa, execução local e runner.
 
 ## Política de referências
 

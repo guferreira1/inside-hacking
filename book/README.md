@@ -12,7 +12,7 @@ Este índice aponta para textos que já existem. Para consultar os assuntos aind
 | --- | --- | --- |
 | [I · Hacking, segurança e método](modulo-1/README.md) | Capítulos 1 a 5 | Textos disponíveis; capítulo 1 ainda em revisão |
 | [II · Computadores por dentro](modulo-2/README.md) | Capítulos 6 a 10 | Ciclo interno concluído — v1.0 nos capítulos 6–10 |
-| [III · Sistemas operacionais](modulo-3/README.md) | Capítulos 11 a 17 | Capítulos 11 a 16 disponíveis; 17 planejado |
+| [III · Sistemas operacionais](modulo-3/README.md) | Capítulos 11 a 17 | Todos os textos disponíveis; capítulo 17 em primeira leitura |
 
 Os demais módulos serão adicionados conforme seus primeiros textos forem produzidos. O Módulo III começa no capítulo 11; o Módulo IV, ainda planejado, começa no capítulo 18. Disponibilidade de todos os textos não equivale a fechamento editorial do módulo.
 
@@ -128,7 +128,8 @@ O Módulo II teve a leitura dos cinco capítulos aprovada e passou por revisão 
 | 13 | [Windows por dentro](modulo-3/capitulo-13/README.md) | Revisão interna concluída — v1.0 |
 | 14 | [Terminal, shells e automação](modulo-3/capitulo-14/README.md) | Revisão interna concluída — v1.0 |
 | 15 | [Usuários, grupos, permissões e privilégios](modulo-3/capitulo-15/README.md) | Revisão interna concluída — v1.0 |
-| 16 | [Processos, serviços, logs e persistência de estado](modulo-3/capitulo-16/README.md) | Rascunho para leitura — v0.1 |
+| 16 | [Processos, serviços, logs e persistência de estado](modulo-3/capitulo-16/README.md) | Revisão interna concluída — v1.0 |
+| 17 | [Virtualização e isolamento](modulo-3/capitulo-17/README.md) | Rascunho para leitura — v0.1 |
 
 ### Dentro do Capítulo 11
 
@@ -193,6 +194,19 @@ O Módulo II teve a leitura dos cinco capítulos aprovada e passou por revisão 
 - [16.6 — O processo acaba; o estado precisa de um contrato](modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md)
 - [16.7 — Reconstruir a execução antes de mudar o sistema](modulo-3/capitulo-16/16.7-investigacao-e-verificacao.md)
 - [Exemplos opcionais](modulo-3/capitulo-16/exemplos/README.md), [respostas comentadas](modulo-3/capitulo-16/solucoes.md) e [referências](modulo-3/capitulo-16/referencias.md).
+
+
+### Dentro do Capítulo 17
+
+- [17.1 · Separado de quê, protegido contra quem?](modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md)
+- [17.2 · Um computador apresentado por outro](modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md)
+- [17.3 · Processos com visões e limites próprios](modulo-3/capitulo-17/17.3-containers-namespaces-e-recursos.md)
+- [17.4 · As passagens que nós mesmos abrimos](modulo-3/capitulo-17/17.4-compartilhamentos-e-autoridade.md)
+- [17.5 · Uma rede virtual continua sendo uma rede](modulo-3/capitulo-17/17.5-conectividade-e-alcance.md)
+- [17.6 · Voltar no tempo tem um alcance](modulo-3/capitulo-17/17.6-imagens-snapshots-e-recuperacao.md)
+- [17.7 · Conferir a fronteira antes de confiar nela](modulo-3/capitulo-17/17.7-investigacao-e-verificacao.md)
+- [Exemplo opcional de namespaces próprios](modulo-3/capitulo-17/exemplos/README.md).
+- [Respostas comentadas](modulo-3/capitulo-17/solucoes.md) e [referências](modulo-3/capitulo-17/referencias.md).
 
 ## Como navegar
 

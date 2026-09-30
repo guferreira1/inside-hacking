@@ -15,10 +15,10 @@ Este módulo investiga quem organiza essa convivência. Começamos pelo papel do
 | 13 | [Windows por dentro](capitulo-13/README.md) | Revisão interna concluída — v1.0 |
 | 14 | [Terminal, shells e automação](capitulo-14/README.md) | Revisão interna concluída — v1.0 |
 | 15 | [Usuários, grupos, permissões e privilégios](capitulo-15/README.md) | Revisão interna concluída — v1.0 |
-| 16 | [Processos, serviços, logs e persistência de estado](capitulo-16/README.md) | Rascunho para leitura — v0.1 |
-| 17 | Virtualização e isolamento | Planejado |
+| 16 | [Processos, serviços, logs e persistência de estado](capitulo-16/README.md) | Revisão interna concluída — v1.0 |
+| 17 | [Virtualização e isolamento](capitulo-17/README.md) | Rascunho para leitura — v0.1 |
 
-Os capítulos 11 a 16 estão disponíveis neste módulo. Os capítulos 11 a 15 têm revisão interna concluída; o 16 está em primeira leitura. O capítulo 17 permanece planejado no [sumário mestre](../../editorial/master-outline.md). A numeração e a ordem continuam globais, sem reorganização.
+Todos os capítulos previstos deste módulo, do 11 ao 17, estão disponíveis. Os capítulos 11 a 16 têm revisão interna concluída; o 17 está em primeira leitura. O fechamento interno do módulo depende dessa leitura e da revisão de conjunto. A sequência do [sumário mestre](../../editorial/master-outline.md) permanece inalterada; o próximo módulo começa no capítulo 18.
 
 ## Como ler
 
@@ -28,4 +28,4 @@ Consulte o [glossário](../glossario.md) e as referências de cada unidade. A in
 
 O capítulo 12 concretiza esse mapa em Linux, com diretórios, montagens, interfaces de estado e manutenção de pacotes. Seu exemplo consulta somente um descritor próprio; a leitura não exige operações administrativas.
 
-**[Começar pelo Capítulo 11 →](capitulo-11/README.md)** · **[Continuar no Capítulo 16 →](capitulo-16/README.md)**
+**[Começar pelo Capítulo 11 →](capitulo-11/README.md)** · **[Continuar no Capítulo 17 →](capitulo-17/README.md)**

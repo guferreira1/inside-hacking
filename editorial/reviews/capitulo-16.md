@@ -1,6 +1,6 @@
 # Primeira entrega editorial — Capítulo 16
 
-**Data:** 29/09/2026. **Estado:** DRAFT 0.1. **Módulo:** III.
+**Primeira entrega:** 29/09/2026. **Estado atual:** VALIDATED — versão editorial 1.0; ciclo interno concluído em 29/09/2026. **Módulo:** III.
 
 [Manuscrito](../../book/modulo-3/capitulo-16/README.md) · [Referências](../../book/modulo-3/capitulo-16/referencias.md) · [Exemplos](../../book/modulo-3/capitulo-16/exemplos/README.md)
 
@@ -37,3 +37,7 @@ A verificação de conjunto e o estado da integração serão registrados na aud
 ## Verificação de conjunto
 
 Os resultados executados constam na [auditoria desta entrega](../audits/2026-09-29-capitulo-16.md) e no [registro de verificações](../updates/capitulo-16-checks.json). A integração em main e a checagem posterior são etapas distintas.
+
+## Aprovação e reconferência interna
+
+O pedido de continuidade confirma a aprovação da leitura. As sete seções e quatorze respostas foram relidas, preservando o conteúdo e os limites dos experimentos. Fontes e execuções da entrega anterior não são apresentadas como novas execuções; a regressão desta rodada está na [auditoria do capítulo 17](../audits/2026-09-29-capitulo-17.md). Não foram atribuídas horas ou competência prática não relatadas. Revisão técnica independente permanece pendente.

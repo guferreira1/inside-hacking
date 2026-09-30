@@ -104,8 +104,23 @@ Pré-requisitos: representações, recursos, processos e arquivos apresentados n
 | 16.6 | [Estado e confirmação](../book/modulo-3/capitulo-16/16.6-estado-confirmacao-e-retomada.md) | SQLite, transação local, repetição e resposta ausente. | Interrupções do processo; sem energia, corrupção física ou concorrência testada. |
 | 16.7 | [Investigação](../book/modulo-3/capitulo-16/16.7-investigacao-e-verificacao.md) | Linha do tempo, hipótese, confirmação e limites de autoridade. | Caso Aurora fictício; sem diagnóstico de incidente real. |
 
+
+### Capítulo 17 — Fronteiras entre ambientes
+
+| Seção | Teoria | Aplicação e verificação | Limites |
+| --- | --- | --- | --- |
+| 17.1 | [Separado de quê, protegido contra quem?](../book/modulo-3/capitulo-17/17.1-virtualizacao-e-fronteiras.md) | Requisito de proteção e base de confiança; venv e chroot como recortes. | Fundamento documental; sem configurar VM, container ou host. |
+| 17.2 | [Um computador apresentado por outro](../book/modulo-3/capitulo-17/17.2-maquinas-virtuais-e-hipervisores.md) | Modelo de máquina, acelerador, memória e dispositivos. | Fundamento documental; sem configurar VM, container ou host. |
+| 17.3 | [Processos com visões e limites próprios](../book/modulo-3/capitulo-17/17.3-containers-namespaces-e-recursos.md) | Visões, identidade, kernel compartilhado e orçamento de recursos. | Fundamento documental; sem configurar VM, container ou host. |
+| 17.4 | [As passagens que nós mesmos abrimos](../book/modulo-3/capitulo-17/17.4-compartilhamentos-e-autoridade.md) | Origens de arquivos, integrações, administração e filtragem. | Fundamento documental; sem configurar VM, container ou host. |
+| 17.5 | [Uma rede virtual continua sendo uma rede](../book/modulo-3/capitulo-17/17.5-conectividade-e-alcance.md) | Entrada e saída, topologia e opções de conectividade. | Fundamento documental; sem configurar VM, container ou host. |
+| 17.6 | [Voltar no tempo tem um alcance](../book/modulo-3/capitulo-17/17.6-imagens-snapshots-e-recuperacao.md) | Estado incluído, efeito externo e identificação de artefatos. | Fundamento documental; sem configurar VM, container ou host. |
+| 17.7 | [Conferir a fronteira antes de confiar nela](../book/modulo-3/capitulo-17/17.7-investigacao-e-verificacao.md) | Caso Aurora e comparação real de namespaces de pai e filho. | Nove testes delimitados; não comprova isolamento externo nem resistência a escapes. |
+
+Capítulo 17 em primeira leitura; [fontes](../book/modulo-3/capitulo-17/referencias.md) e [registro](reviews/capitulo-17.md). O capítulo 16 concluiu o ciclo interno 1.0 com limites preservados.
+
 ## Cobertura ainda planejada
 
 A matriz continuará a detalhar redes e sistemas, reconhecimento, autenticação, ataques a credenciais, Web, APIs, injeções, autorização, lógica de negócio, infraestrutura, Linux, Windows, Active Directory, cloud, containers, supply chain, exploração de software, pós-exploração, escalada de privilégios, persistência, pivotamento, movimentação lateral, segurança de IA, redes sem fio, mobile, IoT, privacidade, dark web, OSINT, investigação e defesa.
 
-Esses temas pertencem ao planejamento, não são capítulos concluídos por aparecerem nesta lista. Os capítulos a partir do 13 não recebem linhas de cobertura efetiva antes da produção dos textos. Os capítulos 11 e 12 não substituem o aprofundamento futuro de Windows, administração, permissões ou isolamento. A matriz não afirma completude e não substitui os registros específicos de revisão.
+Esses temas pertencem ao planejamento, não são capítulos concluídos por aparecerem nesta lista. Os capítulos a partir do 18 não recebem linhas de cobertura efetiva antes da produção dos textos. Os fundamentos dos capítulos 11 a 17 não substituem as unidades futuras de administração aplicada, segurança de plataformas ou pós-exploração. A matriz não afirma completude e não substitui os registros específicos de revisão.

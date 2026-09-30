@@ -4,7 +4,7 @@
 
 **Módulo III — Sistemas operacionais**
 
-> **Status:** DRAFT 0.1 — primeira entrega de leitura. Fontes, execuções e limites no [registro editorial](../../../editorial/reviews/capitulo-16.md). Revisão técnica independente pendente.
+> **Status:** VALIDATED — versão editorial 1.0; leitura aprovada e ciclo interno concluído em 29/09/2026. Fontes, execuções e limites no [registro editorial](../../../editorial/reviews/capitulo-16.md). Revisão técnica independente pendente.
 
 A biblioteca Aurora corrigiu o pedido de acesso do importador. Ele já encontra o catálogo e solicita somente a leitura de que precisa. Durante o teste acompanhado pela equipe, tudo parece funcionar. Na manhã seguinte, porém, alguns livros aparecem duas vezes.
 
