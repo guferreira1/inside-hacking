@@ -1,0 +1,21 @@
+name: Prepare chapter 16
+on:
+  push:
+    branches:
+      - docs/chapter-16-processes-20260929
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Verify chapter and prepare an unreferenced manuscript tree
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .editorial_prepare16.py
